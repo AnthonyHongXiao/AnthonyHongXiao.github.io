@@ -1,2 +1,2 @@
 User-Agent: *
-Sitemap: AnthonyHongXiao.github.io/sitemap.xml
+Sitemap: https://AnthonyHongXiao.github.io/sitemap.xml
