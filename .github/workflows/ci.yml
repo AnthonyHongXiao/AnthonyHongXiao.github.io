@@ -1,66 +1,38 @@
-name: CI
+name: GitHub Pages
 
 on:
   push:
     branches:
-    - master
+      - main  # Set a branch name to trigger deployment
   pull_request:
-    branches:
-    - master
 
 jobs:
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2.6.0
-      with:
-        hugo-version: latest
-
-    - name: Build site
-      run: hugo --minify --gc --destination ../public
-
-    - name: Upload Artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: build
-        path: ./public
-
-  dependabot:
-    name: Dependabot Auto-Merge
-    needs: build
-    runs-on: ubuntu-latest
-    if: ${{ github.actor == 'dependabot[bot]' && github.event_name == 'pull_request'}}
-    steps:
-      - name: Dependabot metadata
-        id: dependabot-metadata
-        uses: dependabot/fetch-metadata@v1
-        with:
-          github-token: '${{ secrets.GITHUB_TOKEN }}'
-      - name: Enable auto-merge for Dependabot PRs
-        if: contains(fromJSON('["version-update:semver-patch", "version-update:semver-minor"]'), steps.dependabot-metadata.outputs.update-type)
-        run: gh pr merge --auto --merge "$PR_URL"
-        env:
-          PR_URL: ${{github.event.pull_request.html_url}}
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
   deploy:
-    needs: build
-    name: Deploy to GitHub Pages
-    runs-on: ubuntu-latest
-    if: github.event_name == 'push'
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/upload-artifact@v3
         with:
-          name: build
-          path: ./public
-      - uses: peaceiris/actions-gh-pages@v3.9.2
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.110.0'
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        # If you're changing the branch from main,
+        # also change the `main` in `refs/heads/main`
+        # below accordingly.
+        if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
