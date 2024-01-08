@@ -1,7 +1,9 @@
 # Xiao (Anthony) Hong
 
 ## About Me
-I am [Your Name], a [Your Profession/Field of Study]. My work primarily focuses on [Brief Description of Your Work or Research Interests].
+I am Anthony, a junior at Washington University in St. Louis (WUSTL). While enjoying mathematical beauty in large, I'm primarily interested in the interaction between geometry and data analysis. Specifically, I like to see how real world images are stored as data and how structure of data is geometrized and visualized. In the following map of "math land," I live in a small cabin in the mountains but often travel to various places.
+
+![Mathland](https://github.com/AnthonyHongXiao/AnthonyHongXiao.github.io/assets/89869001/55ba79c9-f730-4940-9a74-ff7ef959e3d6)
 
 ## Contact
 - Email: [your.email@example.com](mailto:your.email@example.com)
