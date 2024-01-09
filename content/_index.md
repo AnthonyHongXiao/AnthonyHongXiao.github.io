@@ -19,7 +19,7 @@ In the following map of "math land," I wish to live in a small cabin 🤔️ in 
 
 Major GPA: 4.00/4.00; Total GPA: 3.99/4.00
 
-### Selected courses**:
+### Selected Courses:
 **Graduate courses**:
 Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math 5051 Measure Theory and Functional Analysis I (A); Math5031 Algebra I (A+); Math5021 Complex Analysis I (A); Math586 Network Statistics (A)
 
