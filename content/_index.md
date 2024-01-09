@@ -26,7 +26,7 @@ In the following map of "math land," I wish to live in a small cabin in the moun
 
 ## Publications/Projects
 
-<strong><span style="font-size: smaller;">Curvature of Cayley Graph of Certain Groups</span></strong> (working)
+<span style="color:#3c66b5">Theorem</span>Curvature of Cayley Graph of Certain Groups (working)
 
 This is a summer research with Professor Renato Feres beginning in July 2023. The study aims to use efficient algorithms to compute Ollivier-Ricci curvature of Cayley graphs of certain groups and find out some patterns.
 
