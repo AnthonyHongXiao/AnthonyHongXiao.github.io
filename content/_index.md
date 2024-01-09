@@ -20,8 +20,8 @@ In the following map of "math land," I wish to live in a small cabin in the moun
 - [Job Title, Company/Organization, Duration]
 
 ## Publications/Projects
-### Study of Intergenerational Mobility and Urbanization Based on OLS Method and Ordered Probit Model, IEEE-CS/MSIEID2020
-<div style="text-align: right;">12/18/2020</div> 
+
+<span style="font-size: smaller;">Study of Intergenerational Mobility and Urbanization Based on OLS Method and Ordered Probit Model, IEEE-CS/MSIEID2020</span> <div style="text-align: right; display: inline-block; width: 100%;">12/18/2020</div>
 
 The study, using the CHARLS dataset and techniques like OLS and ordered probit model, reveals a growing educational disparity across generations in China, highlighting an increasing trend in educational inequality despite overall improvements, especially between urban and rural regions.
 
