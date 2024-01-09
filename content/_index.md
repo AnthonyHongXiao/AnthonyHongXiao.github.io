@@ -3,7 +3,7 @@
 ## About Me
 I am Anthony, a junior at Washington University in St. Louis (WUSTL). While enjoying mathematical beauty in large, I'm primarily interested in the interaction between geometry and data analysis. Specifically, I like to see how real world images are stored as data and how the structure of data is geometrized and visualized.
 
-{{< figure src="https://github.com/AnthonyHongXiao/AnthonyHongXiao.github.io/assets/89869001/82920521-aae9-4166-9554-98791b7206fa" height="50%" width="50%" class="imagecenter" >}}
+{{< figure src="https://github.com/AnthonyHongXiao/AnthonyHongXiao.github.io/assets/89869001/82920521-aae9-4166-9554-98791b7206fa" height="40%" width="40%" class="imagecenter" >}}
 
 ## Contact
 - Email: [hong.x@wustl.edu](mailto:hong.x@wustl.edu)
@@ -33,8 +33,7 @@ This is a summer research with Professor Renato Feres beginning in July 2023. Th
 
 The study, using the CHARLS dataset and techniques like OLS and ordered probit model, reveals a growing educational disparity across generations in China, highlighting an increasing trend in educational inequality despite overall improvements, especially between urban and rural regions.
 
-$x^2=y$
-
+$x^2=y, \frac{1}{2}, G=\langle a\rangle,\quad a$
 
 
 
