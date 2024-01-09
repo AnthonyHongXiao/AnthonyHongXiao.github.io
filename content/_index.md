@@ -24,15 +24,17 @@ In the following map of "math land," I wish to live in a small cabin in the moun
 
 ## Publications/Projects
 
-<span style="color:#3c66b5">Curvature of Cayley Graph of Certain Groups</span> (working)
+**Curvature of Cayley Graph of Certain Groups** (working)
 
 This is a summer research with Professor Renato Feres beginning in July 2023. The study aims to use efficient algorithms to compute Ollivier-Ricci curvature of Cayley graphs of certain groups and find out some patterns.
 
-12/18/2020, <strong><span style="font-size: smaller;">Study of Intergenerational Mobility and Urbanization Based on OLS Method and Ordered Probit Model</span></strong>, IEEE-CS/MSIEID2020
+12/18/2020, **Study of Intergenerational Mobility and Urbanization Based on OLS Method and Ordered Probit Model**, IEEE-CS/MSIEID2020
 
 [DOI: 10.1109/MSIEID52046.2020.00092](https://ieeexplore.ieee.org/abstract/document/9382602)
 
 The study, using the CHARLS dataset and techniques like OLS and ordered probit model, reveals a growing educational disparity across generations in China, highlighting an increasing trend in educational inequality despite overall improvements, especially between urban and rural regions.
+
+$x^2=y$
 
 
 
