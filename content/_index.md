@@ -3,7 +3,7 @@
 ## About Me
 I am Anthony, a junior at Washington University in St. Louis (WUSTL). While enjoying mathematical beauty in large, I'm primarily interested in the interaction between geometry and data analysis. Specifically, I like to see how real world images are stored as data and how the structure of data is geometrized and visualized.
 
-{{< figure src="https://github.com/AnthonyHongXiao/AnthonyHongXiao.github.io/assets/89869001/82920521-aae9-4166-9554-98791b7206fa" height="40%" width="40%" class="imagecenter" >}}
+{{< figure src="images/personal_website_photo.jpg" height="40%" width="40%" class="imagecenter" >}}
 
 ## Contact
 - Email: [hong.x@wustl.edu](mailto:hong.x@wustl.edu)
