@@ -1,6 +1,6 @@
 # Xiao (Anthony) Hong
 
-{{< figure src="[/media/spf13.jpg](https://github.com/AnthonyHongXiao/AnthonyHongXiao.github.io/assets/89869001/82920521-aae9-4166-9554-98791b7206fa)" title="Anthony" height="50%" width="50%" >}}
+{{< figure src="https://github.com/AnthonyHongXiao/AnthonyHongXiao.github.io/assets/89869001/82920521-aae9-4166-9554-98791b7206fa" title="Anthony" height="50%" width="50%" >}}
 
 ## About Me
 
