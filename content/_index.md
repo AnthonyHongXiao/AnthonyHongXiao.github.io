@@ -1,9 +1,13 @@
 # Xiao (Anthony) Hong
 
+{{< columns >}}
 ![Anthony](/images/personal_website_photo.jpg)
+<---> <!-- This is the column break shortcode in some Hugo themes -->
+### About Me
 
-## About me
-I am Anthony, a junior at Washington University in St. Louis (WUSTL). While enjoying mathematical beauty in large, I'm primarily interested in the interaction between geometry and data analysis. Specifically, I like to see how real world images are stored as data and how structure of data is geometrized and visualized.
+I am Anthony, a junior at Washington University in St. Louis (WUSTL). While enjoying mathematical beauty in large, I'm primarily interested in the interaction between geometry and data analysis. Specifically, I like to see how real world images are stored as data and how the structure of data is geometrized and visualized.
+{{< /columns >}}
+
 
 
 ## Contact
