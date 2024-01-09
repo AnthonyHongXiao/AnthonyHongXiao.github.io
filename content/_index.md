@@ -36,7 +36,7 @@ The study, using the CHARLS dataset and techniques like OLS and ordered probit m
 $x^2=y, \frac{1}{2}, G=\langle a\rangle,\quad a$
 
 see the following pdf:
-![ajdhihs](/pdfs/5031-5032_Algebra.pdf)
+[Algebra note](/pdfs/5031-5032_Algebra.pdf)
 
 
 
