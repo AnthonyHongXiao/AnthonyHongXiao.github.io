@@ -9,7 +9,7 @@ I am Anthony, a junior at Washington University in St. Louis (WUSTL). While enjo
 - Email: [hong.x@wustl.edu](mailto:hong.x@wustl.edu)
 - LinkedIn: [https://www.linkedin.com/in/xiao-hong-anthony/](https://www.linkedin.com/in/xiao-hong-anthony/)
 
-In the following map of "math land," I wish to live in a small cabin 🤔️ in the hills and often travel to various other places. 🚶
+In the following map of "math land," I wish to live in a small cabin 🤔️ on the hills and often travel to various other places. 🚶
 
 {{< figure src="/images/Mathland.jpg" title="Math Land" height="95%" width="95%" class="imagecenter" >}}
 
