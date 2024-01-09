@@ -27,8 +27,11 @@ Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math 5051 M
 
 
 ## Experience
-- [Job Title, Company/Organization, Duration]
-- [Job Title, Company/Organization, Duration]
+- Speaker in Midstates Consortium for Math and Science 23 at University of Chicago.
+- UNC Undergraduate Analysis and PDE Seminar FL22-SP23.
+- WashU Reading Group SP23: Algebraic Geometry.
+- WashU Reading Group FL23: Representation Theory.
+- WUSTL Metamorphic Architecture Workshop 2019, Dean Heather Woofter's tutee.
 
 ## Publications/Projects
 
