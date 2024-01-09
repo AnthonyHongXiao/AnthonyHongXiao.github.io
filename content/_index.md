@@ -21,7 +21,7 @@ In the following map of "math land," I wish to live in a small cabin in the moun
 
 ## Publications/Projects
 
-<strong><span style="font-size: smaller;">Study of Intergenerational Mobility and Urbanization Based on OLS Method and Ordered Probit Model, IEEE-CS/MSIEID2020, 12/18/2020
+<div style="color: #5F9EA0;">12/18/2020<\div><strong><span style="font-size: smaller;">Study of Intergenerational Mobility and Urbanization Based on OLS Method and Ordered Probit Model<\strong>, IEEE-CS/MSIEID2020
 
 [DOI: 10.1109/MSIEID52046.2020.00092](https://ieeexplore.ieee.org/abstract/document/9382602)
 
