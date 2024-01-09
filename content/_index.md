@@ -47,22 +47,22 @@ The study, using the CHARLS dataset and techniques like OLS and ordered probit m
 Spring 2022, **Hex & Brouwer Paper Report**, Midterm project in Prof. Chi's Math 4181 Algebraic Topology.
 
 A paper correcting and reestablishing the proof of equivalence between the Hex theorem and the Bouwer Fixed-Point in David Gale’s paper “The Game of Hex and The Brouwer Fixed-Point Theorem.”
-[Algebra note](/pdfs/4181_Hex_and_Brouwer.pdf)
+[Paper Link](/pdfs/4181_Hex_and_Brouwer.pdf)
 <!---------------------------- seperation line ---------------------------->
 
 Spring 2022, **Split Spoils: Solution to Stolen Necklace Problem Via Borsuk-Ulam Theorem**, Final project in Prof.Chi's Math 4181 Algebraic Topology.
 
 Aiming for high-schooler reading, the paper presents the process of solving a mathematical problem and the use of intuition in solving the 2-dimensional Necklace division problem using the Borsuk-Ulam Theorem.
-[paper link](/pdfs/4181_Necklace_Problem.pdf)
+[Paper Link](/pdfs/4181_Necklace_Problem.pdf)
 <!---------------------------- seperation line ---------------------------->
 
 Spring 2023, **A Note about Algebraic and Geometric Characteristics of Archetypal Riemann Surfaces**, Final project in Dr. Rodsphon's Math 497 Topic in Group Theory.
 
 A summary of curvatures, isometry groups, and automorphism groups of 3 Riemann Surfaces $\hat{\mathbb{C}}, \mathbb{C}, \triangle$ in uniformization theorem.
-[Algebra note](/pdfs/497_A_Note_on_Algebraic_and_Geometric_Characteristics_of_Archetypal_Riemann_Surfaces.pdf)
+[Paper Link](/pdfs/497_A_Note_on_Algebraic_and_Geometric_Characteristics_of_Archetypal_Riemann_Surfaces.pdf)
 <!---------------------------- seperation line ---------------------------->
 
 Fall 2023, **Image Classification Using Wasserstein Distance from Monge-Kantorovich Solvers**, Final project in Prof. Yixin Chen's CSE543 Nonlinear Optimization, with Jingyuan Zhu, Mingzhen Li, Ruiqi Wang.
 
 A survey on two algorithmic solutions of Monge-Kantorovich solvers and application of image classification.
-[Algebra note](/pdfs/543_Image_Classification_Using_Wasserstein_Distance_from_Monge-Kantorovich_Solvers.pdf)
+[Paper Link](/pdfs/543_Image_Classification_Using_Wasserstein_Distance_from_Monge-Kantorovich_Solvers.pdf)
