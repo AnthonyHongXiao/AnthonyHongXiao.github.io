@@ -1,0 +1,16 @@
++++
+title = "Algebra Lecture Note"
+
+#
+# description is optional
+#
+# description = "An optional description for SEO. If not provided, an automatically created summary will be used."
+
+tags = ["markdown","syntax",]
++++
+
+This is the lecture note for Math 5031 Algebra I (FL23) taught by Professor Beheshti Zavareh. Thanks to Albert Peng for his permission to edit his tex file of Math5031 and also J.S. Milne’s tex file. 
+
+The course reviewed group theory and developed more on rings, fields, modules, and categories.
+
+[Algebra Lecture Note](/pdfs/5031-5032_Algebra.pdf)
