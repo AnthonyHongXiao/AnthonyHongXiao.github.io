@@ -1,6 +1,5 @@
 # Xiao (Anthony) Hong
 
-## About Me
 <div style="display: flex; justify-content: start; align-items: flex-start;">
   <div style="flex: 3; padding-right: 20px;">
     <h2>About Me</h2>
