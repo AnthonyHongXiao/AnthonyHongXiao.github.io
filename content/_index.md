@@ -1,14 +1,8 @@
 # Xiao (Anthony) Hong
 
-<div style="display: flex; justify-content: start; align-items: flex-start;">
-  <div style="flex: 3; padding-right: 20px;">
-    <h2>About Me</h2>
-    <p>I am Anthony, a junior at Washington University in St. Louis (WUSTL). While enjoying mathematical beauty in large, I'm primarily interested in the interaction between geometry and data analysis. Specifically, I like to see how real world images are stored as data and how structure of data is geometrized and visualized.</p>
-  </div>
-  <div style="flex: 1;">
-    <img src="/images/personal_website_photo.jpg" alt="Anthony" style="max-height: 300px; object-fit: cover;">
-  </div>
-</div>
+## About me
+I am Anthony, a junior at Washington University in St. Louis (WUSTL). While enjoying mathematical beauty in large, I'm primarily interested in the interaction between geometry and data analysis. Specifically, I like to see how real world images are stored as data and how structure of data is geometrized and visualized.
+
 
 ## Contact
 - Email: [hong.x@wustl.edu](mailto:hong.x@wustl.edu)
@@ -28,7 +22,7 @@ In the following map of "math land," I wish to live in a small cabin in the moun
 
 ## Publications/Projects
 
-<div style="color: #5F9EA0; text-align: right;">12/18/2020</div>
+12/18/2020
 <strong><span style="font-size: smaller;">Curvature of Cayley Graph of Certain Groups</span></strong> (working)
 
 This is a summer research with Professor Renato Feres beginning in July 2023. The study aims to use efficient algorithms to compute Ollivier-Ricci curvature of Cayley graphs of certain groups and find out some patterns.
