@@ -3,7 +3,7 @@
 ## About Me
 I am Anthony, a junior at Washington University in St. Louis (WUSTL). While enjoying mathematical beauty in large, I'm primarily interested in the interaction between geometry and data analysis. Specifically, I like to see how real world images are stored as data and how the structure of data is geometrized and visualized.
 
-{{< figure src="/images/personal_website_photo.jpg" title="Dining. Photo credit: Jessie." height="30%" width="30%" class="imagecenter" >}}
+{{< figure src="Learning_Singular_Homology/images/.jpg" title="learning singular homology in bar. Photo credit: Jessie." height="30%" width="30%" class="imagecenter" >}}
 
 ## Contact
 - Email: [hong.x@wustl.edu](mailto:hong.x@wustl.edu)
