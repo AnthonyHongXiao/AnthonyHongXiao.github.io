@@ -6,7 +6,7 @@
     <p>I am Anthony, a junior at Washington University in St. Louis (WUSTL). While enjoying mathematical beauty in large, I'm primarily interested in the interaction between geometry and data analysis. Specifically, I like to see how real world images are stored as data and how structure of data is geometrized and visualized.</p>
   </div>
   <div style="flex: 1;">
-    <img src="/iamges/personal website photo.jpg" alt="Anthony" style="max-height: 300px; object-fit: cover;">
+    <img src="images/personal_website_photo.jpg" alt="Anthony" style="max-height: 300px; object-fit: cover;">
   </div>
 </div>
 
