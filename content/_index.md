@@ -1,7 +1,15 @@
 # Xiao (Anthony) Hong
 
 ## About Me
-I am Anthony, a junior at Washington University in St. Louis (WUSTL). While enjoying mathematical beauty in large, I'm primarily interested in the interaction between geometry and data analysis. Specifically, I like to see how real world images are stored as data and how structure of data is geometrized and visualized.
+<div style="display: flex; justify-content: start; align-items: flex-start;">
+  <div style="flex: 3; padding-right: 20px;">
+    <h2>About Me</h2>
+    <p>I am Anthony, a junior at Washington University in St. Louis (WUSTL). While enjoying mathematical beauty in large, I'm primarily interested in the interaction between geometry and data analysis. Specifically, I like to see how real world images are stored as data and how structure of data is geometrized and visualized.</p>
+  </div>
+  <div style="flex: 1;">
+    <img src="/path-to-your-uploaded-image.jpg" alt="Anthony" style="max-height: 300px; object-fit: cover;">
+  </div>
+</div>
 
 ## Contact
 - Email: [hong.x@wustl.edu](mailto:hong.x@wustl.edu)
