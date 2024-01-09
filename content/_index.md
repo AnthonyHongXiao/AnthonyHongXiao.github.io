@@ -13,7 +13,7 @@ In the following map of "math land," I wish to live in a small cabin in the moun
 
 ## Education
 - High School Diploma, Shenzhen Middle School, 2017-2021;
-- Bachelor of Science in Economics & Computer Science, Second Major in Mathematics, Washington University in St. Louis, 2021-2025
+- Bachelor of Science in Economics & Computer Science, Second Major in Mathematics, Washington University in St. Louis, 2021-2025.
 
 ## Experience
 - [Job Title, Company/Organization, Duration]
@@ -21,7 +21,7 @@ In the following map of "math land," I wish to live in a small cabin in the moun
 
 ## Publications/Projects
 
-<span style="font-size: smaller;">Study of Intergenerational Mobility and Urbanization Based on OLS Method and Ordered Probit Model, IEEE-CS/MSIEID2020</span> <div style="text-align: right; display: inline-block; width: 100%;">12/18/2020</div>
+<span style="font-size: smaller;">Study of Intergenerational Mobility and Urbanization Based on OLS Method and Ordered Probit Model, IEEE-CS/MSIEID2020, 12/18/2020
 
 The study, using the CHARLS dataset and techniques like OLS and ordered probit model, reveals a growing educational disparity across generations in China, highlighting an increasing trend in educational inequality despite overall improvements, especially between urban and rural regions.
 
