@@ -21,14 +21,16 @@ Major GPA: 4.00/4.00; Total GPA: 3.99/4.00
 
 ### Selected Courses:
 **Graduate courses**:
-Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math 5051 Measure Theory and Functional Analysis I (A); Math5031 Algebra I (A+); Math5021 Complex Analysis I (A); Math586 Network Statistics (A)
+Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Measure Theory and Functional Analysis I (A); Math5031 Algebra I (A+); Math5021 Complex Analysis I (A); Math586 Network Statistics (A)
 
 **Undergraduate courses**: Math494 Mathematical Statistics (A+); Math350 Dynamical System and Chaos (A); CSE417T Introduction to Machine Learning (A); Econ4011 Microecon (A+); Econ4021 Macroecon (A+); Econ413 Econometrics (A+).
 
+**In progress**: CSE546T Computational Geometry; CSE347 Analysis of Algorithm; Math547 Combinatorics of Polytopes; Math5032 Algebra II; Math 5021 Complex Analysis II; Math462 Big Data
 
 ## Experience
 - Speaker in Midstates Consortium for Math and Science 23 at University of Chicago.
 - UNC Undergraduate Analysis and PDE Seminar FL22-SP23.
+- Grading Math4111 Analysis, Math4171 Topology, Math5046 Differential Topology
 - WashU Reading Group SP23: Algebraic Geometry.
 - WashU Reading Group FL23: Representation Theory.
 - WUSTL Metamorphic Architecture Workshop 2019, Dean Heather Woofter's tutee.
