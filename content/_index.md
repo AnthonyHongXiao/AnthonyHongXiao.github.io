@@ -69,5 +69,5 @@ A summary of curvatures, isometry groups, and automorphism groups of 3 Riemann S
 
 6. Fall 2023, **Image Classification Using Wasserstein Distance from Monge-Kantorovich Solvers**, Final project in Prof. Yixin Chen's CSE543 Nonlinear Optimization, with Jingyuan Zhu, Mingzhen Li, Ruiqi Wang.
 
-A survey on two algorithmic solutions of Monge-Kantorovich solvers and application of image classification.
+A survey on two algorithmic solutions (gradient descent and numerical pde) of Monge-Kantorovich solvers and application of image classification.
 [Paper Link](/pdfs/543_Image_Classification_Using_Wasserstein_Distance_from_Monge-Kantorovich_Solvers.pdf)
