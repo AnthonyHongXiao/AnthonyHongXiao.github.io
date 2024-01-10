@@ -1,18 +1,23 @@
 +++
-title = "Bear"
+title = "Courses"
 menu = "main"
 +++
 
-# Bear
+# Courses
 
-Website: https://bearblog.dev
+This is a collection of lecture notes, assignments, and some other related materials of the courses I have taken.
 
-There is a website obesity crisis. Bloated websites are full of scripts, ads, and trackers slowing your readers down every time they try to read your well-crafted content.
+## FL23 Math5031 Algebra, Prof. Beheshti Zavareh
+Thanks to Albert Peng for his permission to edit his tex file of Math5031 and also J.S. Milne’s tex file. The lecture note also adds many thoughts and exercises from other sources (see the bibliography).
 
-Bear is all you need to build a fantastic and optimized site or blog. It works perfectly on **any** viewing device. All you need to focus on is writing good content.
+[Lecture Note, with Math5031 homework incorporated as solved exercises](/pdfs/5031-5032_Algebra.pdf)
 
-Bear makes it simple to publish content online and grow an audience while keeping pages tiny, fast, and **optimized for search engines.**
+## FL23 Math5021 Complex Analysis I, Prof. Martinkainen
+I put Prof. Martinkainen's written manuscripts into latex file, with several tikz illustrations.
 
-Each page is ~5kb.
+[Lecture Note](/pdfs/5021-5022_Complex_Analysis.pdf)
 
-Learn more and contribute on [GitHub](https://github.com/HermanMartinus/bearblog).
+## SP22 Math350 Dynamical System. Prof. McCarthy
+This is a temporarily shelved project because differential equations and dynamical systems are a broad field involving many aspects. Currently, I have only organized some theories of ordinary differential equations.
+
+[Lecture Note](/pdfs/350_Differential_Equations.pdf)
