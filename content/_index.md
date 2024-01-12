@@ -29,10 +29,15 @@ Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Me
 
 ## Experience
 - Speaker in Midstates Consortium for Math and Science 23 at University of Chicago.
-- UNC Undergraduate Analysis and PDE Seminar FL22-SP23.
-- Grading Math4111 Analysis, Math4171 Topology, Math5046 Differential Topology
+- Grading Math4111 Analysis, Math4171 Topology, Math5046 Differential Topology.
+
+### Seminar/Workshop/Topic Course
+- Math586 Network Statistics
+- Math547 Theory of Polytope
+- UNC Undergraduate Analysis and PDE Seminar FL22-SP24.
 - WashU Reading Group SP23: Algebraic Geometry.
 - WashU Reading Group FL23: Representation Theory.
+- StanCon 2023 Workshop: [Convention on Stan Programming and Bayesian Modeling](https://mc-stan.org/events/stancon2023/#tutorials)
 - WUSTL Metamorphic Architecture Workshop 2019, Dean Heather Woofter's tutee.
 
 ## Publications/Projects
