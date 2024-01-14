@@ -14,7 +14,7 @@ Exercises solns reference: [soln](https://zhuanlan.zhihu.com/p/338822722).
 # 0. Appetizer
 
 ## Key Takeaways
-1. **convex combination** $\sum^{m}_{i=1}\lambda_iz_i$ where $\lambda_i\ge 0$ and $\sum^{m}_{i=1}\lambda_i=1$.
+1. **convex combination** $\sum^{m}_{i=1}\lambda_i z_i$ where $\lambda_i\ge 0$ and $\sum^{m}_{i=1}\lambda_i=1$.
 
 2. **convex hull of a set $T$**, $\mathrm{conv}(T)=\{\text{convex combinations of }z_1,\cdots,z_m\in T\text{ for }m\in \mathbb{N}\}$.
 
