@@ -9,6 +9,8 @@ This file is for the notes and exercises for the book [High-Dimensional Probabil
 
 Errata and update of the book: [errata](/pdfs/Vershynin-Errata-2020.pdf), [update](Vershynin-Updates-2020.pdf).
 
+Exercises solns reference: [soln](https://zhuanlan.zhihu.com/p/338822722).
+
 # 0. Appetizer
 
 ## Key Takeaways
