@@ -16,7 +16,7 @@ Exercises solns reference: [soln](https://zhuanlan.zhihu.com/p/338822722).
 ## Key Takeaways
 1. **convex combination** $\sum_{i=1}^m \lambda_i z_i \quad$ where $\quad \lambda_i \geq 0 \quad$ and $\quad \sum_{i=1}^m \lambda_i=1$.
 
-2. **convex hull of a set $T$**, $\operatorname{conv}(T):=\left\{\right.$ convex combinations of $z_1, \ldots, z_m \in T$ for $\left.m \in \mathbb{N}\right\}$.
+2. **convex hull of a set $T$**, $\mathrm{conv}(T):=\left\{\right.$ convex combinations of $z_1, \ldots, z_m \in T$ for $\left.m \in \mathbb{N}\right\}$.
 
 3. **Theorem 0.0.1 (Caratheodory's Theorem)**: Every point in the convex hull of a set $T\subseteq \mathbb{R}^n$ can be expressed as a convex combination of at most $n+1$ points from $T$. 
 
