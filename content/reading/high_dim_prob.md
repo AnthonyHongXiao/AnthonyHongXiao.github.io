@@ -35,11 +35,12 @@ Check the following variance identities, which we used in the proof of Theorem 0
 
 (a) Let $Z_1, \ldots, Z_k$ be independent mean-zero random vectors in $\mathbb{R}^n$. Show that
 $$
-\mathbb{E}\left\Vert\sum_{j=1}^k Z_j\right\Vert_2^2=\sum_{j=1}^k \mathbb{E}\left\VertZ_j\right\Vert_2^2 .
+\mathbb{E}\left\Vert\sum_{j=1}^k Z_j\right\Vert_2^2=\sum_{j=1}^k \mathbb{E}\left\Vert Z_j\right\Vert_2^2 .
 $$
+
 (b) Let $Z$ be a random vector in $\mathbb{R}^n$. Show that
 $$
-\mathbb{E}\VertZ-\mathbb{E} Z\Vert_2^2=\mathbb{E}\VertZ\Vert_2^2-\Vert\mathbb{E} Z\Vert_2^2
+\mathbb{E}\Vert Z-\mathbb{E} Z\Vert_2^2=\mathbb{E}\Vert Z\Vert_2^2-\Vert\mathbb{E} Z\Vert_2^2
 $$
 *Soln*: routine (write each random vector as a tuple of random variables and remember to use independency and zero-mean).
 
