@@ -2,5 +2,5 @@
 Errata and update of the book: errata, update.
 Exercises solns reference: soln.
 0. Appetizer Key Takeaways convex combination $\sum_{i=1}^m \lambda_i z_i \quad$ where $\quad \lambda_i \geq 0 \quad$ and $\quad \sum_{i=1}^m \lambda_i=1$.
-convex hull of a set $T$, $\mathrm{conv}(T)$ is the set of all convex combinations of $z_1, \cdots, z_m \in T$ for $m \in \mathbb{N}}$.
+convex hull of a set $T$, $\mathrm{conv}(T)$ is the set of all convex combinations of $z_1, \cdots, z_m \in T$ for $m \in \mathbb{N}$.
 Theorem 0.</description></item></channel></rss>

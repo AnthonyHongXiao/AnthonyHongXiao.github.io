@@ -2,7 +2,7 @@
 Errata and update of the book: errata, update.
 Exercises solns reference: soln.
 0. Appetizer Key Takeaways convex combination $\sum_{i=1}^m \lambda_i z_i \quad$ where $\quad \lambda_i \geq 0 \quad$ and $\quad \sum_{i=1}^m \lambda_i=1$.
-convex hull of a set $T$, $\mathrm{conv}(T)$ is the set of all convex combinations of $z_1, \cdots, z_m \in T$ for $m \in \mathbb{N}}$.
+convex hull of a set $T$, $\mathrm{conv}(T)$ is the set of all convex combinations of $z_1, \cdots, z_m \in T$ for $m \in \mathbb{N}$.
 Theorem 0.</description></item><item><title>Cayley Graphs on Surfaces</title><link>https://AnthonyHongXiao.github.io/cayley-graphs-on-surfaces/</link><pubDate>Fri, 12 Jan 2024 15:09:15 +0800</pubDate><guid>https://AnthonyHongXiao.github.io/cayley-graphs-on-surfaces/</guid><description>Some aspects may be related:
 curvature of cayley graph
 curavture of surface (The convergence result that for n going to infinity, the Ollivier-Ricci curvature of the random geometric graph sampled from manifold converges to the Ricci curvature of the manifold) (and for more general theory, see Graphs of Groups on Surface: Interactions and Models by Arthur T. White).
