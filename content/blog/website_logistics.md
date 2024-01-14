@@ -7,7 +7,7 @@ date = "2024-01-09T19:29:30+08:00"
 #
 # description = "An optional description for SEO. If not provided, an automatically created summary will be used."
 
-tags = ["markdown","syntax",]
+tags = []
 +++
 
 ## After committing and pushing get stucked:

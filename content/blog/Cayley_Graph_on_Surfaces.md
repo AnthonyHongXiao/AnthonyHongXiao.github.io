@@ -7,7 +7,7 @@ date = "2024-01-12T15:09:15+08:00"
 #
 # description = "An optional description for SEO. If not provided, an automatically created summary will be used."
 
-tags = ["markdown","syntax",]
+tags = []
 +++
 
 Some aspects may be related:

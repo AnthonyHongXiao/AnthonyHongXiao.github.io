@@ -7,7 +7,7 @@ date = "2024-01-12T14:08:23+08:00"
 #
 # description = "An optional description for SEO. If not provided, an automatically created summary will be used."
 
-tags = ["markdown","syntax",]
+tags = []
 +++
 
 There are some interesting materials in geometric group theory when I am doing research in computation of Ollivier-Ricci curvature of Cayley graphs:
