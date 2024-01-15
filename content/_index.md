@@ -44,7 +44,10 @@ Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Me
 
 1. 07/2023- **Curvature of Cayley Graph of Certain Groups** (working)
 
-This is a summer research with Prof. Renato Feres beginning in July 2023. The study aims to use efficient algorithms to compute Ollivier-Ricci curvature of Cayley graphs of certain groups and find out some patterns.
+This is a summer research with Prof. Renato Feres beginning in July 2023. The study aims to use efficient algorithms to compute Ollivier-Ricci curvature of Cayley graphs of certain groups and find out some patterns. Currently, efficient optimization algorithm is found for Cayley graph and theoretical justifications for interesting patterns about curvature are concluding.
+
+{{< figure src="/images/ollivier-ricci_curvature_research_cover_image.png" height="50%" width="50%" class="imagecenter" >}}
+
 <!---------------------------- seperation line ---------------------------->
 
 2. 12/18/2020, **Study of Intergenerational Mobility and Urbanization Based on OLS Method and Ordered Probit Model**, IEEE-CS/MSIEID2020
