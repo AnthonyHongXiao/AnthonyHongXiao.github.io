@@ -46,7 +46,7 @@ Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Me
 
 This is a summer research with Prof. Renato Feres beginning in July 2023. The study aims to use efficient algorithms to compute Ollivier-Ricci curvature of Cayley graphs of certain groups and find out some patterns. Currently, efficient optimization algorithm is found for Cayley graph and theoretical justifications for interesting patterns about curvature are concluding.
 
-{{< figure src="/images/ollivier-ricci_curvature_research_cover_image.png" height="50%" width="50%" class="imagecenter" >}}
+{{< figure src="/images/ollivier-ricci_curvature_research_cover_image.png" height="65%" width="65%" class="imagecenter" >}}
 
 <!---------------------------- seperation line ---------------------------->
 
@@ -61,6 +61,8 @@ The study, using the CHARLS dataset and techniques like OLS and ordered probit m
 
 A paper correcting and reestablishing the proof of equivalence between the Hex theorem and the Bouwer Fixed-Point in David Gale’s paper “The Game of Hex and The Brouwer Fixed-Point Theorem.”
 [Paper Link](/pdfs/4181_Hex_and_Brouwer.pdf)
+
+{{< figure src="/images/Hex_board.png" height="40%" width="40%" class="imagecenter" >}}
 <!---------------------------- seperation line ---------------------------->
 
 4. Spring 2022, **Split Spoils: Solution to Stolen Necklace Problem Via Borsuk-Ulam Theorem**, Final project in Prof.Chi's Math 4181 Algebraic Topology.
