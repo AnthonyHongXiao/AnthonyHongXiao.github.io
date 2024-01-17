@@ -17,7 +17,13 @@ I put Prof. Martinkainen's written manuscripts into latex file, with several tik
 
 [Lecture Note](/pdfs/5021-5022_Complex_Analysis.pdf)
 
+## FL23 Math586 Network Statistics, Prof. Lunde
+Final project on cross-validation on network with Aaron Luo.
+
+[Beamer presentaton](/pdfs/586_Cross_Validation_on_Network.pdf)
+
 ## SP22 Math350 Dynamical System, Prof. McCarthy
 This is a temporarily shelved project because differential equations and dynamical systems are a broad field involving many aspects. Currently, I have only organized some theories of linear ordinary differential equations.
 
 [Lecture Note](/pdfs/350_Ordinary_Differential_Equations.pdf)
+
