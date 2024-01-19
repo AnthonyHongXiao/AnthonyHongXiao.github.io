@@ -18,7 +18,7 @@ Errata and update of the book: errata, update.
 Exercises solns reference: soln.
 0. Appetizer Key Takeaways convex combination $\sum_{i=1}^m \lambda_i z_i \quad$ where $\quad \lambda_i \geq 0 \quad$ and $\quad \sum_{i=1}^m \lambda_i=1$.
 convex hull of a set $T$, $\mathrm{conv}(T)$ is the set of all convex combinations of $z_1, \cdots, z_m \in T$ for $m \in \mathbb{N}$.
-Theorem 0."><meta itemprop=datePublished content="2024-01-14T12:01:56+08:00"><meta itemprop=dateModified content="2024-01-14T12:01:56+08:00"><meta itemprop=wordCount content="510"><meta itemprop=image content="https://AnthonyHongXiao.github.io/images/share.png"><meta itemprop=keywords content="probability,"><meta name=referrer content="no-referrer-when-downgrade"><style>body{font-family:Verdana,sans-serif;margin:auto;padding:20px;max-width:720px;text-align:left;background-color:#fff;word-wrap:break-word;overflow-wrap:break-word;line-height:1.5;color:#444}h1,h2,h3,h4,h5,h6,strong,b{color:#222}a{color:#3273dc}.title{text-decoration:none;border:0}.title span{font-weight:400}nav a{margin-right:10px}textarea{width:100%;font-size:16px}input{font-size:16px}content{line-height:1.6}table{width:100%}img{max-width:100%}code{padding:2px 5px;background-color:#f2f2f2}pre code{color:#222;display:block;padding:20px;white-space:pre-wrap;font-size:14px;overflow-x:auto}div.highlight pre{background-color:initial;color:initial}div.highlight code{background-color:unset;color:unset}blockquote{border-left:1px solid #999;color:#222;padding-left:20px;font-style:italic}footer{padding:25px;text-align:center}.helptext{color:#777;font-size:small}.errorlist{color:#eba613;font-size:small}ul.blog-posts{list-style-type:none;padding:unset}ul.blog-posts li{display:flex}ul.blog-posts li span{flex:0 0 130px}ul.blog-posts li a:visited{color:#8b6fcb}@media(prefers-color-scheme:dark){body{background-color:#333;color:#ddd}h1,h2,h3,h4,h5,h6,strong,b{color:#eee}a{color:#8cc2dd}code{background-color:#777}pre code{color:#ddd}blockquote{color:#ccc}textarea,input{background-color:#252525;color:#ddd}.helptext{color:#aaa}}.imagecenter{text-align:center}</style><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css integrity=sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js integrity=sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8 crossorigin=anonymous></script>
+Theorem 0."><meta itemprop=datePublished content="2024-01-14T12:01:56+08:00"><meta itemprop=dateModified content="2024-01-14T12:01:56+08:00"><meta itemprop=wordCount content="1471"><meta itemprop=image content="https://AnthonyHongXiao.github.io/images/share.png"><meta itemprop=keywords content="probability,"><meta name=referrer content="no-referrer-when-downgrade"><style>body{font-family:Verdana,sans-serif;margin:auto;padding:20px;max-width:720px;text-align:left;background-color:#fff;word-wrap:break-word;overflow-wrap:break-word;line-height:1.5;color:#444}h1,h2,h3,h4,h5,h6,strong,b{color:#222}a{color:#3273dc}.title{text-decoration:none;border:0}.title span{font-weight:400}nav a{margin-right:10px}textarea{width:100%;font-size:16px}input{font-size:16px}content{line-height:1.6}table{width:100%}img{max-width:100%}code{padding:2px 5px;background-color:#f2f2f2}pre code{color:#222;display:block;padding:20px;white-space:pre-wrap;font-size:14px;overflow-x:auto}div.highlight pre{background-color:initial;color:initial}div.highlight code{background-color:unset;color:unset}blockquote{border-left:1px solid #999;color:#222;padding-left:20px;font-style:italic}footer{padding:25px;text-align:center}.helptext{color:#777;font-size:small}.errorlist{color:#eba613;font-size:small}ul.blog-posts{list-style-type:none;padding:unset}ul.blog-posts li{display:flex}ul.blog-posts li span{flex:0 0 130px}ul.blog-posts li a:visited{color:#8b6fcb}@media(prefers-color-scheme:dark){body{background-color:#333;color:#ddd}h1,h2,h3,h4,h5,h6,strong,b{color:#eee}a{color:#8cc2dd}code{background-color:#777}pre code{color:#ddd}blockquote{color:#ccc}textarea,input{background-color:#252525;color:#ddd}.helptext{color:#aaa}}.imagecenter{text-align:center}</style><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css integrity=sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js integrity=sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8 crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script></head><body><header><a href=/ class=title><h2>Energy = Milk · Coffee^2</h2></a><nav><a href=/>Home</a>
 <a href=/course/>Courses</a>
@@ -87,4 +87,121 @@ k
 & =\left[\frac{e(k-1)}{k}+\frac{e}{k \epsilon^2} \epsilon^2 N\right]^k \leq\left[C_\epsilon\left(1+\epsilon^2 N\right)\right]^{\left\lceil 1 / \epsilon^2\right\rceil}
 \end{aligned}
 $$
-where $C_\epsilon=\frac{e}{\left[1 / \epsilon^2\right] \epsilon^2}$.</p><h1 id=1-preliminaries-on-random-variables>1. Preliminaries on Random Variables</h1><h2 id=key-takeaways-1>Key Takeaways</h2></content><p><a href=https://AnthonyHongXiao.github.io/blog/probability/>#probability</a></p></main><footer>Made with <a href=https://github.com/janraasch/hugo-bearblog/>Hugo ʕ•ᴥ•ʔ Bear</a></footer></body></html>
+where $C_\epsilon=\frac{e}{\left[1 / \epsilon^2\right] \epsilon^2}$.</p><h1 id=1-preliminaries-on-random-variables>1. Preliminaries on Random Variables</h1><h2 id=key-takeaways-1>Key Takeaways</h2><ol><li><p><strong>Random Variables</strong>, <strong>expectation</strong> $\mathbb{E}(X)$, <strong>variance</strong> $\mathbb{E}(X-\mathbb{E}(X))^2$, <strong>moment generating function</strong> $M_X(t)=\mathbb{E}(e^{tX})$, <strong>p-th moment</strong> $\mathbb{E}(X^p)$, <strong>p-th absolute moment</strong> $\mathbb{E}(|X|^p)$, and <strong>$L^P$ norm</strong> and <strong>essential norm</strong> of a random variable
+$$
+\begin{aligned}
+&\Vert X\Vert_{L^p}=(\mathbb{E}|X|^p)^{1/p}, p\in (0,\infty)\
+&\Vert X\Vert_{L^{\infty}}=\mathrm{ess; sup}|X|=\inf{M|;|f|\le M\text{ for }\mu-\text{a.e. }x\in X}
+\end{aligned}
+$$</p></li><li><p>For fixed $p$ and a given probability space $(\Omega, \Sigma, \mathbb{P})$, the classical vector space $L^p=L^p(\Omega, \Sigma, \mathbb{P})$ consists of all random variables $X$ on $\Omega$ with finite $L^p$ norm, that is
+$$
+L^p=\left{X:|X|_{L^p}&lt;\infty\right} .
+$$</p><p>If $p \in[1, \infty]$, the quantity $|X|<em>{L^p}$ is a norm and $L^p$ is a <strong>Banach space</strong>. This fact follows from <strong>Minkowski&rsquo;s inequality</strong>. For $p&lt;1$, the triangle inequality fails and $|X|</em>{L^p}$ is not a norm.</p><p>The exponent $p=2$ is special in that $L^2$ is not only a Banach space but also a <strong>Hilbert space</strong>. The inner product and the corresponding norm on $L^2$ are given by
+$$
+\langle X, Y\rangle_{L^2}=\mathbb{E} X Y, \quad|X|_{L^2}=\left(\mathbb{E}|X|^2\right)^{1 / 2} .
+$$</p><p>Then the <strong>standard deviation</strong> of $X$ can be expressed as
+$$
+|X-\mathbb{E} X|_{L^2}=\sqrt{\operatorname{Var}(X)}=\sigma(X) .
+$$</p><p>Similarly, we can express the <strong>covariance</strong> of random variables of $X$ and $Y$ as
+$$
+\operatorname{cov}(X, Y)=\mathbb{E}(X-\mathbb{E} X)(Y-\mathbb{E} Y)=\langle X-\mathbb{E} X, Y-\mathbb{E} Y\rangle_{L^2} .
+$$</p></li><li><p><strong>Jensen&rsquo;s Inequality</strong>: for $\varphi:\mathbb{R}\to \mathbb{R}$​ convex, we have
+$$
+\varphi(\mathbb{E}X)\le \mathbb{E}\varphi(X)
+$$</p></li><li><p><strong>Corollary</strong>: $\Vert X\Vert_{L^p}$ is an increasing function in $p$, i.e.
+$$
+\Vert X\Vert_{L^p}\le \Vert X\Vert_{L^q}\quad \text{for any }0\le p\le q=\infty
+$$</p></li><li><p><strong>Minkowski&rsquo;s inequality</strong>: for any $p\in [1,\infty]$ and any random variables $X,Y\in L^p$​, we have
+$$
+\Vert X+Y\Vert_{L^p}\le \Vert X\Vert_{L^p}+\Vert Y\Vert_{L^p}
+$$</p></li><li><p><strong>Cauchy-Schwarz inequality</strong>: for any random variables $X,Y\in L^2$, we have
+$$
+|\mathbb{E}XY|\le \Vert X\Vert_{L^2}\Vert Y\Vert_{L^2}
+$$</p></li><li><p><strong>Holder inequality</strong>: suppose $p,q\in (1,\infty)$ such that $1/p+1/q=1$, i.e., they are <strong>conjugate exponents</strong>. The random variables $X\in L^p$ and $Y\in L^q$​ satisfy
+$$
+|\mathbb{E}XY|\le \Vert X\Vert_{L^p}\Vert Y\Vert_{L^q}
+$$
+The inequality also holds for the pair $p=1,q=\infty$.</p></li><li><p>Definition of <strong>distribution</strong>, <strong>propability density function (pdf)</strong>, and <strong>cumulative distribution function (cdf)</strong>.</p></li><li><p><strong>Lemma 1.2.1 (Integral identity)</strong>. Let $X$ be a non-negative random variable. Then
+$$
+\mathbb{E} X=\int_0^{\infty} \mathbb{P}{X>t} d t .
+$$</p><p>The two sides of this identity are either finite or infinite simultaneously.</p></li><li><p><strong>Exercise 1.2.2 (Generalization of integral identity)</strong>. for any random variable $X$ (not necessarily non-negative):
+$$
+\mathbb{E} X=\int_0^{\infty} \mathbb{P}{X>t} d t-\int_{-\infty}^0 \mathbb{P}{X&lt;t} d t
+$$</p></li><li><p><strong>Exercise 1.2.3 ( $p$-moments via tails)</strong>. Let $X$ be a random variable and $p \in(0, \infty)$. Show that
+$$
+\mathbb{E}|X|^p=\int_0^{\infty} p t^{p-1} \mathbb{P}{|X|>t} d t
+$$
+whenever the right hand side is finite.</p></li><li><p><strong>Proposition 1.2.4 (Markov&rsquo;s Inequality)</strong>. For any non-negative random variable $X$ and $t>0$, we have
+$$
+\mathbb{P}{X \geq t} \leq \frac{\mathbb{E} X}{t}
+$$</p></li><li><p><strong>Corollary 1.2 .5 (Chebyshev&rsquo;s inequality)</strong>. Let $X$ be a random variable with mean $\mu$ and variance $\sigma^2$. Then, for any $t>0$, we have
+$$
+\mathbb{P}{|X-\mu| \geq t} \leq \frac{\sigma^2}{t^2}
+$$</p></li><li><p>Some formulae:</p><p><strong>Expectation and Variance of linear comb.</strong>
+$$
+\begin{aligned}
+&\mathbb{E}(aX+b)=a\mathbb{E}(X)+b\
+&\operatorname{Var}(aX+b)=a^2\operatorname{Var}(X)\
+\end{aligned}
+$$
+<strong>Proposition (Ross (e8) p.298)</strong>: if $X$ and $Y$ have a joint probability mass function $p(x,y)$, then
+$$
+\mathbb{E}[g(X,Y)]=\sum_y\sum_x g(x,y)p(x,y)
+$$
+If they have joint probability density function $f(x,y)$, then
+$$
+\mathbb{E}[g(X,Y)]=\int^{\infty}<em>{-\infty}\int^{\infty}</em>{-\infty}g(x,y)f(x,y)dx,dy
+$$
+<strong>Corollary (Ross e8 p.299)</strong>: for finite $X,Y$ and $g(X,Y)=X+Y$, we have $\mathbb E(X+Y)=\mathbb E(X)+\mathbb E(Y)$.</p><p><strong>Variance of sum of var.</strong>: if they are independent,
+$$
+\operatorname{Var}(X_1+\cdots+X_n)=\operatorname{Var}(X_1)+\cdots+\operatorname{Var}(X_n)
+$$
+if they are also identically distributed,
+$$
+\operatorname{Var}\left(\frac{1}{N} \sum_{i=1}^N X_i\right)=\frac{\sigma^2}{N}
+$$
+For more formulae, see Ross (e8) p.322 section 7.4 Covariance, Variance of Sums, and Correlations.</p></li><li><p><strong>Theorem 1.3.1 (Strong law of large numbers)</strong>. Let $X_1, X_2, \ldots$ be a sequence of i.i.d. random variables with mean $\mu$. Consider the sum
+$$
+S_N=X_1+\cdots +X_N .
+$$</p><p>Then, as $N \rightarrow \infty$,
+$$
+\frac{S_N}{N} \rightarrow \mu \quad \text { almost surely. }
+$$
+That is, <strong>converges in probability</strong>: for any $\varepsilon>0$,
+$$
+\lim_{N\to \infty}\mathbb{P}\left(\left|\frac{S_N}{N}-\mu\right|\le \varepsilon\right)=1
+$$</p></li><li><p><strong>Theorem 1.3.2 (Lindeberg-Lévy central limit theorem)</strong>. Let $X_1, X_2, \ldots$ be a sequence of i.i.d. random variables with mean $\mu$ and variance $\sigma^2$. Consider the sum
+$$
+S_N=X_1+\cdots+X_N
+$$
+and normalize it to obtain a random variable with zero mean and unit variance as follows:
+$$
+Z_N:=\frac{S_N-\mathbb{E} S_N}{\sqrt{\operatorname{Var}\left(S_N\right)}}=\frac{1}{\sigma \sqrt{N}} \sum_{i=1}^N\left(X_i-\mu\right) .
+$$</p><p>Then, as $N \rightarrow \infty$,
+$$
+Z_N \rightarrow N(0,1) \text { in distribution. }
+$$</p><p>That is, <strong>converges in distribution</strong>: for a sequence of r.v. $X_i$ with their cdf $F_{X_i}$, one has pointwise convergence of $F_{X_i}$ to cdf $F_X$ of a r.v. $X$:
+$$
+\forall x,\lim_{N\to \infty}F_i(x)=F(x)
+$$
+The convergence in distribution means that the $\mathrm{CDF}$ of the normalized sum converges pointwise to the CDF of the standard normal distribution. We can express this in terms of tails as follows. Then for every $t \in \mathbb{R}$, we have
+$$
+\mathbb{P}\left{Z_N \geq t\right} \rightarrow \mathbb{P}{g \geq t}=\frac{1}{\sqrt{2 \pi}} \int_t^{\infty} e^{-x^2 / 2} d x
+$$
+as $N \rightarrow \infty$, where $g \sim N(0,1)$​ is a standard normal random variable.</p></li><li><p><strong>Corollary (de Moivre-Laplace theorem)</strong>:</p><p>One remarkable special case of the central limit theorem is where $X_i$ are Bernoulli random variables with some fixed parameter $p \in(0,1)$, denoted
+$$
+X_i \sim \operatorname{Ber}(p) .
+$$</p><p>Recall that this means that $X_i$ take values 1 and 0 with probabilities $p$ and $1-p$ respectively; also recall that $\mathbb{E} X_i=p$ and $\operatorname{Var}\left(X_i\right)=p(1-p)$. The sum
+$$
+S_N:=X_1+\cdots+X_N
+$$
+is said to have the binomial distribution $\operatorname{Binom}(N, p)$. The central limit theorem (Theorem 1.3.2) yields that as $N \rightarrow \infty$,
+$$
+\frac{S_N-N p}{\sqrt{N p(1-p)}} \rightarrow N(0,1) \text { in distribution. }
+$$</p></li><li><p><strong>Corollary (Poisson limit theorem)</strong>:</p><p>Theorem 1.3.4 (Poisson Limit Theorem). Let $X_{N, i}, 1 \leq i \leq N$, be independent random variables $X_{N, i} \sim \operatorname{Ber}\left(p_{N, i}\right)$, and let $S_N=\sum_{i=1}^N X_{N, i}$. Assume that, as $N \rightarrow \infty$,
+$$
+\max <em>{i \leq N} p</em>{N, i} \rightarrow 0 \quad \text { and } \quad \mathbb{E} S_N=\sum_{i=1}^N p_{N, i} \rightarrow \lambda&lt;\infty .
+$$</p><p>Then, as $N \rightarrow \infty$,
+$$
+S_N \rightarrow \operatorname{Pois}(\lambda) \quad\text { in distribution. }
+$$</p></li></ol><h1 id=2-concentration-of-sums-of-independent-random-variables>2. Concentration of Sums of Independent Random Variables</h1><h2 id=key-takeaways-2>Key Takeaways</h2></content><p><a href=https://AnthonyHongXiao.github.io/blog/probability/>#probability</a></p></main><footer>Made with <a href=https://github.com/janraasch/hugo-bearblog/>Hugo ʕ•ᴥ•ʔ Bear</a></footer></body></html>
