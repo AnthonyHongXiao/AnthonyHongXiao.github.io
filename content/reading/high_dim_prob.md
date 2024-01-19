@@ -123,3 +123,195 @@ where $C_\epsilon=\frac{e}{\left[1 / \epsilon^2\right] \epsilon^2}$.
 
 ## Key Takeaways
 
+1. **Random Variables**, **expectation** $\mathbb{E}(X)$, **variance** $\mathbb{E}(X-\mathbb{E}(X))^2$, **moment generating function** $M_X(t)=\mathbb{E}(e^{tX})$, **p-th moment** $\mathbb{E}(X^p)$, **p-th absolute moment** $\mathbb{E}(|X|^p)$, and **$L^P$ norm** and **essential norm** of a random variable
+   $$
+   \begin{aligned}
+   &\Vert X\Vert_{L^p}=(\mathbb{E}|X|^p)^{1/p}, p\in (0,\infty)\\
+   &\Vert X\Vert_{L^{\infty}}=\mathrm{ess\; sup}|X|=\inf\{M|\;|f|\le M\text{ for }\mu-\text{a.e. }x\in X\}
+   \end{aligned}
+   $$
+   
+
+2. For fixed $p$ and a given probability space $(\Omega, \Sigma, \mathbb{P})$, the classical vector space $L^p=L^p(\Omega, \Sigma, \mathbb{P})$ consists of all random variables $X$ on $\Omega$ with finite $L^p$ norm, that is
+   $$
+   L^p=\left\{X:\|X\|_{L^p}<\infty\right\} .
+   $$
+
+   If $p \in[1, \infty]$, the quantity $\|X\|_{L^p}$ is a norm and $L^p$ is a **Banach space**. This fact follows from **Minkowski's inequality**. For $p<1$, the triangle inequality fails and $\|X\|_{L^p}$ is not a norm.
+
+   The exponent $p=2$ is special in that $L^2$ is not only a Banach space but also a **Hilbert space**. The inner product and the corresponding norm on $L^2$ are given by
+   $$
+   \langle X, Y\rangle_{L^2}=\mathbb{E} X Y, \quad\|X\|_{L^2}=\left(\mathbb{E}|X|^2\right)^{1 / 2} .
+   $$
+
+   Then the **standard deviation** of $X$ can be expressed as
+   $$
+   \|X-\mathbb{E} X\|_{L^2}=\sqrt{\operatorname{Var}(X)}=\sigma(X) .
+   $$
+
+   Similarly, we can express the **covariance** of random variables of $X$ and $Y$ as
+   $$
+   \operatorname{cov}(X, Y)=\mathbb{E}(X-\mathbb{E} X)(Y-\mathbb{E} Y)=\langle X-\mathbb{E} X, Y-\mathbb{E} Y\rangle_{L^2} .
+   $$
+
+3. **Jensen's Inequality**: for $\varphi:\mathbb{R}\to \mathbb{R}$​ convex, we have
+   $$
+   \varphi(\mathbb{E}X)\le \mathbb{E}\varphi(X)
+   $$
+   
+
+4. **Corollary**: $\Vert X\Vert_{L^p}$ is an increasing function in $p$, i.e.
+   $$
+   \Vert X\Vert_{L^p}\le \Vert X\Vert_{L^q}\quad \text{for any }0\le p\le q=\infty
+   $$
+   
+
+5. **Minkowski's inequality**: for any $p\in [1,\infty]$ and any random variables $X,Y\in L^p$​, we have
+   $$
+   \Vert X+Y\Vert_{L^p}\le \Vert X\Vert_{L^p}+\Vert Y\Vert_{L^p}
+   $$
+   
+
+6. **Cauchy-Schwarz inequality**: for any random variables $X,Y\in L^2$, we have
+   $$
+   |\mathbb{E}XY|\le \Vert X\Vert_{L^2}\Vert Y\Vert_{L^2}
+   $$
+   
+
+7. **Holder inequality**: suppose $p,q\in (1,\infty)$ such that $1/p+1/q=1$, i.e., they are **conjugate exponents**. The random variables $X\in L^p$ and $Y\in L^q$​ satisfy
+   $$
+   |\mathbb{E}XY|\le \Vert X\Vert_{L^p}\Vert Y\Vert_{L^q}
+   $$
+   The inequality also holds for the pair $p=1,q=\infty$.
+
+8. Definition of **distribution**, **propability density function (pdf)**, and **cumulative distribution function (cdf)**.
+
+9. **Lemma 1.2.1 (Integral identity)**. Let $X$ be a non-negative random variable. Then
+   $$
+   \mathbb{E} X=\int_0^{\infty} \mathbb{P}\{X>t\} d t .
+   $$
+
+   The two sides of this identity are either finite or infinite simultaneously.
+
+10. **Exercise 1.2.2 (Generalization of integral identity)**. for any random variable $X$ (not necessarily non-negative):
+    $$
+    \mathbb{E} X=\int_0^{\infty} \mathbb{P}\{X>t\} d t-\int_{-\infty}^0 \mathbb{P}\{X<t\} d t
+    $$
+
+11. **Exercise 1.2.3 ( $p$-moments via tails)**. Let $X$ be a random variable and $p \in(0, \infty)$. Show that
+    $$
+    \mathbb{E}|X|^p=\int_0^{\infty} p t^{p-1} \mathbb{P}\{|X|>t\} d t
+    $$
+    whenever the right hand side is finite.
+
+12. **Proposition 1.2.4 (Markov's Inequality)**. For any non-negative random variable $X$ and $t>0$, we have
+    $$
+    \mathbb{P}\{X \geq t\} \leq \frac{\mathbb{E} X}{t}
+    $$
+
+13. **Corollary 1.2 .5 (Chebyshev's inequality)**. Let $X$ be a random variable with mean $\mu$ and variance $\sigma^2$. Then, for any $t>0$, we have
+    $$
+    \mathbb{P}\{|X-\mu| \geq t\} \leq \frac{\sigma^2}{t^2}
+    $$
+
+14. Some formulae:
+
+    **Expectation and Variance of linear comb.**
+    $$
+    \begin{aligned}
+    &\mathbb{E}(aX+b)=a\mathbb{E}(X)+b\\
+    &\operatorname{Var}(aX+b)=a^2\operatorname{Var}(X)\\
+    \end{aligned}
+    $$
+    **Proposition (Ross (e8) p.298)**: if $X$ and $Y$ have a joint probability mass function $p(x,y)$, then
+    $$
+    \mathbb{E}[g(X,Y)]=\sum_y\sum_x g(x,y)p(x,y)
+    $$
+    If they have joint probability density function $f(x,y)$, then
+    $$
+    \mathbb{E}[g(X,Y)]=\int^{\infty}_{-\infty}\int^{\infty}_{-\infty}g(x,y)f(x,y)dx\,dy
+    $$
+    **Corollary (Ross e8 p.299)**: for finite $X,Y$ and $g(X,Y)=X+Y$, we have $\mathbb E(X+Y)=\mathbb E(X)+\mathbb E(Y)$.
+
+    **Variance of sum of var.**: if they are independent,
+    $$
+    \operatorname{Var}(X_1+\cdots+X_n)=\operatorname{Var}(X_1)+\cdots+\operatorname{Var}(X_n)
+    $$
+    if they are also identically distributed,
+    $$
+    \operatorname{Var}\left(\frac{1}{N} \sum_{i=1}^N X_i\right)=\frac{\sigma^2}{N}
+    $$
+    For more formulae, see Ross (e8) p.322 section 7.4 Covariance, Variance of Sums, and Correlations.
+
+15. **Theorem 1.3.1 (Strong law of large numbers)**. Let $X_1, X_2, \ldots$ be a sequence of i.i.d. random variables with mean $\mu$. Consider the sum
+    $$
+    S_N=X_1+\cdots +X_N .
+    $$
+
+    Then, as $N \rightarrow \infty$,
+    $$
+    \frac{S_N}{N} \rightarrow \mu \quad \text { almost surely. }
+    $$
+    That is, **converges in probability**: for any $\varepsilon>0$,
+    $$
+    \lim_{N\to \infty}\mathbb{P}\left(\left|\frac{S_N}{N}-\mu\right|\le \varepsilon\right)=1
+    $$
+    
+
+16. **Theorem 1.3.2 (Lindeberg-Lévy central limit theorem)**. Let $X_1, X_2, \ldots$ be a sequence of i.i.d. random variables with mean $\mu$ and variance $\sigma^2$. Consider the sum
+    $$
+    S_N=X_1+\cdots+X_N
+    $$
+    and normalize it to obtain a random variable with zero mean and unit variance as follows:
+    $$
+    Z_N:=\frac{S_N-\mathbb{E} S_N}{\sqrt{\operatorname{Var}\left(S_N\right)}}=\frac{1}{\sigma \sqrt{N}} \sum_{i=1}^N\left(X_i-\mu\right) .
+    $$
+
+    Then, as $N \rightarrow \infty$,
+    $$
+    Z_N \rightarrow N(0,1) \text { in distribution. }
+    $$
+
+    That is, **converges in distribution**: for a sequence of r.v. $X_i$ with their cdf $F_{X_i}$, one has pointwise convergence of $F_{X_i}$ to cdf $F_X$ of a r.v. $X$:
+    $$
+    \forall x,\lim_{N\to \infty}F_i(x)=F(x)
+    $$
+    The convergence in distribution means that the $\mathrm{CDF}$ of the normalized sum converges pointwise to the CDF of the standard normal distribution. We can express this in terms of tails as follows. Then for every $t \in \mathbb{R}$, we have
+    $$
+    \mathbb{P}\left\{Z_N \geq t\right\} \rightarrow \mathbb{P}\{g \geq t\}=\frac{1}{\sqrt{2 \pi}} \int_t^{\infty} e^{-x^2 / 2} d x
+    $$
+    as $N \rightarrow \infty$, where $g \sim N(0,1)$​ is a standard normal random variable.
+
+17. **Corollary (de Moivre-Laplace theorem)**: 
+
+    One remarkable special case of the central limit theorem is where $X_i$ are Bernoulli random variables with some fixed parameter $p \in(0,1)$, denoted
+    $$
+    X_i \sim \operatorname{Ber}(p) .
+    $$
+
+    Recall that this means that $X_i$ take values 1 and 0 with probabilities $p$ and $1-p$ respectively; also recall that $\mathbb{E} X_i=p$ and $\operatorname{Var}\left(X_i\right)=p(1-p)$. The sum
+    $$
+    S_N:=X_1+\cdots+X_N
+    $$
+    is said to have the binomial distribution $\operatorname{Binom}(N, p)$. The central limit theorem (Theorem 1.3.2) yields that as $N \rightarrow \infty$,
+    $$
+    \frac{S_N-N p}{\sqrt{N p(1-p)}} \rightarrow N(0,1) \text { in distribution. }
+    $$
+
+18. **Corollary (Poisson limit theorem)**: 
+
+    Theorem 1.3.4 (Poisson Limit Theorem). Let $X_{N, i}, 1 \leq i \leq N$, be independent random variables $X_{N, i} \sim \operatorname{Ber}\left(p_{N, i}\right)$, and let $S_N=\sum_{i=1}^N X_{N, i}$. Assume that, as $N \rightarrow \infty$,
+    $$
+    \max _{i \leq N} p_{N, i} \rightarrow 0 \quad \text { and } \quad \mathbb{E} S_N=\sum_{i=1}^N p_{N, i} \rightarrow \lambda<\infty .
+    $$
+
+    Then, as $N \rightarrow \infty$,
+    $$
+    S_N \rightarrow \operatorname{Pois}(\lambda) \quad\text { in distribution. }
+    $$
+    
+
+# 2. Concentration of Sums of Independent Random Variables
+
+## Key Takeaways
+
