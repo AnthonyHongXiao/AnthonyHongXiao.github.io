@@ -5,7 +5,7 @@ tags = ["probability"]
 
 +++
 
-This file is for the notes and exercises for the book [High-Dimensional Probability](/pdfs/HDP-book.pdf.)
+This file is for the notes and exercises for the book [High-Dimensional Probability](/pdfs/HDP-book.pdf).
 
 Errata and update of the book: [errata](/pdfs/Vershynin-Errata-2020.pdf), [update](Vershynin-Updates-2020.pdf).
 
