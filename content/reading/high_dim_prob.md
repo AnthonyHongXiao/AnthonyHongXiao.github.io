@@ -126,15 +126,14 @@ where $C_\epsilon=\frac{e}{\left[1 / \epsilon^2\right] \epsilon^2}$.
 1. **Random Variables**, **expectation** $\mathbb{E}(X)$, **variance** $\mathbb{E}(X-\mathbb{E}(X))^2$, **moment generating function** $M_X(t)=\mathbb{E}(e^{tX})$, **p-th moment** $\mathbb{E}(X^p)$, **p-th absolute moment** $\mathbb{E}(|X|^p)$, and **$L^P$ norm** and **essential norm** of a random variable
    $$
    \begin{aligned}
-   &\Vert X\Vert_{L^p}=(\mathbb{E}|X|^p)^{1/p}, p\in (0,\infty)\\
-   &\Vert X\Vert_{L^{\infty}}=\mathrm{ess\; sup}|X|=\inf\{M|\;|f|\le M\text{ for }\mu-\text{a.e. }x\in X\}
+   \Vert X\Vert_{L^p}&=(\mathbb{E}|X|^p)^{1/p}, p\in (0,\infty)\\
+   \Vert X\Vert_{L^{\infty}}&=\mathrm{ess\; sup}|X|=\inf\{M|\;|f|\le M\text{ for }\mu-\text{a.e. }x\in X\}
    \end{aligned}
    $$
    
-
 2. For fixed $p$ and a given probability space $(\Omega, \Sigma, \mathbb{P})$, the classical vector space $L^p=L^p(\Omega, \Sigma, \mathbb{P})$ consists of all random variables $X$ on $\Omega$ with finite $L^p$ norm, that is
    $$
-   L^p=\left\{X:\|X\|_{L^p}<\infty\right\} .
+   L^p=\set{X:\|X\|_{L^p}<\infty}.
    $$
 
    If $p \in[1, \infty]$, the quantity $\|X\|_{L^p}$ is a norm and $L^p$ is a **Banach space**. This fact follows from **Minkowski's inequality**. For $p<1$, the triangle inequality fails and $\|X\|_{L^p}$ is not a norm.
@@ -159,25 +158,21 @@ where $C_\epsilon=\frac{e}{\left[1 / \epsilon^2\right] \epsilon^2}$.
    \varphi(\mathbb{E}X)\le \mathbb{E}\varphi(X)
    $$
    
-
 4. **Corollary**: $\Vert X\Vert_{L^p}$ is an increasing function in $p$, i.e.
    $$
    \Vert X\Vert_{L^p}\le \Vert X\Vert_{L^q}\quad \text{for any }0\le p\le q=\infty
    $$
    
-
 5. **Minkowski's inequality**: for any $p\in [1,\infty]$ and any random variables $X,Y\in L^p$​, we have
    $$
    \Vert X+Y\Vert_{L^p}\le \Vert X\Vert_{L^p}+\Vert Y\Vert_{L^p}
    $$
    
-
 6. **Cauchy-Schwarz inequality**: for any random variables $X,Y\in L^2$, we have
    $$
    |\mathbb{E}XY|\le \Vert X\Vert_{L^2}\Vert Y\Vert_{L^2}
    $$
    
-
 7. **Holder inequality**: suppose $p,q\in (1,\infty)$ such that $1/p+1/q=1$, i.e., they are **conjugate exponents**. The random variables $X\in L^p$ and $Y\in L^q$​ satisfy
    $$
    |\mathbb{E}XY|\le \Vert X\Vert_{L^p}\Vert Y\Vert_{L^q}
@@ -257,7 +252,6 @@ where $C_\epsilon=\frac{e}{\left[1 / \epsilon^2\right] \epsilon^2}$.
     \lim_{N\to \infty}\mathbb{P}\left(\left|\frac{S_N}{N}-\mu\right|\le \varepsilon\right)=1
     $$
     
-
 16. **Theorem 1.3.2 (Lindeberg-Lévy central limit theorem)**. Let $X_1, X_2, \ldots$ be a sequence of i.i.d. random variables with mean $\mu$ and variance $\sigma^2$. Consider the sum
     $$
     S_N=X_1+\cdots+X_N
@@ -278,7 +272,7 @@ where $C_\epsilon=\frac{e}{\left[1 / \epsilon^2\right] \epsilon^2}$.
     $$
     The convergence in distribution means that the $\mathrm{CDF}$ of the normalized sum converges pointwise to the CDF of the standard normal distribution. We can express this in terms of tails as follows. Then for every $t \in \mathbb{R}$, we have
     $$
-    \mathbb{P}\left\{Z_N \geq t\right\} \rightarrow \mathbb{P}\{g \geq t\}=\frac{1}{\sqrt{2 \pi}} \int_t^{\infty} e^{-x^2 / 2} d x
+    \mathbb{P}\set{Z_N \geq t} \rightarrow \mathbb{P}\{g \geq t\}=\frac{1}{\sqrt{2 \pi}} \int_t^{\infty} e^{-x^2 / 2} d x
     $$
     as $N \rightarrow \infty$, where $g \sim N(0,1)$​ is a standard normal random variable.
 
@@ -302,7 +296,7 @@ where $C_\epsilon=\frac{e}{\left[1 / \epsilon^2\right] \epsilon^2}$.
 
     Theorem 1.3.4 (Poisson Limit Theorem). Let $X_{N, i}, 1 \leq i \leq N$, be independent random variables $X_{N, i} \sim \operatorname{Ber}\left(p_{N, i}\right)$, and let $S_N=\sum_{i=1}^N X_{N, i}$. Assume that, as $N \rightarrow \infty$,
     $$
-    \max _{i \leq N} p_{N, i} \rightarrow 0 \quad \text { and } \quad \mathbb{E} S_N=\sum_{i=1}^N p_{N, i} \rightarrow \lambda<\infty .
+    \max_{i \leq N} p_{N, i} \rightarrow 0 \quad \text{ and } \quad \mathbb{E} S_N=\sum_{i=1}^N p_{N, i} \rightarrow \lambda<\infty .
     $$
 
     Then, as $N \rightarrow \infty$,
