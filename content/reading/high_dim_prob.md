@@ -224,7 +224,7 @@ where $C_\epsilon=\frac{e}{\left[1 / \epsilon^2\right] \epsilon^2}$.
     $$
     If they have joint probability density function $f(x,y)$, then
     $$
-    \mathbb{E}[g(X,Y)]=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}g(x,y)f(x,y)dx\,dy
+    \mathbb{E}[g(X,Y)]=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}g(x,y)f(x,y)dxdy
     $$
     **Corollary (Ross e8 p.299)**: for finite $X,Y$ and $g(X,Y)=X+Y$, we have $\mathbb E(X+Y)=\mathbb E(X)+\mathbb E(Y)$.
 
