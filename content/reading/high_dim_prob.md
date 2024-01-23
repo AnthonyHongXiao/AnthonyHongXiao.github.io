@@ -1,19 +1,22 @@
 +++
-title = "High-Dimensional Probability"
+title = "High-Dimensional Probability and Statistics"
 date = "2024-01-14T12:01:56+08:00"
 tags = ["probability"]
 
 +++
 
-This file is for the notes and exercises for the book [High-Dimensional Probability](/pdfs/HDP-book.pdf).
+This file is for the notes and exercises for the book Roman Vershynin's  [High-Dimensional Probability](/pdfs/HDP-book.pdf), one of the references used in Prof Lunde's Math5440. The other references are Ramon van Handel's [Probability in High Dimension](\pdfs\PHD-book.pdf) and Martin J.Wainwright's [High-Dimensional Statistics](/pdfs/HDS-book.pdf).
 
-Errata and update of the book: [errata](/pdfs/Vershynin-Errata-2020.pdf), [update](/pdfs/Vershynin-Updates-2020.pdf).
+Errata and update of HDP: [errata](/pdfs/Vershynin-Errata-2020.pdf), [update](/pdfs/Vershynin-Updates-2020.pdf).
 
-Exercises solns reference: [soln](https://zhuanlan.zhihu.com/p/338822722).
+Exercises solns for HDP: [soln](https://zhuanlan.zhihu.com/p/338822722).
+
+Exercises solns for HDS: [soln](https://high-dimensional-statistics.github.io/).
 
 # 0. Appetizer
 
 ## Key Takeaways
+
 1. **convex combination** $\sum_{i=1}^m \lambda_i z_i \quad$ where $\quad \lambda_i \geq 0 \quad$ and $\quad \sum_{i=1}^m \lambda_i=1$.
 
 2. **convex hull of a set $T$**, $\mathrm{conv}(T)$ is the set of all convex combinations of $z_1, \cdots, z_m \in T$ for $m \in \mathbb{N}$.
@@ -130,7 +133,7 @@ where $C_\epsilon=\frac{e}{\left[1 / \epsilon^2\right] \epsilon^2}$.
    \Vert X\Vert_{L^{\infty}}&=\mathrm{ess\; sup}|X|=\inf\{M|\;|f|\le M\text{ for }\mu-\text{a.e. }x\in X\}
    \end{aligned}
    $$
-   
+
 2. For fixed $p$ and a given probability space $(\Omega, \Sigma, \mathbb{P})$, the classical vector space $L^p=L^p(\Omega, \Sigma, \mathbb{P})$ consists of all random variables $X$ on $\Omega$ with finite $L^p$ norm, that is
    $$
    L^p=\set{X:\|X\|_{L^p}<\infty}.
@@ -157,22 +160,22 @@ where $C_\epsilon=\frac{e}{\left[1 / \epsilon^2\right] \epsilon^2}$.
    $$
    \varphi(\mathbb{E}X)\le \mathbb{E}\varphi(X)
    $$
-   
+
 4. **Corollary**: $\Vert X\Vert_{L^p}$ is an increasing function in $p$, i.e.
    $$
    \Vert X\Vert_{L^p}\le \Vert X\Vert_{L^q}\quad \text{for any }0\le p\le q=\infty
    $$
-   
+
 5. **Minkowski's inequality**: for any $p\in [1,\infty]$ and any random variables $X,Y\in L^p$​, we have
    $$
    \Vert X+Y\Vert_{L^p}\le \Vert X\Vert_{L^p}+\Vert Y\Vert_{L^p}
    $$
-   
+
 6. **Cauchy-Schwarz inequality**: for any random variables $X,Y\in L^2$, we have
    $$
    |\mathbb{E}XY|\le \Vert X\Vert_{L^2}\Vert Y\Vert_{L^2}
    $$
-   
+
 7. **Holder inequality**: suppose $p,q\in (1,\infty)$ such that $1/p+1/q=1$, i.e., they are **conjugate exponents**. The random variables $X\in L^p$ and $Y\in L^q$​ satisfy
    $$
    |\mathbb{E}XY|\le \Vert X\Vert_{L^p}\Vert Y\Vert_{L^q}
@@ -218,6 +221,13 @@ where $C_\epsilon=\frac{e}{\left[1 / \epsilon^2\right] \epsilon^2}$.
     &\operatorname{Var}(aX+b)=a^2\operatorname{Var}(X)\\
     \end{aligned}
     $$
+    **Proposition (Ross (e8) p.129, p.191)**: The expectation of function of random variable is given by
+    $$
+    \begin{aligned}
+    \mathbb{E}[g(X)]&=\sum_xg(x)p(x)\\
+    \mathbb{E}[g(X)]&=\int_{-\infty}^{\infty}g(x)f(x)dx
+    \end{aligned}
+    $$
     **Proposition (Ross (e8) p.298)**: if $X$ and $Y$ have a joint probability mass function $p(x,y)$, then
     $$
     \mathbb{E}[g(X,Y)]=\sum_y\sum_x g(x,y)p(x,y)
@@ -251,7 +261,7 @@ where $C_\epsilon=\frac{e}{\left[1 / \epsilon^2\right] \epsilon^2}$.
     $$
     \lim_{N\to \infty}\mathbb{P}\left(\left|\frac{S_N}{N}-\mu\right|\le \varepsilon\right)=1
     $$
-    
+
 16. **Theorem 1.3.2 (Lindeberg-Lévy central limit theorem)**. Let $X_1, X_2, \ldots$ be a sequence of i.i.d. random variables with mean $\mu$ and variance $\sigma^2$. Consider the sum
     $$
     S_N=X_1+\cdots+X_N
@@ -303,9 +313,71 @@ where $C_\epsilon=\frac{e}{\left[1 / \epsilon^2\right] \epsilon^2}$.
     $$
     S_N \rightarrow \operatorname{Pois}(\lambda) \quad\text { in distribution. }
     $$
-    
 
 # 2. Concentration of Sums of Independent Random Variables
 
 ## Key Takeaways
+
+### 2.1 Why Concentration Inequalities?
+
+- An example (Question 2.1.1) on estimation of number of heads of flipping coins by Chebyshev's inequality and central limit theorem.
+
+- Our Math5440 gives some more examples (see Lecture 2).
+
+### 2.2 Hoeffding's Inequality
+
+- symmetric Bernoulli distribution is the uniform distribution for discrete variable $X$ that takes values $1$ and $-1$, i.e., $\mathbb{P}(X=1)=\mathbb{P}(X=-1)=\frac{1}{2}$.
+
+**Theorem 2.2.2 (Hoeffding's Inequality)**: Let $X_1,\cdots,X_N$ be independent symmetric Bernoulli random variables, and let $a=(a_1,\cdots,a_N)\in \R^N$. Then, for any $t>0$, we have
+$$
+\mathbb{P}\left[\sum_{i=1}^Na_iX_i\ge t\right]\le \mathbb P\left(-\frac{t^2}{2\Vert a\Vert_2^2}\right)
+$$
+**Remark 2.2.4 (Non-asymptotic results)**: Note that CLT gives a bound of tail that works for large $N$​, while Hoeffding bound gets rid of that requirement.
+
+Two generalizations are given:
+
+**Theorem 2.2.5 (Two sided Hoeffding's inequality)**
+
+**Theorem 2.2.6 (Hoeffding's inequaity for general bounded random variables)**
+
+### 2.3 Chernoff's Inequality
+
+
+
+## Exercises
+
+### Exercise 2.1.4
+
+Let $g\sim N(0,1)$. Show that, for all $t>1$, we have
+$$
+\mathbb{E}(g^2\mathbf{1}_{\{g>t\}})=t\frac{1}{\sqrt{2\pi}}e^{-t^2/2}+\mathbb{P}\{g>t\}\le \left(t+\frac{1}{t}\right)\frac{1}{\sqrt{2\pi}}e^{-t^2/2}
+$$
+*soln*:
+
+The pdf of $g\sim N(0,1)$ is $p(x)=\frac{1}{\sqrt{2\pi}}e^{-x^2/2}$. We observe that $p'(x)=-x\frac{1}{\sqrt{2\pi}}e^{-x^2/2}=-xp(x)$. By formula (27) (expectation of function of variable), we compute
+$$
+\begin{aligned}
+\mathbb{E}(g^2\mathbf{1}_{\{g>t\}})&=\int_t^{\infty}x^2p(x)dx\\
+&=\int_t^{\infty}-xp'(x)dx\\
+&=[-xp(x)]_t^{\infty}+\int_t^{\infty}p(x)dx\\
+&=t\frac{1}{\sqrt{2\pi}}e^{-t^2/2}+\mathbb{P}\{g>t\}
+\end{aligned}
+$$
+where for the last step we notice that $\lim_{x\to \infty}xp(x)=0$ for $p(x)$ decreases exponentially fast to zero. This proved the equality. To show the inequality is obtained by using Proposition 2.1.2 in HDP.
+
+### Exercise 2.2.3
+
+show that
+$$
+\cosh (x)\le e^{x^2/2},\quad \forall x\in \mathbb{R}
+$$
+*soln 1*:
+$$
+\cosh (x)=\prod_{k=1}^{\infty}\left(1+\frac{4 x^2}{\pi^2(2 k-1)^2}\right) \leq \exp \left(\sum_{k=1}^{\infty} \frac{4 x^2}{\pi^2(2 k-1)^2}\right)=\exp \left(x^2 / 2\right)
+$$
+*soln 2*:
+
+This is equivalent of showing $\ln \cosh(x)\le x^2/2$. Define $f(x)=\ln (\cosh x)-x^2 / 2$ and see that $f^{\prime}(x)=\tanh (x)-x$. Let it be zero to find maximum of $f$.
+
+### Exercise 2.2.8
 
