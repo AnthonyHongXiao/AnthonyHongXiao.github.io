@@ -25,7 +25,7 @@ Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Me
 
 **Undergraduate courses**: Math494 Mathematical Statistics (A+); Math350 Dynamical System and Chaos (A); CSE417T Introduction to Machine Learning (A); Econ4011 Microecon (A+); Econ4021 Macroecon (A+); Econ413 Econometrics (A+).
 
-**In progress**: CSE546T Computational Geometry; CSE347 Analysis of Algorithm; Math547 Combinatorics of Polytopes; Math5032 Algebra II; Math 5021 Complex Analysis II; Math462 Big Data
+**In progress**: CSE546T Computational Geometry; CSE347 Analysis of Algorithm; Math547 Combinatorics of Polytopes; Math5032 Algebra II; Math 5021 Complex Analysis II; Math5440 Big Data
 
 ## Experience
 - Speaker in Midstates Consortium for Math and Science 23 at University of Chicago.
