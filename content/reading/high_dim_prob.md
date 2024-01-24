@@ -36,12 +36,12 @@ Exercises solns for HDS: [soln](https://high-dimensional-statistics.github.io/).
 
 Check the following variance identities, which we used in the proof of Theorem 0.0.2:
 
-(a) Let $Z_1, \ldots, Z_k$ be independent mean-zero random vectors in $\mathbb{R}^n$. Show that
+**(a)** Let $Z_1, \ldots, Z_k$ be independent mean-zero random vectors in $\mathbb{R}^n$. Show that
 $$
 \mathbb{E}\left\Vert\sum_{j=1}^k Z_j\right\Vert_2^2=\sum_{j=1}^k \mathbb{E}\left\Vert Z_j\right\Vert_2^2 .
 $$
 
-(b) Let $Z$ be a random vector in $\mathbb{R}^n$. Show that
+**(b)** Let $Z$ be a random vector in $\mathbb{R}^n$. Show that
 $$
 \mathbb{E}\Vert Z-\mathbb{E} Z\Vert_2^2=\mathbb{E}\Vert Z\Vert_2^2-\Vert\mathbb{E} Z\Vert_2^2
 $$
@@ -336,13 +336,47 @@ $$
 
 Two generalizations are given:
 
-**Theorem 2.2.5 (Two sided Hoeffding's inequality)**
-
-**Theorem 2.2.6 (Hoeffding's inequaity for general bounded random variables)**
+**Theorem 2.2.5 (Two sided Hoeffding's inequality)** Let $X_i$ and $a$ be the same. Then, for $t>0$,
+$$
+\mathbb{p}\left[\left|\sum_{i=1}^Na_iX_i\right|\ge t\right]\le 2\exp\left(-\frac{t^2}{2\Vert a\Vert_2^2}\right)
+$$
+**Theorem 2.2.6 (Hoeffding's inequaity for general bounded random variables)** Let $X_1,\cdots,X_N$ be independent random variables. Assume that $X_i\in [m_i,M_i]$ for every $i$. Then, for any $t>0$, we have
+$$
+\mathbb{P}\left[\sum_{i=1}^N(X_i-\mathbb{E}X_i)\ge t\right]\le \exp\left(-\frac{2t^2}{\sum_{i=1}^N(M_1-m_1)^2}\right)
+$$
 
 ### 2.3 Chernoff's Inequality
 
+**Theorem 2.3.1 (Chernoff's inequality (upper tail))**
 
+Let $X_i$ be independent Bernoulli random variables with parameters $p_i$. Consider their sum $S_N=\sum_{i=1}^NX_i$ and denote its mean by $\mu=\mathbb{E}S_N$. Then, for $t>\mu$, we have
+$$
+\mathbb{E}[S_N\le t]\le e^{-\mu}\left(\frac{e\mu}{t}\right)^t
+$$
+**Exercise 2.3.2 (Chernoff's inequality (lower tail))**
+
+Let $X_i$ and $S_N$ be the same. When $t<\mu$, we have
+$$
+\mathbb{E}[S_N\le t]\le e^{-\mu}\left(\frac{e\mu}{t}\right)^t
+$$
+**Exercise 2.3.3 (Poisson tail)**
+
+Let $X\sim \mathrm{Pois}(\lambda)$. When $t>\lambda$, we have
+$$
+\mathbb{E}[X\le t]\le e^{-\lambda}\left(\frac{e\lambda}{t}\right)^t
+$$
+**Exercise 2.3.6 (Poisson diet. near the mean)**
+
+Let $X\sim \mathrm{Pois}(\lambda)$. When $t\in (0,\lambda]$, we have
+$$
+\mathbb{P}[|X-\mu|\ge t]\le 2\exp\left(-\frac{ct^2}{\lambda}\right)
+$$
+**Exercise 2.3.7 (Normal approximation to Poisson)**
+
+Let $X\sim \mathrm{Pois}(\lambda)$. As $\lambda\to \infty$, we have
+$$
+\frac{X-\lambda}{\sqrt{\lambda}}\to N(0,1)\quad\text{in distribution}
+$$
 
 ## Exercises
 
@@ -380,4 +414,57 @@ $$
 This is equivalent of showing $\ln \cosh(x)\le x^2/2$. Define $f(x)=\ln (\cosh x)-x^2 / 2$ and see that $f^{\prime}(x)=\tanh (x)-x$. Let it be zero to find maximum of $f$.
 
 ### Exercise 2.2.8
+
+(Boosting Randomized Algorithm) Calculate the probability of correctness for majority vote where each voter has $\frac{1}{2}+\delta$ probability of being correct.
+
+*soln*:
+
+Let each of the voter be $X_i\sim B(\frac{1}{2}+\delta)$. By Theorem 2.2.6 (Hoeffding's inequaity for general bounded random variables), we have
+$$
+\begin{aligned}
+\mathbb{P}\left[\sum_{i=1}^NX_i\le \frac{N}{2}\right]&= \mathbb{P}\left[\sum_{i=1}^N(-X_i)\ge -\frac{N}{2}\right]\\
+&=\mathbb{P}\left[\sum_{i=1}^N((-X_i)-\mathbb{E}(-X_i))\ge -\frac{N}{2}+N\left(\frac{1}{2}+\delta\right)\right]\\
+&\le \exp\left(-\frac{2(N\delta)^2}{N}\right)=\exp(-2N\delta^2)
+\end{aligned}
+$$
+When $N\ge \frac{1}{2}\delta^{-2}\ln (\varepsilon^{-1})$, we have $\exp(-2N\delta^2)\le \exp(-\ln(\varepsilon^{-1}))=\varepsilon$. The probability that the answer voted by majority is incorrect is at most $\varepsilon$.
+
+### Exercise 2.2.10
+
+Let $X_1,\cdots,X_N$ be non-negative independent random variables with continuous distributions. Assume that the densities of $X_i$ are uniformly bounded by $1$.
+
+**(a)** Show that the MGF of $X_i$ satisfies 
+$$
+\mathbb{E}\exp (-tX_i)\le \frac{1}{t}\quad \forall t>0
+$$
+**(b)** Deduce that, for any $\varepsilon>0$, we have
+$$
+\mathbb{P}\left[\sum_{i=1}^NX_i\le \varepsilon N\right]\le (e\varepsilon)^N
+$$
+*soln*:
+
+**(a)** We note that these r.v. are non-negative, so
+$$
+\mathbb{E}\exp (-tX_i)\le \frac{1}{t}=\int_0^{\infty}p_i(x)e^{-tx}dx
+$$
+and we bound it by its absolute value and use the condition of uniform boundedness of the family,
+$$
+\text{RHS}\le \left|\int_0^{\infty}p_i(x)e^{-tx}dx\right|\le \int_0^{\infty}\underbrace{|p_i(x)|}_{\le 1}\underbrace{|e^{-tx}|}_{=e^{-tx}}dx\le\int_0^{\infty}e^{-tx}dx=\left[-\frac{1}{t}e^{-tx}\right]_0^{\infty}=\frac{1}{t}
+$$
+**(b)** We mimic the proof of Theorem 2.2.2 (Hoeffding's inequality), i.e., using Markov's inequality and the fact that MGF of sum is product of MGF for independent $X_i$:
+$$
+\begin{aligned}
+\mathbb{P}\left[\sum_{i=1}^N X_i\le \varepsilon N\right]&=\mathbb{P}\left[\exp\sum_{i=1}^N(-tX_i)\ge \exp(-t\varepsilon N)\right]\\
+&\le \frac{\mathbb{E}\left(\exp \sum_{i=1}^N(-tX_i)\right)}{\exp(-t\varepsilon N)}\\
+&=\frac{\prod_{i=1}^N\mathbb{E}\left(\exp (-tX_i)\right)}{\exp(-t\varepsilon N)}\\
+&\le e^{t\varepsilon N}\prod_{i=1}^N\frac{1}{t}=e^{t\varepsilon N}/t^N
+\end{aligned}
+$$
+Letting $t=1/\varepsilon$ to maximize it to get $(e\varepsilon)^N$​​​. 
+
+
+
+
+
+
 
