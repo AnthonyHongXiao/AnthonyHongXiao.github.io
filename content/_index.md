@@ -1,9 +1,15 @@
+☕~
+{{< imageRight src="/images/Learning_Singular_Homology.jpg" alt="Anthony learning singular homology in bar. Photo credit: Jessie." caption="Learning singular homology in a bar. Photo credit: Jessie." width="20%" >}}
+
 # Xiao (Anthony) Hong
+
+
+
 
 ## About Me
 I am Anthony, a junior at Washington University in St. Louis (WUSTL). While enjoying mathematical beauty in large, I'm primarily interested in the interaction between geometry and data analysis. Specifically, I like to see how real world images are stored as data and how the structure of data is geometrized and visualized.
 
-{{< figure src="/images/Learning_Singular_Homology.jpg" title="learning singular homology in bar. Photo credit: Jessie." height="30%" width="30%" class="imagecenter" >}}
+<br>
 
 ## Contact
 - Email: [hong.x@wustl.edu](mailto:hong.x@wustl.edu)
@@ -12,6 +18,8 @@ I am Anthony, a junior at Washington University in St. Louis (WUSTL). While enjo
 In the following map of "math land," I wish to live in a small cabin 🤔️ on the Northern hills and often travel to various other places. 🚶
 
 {{< figure src="/images/Mathland.jpg" title="Math Land" height="95%" width="95%" class="imagecenter" >}}
+
+<br>
 
 ## Education
 - High School Diploma, Shenzhen Middle School, 2017-2021;
@@ -27,6 +35,8 @@ Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Me
 
 **In progress**: CSE546T Computational Geometry; CSE347 Analysis of Algorithm; Math547 Combinatorics of Polytopes; Math5032 Algebra II; Math 5021 Complex Analysis II; Math5440 Big Data
 
+<br>
+
 ## Experience
 - Speaker in Midstates Consortium for Math and Science 23 at University of Chicago.
 - Grading Math4111 Analysis, Math4171 Topology, Math5046 Differential Topology.
@@ -39,6 +49,8 @@ Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Me
 - WashU Reading Group FL23: Representation Theory.
 - StanCon 2023 Workshop: [Convention on Stan Programming and Bayesian Modeling](https://mc-stan.org/events/stancon2023/#tutorials)
 - WUSTL Metamorphic Architecture Workshop 2019, Dean Heather Woofter's tutee.
+
+<br>
 
 ## Publications/Projects
 
