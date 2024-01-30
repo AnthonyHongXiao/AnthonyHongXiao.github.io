@@ -54,8 +54,6 @@ Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Me
 
 This is a summer research with Prof. Renato Feres beginning in July 2023. The study aims to use efficient algorithms to compute Ollivier-Ricci curvature of Cayley graphs of certain groups and find out some patterns. Currently, efficient optimization algorithm is found for Cayley graph and theoretical justifications for interesting patterns about curvature are concluding.
 
-{{< figure src="/images/ollivier-ricci_curvature_research_cover_image.png" caption="Optimal transportation on complete graphs." height="65%" width="65%" class="imagecenter" >}}
-
 There is also a second project I am working with Prof. Feres. The project studies the Wasserstein distance of point measures that evolved along their geodesics after initiations.
 
 {{< figure src="/images/evolved_point_measures.png" caption="Evolved Point Measures." height="65%" width="65%" class="imagecenter" >}}
@@ -66,7 +64,7 @@ There is also a second project I am working with Prof. Feres. The project studie
 A survey on two algorithmic solutions (gradient descent and numerical pde) of Monge-Kantorovich solvers and application of image classification.
 [Paper Link](/pdfs/543_Image_Classification_Using_W_dist.pdf)
 
-{{< figure src="/images/image_classification.png" caption="MNIST digit examples." height="65%" width="65%" class="imagecenter" >}}
+{{< figure src="/images/image_classification.png" caption="MNIST digit examples." height="40%" width="50%" class="imagecenter" >}}
 <!---------------------------- seperation line ---------------------------->
 
 3. 12/18/2020, **Study of Intergenerational Mobility and Urbanization Based on OLS Method and Ordered Probit Model**, IEEE-CS/MSIEID2020
