@@ -1,13 +1,12 @@
 ☕~
-{{< imageRight src="/images/Learning_Singular_Homology.jpg" alt="Anthony learning singular homology in bar. Photo credit: Jessie." caption="Learning singular homology in a bar. Photo credit: Jessie." width="20%" >}}
+{{< imageRight src="/images/Learning_Singular_Homology.jpg" alt="Learning singular homology in a bar. Photo credit: Jessie." caption="Learning singular homology in a bar. Photo credit: Jessie." width="20%" >}}
 
 # Xiao (Anthony) Hong
 
-
-
-
 ## About Me
-I am Anthony, a junior at Washington University in St. Louis (WUSTL). While enjoying mathematical beauty in large, I'm primarily interested in the interaction between geometry and data analysis. Specifically, I like to see how real world images are stored as data and how the structure of data is geometrized and visualized.
+Hello! I am Anthony, a junior at Washington University in St. Louis (WUSTL), where I transitioned from an early passion for architecture into the intricate world of geometric structures. Geometry is not only the theoretical foundation of civil engineering but also a powerful tool to showcase the uniqueness of data. I seek to understand how structures inherent in real-world images can be encoded as data and subsequently take on a geometric and visual form. I also study implications of geometries, manifolds and grpahs, on information and data in general.
+
+I find solace in the rich symphonies of Brahms and the leisures that come with travel. My recent academic interests include algorithmic algebraic geometry/tropical geometry, harmonic analysis on groups, and surface reconstruction for imaging.
 
 <br>
 
@@ -50,7 +49,7 @@ Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Me
 - StanCon 2023 Workshop: [Convention on Stan Programming and Bayesian Modeling](https://mc-stan.org/events/stancon2023/#tutorials)
 - WUSTL Metamorphic Architecture Workshop 2019, Dean Heather Woofter's tutee.
 
-<br>
+{{< figure src="/images/Half-Stereo_Collage_Village_Re-assemblage.jpg" height="40%" width="50%" class="imagecenter" >}}
 
 ## Publications/Projects
 
