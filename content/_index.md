@@ -1,5 +1,5 @@
 
-{{< imageRight src="/images/Learning_Singular_Homology.jpg" alt="Learning singular homology in a bar. Photo credit: Jessie." caption="Learning singular homology in a bar. Photo credit: Jessie." width="20%" >}}
+☕️～ {{< imageRight src="/images/Learning_Singular_Homology.jpg" alt="Learning singular homology in a bar. Photo credit: Jessie." caption="Learning singular homology in a bar. Photo credit: Jessie." width="20%" >}}
 
 # Xiao (Anthony) Hong
 
