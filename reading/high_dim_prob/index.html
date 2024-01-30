@@ -14,7 +14,7 @@ Exercises solns for HDS: soln.
 Errata and update of HDP: errata, update.
 Exercises solns for HDP: soln.
 Exercises solns for HDS: soln.
-0. Appetizer Key Takeaways convex combination $\sum_{i=1}^m \lambda_i z_i \quad$ where $\quad \lambda_i \geq 0 \quad$ and $\quad \sum_{i=1}^m \lambda_i=1$."><meta itemprop=datePublished content="2024-01-14T12:01:56+08:00"><meta itemprop=dateModified content="2024-01-14T12:01:56+08:00"><meta itemprop=wordCount content="2169"><meta itemprop=image content="https://AnthonyHongXiao.github.io/images/share.png"><meta itemprop=keywords content="probability,"><meta name=referrer content="no-referrer-when-downgrade"><style>body{font-family:Verdana,sans-serif;margin:auto;padding:20px;max-width:1000px;text-align:left;background-color:#fff;word-wrap:break-word;overflow-wrap:break-word;line-height:1.5;color:#444;font-size:14}h1,h2,h3,h4,h5,h6,strong,b{color:#222}a{color:#3273dc}.title{text-decoration:none;border:0}.title span{font-weight:400}nav a{margin-right:10px}textarea{width:100%;font-size:16px}input{font-size:16px}content{line-height:1.6}table{width:100%}img{max-width:100%}code{padding:2px 5px;background-color:#f2f2f2}pre code{color:#222;display:block;padding:20px;white-space:pre-wrap;font-size:14px;overflow-x:auto}div.highlight pre{background-color:initial;color:initial}div.highlight code{background-color:unset;color:unset}blockquote{border-left:1px solid #999;color:#222;padding-left:20px;font-style:italic}footer{padding:25px;text-align:center}.helptext{color:#777;font-size:small}.errorlist{color:#eba613;font-size:small}ul.blog-posts{list-style-type:none;padding:unset}ul.blog-posts li{display:flex}ul.blog-posts li span{flex:0 0 130px}ul.blog-posts li a:visited{color:#8b6fcb}@media(prefers-color-scheme:dark){body{background-color:#333;color:#ddd}h1,h2,h3,h4,h5,h6,strong,b{color:#eee}a{color:#8cc2dd}code{background-color:#777}pre code{color:#ddd}blockquote{color:#ccc}textarea,input{background-color:#252525;color:#ddd}.helptext{color:#aaa}}.imagecenter{text-align:center}</style><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css integrity=sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js integrity=sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8 crossorigin=anonymous></script>
+0. Appetizer Key Takeaways convex combination $\sum_{i=1}^m \lambda_i z_i \quad$ where $\quad \lambda_i \geq 0 \quad$ and $\quad \sum_{i=1}^m \lambda_i=1$."><meta itemprop=datePublished content="2024-01-14T12:01:56+08:00"><meta itemprop=dateModified content="2024-01-14T12:01:56+08:00"><meta itemprop=wordCount content="3049"><meta itemprop=image content="https://AnthonyHongXiao.github.io/images/share.png"><meta itemprop=keywords content="probability,"><meta name=referrer content="no-referrer-when-downgrade"><style>body{font-family:Verdana,sans-serif;margin:auto;padding:20px;max-width:1000px;text-align:left;background-color:#fff;word-wrap:break-word;overflow-wrap:break-word;line-height:1.5;color:#444;font-size:14}h1,h2,h3,h4,h5,h6,strong,b{color:#222}a{color:#3273dc}.title{text-decoration:none;border:0}.title span{font-weight:400}nav a{margin-right:10px}textarea{width:100%;font-size:16px}input{font-size:16px}content{line-height:1.6}table{width:100%}img{max-width:100%}code{padding:2px 5px;background-color:#f2f2f2}pre code{color:#222;display:block;padding:20px;white-space:pre-wrap;font-size:14px;overflow-x:auto}div.highlight pre{background-color:initial;color:initial}div.highlight code{background-color:unset;color:unset}blockquote{border-left:1px solid #999;color:#222;padding-left:20px;font-style:italic}footer{padding:25px;text-align:center}.helptext{color:#777;font-size:small}.errorlist{color:#eba613;font-size:small}ul.blog-posts{list-style-type:none;padding:unset}ul.blog-posts li{display:flex}ul.blog-posts li span{flex:0 0 130px}ul.blog-posts li a:visited{color:#8b6fcb}@media(prefers-color-scheme:dark){body{background-color:#333;color:#ddd}h1,h2,h3,h4,h5,h6,strong,b{color:#eee}a{color:#8cc2dd}code{background-color:#777}pre code{color:#ddd}blockquote{color:#ccc}textarea,input{background-color:#252525;color:#ddd}.helptext{color:#aaa}}.imagecenter{text-align:center}</style><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css integrity=sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js integrity=sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8 crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1})})</script></head><body><header><a href=/ class=title><h2>Energy = Milk · Coffee^2</h2></a><nav><a href=/>Home</a>
 <a href=/course/>Courses</a>
@@ -230,14 +230,77 @@ $$
 $$
 \mathbb{E}[X\le t]\le e^{-\lambda}\left(\frac{e\lambda}{t}\right)^t
 $$
-<strong>Exercise 2.3.6 (Poisson diet. near the mean)</strong></p><p>Let $X\sim \mathrm{Pois}(\lambda)$. When $t\in (0,\lambda]$, we have
+<strong>Exercise 2.3.6 (Poisson dist. near the mean)</strong></p><p>Let $X\sim \mathrm{Pois}(\lambda)$. When $t\in (0,\lambda]$, we have
 $$
 \mathbb{P}[|X-\mu|\ge t]\le 2\exp\left(-\frac{ct^2}{\lambda}\right)
 $$
 <strong>Exercise 2.3.7 (Normal approximation to Poisson)</strong></p><p>Let $X\sim \mathrm{Pois}(\lambda)$. As $\lambda\to \infty$, we have
 $$
 \frac{X-\lambda}{\sqrt{\lambda}}\to N(0,1)\quad\text{in distribution}
-$$</p><h2 id=exercises-1>Exercises</h2><h3 id=exercise-214>Exercise 2.1.4</h3><p>Let $g\sim N(0,1)$. Show that, for all $t>1$, we have
+$$</p><h3 id=24-application-degrees-of-random-graphs>2.4 Application: Degrees of Random Graphs</h3><h3 id=25-sub-gaussian-distributions>2.5 Sub-Gaussian Distributions</h3><p>If $X\sim N(0,1)$, then for $p\ge 1$,</p><ul><li>$\mathbb{P}[|X|\ge t]\le 2\exp(-t^2/2)\quad \forall t\in R$​.</li><li>$\Vert X\Vert_{L^p}=(\mathbb{E}|X|^p)^{1/p}=\sqrt{2}\left(\frac{\Gamma((1+p)/2)}{\Gamma(1/2)}\right)^{1/p}$.</li><li>$\Vert X\Vert_{L^P}=O(\sqrt{p}),\quad p\to \infty$.</li><li>Its MGF is given by $\mathbb{E}(e^{tX})=e^{t^2/2},\quad \forall t\in \R$.</li></ul><h4 id=some-facts-about-beta-and-gamma-functions>Some facts about Beta and Gamma functions</h4><p>(Rudin&rsquo;s <em>Introduction to Mathematical Analysis</em> (e3) p.192 has some of the following properties.)</p><ul><li><p>Beta Function $B(x,y)=\int_0^1 t^{x-1}(1-t)^{y-1}dt$. This indefinite integral is convergent for $x>0,y&lt;0$.</p></li><li><p>Gamma Function $\Gamma(x)=\int_0^{+\infty}t^{x-1}e^{-t}dt$. This indefinite integral is convergent for $x>0$.</p></li><li><p>property 1: for $0&lt;x&lt;\infty$, $\Gamma (x+ 1) = x\Gamma(x)$.</p></li><li><p>property 2: $\Gamma(n)=n!$ for $n=1,2,3,\cdots$.</p></li><li><p>property 3: $\log \Gamma$ is convex on $(0,\infty)$.</p></li><li><p>property 4: if $x>0$ and $y>0$, then
+$$
+B(x,y)=\int_0^1 t^{x-1}(1-t)^{y-1}dt=\frac{\Gamma(x)\Gamma(y)}{\Gamma(x+y)}
+$$</p></li><li><p>property 5: both $\Beta$ and $\Gamma$ are continuous on their convergent regions.</p></li><li><p>property 6 (<strong>Stirling&rsquo;s Formula</strong>):
+$$
+\lim _{x \rightarrow \infty} \frac{\Gamma(x+1)}{(x / e)^x \sqrt{2 \pi x}}=1
+$$</p></li><li><p>Property 6&rsquo; (<strong>Stirling&rsquo;s Formula</strong>):
+$$
+\Gamma(x)=\sqrt{\frac{2\pi}{x}}\left(\frac{x}{e}\right)^x(1+o(1/x))
+$$</p></li><li><p>Property 7: for any $x\ge 1/2$, $\Gamma(x)\le 3x$.</p></li></ul><h4 id=sub-gaussian-variable>Sub-Gaussian variable</h4><p>A zero-mean random variable $X$ is <strong>sub-Gaussian</strong> with parameter $\sigma^2$, or $\operatorname{subGaussian}\left(\sigma^2\right)$, if there exists $\sigma^2 \geq 0$ such that:
+$$
+E\left(e^{\lambda X}\right) \leq e^{\frac{\lambda^2 \sigma^2}{2}} \text { for all } \lambda \geq 0
+$$</p><p>In other words, a random variable is sub-Gaussian if its MGF is upperbounded by an MGF of some Gaussian random variable with variance $\sigma^2$. It should be noted that the parameter $\sigma^2$ is generally not the variance of a subGaussian random variable (it is the variance of a Gaussian that has a larger MGF). If this property holds, we have that:
+$$
+\begin{aligned}
+P(X-\mu \geq t) & \leq \inf _{\lambda>0} E\left(e^{\lambda(X-\mu)}\right) e^{-\lambda t} \
+& \leq \inf _{\lambda>0} \exp \left(\frac{\lambda^2 \sigma^2}{2}-\lambda t\right) \
+& \left.=\exp \left(\frac{t^2}{2 \sigma^2}-\frac{t^2}{\sigma^2}\right) \text { (plugging in minimizer } \lambda=t / \sigma^2\right) \
+& =\exp \left(\frac{-t^2}{2 \sigma^2}\right)
+\end{aligned}
+$$</p><p>Therefore, if a random variable is sub-Gaussian, we have tail decay of the form $\exp \left(-t^2 / 2 K_1^2\right)$, which is quite fast. One can show an analogous bound for the left tail. So what random variables are sub-Gaussian? It turns out that bounded random variables are sub-Gaussian.</p><p><strong>Proposition 1</strong>. Suppose $X$ is mean 0 and $a \leq X \leq b$ with probability 1. Then, $X$ is sub-Gaussian with $\sigma^2=(b-a)^2 / 4$.</p><p>In what follows, let $K_i$ be the sub-Gaussian constant associated with the $i$-th notion of sub-Gaussianity. It turns out that different notions of sub-Gaussianity are equivalent in the sense that they are related to each other by some universal constant. In other words, if $X ∼ \mathrm{subGaussian}(K_i)$, then there exists some constant $C$ (that does not depend on the distribution of $X$) such that $X ∼ \mathrm{subGaussian}(CK_j)$ for an equivalent notion of sub-Gaussianity. Another way of saying this is that for any $i,j=1,\cdots,5$, there is some absolute constant $C$ such that $K_i\le CK_j$.</p><p><strong>Proposition 2.5.2 (Sub-Gaussian Properties)</strong>: Let $X$ be a random variable. Then the following properties are equivalent.</p><p>(i) The tails of $X$ satisfy
+$$
+\mathbb{P}{|X| \geq t} \leq 2 \exp \left(-t^2 / K_1^2\right) \quad \text { for all } t \geq 0 .
+$$
+(ii) The moments of $X$ satisfy
+$$
+|X|_{L^p}=\left(\mathbb{E}|X|^p\right)^{1 / p} \leq K_2 \sqrt{p} \quad \text { for all } p \geq 1 .
+$$
+(iii) The MGF of $X^2$ satisfies
+$$
+\mathbb{E} \exp \left(\lambda^2 X^2\right) \leq \exp \left(K_3^2 \lambda^2\right) \quad \text { for all } \lambda \text { such that }|\lambda| \leq \frac{1}{K_3} \text {. }
+$$
+(iv) The MGF of $X^2$ is bounded at some point, namely
+$$
+\mathbb{E} \exp \left(X^2 / K_4^2\right) \leq 2 .
+$$</p><p>Moreover, if $\mathbb{E} X=0$ then properties $i$-iv are also equivalent to the following one.
+(v) The MGF of $X$ satisfies
+$$
+\mathbb{E} \exp (\lambda X) \leq \exp \left(K_5^2 \lambda^2\right) \quad \text { for all } \lambda \in \mathbb{R}
+$$
+<strong>Orlicz Norm</strong> and <strong>Sub-Gaussian Norm</strong>:</p><p>Suppose that $\Psi:[0, \infty) \mapsto[0, \infty)$ is a monotone increasing, convex function such that $\Psi(0)=0$ and $\lim <em>{x \rightarrow \infty} \Psi(x)=\infty$. The associated Orlicz norm of a random variable $X$ is given by
+$$
+|X|</em>{\Psi}=\inf \left{t>0: \mathbb E\left[\Psi\left(\frac{|X|}{t}\right)\right] \leq 1\right}
+$$</p><p>It can be shown that this is indeed a norm on the space of random variables for which this quantity is finite. It can also shown that for the choice of function $\psi_2(x)=e^{x^2}-1$, the sub-Gaussian condition:
+$$
+\mathbb E\left(\exp \left(X^2 / K_4^2\right)\right) \leq 2
+$$
+is equivalent to:
+$$
+|X|_{\psi_2} \leq K_4
+$$</p><p>We let this <strong>sub-Gaussian norm</strong> of a sub-Gaussian be specifically denoted as
+$$
+\Vert X\Vert_{\psi_2}=\inf {t>0:\mathbb E\exp(X^2/t^2)\le 2}
+$$
+Other restatements of sub-Gaussianities using the norm are given in (2.14)-(2.16):
+$$
+\begin{gathered}
+\mathbb{P}{|X| \geq t} \leq 2 \exp \left(-c t^2 /|X|<em>{\psi_2}^2\right) \quad \text { for all } t \geq 0 \
+|X|</em>{L^p} \leq C|X|<em>{\psi_2} \sqrt{p} \quad \text { for all } p \geq 1 \
+\mathbb{E} \exp \left(X^2 /|X|</em>{\psi_2}^2\right) \leq 2 \
+\text{if }\mathbb{E} X=0\text{ then }\mathbb{E} \exp (\lambda X) \leq \exp \left(C \lambda^2|X|_{\psi_2}^2\right) \quad\forall \lambda \in \mathbb{R}
+\end{gathered}
+$$
+Therefore, Orlicz norms can be used to define sub-Gaussianity in a succinct way and imply other properties of these random variables. Different choices of the function $\Psi$​​ will also lead to different notions of light-tailedness.</p><p><strong>Examples and non-examples of sub-gaussian r.v.</strong></p><p>(i) <strong>Gaussian</strong></p><p>(ii) <strong>Bernoulli</strong></p><p>(iii) <strong>Bounded</strong></p><p>(iv) <strong>Poisson</strong></p><p>(v) <strong>Pareto</strong></p><p>(vi) <strong>Cauchy</strong></p><h3 id=26-general-hoeffding-and-khintchine-inequalities>2.6 General Hoeffding and Khintchine Inequalities</h3><h2 id=exercises-1>Exercises</h2><h3 id=exercise-214>Exercise 2.1.4</h3><p>Let $g\sim N(0,1)$. Show that, for all $t>1$, we have
 $$
 \mathbb{E}(g^2\mathbf{1}_{{g>t}})=t\frac{1}{\sqrt{2\pi}}e^{-t^2/2}+\mathbb{P}{g>t}\le \left(t+\frac{1}{t}\right)\frac{1}{\sqrt{2\pi}}e^{-t^2/2}
 $$
@@ -291,4 +354,4 @@ $$
 &\le e^{t\varepsilon N}\prod_{i=1}^N\frac{1}{t}=e^{t\varepsilon N}/t^N
 \end{aligned}
 $$
-Letting $t=1/\varepsilon$ to maximize it to get $(e\varepsilon)^N$​​​.</p></content><p><a href=https://AnthonyHongXiao.github.io/blog/probability/>#probability</a></p></main><footer>Made with <a href=https://github.com/janraasch/hugo-bearblog/>Hugo ʕ•ᴥ•ʔ Bear</a></footer></body></html>
+Letting $t=1/\varepsilon$ to maximize it to get $(e\varepsilon)^N$​​​.</p><h3 id=exercise-259>Exercise 2.5.9</h3><p>We did this when listing examples and non-examples of sub-Gaussians above.</p></content><p><a href=https://AnthonyHongXiao.github.io/blog/probability/>#probability</a></p></main><footer>Made with <a href=https://github.com/janraasch/hugo-bearblog/>Hugo ʕ•ᴥ•ʔ Bear</a></footer></body></html>
