@@ -32,6 +32,10 @@ Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Me
 
 <br>
 
+{{< imageRight src="/images/Aryclic_Painting_Urbanity_and_Time.jpg" alt="Aryclic Painting: Urbanity and Time. Drawn in 8/2020." caption="Aryclic Painting: Urbanity and Time. Drawn in 8/2020." width="20%" >}}
+
+{{< imageRight src="/images/Aryclic_Painting_Urbanity_and_Space.jpg" alt="Aryclic Painting: Urbanity and Space. Drawn in 8/2020." caption="Aryclic Painting: Urbanity and Space. Drawn in 8/2020." width="20%" >}}
+
 ## Experience
 - Speaker in Midstates Consortium for Math and Science 23 at University of Chicago.
 - Grading Math4111 Analysis, Math4171 Topology, Math5046 Differential Topology.
@@ -91,6 +95,4 @@ A survey on two algorithmic solutions (gradient descent and numerical pde) of Mo
 [Paper Link](/pdfs/543_Image_Classification_Using_W_dist.pdf)
 
 <br>
-
-{{< imageRight src="/images/Aryclic_Painting_Urbanity_and_Time.jpg" alt="Learning singular homology in a bar. Photo credit: Jessie." caption="Aryclic Painting: Urbanity and Time. Drawn in 8/2020." width="20%" >}}
 
