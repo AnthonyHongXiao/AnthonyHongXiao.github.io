@@ -1,9 +1,7 @@
-
-☕️～ {{< imageRight src="/images/Learning_Singular_Homology.jpg" alt="Learning singular homology in a bar. Photo credit: Jessie." caption="Learning singular homology in a bar. Photo credit: Jessie." width="20%" >}}
-
 # Xiao (Anthony) Hong
 
 ## About Me
+{{< imageRight src="/images/Learning_Singular_Homology.jpg" alt="Learning singular homology in a bar. Photo credit: Jessie." caption="Learning singular homology in a bar. Photo credit: Jessie." width="20%" >}}
 Hello! I am Anthony, a junior at Washington University in St. Louis (WUSTL), where I transitioned from an early passion for architecture into the intricate world of geometric structures. Geometry is not only the theoretical foundation of civil engineering but also a powerful tool to showcase the uniqueness of data. I seek to understand how structures inherent in real-world images can be encoded as data and subsequently take on a geometric and visual form. I also study implications of geometries, manifolds and grpahs, on information and data in general.
 
 I find solace in the rich symphonies of Brahms and the leisures that come with travel. My recent academic interests include algorithmic algebraic geometry/tropical geometry, harmonic analysis on groups, and surface reconstruction for imaging.
