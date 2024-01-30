@@ -34,11 +34,11 @@ Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Me
 
 {{< imageRight src="/images/Aryclic_Painting_Urbanity_and_Time.jpg" alt="Aryclic Painting: Urbanity and Time. Drawn in 8/2020." caption="Aryclic Painting: Urbanity and Time. Drawn in 8/2020." width="20%" >}}
 
-{{< imageRight src="/images/Aryclic_Painting_Urbanity_and_Space.jpg" alt="Aryclic Painting: Urbanity and Space. Drawn in 8/2020." caption="Aryclic Painting: Urbanity and Space. Drawn in 8/2020." width="20%" >}}
-
 ## Experience
 - Speaker in Midstates Consortium for Math and Science 23 at University of Chicago.
 - Grading Math4111 Analysis, Math4171 Topology, Math5046 Differential Topology.
+
+{{< imageRight src="/images/Aryclic_Painting_Urbanity_and_Space.jpg" alt="Aryclic Painting: Urbanity and Space. Drawn in 8/2020." caption="Aryclic Painting: Urbanity and Space. Drawn in 8/2020." width="20%" >}}
 
 ### Seminar/Workshop/Topic Course
 - Math586 Network Statistics
@@ -49,8 +49,6 @@ Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Me
 - StanCon 2023 Workshop:
   [Convention on Stan Programming and Bayesian Modeling](https://mc-stan.org/events/stancon2023/#tutorials)
 - WUSTL Metamorphic Architecture Workshop 2019, Dean Heather Woofter's tutee.
-
-{{< figure src="/images/Model_The_Memory_Museum.jpg" height="40%" width="55%" caption="Model: The Memory Museum. Built in 12/2019." class="imagecenter" >}}
 
 ## Publications/Projects
 
@@ -94,5 +92,5 @@ A summary of curvatures, isometry groups, and automorphism groups of 3 Riemann S
 A survey on two algorithmic solutions (gradient descent and numerical pde) of Monge-Kantorovich solvers and application of image classification.
 [Paper Link](/pdfs/543_Image_Classification_Using_W_dist.pdf)
 
-<br>
+{{< figure src="/images/Model_The_Memory_Museum.jpg" height="40%" width="55%" caption="Model: The Memory Museum. Built in 12/2019." class="imagecenter" >}}
 
