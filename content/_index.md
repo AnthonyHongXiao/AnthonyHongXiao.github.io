@@ -55,17 +55,23 @@ Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Me
 This is a summer research with Prof. Renato Feres beginning in July 2023. The study aims to use efficient algorithms to compute Ollivier-Ricci curvature of Cayley graphs of certain groups and find out some patterns. Currently, efficient optimization algorithm is found for Cayley graph and theoretical justifications for interesting patterns about curvature are concluding.
 
 {{< figure src="/images/ollivier-ricci_curvature_research_cover_image.png" height="65%" width="65%" class="imagecenter" >}}
+<!---------------------------- seperation line ---------------------------->
+
+2. Fall 2023, **Image Classification Using Wasserstein Distance from Monge-Kantorovich Solvers**, Final project in Prof. Yixin Chen's CSE543 Nonlinear Optimization, with Jingyuan Zhu, Mingzhen Li, Ruiqi Wang.
+
+A survey on two algorithmic solutions (gradient descent and numerical pde) of Monge-Kantorovich solvers and application of image classification.
+[Paper Link](/pdfs/543_Image_Classification_Using_W_dist.pdf)
 
 <!---------------------------- seperation line ---------------------------->
 
-2. 12/18/2020, **Study of Intergenerational Mobility and Urbanization Based on OLS Method and Ordered Probit Model**, IEEE-CS/MSIEID2020
+3. 12/18/2020, **Study of Intergenerational Mobility and Urbanization Based on OLS Method and Ordered Probit Model**, IEEE-CS/MSIEID2020
 
 [DOI: 10.1109/MSIEID52046.2020.00092](https://ieeexplore.ieee.org/abstract/document/9382602)
 
 The study, using the CHARLS dataset and techniques like OLS and ordered probit model, reveals a growing educational disparity across generations in China, highlighting an increasing trend in educational inequality despite overall improvements, especially between urban and rural regions.
 <!---------------------------- seperation line ---------------------------->
 
-3. Spring 2022, **Hex & Brouwer Paper Report**, Midterm project in Prof. Chi's Math 4181 Algebraic Topology.
+4. Spring 2022, **Hex & Brouwer Paper Report**, Midterm project in Prof. Chi's Math 4181 Algebraic Topology.
 
 A paper correcting and reestablishing the proof of equivalence between the Hex theorem and the Bouwer Fixed-Point in David Gale’s paper “The Game of Hex and The Brouwer Fixed-Point Theorem.”
 [Paper Link](/pdfs/4181_Hex_and_Brouwer.pdf)
@@ -73,20 +79,17 @@ A paper correcting and reestablishing the proof of equivalence between the Hex t
 {{< figure src="/images/Hex_board.png" height="40%" width="40%" class="imagecenter" >}}
 <!---------------------------- seperation line ---------------------------->
 
-4. Spring 2022, **Split Spoils: Solution to Stolen Necklace Problem Via Borsuk-Ulam Theorem**, Final project in Prof.Chi's Math 4181 Algebraic Topology.
+5. Spring 2022, **Split Spoils: Solution to Stolen Necklace Problem Via Borsuk-Ulam Theorem**, Final project in Prof.Chi's Math 4181 Algebraic Topology.
 
 Aiming for high-schooler reading, the paper presents the process of solving a mathematical problem and the use of intuition in solving the 2-dimensional Necklace division problem using the Borsuk-Ulam Theorem.
 [Paper Link](/pdfs/4181_Necklace_Problem.pdf)
 <!---------------------------- seperation line ---------------------------->
 
-5. Spring 2023, **A Note about Algebraic and Geometric Characteristics of Archetypal Riemann Surfaces**, Final project in Dr. Rodsphon's Math 497 Topic in Group Theory.
+6. Spring 2023, **A Note about Algebraic and Geometric Characteristics of Archetypal Riemann Surfaces**, Final project in Dr. Rodsphon's Math 497 Topic in Group Theory.
 
 A summary of curvatures, isometry groups, and automorphism groups of 3 Riemann Surfaces $\hat{\mathbb{C}}, \mathbb{C}, \triangle$ in uniformization theorem.
 [Paper Link](/pdfs/497_A_Note_on_Algebraic_and_Geometric_Characteristics_of_Archetypal_Riemann_Surfaces.pdf)
-<!---------------------------- seperation line ---------------------------->
 
-6. Fall 2023, **Image Classification Using Wasserstein Distance from Monge-Kantorovich Solvers**, Final project in Prof. Yixin Chen's CSE543 Nonlinear Optimization, with Jingyuan Zhu, Mingzhen Li, Ruiqi Wang.
 
-A survey on two algorithmic solutions (gradient descent and numerical pde) of Monge-Kantorovich solvers and application of image classification.
-[Paper Link](/pdfs/543_Image_Classification_Using_W_dist.pdf)
+
 
