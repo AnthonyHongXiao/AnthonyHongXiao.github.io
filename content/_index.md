@@ -58,7 +58,7 @@ Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Me
 
 The study, using the CHARLS dataset and techniques like OLS and ordered probit model, reveals a growing educational disparity across generations in China, highlighting an increasing trend in educational inequality despite overall improvements, especially between urban and rural regions.
 
-{{< figure src="/images/Great_Gatsby_Curve.png" caption="The Great Gatsby Curve" height="50%" width="50%" class="imagecenter" >}}
+{{< figure src="/images/Great_Gatsby_Curve.png" caption="The Great Gatsby Curve." height="50%" width="50%" class="imagecenter" >}}
 
 ## Projects
 
