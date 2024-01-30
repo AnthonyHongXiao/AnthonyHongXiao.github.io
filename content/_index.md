@@ -14,10 +14,6 @@ I find solace in the rich symphonies of Brahms and the leisures that come with t
 - Email: [hong.x@wustl.edu](mailto:hong.x@wustl.edu)
 - LinkedIn: [https://www.linkedin.com/in/xiao-hong-anthony/](https://www.linkedin.com/in/xiao-hong-anthony/)
 
-In the following map of "math land," I wish to live in a small cabin 🤔️ on the Northern hills and often travel to various other places. 🚶
-
-{{< figure src="/images/Mathland.jpg" title="Math Land" height="95%" width="95%" class="imagecenter" >}}
-
 <br>
 
 ## Education
