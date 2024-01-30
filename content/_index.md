@@ -38,14 +38,15 @@ Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Me
 - Speaker in Midstates Consortium for Math and Science 23 at University of Chicago.
 - Grading Math4111 Analysis, Math4171 Topology, Math5046 Differential Topology.
 
-{{< imageRight src="/images/Aryclic_Painting_Urbanity_and_Space.jpg" alt="Aryclic Painting: Urbanity and Space. Drawn in 8/2020." caption="Aryclic Painting: Urbanity and Space. Drawn in 8/2020." width="20%" >}}
-
 ### Seminar/Workshop/Topic Course
 - Math586 Network Statistics
 - Math547 Combinatorics of Polytopes
 - UNC Undergraduate Analysis and PDE Seminar FL22-SP24.
 - WashU Reading Group SP23: Algebraic Geometry.
 - WashU Reading Group FL23: Representation Theory.
+
+{{< imageRight src="/images/Aryclic_Painting_Urbanity_and_Space.jpg" alt="Aryclic Painting: Urbanity and Space. Drawn in 8/2020." caption="Aryclic Painting: Urbanity and Space. Drawn in 8/2020." width="20%" >}}
+
 - StanCon 2023 Workshop:
   [Convention on Stan Programming and Bayesian Modeling](https://mc-stan.org/events/stancon2023/#tutorials)
 - WUSTL Metamorphic Architecture Workshop 2019, Dean Heather Woofter's tutee.
