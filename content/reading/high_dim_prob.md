@@ -365,7 +365,7 @@ Let $X\sim \mathrm{Pois}(\lambda)$. When $t>\lambda$, we have
 $$
 \mathbb{E}[X\le t]\le e^{-\lambda}\left(\frac{e\lambda}{t}\right)^t
 $$
-**Exercise 2.3.6 (Poisson diet. near the mean)**
+**Exercise 2.3.6 (Poisson dist. near the mean)**
 
 Let $X\sim \mathrm{Pois}(\lambda)$. When $t\in (0,\lambda]$, we have
 $$
@@ -377,6 +377,145 @@ Let $X\sim \mathrm{Pois}(\lambda)$. As $\lambda\to \infty$, we have
 $$
 \frac{X-\lambda}{\sqrt{\lambda}}\to N(0,1)\quad\text{in distribution}
 $$
+
+### 2.4 Application: Degrees of Random Graphs
+
+### 2.5 Sub-Gaussian Distributions
+
+If $X\sim N(0,1)$, then for $p\ge 1$,
+
+- $\mathbb{P}[|X|\ge t]\le 2\exp(-t^2/2)\quad \forall t\in R$​.
+- $\Vert X\Vert_{L^p}=(\mathbb{E}|X|^p)^{1/p}=\sqrt{2}\left(\frac{\Gamma((1+p)/2)}{\Gamma(1/2)}\right)^{1/p}$.
+- $\Vert X\Vert_{L^P}=O(\sqrt{p}),\quad  p\to \infty$.
+- Its MGF is given by $\mathbb{E}(e^{tX})=e^{t^2/2},\quad \forall t\in \R$.
+
+#### Some facts about Beta and Gamma functions
+
+(Rudin's *Introduction to Mathematical Analysis* (e3) p.192 has some of the following properties.)
+
+- Beta Function $B(x,y)=\int_0^1 t^{x-1}(1-t)^{y-1}dt$. This indefinite integral is convergent for  $x>0,y<0$.
+- Gamma Function $\Gamma(x)=\int_0^{+\infty}t^{x-1}e^{-t}dt$. This indefinite integral is convergent for $x>0$.
+
+- property 1: for $0<x<\infty$, $\Gamma (x+ 1) = x\Gamma(x)$.
+
+- property 2: $\Gamma(n)=n!$ for $n=1,2,3,\cdots$.
+
+- property 3: $\log \Gamma$ is convex on $(0,\infty)$.
+
+- property 4: if $x>0$ and $y>0$, then
+  $$
+  B(x,y)=\int_0^1 t^{x-1}(1-t)^{y-1}dt=\frac{\Gamma(x)\Gamma(y)}{\Gamma(x+y)}
+  $$
+
+- property 5: both $\Beta$ and $\Gamma$ are continuous on their convergent regions.
+
+- property 6 (**Stirling's Formula**): 
+  $$
+  \lim _{x \rightarrow \infty} \frac{\Gamma(x+1)}{(x / e)^x \sqrt{2 \pi x}}=1
+  $$
+
+- Property 6' (**Stirling's Formula**):
+  $$
+  \Gamma(x)=\sqrt{\frac{2\pi}{x}}\left(\frac{x}{e}\right)^x(1+o(1/x))
+  $$
+
+- Property 7: for any $x\ge 1/2$, $\Gamma(x)\le 3x$.
+
+#### Sub-Gaussian variable
+
+A zero-mean random variable $X$ is **sub-Gaussian** with parameter $\sigma^2$, or $\operatorname{subGaussian}\left(\sigma^2\right)$, if there exists $\sigma^2 \geq 0$ such that:
+$$
+E\left(e^{\lambda X}\right) \leq e^{\frac{\lambda^2 \sigma^2}{2}} \text { for all } \lambda \geq 0
+$$
+
+In other words, a random variable is sub-Gaussian if its MGF is upperbounded by an MGF of some Gaussian random variable with variance $\sigma^2$. It should be noted that the parameter $\sigma^2$ is generally not the variance of a subGaussian random variable (it is the variance of a Gaussian that has a larger MGF). If this property holds, we have that:
+$$
+\begin{aligned}
+P(X-\mu \geq t) & \leq \inf _{\lambda>0} E\left(e^{\lambda(X-\mu)}\right) e^{-\lambda t} \\
+& \leq \inf _{\lambda>0} \exp \left(\frac{\lambda^2 \sigma^2}{2}-\lambda t\right) \\
+& \left.=\exp \left(\frac{t^2}{2 \sigma^2}-\frac{t^2}{\sigma^2}\right) \text { (plugging in minimizer } \lambda=t / \sigma^2\right) \\
+& =\exp \left(\frac{-t^2}{2 \sigma^2}\right)
+\end{aligned}
+$$
+
+Therefore, if a random variable is sub-Gaussian, we have tail decay of the form $\exp \left(-t^2 / 2 K_1^2\right)$, which is quite fast. One can show an analogous bound for the left tail. So what random variables are sub-Gaussian? It turns out that bounded random variables are sub-Gaussian.
+
+**Proposition 1**. Suppose $X$ is mean 0 and $a \leq X \leq b$ with probability 1. Then, $X$ is sub-Gaussian with $\sigma^2=(b-a)^2 / 4$.
+
+In what follows, let $K_i$ be the sub-Gaussian constant associated with the $i$-th notion of sub-Gaussianity. It turns out that different notions of sub-Gaussianity are equivalent in the sense that they are related to each other by some universal constant. In other words, if $X ∼ \mathrm{subGaussian}(K_i)$, then there exists some constant $C$ (that does not depend on the distribution of $X$) such that $X ∼ \mathrm{subGaussian}(CK_j)$ for an equivalent notion of sub-Gaussianity. Another way of saying this is that for any $i,j=1,\cdots,5$, there is some absolute constant $C$ such that $K_i\le CK_j$.
+
+**Proposition 2.5.2 (Sub-Gaussian Properties)**: Let $X$ be a random variable. Then the following properties are equivalent.
+
+(i) The tails of $X$ satisfy
+$$
+\mathbb{P}\{|X| \geq t\} \leq 2 \exp \left(-t^2 / K_1^2\right) \quad \text { for all } t \geq 0 .
+$$
+(ii) The moments of $X$ satisfy
+$$
+\|X\|_{L^p}=\left(\mathbb{E}|X|^p\right)^{1 / p} \leq K_2 \sqrt{p} \quad \text { for all } p \geq 1 .
+$$
+(iii) The MGF of $X^2$ satisfies
+$$
+\mathbb{E} \exp \left(\lambda^2 X^2\right) \leq \exp \left(K_3^2 \lambda^2\right) \quad \text { for all } \lambda \text { such that }|\lambda| \leq \frac{1}{K_3} \text {. }
+$$
+(iv) The MGF of $X^2$ is bounded at some point, namely
+$$
+\mathbb{E} \exp \left(X^2 / K_4^2\right) \leq 2 .
+$$
+
+Moreover, if $\mathbb{E} X=0$ then properties $i$-iv are also equivalent to the following one.
+(v) The MGF of $X$ satisfies
+$$
+\mathbb{E} \exp (\lambda X) \leq \exp \left(K_5^2 \lambda^2\right) \quad \text { for all } \lambda \in \mathbb{R}
+$$
+**Orlicz Norm** and **Sub-Gaussian Norm**:
+
+Suppose that $\Psi:[0, \infty) \mapsto[0, \infty)$ is a monotone increasing, convex function such that $\Psi(0)=0$ and $\lim _{x \rightarrow \infty} \Psi(x)=\infty$. The associated Orlicz norm of a random variable $X$ is given by
+$$
+\|X\|_{\Psi}=\inf \left\{t>0: \mathbb E\left[\Psi\left(\frac{|X|}{t}\right)\right] \leq 1\right\}
+$$
+
+It can be shown that this is indeed a norm on the space of random variables for which this quantity is finite. It can also shown that for the choice of function $\psi_2(x)=e^{x^2}-1$, the sub-Gaussian condition:
+$$
+\mathbb E\left(\exp \left(X^2 / K_4^2\right)\right) \leq 2
+$$
+is equivalent to:
+$$
+\|X\|_{\psi_2} \leq K_4
+$$
+
+We let this **sub-Gaussian norm** of a sub-Gaussian be specifically denoted as
+$$
+\Vert X\Vert_{\psi_2}=\inf \{t>0:\mathbb E\exp(X^2/t^2)\le 2\}
+$$
+ Other restatements of sub-Gaussianities using the norm are given in (2.14)-(2.16):
+$$
+\begin{gathered}
+\mathbb{P}\{|X| \geq t\} \leq 2 \exp \left(-c t^2 /\|X\|_{\psi_2}^2\right) \quad \text { for all } t \geq 0 \\
+\|X\|_{L^p} \leq C\|X\|_{\psi_2} \sqrt{p} \quad \text { for all } p \geq 1 \\
+\mathbb{E} \exp \left(X^2 /\|X\|_{\psi_2}^2\right) \leq 2 \\
+\text{if }\mathbb{E} X=0\text{ then }\mathbb{E} \exp (\lambda X) \leq \exp \left(C \lambda^2\|X\|_{\psi_2}^2\right) \quad\forall \lambda \in \mathbb{R}
+\end{gathered}
+$$
+Therefore, Orlicz norms can be used to define sub-Gaussianity in a succinct way and imply other properties of these random variables. Different choices of the function $\Psi$​​ will also lead to different notions of light-tailedness.
+
+**Examples and non-examples of sub-gaussian r.v.**
+
+(i) **Gaussian**
+
+(ii) **Bernoulli**
+
+(iii) **Bounded**
+
+(iv) **Poisson**
+
+(v) **Pareto**
+
+(vi) **Cauchy**
+
+### 2.6 General Hoeffding and Khintchine Inequalities
+
+
 
 ## Exercises
 
@@ -461,6 +600,12 @@ $$
 \end{aligned}
 $$
 Letting $t=1/\varepsilon$ to maximize it to get $(e\varepsilon)^N$​​​. 
+
+### Exercise 2.5.9
+
+We did this when listing examples and non-examples of sub-Gaussians above.
+
+
 
 
 
