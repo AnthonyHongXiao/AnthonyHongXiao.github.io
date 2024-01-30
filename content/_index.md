@@ -46,10 +46,11 @@ Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Me
 - UNC Undergraduate Analysis and PDE Seminar FL22-SP24.
 - WashU Reading Group SP23: Algebraic Geometry.
 - WashU Reading Group FL23: Representation Theory.
-- StanCon 2023 Workshop: [Convention on Stan Programming and Bayesian Modeling](https://mc-stan.org/events/stancon2023/#tutorials)
+- StanCon 2023 Workshop:
+  [Convention on Stan Programming and Bayesian Modeling](https://mc-stan.org/events/stancon2023/#tutorials)
 - WUSTL Metamorphic Architecture Workshop 2019, Dean Heather Woofter's tutee.
 
-{{< figure src="/images/Half-Stereo_Collage_Village_Re-assemblage.jpg" height="40%" width="50%" class="imagecenter" >}}
+{{< figure src="/images/Model_The_Memory_Museum.jpg" height="40%" width="55%" caption="Model: The Memory Museum. Built in 12/2019." class="imagecenter" >}}
 
 ## Publications/Projects
 
@@ -93,4 +94,7 @@ A summary of curvatures, isometry groups, and automorphism groups of 3 Riemann S
 A survey on two algorithmic solutions (gradient descent and numerical pde) of Monge-Kantorovich solvers and application of image classification.
 [Paper Link](/pdfs/543_Image_Classification_Using_W_dist.pdf)
 
-{{< figure src="/images/Model_The_Memory_Museum.jpg" height="40%" width="50%" class="imagecenter" >}}
+<br>
+
+{{< imageRight src="/images/Aryclic_Painting_Urbanity_and_Time.jpg" alt="Learning singular homology in a bar. Photo credit: Jessie." caption="Aryclic Painting: Urbanity and Time. Drawn in 8/2020." width="20%" >}}
+
