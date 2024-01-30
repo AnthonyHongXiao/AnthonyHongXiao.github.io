@@ -24,11 +24,11 @@ Major GPA: 4.00/4.00; Total GPA: 3.99/4.00
 
 ### Selected Courses:
 **Graduate courses**:
-Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Measure Theory and Functional Analysis I (A); Math5031 Algebra I (A+); Math5021 Complex Analysis I (A); Math586 Network Statistics (A)
+Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Measure Theory and Functional Analysis I (A); Math5031 Algebra I (A+); Math5021 Complex Analysis I (A); Math586 Network Statistics (A); CSE543 Algorithms of Nonlinear Optimization (A).
 
 **Undergraduate courses**: Math494 Mathematical Statistics (A+); Math350 Dynamical System and Chaos (A); CSE417T Introduction to Machine Learning (A); Econ4011 Microecon (A+); Econ4021 Macroecon (A+); Econ413 Econometrics (A+).
 
-**In progress**: CSE546T Computational Geometry; CSE347 Analysis of Algorithm; Math547 Combinatorics of Polytopes; Math5032 Algebra II; Math 5021 Complex Analysis II; Math5440 Big Data
+**In progress**: CSE546T Computational Geometry; CSE347 Analysis of Algorithm; Math547 Combinatorics of Polytopes; Math5032 Algebra II; Math 5021 Complex Analysis II; Math5440 Big Data.
 
 <br>
 
