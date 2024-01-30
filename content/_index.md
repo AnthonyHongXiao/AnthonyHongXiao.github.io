@@ -96,5 +96,3 @@ A summary of curvatures, isometry groups, and automorphism groups of 3 Riemann S
 A survey on two algorithmic solutions (gradient descent and numerical pde) of Monge-Kantorovich solvers and application of image classification.
 [Paper Link](/pdfs/543_Image_Classification_Using_W_dist.pdf)
 
-{{< figure src="/images/Model_The_Memory_Museum.jpg" height="40%" width="55%" caption="Model: The Memory Museum. Built in 12/2019." class="imagecenter" >}}
-
