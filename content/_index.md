@@ -48,7 +48,19 @@ Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Me
 
 <br>
 
-## Publications/Projects
+## Publications
+
+### 1. Study of Intergenerational Mobility and Urbanization Based on OLS Method and Ordered Probit Model
+
+**IEEE-CS/MSIEID2020, 12/18/2020.**
+
+[DOI: 10.1109/MSIEID52046.2020.00092](https://ieeexplore.ieee.org/abstract/document/9382602)
+
+The study, using the CHARLS dataset and techniques like OLS and ordered probit model, reveals a growing educational disparity across generations in China, highlighting an increasing trend in educational inequality despite overall improvements, especially between urban and rural regions.
+
+{{< figure src="/images/Great_Gatsby_Curve.png" caption="The Great Gatsby Curve" height="50%" width="50%" class="imagecenter" >}}
+
+## Projects
 
 ### 1.  Curvature of Cayley Graph of Certain Groups (working)
 
@@ -71,18 +83,7 @@ A survey on two algorithmic solutions (gradient descent and numerical pde) of Mo
 {{< figure src="/images/image_classification.png" caption="MNIST digit examples." height="40%" width="50%" class="imagecenter" >}}
 <!---------------------------- seperation line ---------------------------->
 
-### 3. Study of Intergenerational Mobility and Urbanization Based on OLS Method and Ordered Probit Model
-
-**IEEE-CS/MSIEID2020, 12/18/2020.**
-
-[DOI: 10.1109/MSIEID52046.2020.00092](https://ieeexplore.ieee.org/abstract/document/9382602)
-
-The study, using the CHARLS dataset and techniques like OLS and ordered probit model, reveals a growing educational disparity across generations in China, highlighting an increasing trend in educational inequality despite overall improvements, especially between urban and rural regions.
-
-{{< figure src="/images/Great_Gatsby_Curve.png" caption="The Great Gatsby Curve" height="50%" width="50%" class="imagecenter" >}}
-<!---------------------------- seperation line ---------------------------->
-
-### 4. Hex & Brouwer Paper Report
+### 3. Hex & Brouwer Paper Report
 
 **Midterm project in Prof. Chi's Math 4181 Algebraic Topology, Spring 2022.**
 
@@ -92,7 +93,7 @@ A paper correcting and reestablishing the proof of equivalence between the Hex t
 {{< figure src="/images/Hex_board.png" height="40%" width="40%" class="imagecenter" >}}
 <!---------------------------- seperation line ---------------------------->
 
-### 5. Split Spoils: Solution to Stolen Necklace Problem Via Borsuk-Ulam Theorem
+### 4. Split Spoils: Solution to Stolen Necklace Problem Via Borsuk-Ulam Theorem
 
 **Final project in Prof.Chi's Math 4181 Algebraic Topology, Spring 2022.**
 
@@ -100,7 +101,7 @@ Aiming for high-schooler reading, the paper presents the process of solving a ma
 [Paper Link](/pdfs/4181_Necklace_Problem.pdf)
 <!---------------------------- seperation line ---------------------------->
 
-### 6. A Note about Algebraic and Geometric Characteristics of Archetypal Riemann Surfaces
+### 5. A Note about Algebraic and Geometric Characteristics of Archetypal Riemann Surfaces
 
 **Final project in Dr. Rodsphon's Math 497 Topic in Group Theory, Spring 2023.**
 
