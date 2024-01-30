@@ -28,17 +28,18 @@ Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Me
 
 **Undergraduate courses**: Math494 Mathematical Statistics (A+); Math350 Dynamical System and Chaos (A); CSE417T Introduction to Machine Learning (A); Econ4011 Microecon (A+); Econ4021 Macroecon (A+); Econ413 Econometrics (A+).
 
+{{< imageRight src="/images/Uchi_Midstates_Consortium.jpg" alt="Aryclic Painting: Urbanity and Time. Drawn in 8/2020." caption="Aryclic Painting: Urbanity and Time. Drawn in 8/2020." width="30%" >}}
+
 **In progress**: CSE546T Computational Geometry; CSE347 Analysis of Algorithm; Math547 Combinatorics of Polytopes; Math5032 Algebra II; Math 5021 Complex Analysis II; Math5440 Big Data.
 
 <br>
 
-{{< imageRight src="/images/Aryclic_Painting_Urbanity_and_Time.jpg" alt="Aryclic Painting: Urbanity and Time. Drawn in 8/2020." caption="Aryclic Painting: Urbanity and Time. Drawn in 8/2020." width="20%" >}}
-
 ## Experience
 - Speaker in Midstates Consortium for Math and Science 23 at University of Chicago.
-- Grading Math4111 Analysis, Math4171 Topology, Math5046 Differential Topology.
+- Grading Math4111 Analysis, Math4171 Topology
+- TA Math5046 Differential Topology.
 
-### Seminar/Workshop/Topic Course
+### Seminars/Workshops
 - Math586 Network Statistics
 - Math547 Combinatorics of Polytopes
 - UNC Undergraduate Analysis and PDE Seminar FL22-SP24.
@@ -50,6 +51,8 @@ Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Me
 - StanCon 2023 Workshop:
   [Convention on Stan Programming and Bayesian Modeling](https://mc-stan.org/events/stancon2023/#tutorials)
 - WUSTL Metamorphic Architecture Workshop 2019, Dean Heather Woofter's tutee.
+
+<br>
 
 ## Publications/Projects
 
