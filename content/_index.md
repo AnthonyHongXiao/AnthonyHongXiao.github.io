@@ -78,6 +78,8 @@ A survey on two algorithmic solutions (gradient descent and numerical pde) of Mo
 [DOI: 10.1109/MSIEID52046.2020.00092](https://ieeexplore.ieee.org/abstract/document/9382602)
 
 The study, using the CHARLS dataset and techniques like OLS and ordered probit model, reveals a growing educational disparity across generations in China, highlighting an increasing trend in educational inequality despite overall improvements, especially between urban and rural regions.
+
+{{< figure src="/images/Great_Gatsby_Curve.png" height="50%" width="50%" class="imagecenter" >}}
 <!---------------------------- seperation line ---------------------------->
 
 ### 4. Hex & Brouwer Paper Report
