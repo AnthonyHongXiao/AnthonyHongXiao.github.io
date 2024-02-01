@@ -31,7 +31,7 @@ Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Me
 <br>
 
 ## Experience
-- Speaker in Midstates Consortium for Math and Science 23 at University of Chicago.
+- Speaker at Midstates Consortium for Math and Science 23 at University of Chicago.
 - Grading Math4111 Analysis, Math4171 Topology
 - TA Math5046 Differential Topology.
 
