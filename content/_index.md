@@ -7,7 +7,7 @@ Hello! I am Anthony, a junior at Washington University in St. Louis (WUSTL), whe
 I find solace in the rich symphonies of Brahms and the leisures that come with travel. My recent academic interests include algorithmic algebraic geometry/tropical geometry, harmonic analysis on groups, and surface reconstruction for imaging.
 
 ### Contact
-- Email: [hong.x@wustl.edu](mailto:hong.x@wustl.edu)
+- Email: hong[dot]x@wustl[dot]edu
 - LinkedIn: [https://www.linkedin.com/in/xiao-hong-anthony/](https://www.linkedin.com/in/xiao-hong-anthony/)
 
 <br>
