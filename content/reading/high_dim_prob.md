@@ -394,6 +394,7 @@ If $X\sim N(0,1)$, then for $p\ge 1$,
 (Rudin's *Introduction to Mathematical Analysis* (e3) p.192 has some of the following properties.)
 
 - Beta Function $B(x,y)=\int_0^1 t^{x-1}(1-t)^{y-1}dt$. This indefinite integral is convergent for  $x>0,y<0$.
+
 - Gamma Function $\Gamma(x)=\int_0^{+\infty}t^{x-1}e^{-t}dt$. This indefinite integral is convergent for $x>0$.
 
 - property 1: for $0<x<\infty$, $\Gamma (x+ 1) = x\Gamma(x)$.
@@ -419,7 +420,13 @@ If $X\sim N(0,1)$, then for $p\ge 1$,
   \Gamma(x)=\sqrt{\frac{2\pi}{x}}\left(\frac{x}{e}\right)^x(1+o(1/x))
   $$
 
-- Property 7: for any $x\ge 1/2$, $\Gamma(x)\le 3x$.
+- Property 7 (**Stirling's Approximation**): for $n\ge 1$,
+  $$
+  \sqrt{2 \pi n}\left(\frac{n}{e}\right)^n e^{\frac{1}{12 n+1}}<n !<\sqrt{2 \pi n}\left(\frac{n}{e}\right)^n e^{\frac{1}{12 n}}
+  $$
+  
+
+- Property 8: for any $x\ge 1/2$, $\Gamma(x)\le 3x$.
 
 #### Sub-Gaussian variable
 
@@ -470,12 +477,12 @@ $$
 $$
 **Orlicz Norm** and **Sub-Gaussian Norm**:
 
-Suppose that $\Psi:[0, \infty) \mapsto[0, \infty)$ is a monotone increasing, convex function such that $\Psi(0)=0$ and $\lim _{x \rightarrow \infty} \Psi(x)=\infty$. The associated Orlicz norm of a random variable $X$ is given by
+Suppose that $\Psi:[0, \infty) \mapsto[0, \infty)$ is a monotone increasing, convex function such that $\Psi(0)=0$ and $\lim _{x \rightarrow \infty} \Psi(x)=\infty$. The **Orlicz space** $L_\psi =L_\psi (\Omega,\Sigma,\mathbb P)$ consists of all random variables $X$ on the probability space $(\Omega,\Sigma,\mathbb P)$ with finite Orlicz norm, i.e., $L_\psi :=\{X:\Vert X\Vert_{\psi}<\infty\}$ where the **Orlicz norm** of a random variable $X$ is given by
 $$
 \|X\|_{\Psi}=\inf \left\{t>0: \mathbb E\left[\Psi\left(\frac{|X|}{t}\right)\right] \leq 1\right\}
 $$
 
-It can be shown that this is indeed a norm on the space of random variables for which this quantity is finite. It can also shown that for the choice of function $\psi_2(x)=e^{x^2}-1$, the sub-Gaussian condition:
+It can be shown that this is indeed a norm on the space of random variables for which this quantity is finite. When we put $\psi(x)=x^p$ for $p\ge 1$, the resulting Orlicz space is the classical space $L^p$.  It can also shown that for the choice of function $\psi_2(x)=e^{x^2}-1$, the sub-Gaussian condition:
 $$
 \mathbb E\left(\exp \left(X^2 / K_4^2\right)\right) \leq 2
 $$
@@ -497,25 +504,158 @@ $$
 \text{if }\mathbb{E} X=0\text{ then }\mathbb{E} \exp (\lambda X) \leq \exp \left(C \lambda^2\|X\|_{\psi_2}^2\right) \quad\forall \lambda \in \mathbb{R}
 \end{gathered}
 $$
-Therefore, Orlicz norms can be used to define sub-Gaussianity in a succinct way and imply other properties of these random variables. Different choices of the function $\Psi$​​ will also lead to different notions of light-tailedness.
+where $c,C$ are absolute constants. Morover, up to absolute constant factors, $\Vert X\Vert_{\psi_2}$ is the smallest possible number that makes each of these inequalities holds. 
 
 **Examples and non-examples of sub-gaussian r.v.**
 
-(i) **Gaussian**
+(i) **Gaussian** ☑️: Due to equation (2.3) from the book and symmetry, we have that for for $X\sim N(0,1)$ and any $p\ge 1$, $\mathbb{P}[|X|\ge t]\le 2\exp(-t^2/2)\quad \forall t\in R$ . Therefore, it is sub-Gaussian. In fact, if $X\sim N(0,\sigma^2)$, we recall that the MGF of $X\sim N(\mu,\sigma^2)$ is $\exp (\mu t+\sigma^2t^2/2)$. For $\mu=0$, this is $\exp (\sigma^2t^2/2)$. Criterion (v) of Proposition 2.5.2 then concludes that it is sub-Gaussian.
 
-(ii) **Bernoulli**
+(ii) **Bernoulli** ☑️: Let $X$ be a random variable with symmetric Bernoulli distribution. Since $|X|=1$, it follows that $X$ is a sub-Gaussian random variable with $\Vert X\Vert_{\psi_2}=\frac{1}{\sqrt{\ln 2}}$. Just note that when $t\ge 1$, we have
+$$
+\mathbb P[|X|\ge t]=0\le 2\exp(-t^2/K^2_1)
+$$
+When $t<1$, we have
+$$
+\mathbb P[|X|\ge t]=1
+$$
+By letting $K_1=\frac{1}{\sqrt{\ln 2}}$​ and noticing that $t<1\Rightarrow -t^2>-1$, we have 
+$$
+2\exp \left(-\frac{t^2}{-\frac{1}{\ln 2}}\right)=2\cdot 2^{-t^2}>2\cdot 2^{-1}=1= \mathbb P[|X|\ge t]
+$$
+(iii) **Bounded** ☑️: More generally, any bounded random variable $X$ is a sub-Gaussian random variable with
+$$
+\Vert X\Vert_{\psi_2}\le C\Vert X\Vert_{\infty}
+$$
+where $C=1/\sqrt{\ln 2}$.
 
-(iii) **Bounded**
+(iv) **Poisson** ❌: let $X\sim \mathrm{Pois}(\lambda)$. Note that $X=k=0,1,\cdots$ Then its pmf is
+$$
+f(k ; \lambda)=\mathbb P(X=k)=\frac{\lambda^k e^{-\lambda}}{k !}
+$$
+Now, let $m$ be the smallest integer that is larger or equal to $t$. Then
+$$
+\mathbb P(|X|\ge t)=\mathbb P(X \geq t)=\sum_{k\ge t}\mathbb P(X=k)>\frac{e^{-\lambda} \lambda^m}{m !}
+$$
+Then apply Stirling's approximation to get a lower bound that decay slower than Gaussian.
 
-(iv) **Poisson**
+(v) **Exponential** ❌: let $X\sim \mathrm{Exp}(\lambda)$. Then,
+$$
+f(x ; \lambda)= \begin{cases}\lambda e^{-\lambda x} & x \geq 0 \\ 0 & x<0\end{cases}
+$$
+We have its moment
+$$
+\mathbb E[|X|^p]=\mathbb E[X^p]=\frac{p!}{\lambda^p}
+$$
+Thus,
+$$
+(\mathbb E|X|^p)^{1/p}=\frac{(p!)^{1/p}}{\lambda}
+$$
+Then by lemma below, it cannot satisfy the second criterion of Proposition 2.5.2.
 
-(v) **Pareto**
+**Lemma**: By rearranging terms, we can see that
+$$
+(n !)^2=[1 \cdot n][2 \cdot(n-1)][3 \cdot(n-2)] \cdots[(n-1) \cdot 2][n \cdot 1] .
+$$
 
-(vi) **Cauchy**
+Each of the $n$ products $(k+1) \cdot(n-k)$, for $0 \leq k<n$, is $\geq n$. Thus $(n !)^2 \geq n^n$ and therefore $(n !)^{1 / n} \geq \sqrt{n}$. 
+
+(vi) **Pareto** ❌: It is one of those heavy-tailed dist. Its pdf is $f(x)=\frac{\alpha x_m^{\alpha}}{x^{\alpha+1}}$, and its cdf is $1-\left(\frac{x_m}{x}\right)^{\alpha}$. Thus,
+$$
+\mathbb P[|X|\ge t]=\mathbb P[X\ge t]=\left(\frac{x_m}{x}\right)^{\alpha}
+$$
+It is easy to see that the polynomial decay is slower than the gaussian one.
+
+(vii) **Cauchy** ❌: Another heavy-tailed dist. Compare its growth to gaussian.
 
 ### 2.6 General Hoeffding and Khintchine Inequalities
 
+The **rotation invariance property** (i.i.d $X_i\sim N(0,\sigma_i^2)\Rightarrow\sum{i=1}^NX_i\sim N\left(0,\sum^N_{i=1}\sigma_i^2\right)$)  extends to the sub-Gaussians, albeit up to an absolute constant.
 
+**Proposition 2.6.1 (Sums of independent sub-Gaussians)**: Let $X_1,\cdots,X_N$ be independent sub-Gaussians with zero-means. Then $\sum_{i=1}^NX_i$ is also a sub-Gaussian r.v., and
+$$
+\left\Vert \sum_{i=1}^N X_i^2 \right\Vert_{\psi_2}^2\le C\sum_{i=1}^N\Vert X_i\Vert_{\psi_2}^2
+$$
+where $C$ is an absolute constant.
+
+**Theorem 2.6.3 (General Hoeffding's inequality)**. Let $X_1, \ldots, X_N$ be independent, mean zero, sub-gaussian random variables, and $a=\left(a_1, \ldots, a_N\right) \in \mathbb{R}^N$. Then, for every $t \geq 0$, we have
+$$
+\mathbb{P}\left\{\left|\sum_{i=1}^N a_i X_i\right| \geq t\right\} \leq 2 \exp \left(-\frac{c t^2}{K^2\|a\|_2^2}\right)
+$$
+where $K=\max _i\left\|X_i\right\|_{\psi_2}$​.
+
+**Theorem 2.6.2**: when $a=(1,\cdots,1)$​​ in Theorem 2.6.3 above.
+
+When the means are not zero, we can show that centering does not harm the sub-Gaussian property, just as $\Vert X-\mathbb X\Vert_{L^2}\le \Vert X\Vert_{L^2}$:
+
+**Lema 2.6.8 (Centering)** If $X$ is sub-Gaussian then $X-\mathbb E X$ is sub-Gaussian too and
+$$
+\Vert X-\mathbb EX\Vert_{\psi_2}\le C\Vert X\Vert_{\psi_2}
+$$
+where $C$ is an absolute constant.
+
+**Exercise 2.6.5 (Khintchine's inequality).** Let $X_1, \ldots, X_N$ be independent sub-gaussian random variables with zero means and unit variances, and let $a=$ $\left(a_1, \ldots, a_N\right) \in \mathbb{R}^N$. Prove that for every $p \in[2, \infty)$ we have
+$$
+\left(\sum_{i=1}^N a_i^2\right)^{1 / 2} \leq\left\|\sum_{i=1}^N a_i X_i\right\|_{L^p} \leq C K \sqrt{p}\left(\sum_{i=1}^N a_i^2\right)^{1 / 2}
+$$
+where $K=\max _i\left\|X_i\right\|_{\psi_2}$ and $C$ is an absolute constant.
+**Exercise 2.6.6 (Khintchine's inequality for $p=1$ ).** Show that in the setting of Exercise 2.6.5, we have
+$$
+c(K)\left(\sum_{i=1}^N a_i^2\right)^{1 / 2} \leq\left\|\sum_{i=1}^N a_i X_i\right\|_{L^1} \leq\left(\sum_{i=1}^N a_i^2\right)^{1 / 2} .
+$$
+
+Here $K=\max _i\left\|X_i\right\|_{\psi_2}$ and $c(K)>0$ is a quantity which may depend only on $K$.
+Hint: Use the following extrapolation trick. Prove the inequality $\|Z\|_2 \leq\|Z\|_1^{1 / 4}\|Z\|_3^{3 / 4}$ and use it for $Z=\sum a_i X_i$. Get a bound on $\|Z\|_3$ from Khintchine's inequality for $p=3$.
+**Exercise 2.6.7 (Khintchine's inequality for $p \in(0,2)$ ).** State and prove a version of Khintchine's inequality for $p \in(0,2)$​.
+Hint: Modify the extrapolation trick in Exercise 2.6.6.
+
+### 2.7 Sub-Exponential Distributions
+
+We previously stated that some common families of random variables are not sub-Gaussian. Consider for example the $\chi^2$ distribution, which comes up with some frequency in statistics. Recall that if $Z \sim N(0,1)$, then $Z^2 \sim \chi_1^2$. Thus, for a $\chi^2$ random variable $Y$, we have that:
+$$
+P(|Y| \geq t)=P\left(Z^2 \geq t\right)=2 P(Z \geq \sqrt{t}) \leq 2 \exp \left(-\frac{t}{2}\right)
+$$
+
+Therefore, $\chi^2$ random variables have tails that decay like $\exp (-C t)$ (**exponential decay**) rather than $\exp \left(-C t^2\right)$ (**gaussian decay**) as we have with Gaussian random variables. It turns out that $\chi^2$ random variables are an example of sub-exponential random variables.
+
+**Proposition 2.7.1 (Sub-exponential properties).** Let $X$ be a random variable. Then the following properties are equivalent; the parameters $K_i>0$ appearing in these properties differ from each other by at most an absolute constant factor.
+
+(i) The tails of $X$ satisfy
+$$
+\mathbb{P}\{|X| \geq t\} \leq 2 \exp \left(-t / K_1\right) \quad \text { for all } t \geq 0 .
+$$
+(ii) The moments of $X$ satisfy
+$$
+\|X\|_{L^p}=\left(\mathbb{E}|X|^p\right)^{1 / p} \leq K_2 p \quad \text { for all } p \geq 1 .
+$$
+(iii) The $M G F$ of $|X|$ satisfies
+$$
+\mathbb{E} \exp (\lambda|X|) \leq \exp \left(K_3 \lambda\right) \quad \text { for all } \lambda \text { such that } 0 \leq \lambda \leq \frac{1}{K_3} \text {. }
+$$
+(iv) The MGF of $|X|$ is bounded at some point, namely
+$$
+\mathbb{E} \exp \left(|X| / K_4\right) \leq 2
+$$
+
+Moreover, if $\mathbb{E} X=0$ then properties $a-d$ are also equivalent to the following one.
+(v) The MGF of $X$ satisfies
+$$
+\mathbb{E} \exp (\lambda X) \leq \exp \left(K_5^2 \lambda^2\right) \quad \text { for all } \lambda \text { such that }|\lambda| \leq \frac{1}{K_5}
+$$
+**Definition 2.7.5 (Sub-exponential random variables).** A random variable $X$ that satisfies one of the equivalent properties (i)-(iv) Proposition 2.7.1 is called a **sub-exponential random variable**. The sub-exponential norm of $X$, denoted $\|X\|_{\psi_1}$, is defined to be the smallest $K_3$ in property 3. In other words,
+$$
+\|X\|_{\psi_1}=\inf \{t>0: \mathbb{E} \exp (|X| / t) \leq 2\} .
+$$
+
+Sub-gaussian and sub-exponential distributions are closely related. First, any sub-gaussian distribution is clearly sub-exponential.
+
+Second, the square of a sub-gaussian random variable is sub-exponential (**Lemma 2.7.6**); more generally, the product of two sub-gaussian random variables is sub-exponential (**Lemma 2.7.7**).
+
+**Example 2.7.8 (sub-exponentials)** Let us mention a few examples of sub-exponential random variables. As we just learned, all sub-gaussian random variables and their squares are sub-exponential, for example $g^2$ for $g\sim N(\mu,\sigma)$​. Apart from that, sub-exponential distributions include the exponential and Poisson distributions. 
+
+**Exercise 2.7.10 (Centering)** With a similar proof as Lemma 2.6.8, we can show that for sub-exponential $X$,
+$$
+\Vert X-\mathbb E X\Vert_{\psi_1}\le C\Vert X\Vert_{\psi_1}
+$$
 
 ## Exercises
 
@@ -604,6 +744,34 @@ Letting $t=1/\varepsilon$ to maximize it to get $(e\varepsilon)^N$​​​.
 ### Exercise 2.5.9
 
 We did this when listing examples and non-examples of sub-Gaussians above.
+
+### Exercise 2.6.5
+
+The first inequality is simply because $\|\bullet\|_{L^2} \leq\|\bullet\|_{L^P}$. As for the second one, by Exercise 1.2 .3 and Hoeffding's inequality (Theorem 2.6.3),
+$$
+\begin{aligned}
+\mathbb{E}\left|\sum_{i=1}^N a_i X_i\right|^p & =\int_0^{\infty} p t^{p-1} \mathbb{P}\left\{\left|\sum_{i=1}^N a_i X_i\right|>t\right\} \mathrm{d} t \\
+& \leq 2 p \int_0^{\infty} t^{p-1} \exp \left(-\frac{c t^2}{K^2\|a\|_2^2}\right) \mathrm{d} t \\
+& =p\left(\frac{K\|a\|_2}{\sqrt{c}}\right)^p \int_0^{\infty} s^{p / 2-1} \mathrm{e}^{-s} \mathrm{~d} s \quad=p\left(\frac{K\|a\|_2}{\sqrt{c}}\right)^p \Gamma\left(\frac{p}{2}\right) .
+\end{aligned}
+$$
+
+It follows that $\left\|\sum_{i=1}^N a_i X_i\right\|_{L^p} /\left(K \sqrt{p}\|a\|_2\right) \leq(p \Gamma(p / 2))^{1 / p} / \sqrt{c p}=O(1)$ by Stirling's formula.
+
+### Exercise 2.6.7
+
+The second inequality is simply because $\|\bullet\|_{L^P} \leq\|\bullet\|_{L^2}$. As for the first one, by the Cauchy-Schwartz inequality and Exercise 2.6.5,
+$$
+\begin{aligned}
+\mathbb{E}\left|\sum_{i=1}^N a_i X_i\right|^p & \geq\left(\mathbb{E}\left|\sum_{i=1}^N a_i X_i\right|^2\right)^2 / \mathbb{E}\left|\sum_{i=1}^N a_i X_i\right|^{4-p} \\
+& \geq\|a\|_2^4 /\left(C K \sqrt{4-p}\|a\|_2\right)^{4-p} \quad=c_p(K)^p\|a\|_2^p
+\end{aligned}
+$$
+with $c_p(K)=(C K \sqrt{4-p})^{1-4 / p}$​.
+
+### 
+
+
 
 
 

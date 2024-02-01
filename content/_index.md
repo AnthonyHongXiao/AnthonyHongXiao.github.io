@@ -114,6 +114,8 @@ A summary of curvatures, isometry groups, and automorphism groups of 3 Riemann S
 
 ## Gallery
 
+{{< figure src="/images/Critique.jpg" caption="Final critique, Metamorphic Workshop 2019." height="70%" width="70%" class="imagecenter" >}}
+
 {{< figure src="/images/Model_Market-Pavilion_Continuum(detail)_Metamorphic_Workshop.jpg" caption="Market-Pavilion Continuum (detail), Metamorphic Workshop 2019." height="80%" width="80%" class="imagecenter" >}}
 
 {{< figure src="/images/Model_The_Memory_Museum.jpg" caption="Model: The Memory Museum. Made in 12/2019." height="80%" width="80%" class="imagecenter" >}}
