@@ -1,12 +1,6 @@
 +++
 title = "Cayley Graphs on Surfaces"
 date = "2024-01-12T15:09:15+08:00"
-
-#
-# description is optional
-#
-# description = "An optional description for SEO. If not provided, an automatically created summary will be used."
-
 tags = []
 +++
 

@@ -1,12 +1,6 @@
 +++
 title = "Website logistics"
 date = "2024-01-09T19:29:30+08:00"
-
-#
-# description is optional
-#
-# description = "An optional description for SEO. If not provided, an automatically created summary will be used."
-
 tags = []
 +++
 
