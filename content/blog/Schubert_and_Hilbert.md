@@ -1,7 +1,7 @@
 +++
 title = "Schubert and Hilbert"
 date = "2024-01-24T10:09:15-06:00"
-tags = [Music]
+tags = ["Music"]
 +++
 
 {{< spotify type="album" id="60ozSapXWEc6PZWDh3tllN" width="100%" height="250" >}}

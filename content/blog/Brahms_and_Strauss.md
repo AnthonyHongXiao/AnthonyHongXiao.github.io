@@ -1,7 +1,7 @@
 +++
 title = "Brahms and Strauss"
 date = "2024-02-05T22:24:27-06:00"
-tags = [Music]
+tags = ["Music"]
 +++
 
 {{< spotify type="album" id="2mv6PrblJaI2FfdYUFWyFX" width="100%" height="250" >}}

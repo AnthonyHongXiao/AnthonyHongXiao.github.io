@@ -1,8 +1,7 @@
 +++
-title = "High-Dimensional Probability and Statistics"
+title = "High-Dimensional Probability and Statistics I"
 date = "2024-01-14T12:01:56+08:00"
 tags = ["probability"]
-
 +++
 
 This file is for the notes and exercises for the book Roman Vershynin's  [High-Dimensional Probability](/pdfs/HDP-book.pdf), one of the references used in Prof Lunde's Math5440. The other references are Ramon van Handel's [Probability in High Dimension](\pdfs\PHD-book.pdf) and Martin J.Wainwright's [High-Dimensional Statistics](/pdfs/HDS-book.pdf).
@@ -129,31 +128,31 @@ where $C_\epsilon=\frac{e}{\left[1 / \epsilon^2\right] \epsilon^2}$.
 1. **Random Variables**, **expectation** $\mathbb{E}(X)$, **variance** $\mathbb{E}(X-\mathbb{E}(X))^2$, **moment generating function** $M_X(t)=\mathbb{E}(e^{tX})$, **p-th moment** $\mathbb{E}(X^p)$, **p-th absolute moment** $\mathbb{E}(|X|^p)$, and **$L^P$ norm** and **essential norm** of a random variable
    $$
    \begin{aligned}
-   \Vert X\Vert_{L^p}&=(\mathbb{E}|X|^p)^{1/p}, p\in (0,\infty)\\
+   \Vert X\Vert_{L^p}&=(\mathbb{E}|X|^p)^{1/p}, p\in (0,\infty)\newline
    \Vert X\Vert_{L^{\infty}}&=\mathrm{ess\; sup}|X|=\inf\{M|\;|f|\le M\text{ for }\mu-\text{a.e. }x\in X\}
    \end{aligned}
    $$
 
 2. For fixed $p$ and a given probability space $(\Omega, \Sigma, \mathbb{P})$, the classical vector space $L^p=L^p(\Omega, \Sigma, \mathbb{P})$ consists of all random variables $X$ on $\Omega$ with finite $L^p$ norm, that is
    $$
-   L^p=\set{X:\|X\|_{L^p}<\infty}.
+   L^p=\set{X:\Vert X\Vert_{L^p}<\infty}.
    $$
 
-   If $p \in[1, \infty]$, the quantity $\|X\|_{L^p}$ is a norm and $L^p$ is a **Banach space**. This fact follows from **Minkowski's inequality**. For $p<1$, the triangle inequality fails and $\|X\|_{L^p}$ is not a norm.
+   If $p \in[1, \infty]$, the quantity $\Vert X\Vert_{L^p}$ is a norm and $L^p$ is a **Banach space**. This fact follows from **Minkowski's inequality**. For $p<1$, the triangle inequality fails and $\Vert X\Vert_{L^p}$ is not a norm.
 
    The exponent $p=2$ is special in that $L^2$ is not only a Banach space but also a **Hilbert space**. The inner product and the corresponding norm on $L^2$ are given by
    $$
-   \langle X, Y\rangle_{L^2}=\mathbb{E} X Y, \quad\|X\|_{L^2}=\left(\mathbb{E}|X|^2\right)^{1 / 2} .
+   \langle X, Y\rangle_{L^2}=\mathbb{E} X Y, \quad\Vert X\Vert_{L^2}=\left(\mathbb{E}|X|^2\right)^{1 / 2} .
    $$
 
    Then the **standard deviation** of $X$ can be expressed as
    $$
-   \|X-\mathbb{E} X\|_{L^2}=\sqrt{\operatorname{Var}(X)}=\sigma(X) .
+   \Vert X-\mathbb{E} X\Vert_{L^2}=\sqrt{\operatorname{Var}(X)}=\sigma(X) .
    $$
 
    Similarly, we can express the **covariance** of random variables of $X$ and $Y$ as
    $$
-   \operatorname{cov}(X, Y)=\mathbb{E}(X-\mathbb{E} X)(Y-\mathbb{E} Y)=\langle X-\mathbb{E} X, Y-\mathbb{E} Y\rangle_{L^2} .
+   \operatorname{cov}(X, Y)=\mathbb{E}(X-\mathbb{E} X)(Y-\mathbb{E} Y)=\langle X-\mathbb{E} X, Y-\mathbb{E} Y \rangle_{L^2} .
    $$
 
 3. **Jensen's Inequality**: for $\varphi:\mathbb{R}\to \mathbb{R}$​ convex, we have
@@ -217,14 +216,14 @@ where $C_\epsilon=\frac{e}{\left[1 / \epsilon^2\right] \epsilon^2}$.
     **Expectation and Variance of linear comb.**
     $$
     \begin{aligned}
-    &\mathbb{E}(aX+b)=a\mathbb{E}(X)+b\\
-    &\operatorname{Var}(aX+b)=a^2\operatorname{Var}(X)\\
+    &\mathbb{E}(aX+b)=a\mathbb{E}(X)+b\newline
+    &\operatorname{Var}(aX+b)=a^2\operatorname{Var}(X)\newline
     \end{aligned}
     $$
     **Proposition (Ross (e8) p.129, p.191)**: The expectation of function of random variable is given by
     $$
     \begin{aligned}
-    \mathbb{E}[g(X)]&=\sum_xg(x)p(x)\\
+    \mathbb{E}[g(X)]&=\sum_xg(x)p(x)\newline
     \mathbb{E}[g(X)]&=\int_{-\infty}^{\infty}g(x)f(x)dx
     \end{aligned}
     $$
@@ -425,7 +424,6 @@ If $X\sim N(0,1)$, then for $p\ge 1$,
   \sqrt{2 \pi n}\left(\frac{n}{e}\right)^n e^{\frac{1}{12 n+1}}<n !<\sqrt{2 \pi n}\left(\frac{n}{e}\right)^n e^{\frac{1}{12 n}}
   $$
   
-
 - Property 8: for any $x\ge 1/2$, $\Gamma(x)\le 3x$.
 
 #### Sub-Gaussian variable
@@ -438,9 +436,9 @@ $$
 In other words, a random variable is sub-Gaussian if its MGF is upperbounded by an MGF of some Gaussian random variable with variance $\sigma^2$. It should be noted that the parameter $\sigma^2$ is generally not the variance of a subGaussian random variable (it is the variance of a Gaussian that has a larger MGF). If this property holds, we have that:
 $$
 \begin{aligned}
-P(X-\mu \geq t) & \leq \inf _{\lambda>0} E\left(e^{\lambda(X-\mu)}\right) e^{-\lambda t} \\
-& \leq \inf _{\lambda>0} \exp \left(\frac{\lambda^2 \sigma^2}{2}-\lambda t\right) \\
-& \left.=\exp \left(\frac{t^2}{2 \sigma^2}-\frac{t^2}{\sigma^2}\right) \text { (plugging in minimizer } \lambda=t / \sigma^2\right) \\
+P(X-\mu \geq t) & \leq \inf_{\lambda>0} E\left(e^{\lambda(X-\mu)}\right) e^{-\lambda t} \newline
+& \leq \inf_{\lambda>0} \exp \left(\frac{\lambda^2 \sigma^2}{2}-\lambda t\right) \newline
+& \left.=\exp \left(\frac{t^2}{2 \sigma^2}-\frac{t^2}{\sigma^2}\right) \text { (plugging in minimizer } \lambda=t / \sigma^2\right) \newline
 & =\exp \left(\frac{-t^2}{2 \sigma^2}\right)
 \end{aligned}
 $$
@@ -459,7 +457,7 @@ $$
 $$
 (ii) The moments of $X$ satisfy
 $$
-\|X\|_{L^p}=\left(\mathbb{E}|X|^p\right)^{1 / p} \leq K_2 \sqrt{p} \quad \text { for all } p \geq 1 .
+\Vert X\Vert_{L^p}=\left(\mathbb{E}|X|^p\right)^{1 / p} \leq K_2 \sqrt{p} \quad \text { for all } p \geq 1 .
 $$
 (iii) The MGF of $X^2$ satisfies
 $$
@@ -477,9 +475,9 @@ $$
 $$
 **Orlicz Norm** and **Sub-Gaussian Norm**:
 
-Suppose that $\Psi:[0, \infty) \mapsto[0, \infty)$ is a monotone increasing, convex function such that $\Psi(0)=0$ and $\lim _{x \rightarrow \infty} \Psi(x)=\infty$. The **Orlicz space** $L_\psi =L_\psi (\Omega,\Sigma,\mathbb P)$ consists of all random variables $X$ on the probability space $(\Omega,\Sigma,\mathbb P)$ with finite Orlicz norm, i.e., $L_\psi :=\{X:\Vert X\Vert_{\psi}<\infty\}$ where the **Orlicz norm** of a random variable $X$ is given by
+Suppose that $\Psi:[0, \infty) \mapsto[0, \infty)$ is a monotone increasing, convex function such that $\Psi(0)=0$ and $\lim_{x \to \infty} \Psi(x)=\infty$. The **Orlicz space** $L_\psi =L_\psi (\Omega,\Sigma,\mathbb P)$ consists of all random variables $X$ on the probability space $(\Omega,\Sigma,\mathbb P)$ with finite Orlicz norm, i.e., $L_\psi :=\{X:\Vert X\Vert_{\psi}<\infty\}$ where the **Orlicz norm** of a random variable $X$ is given by
 $$
-\|X\|_{\Psi}=\inf \left\{t>0: \mathbb E\left[\Psi\left(\frac{|X|}{t}\right)\right] \leq 1\right\}
+|X|_{\Psi}=\inf \newline{t>0: \mathbb{E}\left[\Psi\left(|X|/t\right)\right] \leq 1\newline}
 $$
 
 It can be shown that this is indeed a norm on the space of random variables for which this quantity is finite. When we put $\psi(x)=x^p$ for $p\ge 1$, the resulting Orlicz space is the classical space $L^p$.  It can also shown that for the choice of function $\psi_2(x)=e^{x^2}-1$, the sub-Gaussian condition:
@@ -488,7 +486,7 @@ $$
 $$
 is equivalent to:
 $$
-\|X\|_{\psi_2} \leq K_4
+\Vert X\Vert_{\psi_2} \leq K_4
 $$
 
 We let this **sub-Gaussian norm** of a sub-Gaussian be specifically denoted as
@@ -498,12 +496,13 @@ $$
  Other restatements of sub-Gaussianities using the norm are given in (2.14)-(2.16):
 $$
 \begin{gathered}
-\mathbb{P}\{|X| \geq t\} \leq 2 \exp \left(-c t^2 /\|X\|_{\psi_2}^2\right) \quad \text { for all } t \geq 0 \\
-\|X\|_{L^p} \leq C\|X\|_{\psi_2} \sqrt{p} \quad \text { for all } p \geq 1 \\
-\mathbb{E} \exp \left(X^2 /\|X\|_{\psi_2}^2\right) \leq 2 \\
-\text{if }\mathbb{E} X=0\text{ then }\mathbb{E} \exp (\lambda X) \leq \exp \left(C \lambda^2\|X\|_{\psi_2}^2\right) \quad\forall \lambda \in \mathbb{R}
+\mathbb{P}\{|X| \geq t\} \leq 2 \exp \left(-c t^2 /\Vert X\Vert_{\psi_2}^2\right) \quad \text { for all } t \geq 0 \newline
+\Vert X\Vert_{L^p} \leq C\Vert X\Vert_{\psi_2} \sqrt{p} \quad \text { for all } p \geq 1 \newline
+\mathbb{E} \exp \left(X^2 /\Vert X\Vert_{\psi_2}^2\right) \leq 2 \newline
+\text{if }\mathbb{E} X=0\text{ then }\mathbb{E} \exp (\lambda X) \leq \exp \left(C \lambda^2\Vert X\Vert_{\psi_2}^2\right) \quad\forall \lambda \in \mathbb{R}
 \end{gathered}
 $$
+
 where $c,C$ are absolute constants. Morover, up to absolute constant factors, $\Vert X\Vert_{\psi_2}$ is the smallest possible number that makes each of these inequalities holds. 
 
 **Examples and non-examples of sub-gaussian r.v.**
@@ -540,7 +539,7 @@ Then apply Stirling's approximation to get a lower bound that decay slower than 
 
 (v) **Exponential** ❌: let $X\sim \mathrm{Exp}(\lambda)$. Then,
 $$
-f(x ; \lambda)= \begin{cases}\lambda e^{-\lambda x} & x \geq 0 \\ 0 & x<0\end{cases}
+f(x ; \lambda)= \begin{cases}\lambda e^{-\lambda x} & x \geq 0 \newline 0 & x<0\end{cases}
 $$
 We have its moment
 $$
@@ -579,9 +578,10 @@ where $C$ is an absolute constant.
 
 **Theorem 2.6.3 (General Hoeffding's inequality)**. Let $X_1, \ldots, X_N$ be independent, mean zero, sub-gaussian random variables, and $a=\left(a_1, \ldots, a_N\right) \in \mathbb{R}^N$. Then, for every $t \geq 0$, we have
 $$
-\mathbb{P}\left\{\left|\sum_{i=1}^N a_i X_i\right| \geq t\right\} \leq 2 \exp \left(-\frac{c t^2}{K^2\|a\|_2^2}\right)
+\mathbb{P}\left[\left|\sum_{i=1}^N a_i X_i\right| \geq t\right] \leq 2 \exp \left(-\frac{c t^2}{K^2\Vert a\Vert_2^2}\right)
 $$
-where $K=\max _i\left\|X_i\right\|_{\psi_2}$​.
+
+where $K=\max_i \Vert X_i\Vert_{\psi_2}$​.
 
 **Theorem 2.6.2**: when $a=(1,\cdots,1)$​​ in Theorem 2.6.3 above.
 
@@ -594,17 +594,21 @@ $$
 where $C$ is an absolute constant.
 
 **Exercise 2.6.5 (Khintchine's inequality).** Let $X_1, \ldots, X_N$ be independent sub-gaussian random variables with zero means and unit variances, and let $a=$ $\left(a_1, \ldots, a_N\right) \in \mathbb{R}^N$. Prove that for every $p \in[2, \infty)$ we have
+
 $$
-\left(\sum_{i=1}^N a_i^2\right)^{1 / 2} \leq\left\|\sum_{i=1}^N a_i X_i\right\|_{L^p} \leq C K \sqrt{p}\left(\sum_{i=1}^N a_i^2\right)^{1 / 2}
-$$
-where $K=\max _i\left\|X_i\right\|_{\psi_2}$ and $C$ is an absolute constant.
-**Exercise 2.6.6 (Khintchine's inequality for $p=1$ ).** Show that in the setting of Exercise 2.6.5, we have
-$$
-c(K)\left(\sum_{i=1}^N a_i^2\right)^{1 / 2} \leq\left\|\sum_{i=1}^N a_i X_i\right\|_{L^1} \leq\left(\sum_{i=1}^N a_i^2\right)^{1 / 2} .
+\left(\sum_{i=1}^N a_i^2\right)^{1 / 2} \le \left\Vert \sum_{i=1}^N a_i X_i\right\Vert_{L^p} \leq C K \sqrt{p}\left(\sum_{i=1}^N a_i^2\right)^{1 / 2}
 $$
 
-Here $K=\max _i\left\|X_i\right\|_{\psi_2}$ and $c(K)>0$ is a quantity which may depend only on $K$.
-Hint: Use the following extrapolation trick. Prove the inequality $\|Z\|_2 \leq\|Z\|_1^{1 / 4}\|Z\|_3^{3 / 4}$ and use it for $Z=\sum a_i X_i$. Get a bound on $\|Z\|_3$ from Khintchine's inequality for $p=3$.
+where $K=\max_i\left\Vert X_i\right\Vert_{\psi_2}$ and $C$ is an absolute constant.
+
+**Exercise 2.6.6 (Khintchine's inequality for $p=1$ ).** Show that in the setting of Exercise 2.6.5, we have
+$$
+c(K)\left(\sum_{i=1}^N a_i^2\right)^{1 / 2} \leq\left\Vert\sum_{i=1}^N a_i X_i\right\Vert_{L^1} \leq\left(\sum_{i=1}^N a_i^2\right)^{1 / 2} .
+$$
+
+Here $K=\max_i\left\Vert X_i\right\Vert_{\psi_2}$ and $c(K)>0$ is a quantity which may depend only on $K$.
+Hint: Use the following extrapolation trick. Prove the inequality $\Vert Z\Vert_2 \leq\Vert Z\Vert_1^{1 / 4}\Vert Z\Vert_3^{3 / 4}$ and use it for $Z=\sum a_i X_i$. Get a bound on $\Vert Z\Vert_3$ from Khintchine's inequality for $p=3$.
+
 **Exercise 2.6.7 (Khintchine's inequality for $p \in(0,2)$ ).** State and prove a version of Khintchine's inequality for $p \in(0,2)$​.
 Hint: Modify the extrapolation trick in Exercise 2.6.6.
 
@@ -625,7 +629,7 @@ $$
 $$
 (ii) The moments of $X$ satisfy
 $$
-\|X\|_{L^p}=\left(\mathbb{E}|X|^p\right)^{1 / p} \leq K_2 p \quad \text { for all } p \geq 1 .
+\Vert X\Vert_{L^p}=\left(\mathbb{E}|X|^p\right)^{1 / p} \leq K_2 p \quad \text { for all } p \geq 1 .
 $$
 (iii) The $M G F$ of $|X|$ satisfies
 $$
@@ -641,9 +645,9 @@ Moreover, if $\mathbb{E} X=0$ then properties $a-d$ are also equivalent to the f
 $$
 \mathbb{E} \exp (\lambda X) \leq \exp \left(K_5^2 \lambda^2\right) \quad \text { for all } \lambda \text { such that }|\lambda| \leq \frac{1}{K_5}
 $$
-**Definition 2.7.5 (Sub-exponential random variables).** A random variable $X$ that satisfies one of the equivalent properties (i)-(iv) Proposition 2.7.1 is called a **sub-exponential random variable**. The sub-exponential norm of $X$, denoted $\|X\|_{\psi_1}$, is defined to be the smallest $K_3$ in property 3. In other words,
+**Definition 2.7.5 (Sub-exponential random variables).** A random variable $X$ that satisfies one of the equivalent properties (i)-(iv) Proposition 2.7.1 is called a **sub-exponential random variable**. The sub-exponential norm of $X$, denoted $\Vert X\Vert_{\psi_1}$, is defined to be the smallest $K_3$ in property 3. In other words,
 $$
-\|X\|_{\psi_1}=\inf \{t>0: \mathbb{E} \exp (|X| / t) \leq 2\} .
+\Vert X\Vert_{\psi_1}=\inf \{t>0: \mathbb{E} \exp (|X| / t) \leq 2\} .
 $$
 
 Sub-gaussian and sub-exponential distributions are closely related. First, any sub-gaussian distribution is clearly sub-exponential.
@@ -657,6 +661,47 @@ $$
 \Vert X-\mathbb E X\Vert_{\psi_1}\le C\Vert X\Vert_{\psi_1}
 $$
 
+### 2.8-2.9 Bernstein's inequality, bounded difference inequality, and Bennett's inequality
+
+**Theorem 2.8.1 (Bernstein's inequality)**
+
+Let $X_1,\cdots,X_N$ be independent mean-zero sub-exponential random vairables. Then, for every $t\ge 0$, we have
+$$
+\mathbb P\left[\left|\sum_{i=1}^NX_i\right|\ge t\right\]\le 2\exp\left(-c \min\left(\frac{t^2}{\sum_{i=1}^N \Vert X_i\Vert_{\psi_1}^2},\frac{t}{\max_i\Vert X_i\Vert_{\psi_i}}\right)\right)
+$$
+ where $c>0$ is an absolute constant and $2$ is due to absolute sign.
+
+**Theorem 8.2 (Bernstein's inequality: restatement)**
+
+Ley those $X_i$ be the same. Let $a=(a_1,\cdots,a_N)\in \mathbb R^N$. Then, for every $t\ge 0$, we have
+$$
+\mathbb P\left\[\left|\sum_{i=1}^Na_iX_i\right|\ge t\right\]\le 2\exp\left(-c \min\left(\frac{t^2}{K^2\Vert a\Vert_2^2},\frac{t}{K \Vert a\Vert_{\infty}}\right)\right)
+$$
+where $K=\max_i\Vert X_i\Vert_{\psi_1}$​.
+
+By plugging in $a_i=1/N$ we get a simpler form (**Corollary 2.8.3**).
+
+**Theorem 2.8.4 (Bernstein's inequality for bounded distributions).** Let $X_1, \ldots, X_N$ be independent, mean zero random variables, such that $\left|X_i\right| \leq K$ all $i$. Then, for every $t \geq 0$, we have
+$$
+\mathbb{P}\left\[\left|\sum_{i=1}^N X_i\right| \geq t\right\] \leq 2 \exp \left(-\frac{t^2 / 2}{\sigma^2+K t / 3}\right) .
+$$
+
+Here $\sigma^2=\sum_{i=1}^N \mathbb{E} X_i^2$​ is the variance of the sum.
+
+**Theorem 2.9.1 (Bounded differences inequality).** Let $X_1, \ldots, X_N$ be independent random variables. ${ }^{10}$ Let $f: \mathbb{R}^n \rightarrow \mathbb{R}$ be a measurable function. Assume that the value of $f(x)$ can change by at most $c_i>0$ under an arbitrary change of $a$ single coordinate of $x \in \mathbb{R}^n$. Then, for any $t>0$, we have
+$$
+\mathbb{P}\{f(X)-\mathbb{E} f(X) \geq t\} \leq \exp \left(-\frac{2 t^2}{\sum_{i=1}^N c_i^2}\right)
+$$
+where $X=\left(X_1, \ldots, X_n\right)$.
+Another result worth mentioning is Bennett's inequality, which can be regarded as a generalization of Chernoff's inequality.
+
+**Theorem 2.9 .2 (Bennett's inequality).** Let $X_1, \ldots, X_N$ be independent random variables. Assume that $\left|X_i-\mathbb{E} X_i\right| \leq K$ almost surely for every $i$. Then, for any $t>0$, we have
+$$
+\mathbb{P}\left\[\sum_{i=1}^N\left(X_i-\mathbb{E} X_i\right) \geq t\right\] \leq \exp \left(-\frac{\sigma^2}{K^2} h\left(\frac{K t}{\sigma^2}\right)\right)
+$$
+
+where $\sigma^2=\sum_{i=1}^N \operatorname{Var}\left(X_i\right)$ is the variance of the sum, and $h(u)=(1+u) \log (1+$ $u)-u$.
+
 ## Exercises
 
 ### Exercise 2.1.4
@@ -668,14 +713,16 @@ $$
 *soln*:
 
 The pdf of $g\sim N(0,1)$ is $p(x)=\frac{1}{\sqrt{2\pi}}e^{-x^2/2}$. We observe that $p'(x)=-x\frac{1}{\sqrt{2\pi}}e^{-x^2/2}=-xp(x)$. By formula (27) (expectation of function of variable), we compute
+
 $$
 \begin{aligned}
-\mathbb{E}(g^2\mathbf{1}_{\{g>t\}})&=\int_t^{\infty}x^2p(x)dx\\
-&=\int_t^{\infty}-xp'(x)dx\\
-&=[-xp(x)]_t^{\infty}+\int_t^{\infty}p(x)dx\\
+\mathbb{E}(g^2\mathbf{1}_{\{g>t\}})&=\int_t^{\infty}x^2p(x)dx\newline
+&=\int_t^{\infty}-xp'(x)dx\newline
+&=[-xp(x)]_t^{\infty}+\int_t^{\infty}p(x)dx\newline
 &=t\frac{1}{\sqrt{2\pi}}e^{-t^2/2}+\mathbb{P}\{g>t\}
 \end{aligned}
 $$
+
 where for the last step we notice that $\lim_{x\to \infty}xp(x)=0$ for $p(x)$ decreases exponentially fast to zero. This proved the equality. To show the inequality is obtained by using Proposition 2.1.2 in HDP.
 
 ### Exercise 2.2.3
@@ -701,8 +748,8 @@ This is equivalent of showing $\ln \cosh(x)\le x^2/2$. Define $f(x)=\ln (\cosh x
 Let each of the voter be $X_i\sim B(\frac{1}{2}+\delta)$. By Theorem 2.2.6 (Hoeffding's inequaity for general bounded random variables), we have
 $$
 \begin{aligned}
-\mathbb{P}\left[\sum_{i=1}^NX_i\le \frac{N}{2}\right]&= \mathbb{P}\left[\sum_{i=1}^N(-X_i)\ge -\frac{N}{2}\right]\\
-&=\mathbb{P}\left[\sum_{i=1}^N((-X_i)-\mathbb{E}(-X_i))\ge -\frac{N}{2}+N\left(\frac{1}{2}+\delta\right)\right]\\
+\mathbb{P}\left[\sum_{i=1}^NX_i\le \frac{N}{2}\right]&= \mathbb{P}\left[\sum_{i=1}^N(-X_i)\ge -\frac{N}{2}\right]\newline
+&=\mathbb{P}\left[\sum_{i=1}^N((-X_i)-\mathbb{E}(-X_i))\ge -\frac{N}{2}+N\left(\frac{1}{2}+\delta\right)\right]\newline
 &\le \exp\left(-\frac{2(N\delta)^2}{N}\right)=\exp(-2N\delta^2)
 \end{aligned}
 $$
@@ -726,16 +773,19 @@ $$
 $$
 \mathbb{E}\exp (-tX_i)\le \frac{1}{t}=\int_0^{\infty}p_i(x)e^{-tx}dx
 $$
+
 and we bound it by its absolute value and use the condition of uniform boundedness of the family,
+
 $$
-\text{RHS}\le \left|\int_0^{\infty}p_i(x)e^{-tx}dx\right|\le \int_0^{\infty}\underbrace{|p_i(x)|}_{\le 1}\underbrace{|e^{-tx}|}_{=e^{-tx}}dx\le\int_0^{\infty}e^{-tx}dx=\left[-\frac{1}{t}e^{-tx}\right]_0^{\infty}=\frac{1}{t}
+\text{RHS}\le \left|\int_0^{\infty}p_i(x)e^{-tx}dx\right|\le \int_0^{\infty}\underbrace{|p_i(x)|}_{\le 1}|e^{-tx}|dx\le\int_0^{\infty}e^{-tx}dx=\left[-\frac{1}{t}e^{-tx}\right]_0^{\infty}=\frac{1}{t}
 $$
+
 **(b)** We mimic the proof of Theorem 2.2.2 (Hoeffding's inequality), i.e., using Markov's inequality and the fact that MGF of sum is product of MGF for independent $X_i$:
 $$
 \begin{aligned}
-\mathbb{P}\left[\sum_{i=1}^N X_i\le \varepsilon N\right]&=\mathbb{P}\left[\exp\sum_{i=1}^N(-tX_i)\ge \exp(-t\varepsilon N)\right]\\
-&\le \frac{\mathbb{E}\left(\exp \sum_{i=1}^N(-tX_i)\right)}{\exp(-t\varepsilon N)}\\
-&=\frac{\prod_{i=1}^N\mathbb{E}\left(\exp (-tX_i)\right)}{\exp(-t\varepsilon N)}\\
+\mathbb{P}\left[\sum_{i=1}^N X_i\le \varepsilon N\right]&=\mathbb{P}\left[\exp\sum_{i=1}^N(-tX_i)\ge \exp(-t\varepsilon N)\right]\newline
+&\le \frac{\mathbb{E}\left(\exp \sum_{i=1}^N(-tX_i)\right)}{\exp(-t\varepsilon N)}\newline
+&=\frac{\prod_{i=1}^N\mathbb{E}\left(\exp (-tX_i)\right)}{\exp(-t\varepsilon N)}\newline
 &\le e^{t\varepsilon N}\prod_{i=1}^N\frac{1}{t}=e^{t\varepsilon N}/t^N
 \end{aligned}
 $$
@@ -747,30 +797,159 @@ We did this when listing examples and non-examples of sub-Gaussians above.
 
 ### Exercise 2.6.5
 
-The first inequality is simply because $\|\bullet\|_{L^2} \leq\|\bullet\|_{L^P}$. As for the second one, by Exercise 1.2 .3 and Hoeffding's inequality (Theorem 2.6.3),
+The first inequality is simply because $\Vert\bullet\Vert_{L^2} \leq\Vert \bullet\Vert_{L^P}$. As for the second one, by Exercise 1.2 .3 and Hoeffding's inequality (Theorem 2.6.3),
 $$
 \begin{aligned}
-\mathbb{E}\left|\sum_{i=1}^N a_i X_i\right|^p & =\int_0^{\infty} p t^{p-1} \mathbb{P}\left\{\left|\sum_{i=1}^N a_i X_i\right|>t\right\} \mathrm{d} t \\
-& \leq 2 p \int_0^{\infty} t^{p-1} \exp \left(-\frac{c t^2}{K^2\|a\|_2^2}\right) \mathrm{d} t \\
-& =p\left(\frac{K\|a\|_2}{\sqrt{c}}\right)^p \int_0^{\infty} s^{p / 2-1} \mathrm{e}^{-s} \mathrm{~d} s \quad=p\left(\frac{K\|a\|_2}{\sqrt{c}}\right)^p \Gamma\left(\frac{p}{2}\right) .
+\mathbb{E}\left|\sum_{i=1}^N a_i X_i\right|^p & =\int_0^{\infty} p t^{p-1} \mathbb{P}\left\[\left|\sum_{i=1}^N a_i X_i\right|>t\right\] \mathrm{d} t \newline
+& \leq 2 p \int_0^{\infty} t^{p-1} \exp \left(-\frac{c t^2}{K^2\Vert a\Vert_2^2}\right) \mathrm{d} t \newline
+& =p\left(\frac{K\Vert a\Vert_2}{\sqrt{c}}\right)^p \int_0^{\infty} s^{p / 2-1} \mathrm{e}^{-s} \mathrm{~d} s \quad=p\left(\frac{K\Vert a\Vert_2}{\sqrt{c}}\right)^p \Gamma\left(\frac{p}{2}\right) .
 \end{aligned}
 $$
 
-It follows that $\left\|\sum_{i=1}^N a_i X_i\right\|_{L^p} /\left(K \sqrt{p}\|a\|_2\right) \leq(p \Gamma(p / 2))^{1 / p} / \sqrt{c p}=O(1)$ by Stirling's formula.
+It follows that $\left\Vert \sum_{i=1}^N a_i X_i\right\Vert_{L^p} /\left(K \sqrt{p}\Vert a\Vert_2\right) \leq(p \Gamma(p / 2))^{1 / p} / \sqrt{c p}=O(1)$ by Stirling's formula.
 
 ### Exercise 2.6.7
 
-The second inequality is simply because $\|\bullet\|_{L^P} \leq\|\bullet\|_{L^2}$. As for the first one, by the Cauchy-Schwartz inequality and Exercise 2.6.5,
+The second inequality is simply because $\Vert \bullet\Vert_{L^P} \leq\Vert \bullet\Vert_{L^2}$. As for the first one, by the Cauchy-Schwartz inequality and Exercise 2.6.5,
 $$
 \begin{aligned}
-\mathbb{E}\left|\sum_{i=1}^N a_i X_i\right|^p & \geq\left(\mathbb{E}\left|\sum_{i=1}^N a_i X_i\right|^2\right)^2 / \mathbb{E}\left|\sum_{i=1}^N a_i X_i\right|^{4-p} \\
-& \geq\|a\|_2^4 /\left(C K \sqrt{4-p}\|a\|_2\right)^{4-p} \quad=c_p(K)^p\|a\|_2^p
+\mathbb{E}\left|\sum_{i=1}^N a_i X_i\right|^p & \geq\left(\mathbb{E}\left|\sum_{i=1}^N a_i X_i\right|^2\right)^2 / \mathbb{E}\left|\sum_{i=1}^N a_i X_i\right|^{4-p} \newline
+& \geq\Vert a\Vert_2^4 /\left(C K \sqrt{4-p}\Vert a\Vert_2\right)^{4-p} \quad=c_p(K)^p\Vert a\Vert_2^p
 \end{aligned}
 $$
 with $c_p(K)=(C K \sqrt{4-p})^{1-4 / p}$​.
 
-### 
+### More Exercises
 
+1. (More on the Sub-Gaussian Condition). Suppose that a random variable satisfies:
+
+$$
+\mathbb E[\exp (\lambda X)] \leq \exp \left(\frac{\lambda^2 \sigma^2}{2}\right) \text { for all } \lambda \in \mathbb{R} 
+$$
+
+(a) Show that $X$ must be mean 0. For this problem, it may be helpful to consider the inequality $1+x \leq e^x$ and a Taylor expansion of the form $\exp \left(\frac{\lambda^2 \sigma^2}{2}\right)=1+\frac{\lambda^2 \sigma^2}{2}+R(\lambda)$, where $R(\lambda)$ is the remainder function satisfying $R(\lambda) / \lambda^2 \rightarrow 0$ as $\lambda \rightarrow 0$ (For this problem, it is okay if you are not rigorous with the remainder, so long as you consider $\lambda \rightarrow 0$ ).
+
+(b) One may alternatively define the sub-Gaussian norm as:
+$$
+\Vert X\Vert_{\psi_2}=\sup_{p \geq 1} \frac{\Vert X\Vert_{L^P}}{\sqrt{p}}
+$$
+Argue that $\Vert X\Vert_{\psi_2} \leq K_2$ is equivalent to $X$ being sub-Gaussian. You may use the sub-Gaussian equivalence theorem in your argument (this sub-question should follow immediately from one of the equivalent notions of sub-Gaussianity).
+
+(c) Using part (b), argue that $\operatorname{Var}(X) \leq 2\Vert X\Vert_{\psi_2}^2$; that is, the variance can be upper-bounded by the sub-Gaussian norm (up to constants). (Note: it is also possible to prove $\operatorname{Var}(X) \leq \sigma^2$, but making the argument rigorous is a little trickier).
+
+*soln*:
+
+(a) Since $e^x$ is a convex function, we by Jensen's inequality see that
+$$
+\exp\left(\lambda \mathbb E X\right)\le \exp\left(\frac{\lambda^2\sigma^2}{2}\right)
+$$
+
+Due to the numerical inequality $1+x\le e^x$ and Taylor expansion given, we have
+
+$$
+\begin{aligned}
+&1+\lambda \mathbb E X\le 1+\frac{\lambda^2 \sigma^2}{2}+R(\lambda)\newline
+\implies &\lambda \mathbb E X\le \frac{\lambda^2 \sigma^2}{2}+R(\lambda)\newline
+\xRightarrow[\lambda\neq 0]{\lambda^2> 0}&\frac{\lambda \mathbb E X}{\lambda^2}\le \frac{\sigma^2}{2}+\frac{R(\lambda)}{\lambda^2}\newline
+\implies &\lim_{\lambda\to 0}\frac{\mathbb E X}{\lambda}\le \frac{\sigma^2}{2}+\underbrace{\lim_{\lambda\to 0}\frac{R(\lambda)}{\lambda^2}}_{=0}=\frac{\sigma^2}{2}
+\end{aligned}
+$$
+
+Since the RHS is finite, the LHS must also be finite. Thus $\mathbb E X$ can only be $0$ to make this possible; otherwise the LHS goes to $\infty$.
+
+(b):
+$$
+\begin{aligned}
+&\Vert X\Vert_{\psi_2}:=\sup_{p\ge 1}\frac{\Vert X\Vert_{L^p}}{\sqrt{p}}\le K_2\newline
+\iff &\forall p\ge 1,\; \Vert X\Vert_{L^p}\le K_2\sqrt{p}\newline
+\iff &X\text{ is sub-Gaussian due to second characterization of sub-Gaussianity}
+\end{aligned}
+$$
+
+where for the first $\iff$, use the fact that $\sup$ is an upper bound to show $\implies$ and the fact that it is the smallest upper bound to show $\Longleftarrow$.
+
+(c): We proved in (a) that $X$ has $\mathbb E X=0$, so $\mathrm{Var}(X)=\mathbb E (X^2) - (\mathbb E X)^2=\mathbb E (X^2)$. Now notice that
+$$
+\sqrt{2}\Vert X\Vert_{\psi^2}=\sqrt{2}\sup_{p\ge 1}\frac{\Vert X\Vert_{L^p}}{\sqrt{p}}\ge \sqrt{2}\frac{\Vert X\Vert_{L^2}}{\sqrt{2}}=\Vert X\Vert_{L^2}=(\mathbb E |X|^2)^{1/2}
+$$
+
+Thus
+$$
+2\Vert X\Vert_{\psi^2}^2\ge E(X^2)=\mathrm{Var}(X)
+$$
+
+2. 
+
+(a): For $X \sim N(0,1)$, show that the MGF of $X^2$ is finite only in a bounded neighborhood of $0$.
+
+(b): Suppose that $\mathbb E\left[\exp \left(\lambda^2 X^2\right)\right] \leq \exp \left(\lambda^2 K^2\right)$ for some $K>0$ for all $\lambda \in \mathbb{R}$ opposed to a bounded interval as in condition (iv). Show that this implies $X$ is bounded with probability 1 (Hint: consider $P(X \geq t)$ for appropriately large $t$ as $\lambda \rightarrow \infty)$.
+
+*soln*:
+
+(a): $X \sim N(0,1)$ implies that $X^2\sim \chi_1^2$. The MGF of $\mathbb E(e^{\lambda X})$ of $X^2$ exists only when $\lambda <\frac{1}{2}$ 
+
+(in the sense that the integral diverges otherwise; see [link](https://proofwiki.org/wiki/Moment_Generating_Function_of_Chi-Squared_Distribution).)
+
+When $\lambda<\frac{1}{2}$, it exists and equals to $(1-2\lambda)^{-1/2}$. Therefore, the MGF is finite only in a bounded neighborhood of $0$.
+
+(b): Let $\varepsilon>0$ be given. By Chernoff's inequality,
+$$
+\mathbb{P}\{|X| \geq \sqrt{K+\varepsilon}\}=\mathbb{P}\left\[X^2 \geq K+\varepsilon\right\] \leq \inf_{\lambda \in \mathbb{R}} \mathrm{e}^{-\lambda^2(K+\varepsilon)} \mathbb{E} \exp \left(\lambda^2 X^2\right) \leq \inf_{\lambda \in \mathbb{R}} \mathrm{e}^{-\lambda^2 \varepsilon}=0 .
+$$
+
+Therefore, $\mathbb{P}\{|X| \leq \sqrt{K}\}=\lim _{n \rightarrow \infty} \mathbb{P}\left\[|X|<\sqrt{K+n^{-1}}\right\]=1$.
+
+3. (Concentration of Poisson Random Variables). For the following problem, you may use the fact that the MGF of $\operatorname{Poisson}(\mu)$ is given by:
+
+$$
+M_X(\lambda)=\exp \left(\mu\left(e^\lambda-1\right)\right)
+$$
+
+(a): Show that Poisson$(\mu)$ is not a sub-Gaussian distribution.
+
+(b): Recall that in a Chernoff bound argument, one considers the upper bound:
+$$
+P(X-\mu \geq t) \leq \inf_{\lambda>0} E\left[e^{\lambda(X-\mu)}\right] e^{-\lambda t}
+$$
+
+What is the optimal value of $\lambda$ for $X \sim \operatorname{Poisson}(\mu)$?
+
+*soln*:
+
+(a): By the first characterization of the sub-Gaussianity, $X$ is sub-Gaussian iff for some constant $K_1$,
+$$
+\mu(e^\lambda-1)\le \lambda^2K_1^2,\quad \lambda\in \mathbb R
+$$
+
+
+Note that the Taylor expansion of $e^\lambda$ at $0$ gives
+$$
+e^\lambda=\sum_{n=0}^{\infty} \frac{\lambda^n}{n !}=1+\lambda+\frac{\lambda^2}{2 !}+\frac{\lambda^3}{3 !}+\cdots,\quad \lambda\in \R
+$$
+
+So the LHS is
+$$
+\mu\left(\lambda+\frac{\lambda^2}{2 !}+\frac{\lambda^3}{3 !}+\cdots\right)
+$$
+
+which grows faster than $K_1^2\lambda^2$:
+$$
+\lim_{\lambda\to \infty}\frac{\mu\left(\lambda+\frac{\lambda^2}{2 !}+\frac{\lambda^3}{3 !}+\cdots\right)}{\lambda^2 K_1^2}=\frac{\mu}{K_2^2}\lim_{\lambda\to \infty}\frac{1}{\lambda}+\frac{1}{2!}+\frac{\lambda}{3!}+\cdots=\infty
+$$
+
+(b): Observe that
+$$
+\begin{aligned}
+P(X-\mu \geq t) &\leq \inf_{\lambda>0} \mathbb E\left[e^{\lambda(X-\mu)}\right] e^{-\lambda t}\newline
+&=\inf_{\lambda>0}\mathbb E [e^{\lambda X}]e^{-\lambda \mu-\lambda t}\newline
+&=\inf_{\lambda>0}e^{\mu e^\lambda -1}e^{-\lambda \mu-\lambda t}
+\end{aligned}
+$$
+
+Since $e^{x}$ is an increasing function, we can find the optimal value attaining the minimum of $\mu e^\lambda -1-\lambda \mu-\lambda t$ by setting the derivative to zero:
+$$
+0=\frac{d\left(\mu e^\lambda -1-\lambda \mu-\lambda t\right)}{d \lambda}=\mu e^{\lambda}-\mu-t\Rightarrow \lambda=\log \frac{\mu+t}{\mu}
+$$
 
 
 
