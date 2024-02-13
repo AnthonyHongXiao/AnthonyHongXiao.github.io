@@ -4,6 +4,8 @@ date = "2024-01-14T12:01:56+08:00"
 tags = ["probability"]
 +++
 
+# High-Dimensional Probability and Statistics I
+
 This file is for the notes and exercises for the book Roman Vershynin's  [High-Dimensional Probability](/pdfs/HDP-book.pdf), one of the references used in Prof Lunde's Math5440. The other references are Ramon van Handel's [Probability in High Dimension](\pdfs\PHD-book.pdf) and Martin J.Wainwright's [High-Dimensional Statistics](/pdfs/HDS-book.pdf).
 
 Errata and update of HDP: [errata](/pdfs/Vershynin-Errata-2020.pdf), [update](/pdfs/Vershynin-Updates-2020.pdf).
@@ -453,7 +455,7 @@ In what follows, let $K_i$ be the sub-Gaussian constant associated with the $i$-
 
 (i) The tails of $X$ satisfy
 $$
-\mathbb{P}\{|X| \geq t\} \leq 2 \exp \left(-t^2 / K_1^2\right) \quad \text { for all } t \geq 0 .
+\mathbb{P}[|X| \geq t] \leq 2 \exp \left(-t^2 / K_1^2\right) \quad \text { for all } t \geq 0 .
 $$
 (ii) The moments of $X$ satisfy
 $$
@@ -461,17 +463,17 @@ $$
 $$
 (iii) The MGF of $X^2$ satisfies
 $$
-\mathbb{E} \exp \left(\lambda^2 X^2\right) \leq \exp \left(K_3^2 \lambda^2\right) \quad \text { for all } \lambda \text { such that }|\lambda| \leq \frac{1}{K_3} \text {. }
+\mathbb{E} [\exp \left(\lambda^2 X^2\right)] \leq \exp \left(K_3^2 \lambda^2\right) \quad \text { for all } \lambda \text { such that }|\lambda| \leq \frac{1}{K_3} \text {. }
 $$
 (iv) The MGF of $X^2$ is bounded at some point, namely
 $$
-\mathbb{E} \exp \left(X^2 / K_4^2\right) \leq 2 .
+\mathbb{E} [\exp \left(X^2 / K_4^2\right)] \leq 2 .
 $$
 
 Moreover, if $\mathbb{E} X=0$ then properties $i$-iv are also equivalent to the following one.
 (v) The MGF of $X$ satisfies
 $$
-\mathbb{E} \exp (\lambda X) \leq \exp \left(K_5^2 \lambda^2\right) \quad \text { for all } \lambda \in \mathbb{R}
+\mathbb{E} [\exp (\lambda X)] \leq \exp \left(K_5^2 \lambda^2\right) \quad \text { for all } \lambda \in \mathbb{R}
 $$
 **Orlicz Norm** and **Sub-Gaussian Norm**:
 
@@ -511,7 +513,7 @@ where $c,C$ are absolute constants. Morover, up to absolute constant factors, $\
 
 (ii) **Bernoulli** ☑️: Let $X$ be a random variable with symmetric Bernoulli distribution. Since $|X|=1$, it follows that $X$ is a sub-Gaussian random variable with $\Vert X\Vert_{\psi_2}=\frac{1}{\sqrt{\ln 2}}$. Just note that when $t\ge 1$, we have
 $$
-\mathbb P[|X|\ge t]=0\le 2\exp(-t^2/K^2_1)
+\mathbb P[|X|\ge t\]=0\le 2\exp(-t^2/K^2_1)
 $$
 When $t<1$, we have
 $$
@@ -701,6 +703,30 @@ $$
 $$
 
 where $\sigma^2=\sum_{i=1}^N \operatorname{Var}\left(X_i\right)$ is the variance of the sum, and $h(u)=(1+u) \log (1+$ $u)-u$.
+
+### Tensorization of Variance
+
+In what follows, let $X_1, \ldots, X_n$ be independent but not necessarily identically distributed random variables. Furthermore, let:
+$$
+\operatorname{Var}_i f\left(x_1, \cdots, x_n\right)=\mathrm{Var}(f(x_1, \cdots, X_i, \cdots, x_n))
+$$
+
+denote the variance of $f\left(x_1, \ldots, x_n\right)$ treating all random variables other than $X_i$ as fixed. We have the following inequality:
+
+**Theorem 1 (Tensorization of Variance)**. Suppose that $X_1, \ldots, X_n$ are independent random variables. Then,
+$$
+\operatorname{Var}\left(f\left(X_1, \ldots, X_n\right)\right) \leq \sum_{i=1}^n \mathbb{E}\left[\operatorname{Var}_i f\left(x_1, \ldots, x_n\right)\right]
+$$
+
+We can combine this result with the variance bound for bounded random variables to derive an inequality that is easier to apply. Suppose that for each fixed $x_{-i}=\left(x_1, \ldots x_{i-1}, x_{i+1}, \ldots, x_n\right)$, we have that:
+$$
+\sup_{x, y}|f\left(x_1, \ldots, x_{i-1}, x, x_{i+1}, \ldots, x_n\right)-f\left(x_1, \ldots, x_{i-1}, y, x_{i+1}, \ldots, x_n\right)| \leq D_i f\left(x_{-i}\right)
+$$
+
+**Corollary 1 (Bounded Difference Inequality for Variance)**. Suppose that $X_1, \ldots, X_n$ are independent and (1) holds. Then,
+$$
+\operatorname{Var}\left(f\left(X_1, \ldots, X_n\right)\right) \leq \frac{1}{4} \sum_{i=1}^n \mathbb{E}\left[\left(D_i f\left(x_{-i}\right)\right)^2\right]
+$$
 
 ## Exercises
 
