@@ -1,22 +1,23 @@
 # Xiao (Anthony) Hong
 
 ## About Me
-{{< imageRight src="/images/Learning_Singular_Homology.jpg" alt="Learning singular homology in a bar. Photo credit: Jessie." caption="Learning singular homology in a bar. Photo credit: Jessie." width="20%" >}}
-Hello! I am Anthony, a junior at Washington University in St. Louis (WUSTL), where I transitioned from an early passion for architecture into the intricate world of geometric structures. Geometry is not only the theoretical foundation of civil engineering but also a powerful tool to showcase the uniqueness of data. I seek to understand how structures inherent in real-world images can be encoded as data and subsequently take on a geometric and visual form. I also study implications of geometries, manifolds and grpahs, on information and data in general.
+{{< imageRight src="/images/photos/Learning_Singular_Homology.jpg" alt="Learning singular homology in a bar. Photo credit: Jessie." caption="Learning singular homology in a bar. Photo credit: Jessie." width="20%" >}}
+Hello! I am Anthony, a junior at **Washington University in St. Louis (WUSTL)**, where I transitioned from an early passion for architecture into the intricate world of geometric structures. **Geometry** is not only the theoretical foundation of civil engineering but also a powerful tool to showcase the uniqueness of **data**. I seek to understand how structures inherent in real-world images can be encoded as data and subsequently take on a geometric and visual form. I also study implications of geometries, manifolds and grpahs, on information and data in general.
 
 I find solace in the rich symphonies of Brahms and the leisures that come with travel. My recent academic interests include algorithmic algebraic geometry/tropical geometry, harmonic analysis on groups, and surface reconstruction for imaging.
 
 ### Contact
-- Email: hong[dot]x@wustl[dot]edu
-- LinkedIn: [https://www.linkedin.com/in/xiao-hong-anthony/](https://www.linkedin.com/in/xiao-hong-anthony/)
+- **Email: hong[dot]x@wustl[dot]edu**
+- **LinkedIn: [https://www.linkedin.com/in/xiao-hong-anthony/](https://www.linkedin.com/in/xiao-hong-anthony/)**
 
 <br>
 
 ## Education
 - High School Diploma, Shenzhen Middle School, 2017-2021;
+{{< imageRight src="/images/photos/NY.jpg" alt="Photo: New York. 12/2022." caption="Photo: New York. 12/2022." width="20%" >}}
 - Bachelor of Science in Economics & Computer Science, Second Major in Mathematics, Washington University in St. Louis, 2021-2025.
 
-Major GPA: 4.00/4.00; Total GPA: 3.99/4.00
+**Major GPA: 4.00/4.00; Total GPA: 3.99/4.00**
 
 ### Selected Courses:
 **Graduate courses**:
@@ -24,14 +25,14 @@ Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Me
 
 **Undergraduate courses**: Math494 Mathematical Statistics (A+); Math350 Dynamical System and Chaos (A); CSE417T Introduction to Machine Learning (A); Econ4011 Microecon (A+); Econ4021 Macroecon (A+); Econ413 Econometrics (A+).
 
-{{< imageRight src="/images/Uchi_Midstates_Consortium.jpg" alt="Uchi Midstates Consortium" caption="Midstates Consortium at Uchi" width="20%" >}}
+{{< imageRight src="/images/photos/Uchi_Midstates_Consortium.jpg" alt="Uchi Midstates Consortium" caption="Midstates Consortium at Uchi" width="20%" >}}
 
 **In progress**: CSE546T Computational Geometry; CSE347 Analysis of Algorithm; Math547 Combinatorics of Polytopes; Math5032 Algebra II; Math 5021 Complex Analysis II; Math5440 Big Data.
 
 <br>
 
 ## Experience
-- Speaker at Midstates Consortium for Math and Science 23 at University of Chicago.
+- Speaker at Midstates Consortium for Math and Science 23 ([session I.B.3](https://www.mathsciconsortium.org/uncategorized/2023-undergraduate-research-symposium-in-physical-sciences-mathematics-and-computer-science-at-university-of-chicago/)) at University of Chicago.    ([beamer presentation](pdfs/presentation_on_Ollivier_Ricci_Curvature.pdf))
 - Grading Math4111 Analysis, Math4171 Topology
 - TA Math5046 Differential Topology.
 
@@ -39,10 +40,10 @@ Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Me
 - Math586 Network Statistics.
 - Math547 Combinatorics of Polytopes.
 - Math497 Topic in Group Theory.
-- UNC Undergraduate Analysis and PDE Seminar FL22-SP24.
+- [UNC Undergraduate Analysis and PDE Seminar](https://tarheels.live/waves/analysis-and-pde-seminar/) FL22-SP24.
 - WashU Reading Group SP23: Algebraic Geometry.
 - WashU Reading Group FL23: Representation Theory.
-{{< imageRight src="/images/Aryclic_Painting_Urbanity_and_Space.jpg" alt="Aryclic Painting: Urbanity and Space. Drawn in 8/2020." caption="Aryclic Painting: Urbanity and Space. Drawn in 8/2020." width="20%" >}}
+{{< imageRight src="/images/portfolio/Aryclic_Painting_Urbanity_and_Space.jpg" alt="Aryclic Painting: Urbanity and Space. Drawn in 8/2020." caption="Aryclic Painting: Urbanity and Space. Drawn in 8/2020." width="20%" >}}
 - StanCon 2023 Workshop:
   [Convention on Stan Programming and Bayesian Modeling](https://mc-stan.org/events/stancon2023/#tutorials)
 - WUSTL Metamorphic Architecture Workshop 2019, Dean Heather Woofter's tutee.
@@ -68,6 +69,8 @@ The study, using the CHARLS dataset and techniques like OLS and ordered probit m
 **07/2023-Now**
 
 This is a summer research with Prof. Renato Feres beginning in July 2023. The study aims to use efficient algorithms to compute Ollivier-Ricci curvature of Cayley graphs of certain groups and find out some patterns. Currently, efficient optimization algorithm is found for Cayley graph and theoretical justifications for interesting patterns about curvature are concluding.
+
+[beamer presentation](pdfs/presentation_on_Ollivier_Ricci_Curvature.pdf)
 
 There is also a second project I am working with Prof. Feres. The project studies the Wasserstein distance of point measures that evolved along their geodesics after initiations.
 
@@ -109,19 +112,25 @@ Aiming for high-schooler reading, the paper presents the process of solving a ma
 A summary of curvatures, isometry groups, and automorphism groups of 3 Riemann Surfaces $\hat{\mathbb{C}}, \mathbb{C}, \triangle$ in uniformization theorem.
 [Paper Link](/pdfs/497_A_Note_on_Algebraic_and_Geometric_Characteristics_of_Archetypal_Riemann_Surfaces.pdf)
 
+[Presentation: An Exposition of Modernism in Geometry and Physics](https://docs.google.com/presentation/d/1o8KRS4pxbBGSSJmRdzsk2t1VcwMVyEX8/edit?usp=sharing&ouid=100293676418265540630&rtpof=true&sd=true)
+
 <br>
 <br>
 <br>
 
 ## Gallery
 
-{{< figure src="/images/Critique.jpg" caption="Final critique, Metamorphic Workshop 2019." height="70%" width="70%" class="imagecenter" >}}
+{{< figure src="/images/portfolio/Critique.jpg" caption="Final critique, Metamorphic Workshop 2019." height="70%" width="70%" class="imagecenter" >}}
 
-{{< figure src="/images/Model_Market-Pavilion_Continuum(detail)_Metamorphic_Workshop.jpg" caption="Market-Pavilion Continuum (detail), Metamorphic Workshop 2019." height="80%" width="80%" class="imagecenter" >}}
+{{< figure src="/images/portfolio/Model_Market-Pavilion_Continuum(detail)_Metamorphic_Workshop.jpg" caption="Market-Pavilion Continuum (detail), Metamorphic Workshop 2019." height="80%" width="80%" class="imagecenter" >}}
 
-{{< figure src="/images/Model_The_Memory_Museum.jpg" caption="Model: The Memory Museum. Made in 12/2019." height="80%" width="80%" class="imagecenter" >}}
+{{< figure src="/images/portfolio/Model_The_Memory_Museum.jpg" caption="Model: The Memory Museum. Made in 12/2019." height="80%" width="80%" class="imagecenter" >}}
 
-{{< figure src="/images/Oil_Painting_Oblivion.jpg" caption="Oil Painting: Oblivion. Drawn in 7/2020." height="60%" width="60%" class="imagecenter" >}}
+{{< figure src="/images/photos/SZ.jpg" caption="Photo: Shenzhen Airport. 8/2022." height="60%" width="80%" class="imagecenter" >}}
+
+{{< figure src="/images/portfolio/Oil_Painting_Oblivion.jpg" caption="Oil Painting: Oblivion. Drawn in 7/2020." height="60%" width="60%" class="imagecenter" >}}
+
+
 
 
 
