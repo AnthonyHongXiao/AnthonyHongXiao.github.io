@@ -32,9 +32,7 @@ Final project on cross-validation on network with Aaron Luo.
 ## SP23 Math5046 Differential Topology, Prof. Roberts
 We used John M. Lee's *Introduction to Smooth Manifold* (e2). I am AI and grader for this course in SP24 with Prof. Roberts again, this time using Tu's *Introduction to Manifold* (e2).
 
-### [Lecture Note (before Lie Derivative)](/pdfs/5046_note1.pdf)
-
-### [Lecture Note (starts from Lie Derivative)](/pdf/5046_note2.pdf)
+### [Lecture Note (files too large to upload via github)](https://drive.google.com/drive/folders/1jVZB_Hl3rKbQycN0tSNvaM59Dfhr9HYE?usp=sharing)
 
 ### [Homework soln](https://drive.google.com/drive/folders/1GZ0SFArJ0su1If913UX1wHZrGDyUwOaz?usp=sharing)
 
