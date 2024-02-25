@@ -30,7 +30,7 @@ Final project on cross-validation on network with Aaron Luo.
 
 {{< imageRight src="/images/Ax_signature.jpg" alt="pianist Emaneul Ax's signature on Lee's Intro to SM" caption="pianist Emaneul Ax's signature on Lee's Intro to SM" height="10%" width="22%" >}}
 ## SP23 Math5046 Differential Topology, Prof. Roberts
-We used John M. Lee's *Introduction to Smooth Manifold* (e2). I am AI and grader for this course in SP24 with Prof. Roberts again, this time using Tu's *Introduction to Manifold* (e2).
+We used John M. Lee's *Introduction to Smooth Manifold* (e2). I am AI and grader for this course in SP24 with Prof. Roberts again, this time using Tu's *Introduction to Manifold* (e2). Some other texts are also very interesting, including a classical little book Milnor's *Topology from the Differentiable Viewpoint* and *Smooth Manifolds and Observables* by a group named themselves Jet Nestruev.
 
 ### [Lecture Note (files too large to upload via github)](https://drive.google.com/drive/folders/1jVZB_Hl3rKbQycN0tSNvaM59Dfhr9HYE?usp=sharing)
 

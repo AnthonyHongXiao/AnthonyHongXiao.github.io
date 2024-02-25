@@ -103,6 +103,8 @@ A paper correcting and reestablishing the proof of equivalence between the Hex t
 
 Aiming for high-schooler reading, the paper presents the process of solving a mathematical problem and the use of intuition in solving the 2-dimensional Necklace division problem using the Borsuk-Ulam Theorem.
 [Paper Link](/pdfs/4181_Necklace_Problem.pdf)
+
+Note: an interesting little book is [Using the Borsuk-Ulam Theorem](https://kam.mff.cuni.cz/~matousek/akt.html).
 <!---------------------------- seperation line ---------------------------->
 
 ### 5. A Note about Algebraic and Geometric Characteristics of Archetypal Riemann Surfaces
