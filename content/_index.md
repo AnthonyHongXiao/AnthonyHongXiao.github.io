@@ -116,6 +116,8 @@ A summary of curvatures, isometry groups, and automorphism groups of 3 Riemann S
 
 [Presentation: An Exposition of Modernism in Geometry and Physics](https://docs.google.com/presentation/d/1o8KRS4pxbBGSSJmRdzsk2t1VcwMVyEX8/edit?usp=sharing&ouid=100293676418265540630&rtpof=true&sd=true)
 
+A good little book is A.B. Sossinsky's [Geometries](https://bookstore.ams.org/stml-64/), classifying subgroups of $\text{SO}(3)$ and $\text{Isom}(\mathbb{R}^2)$ for Platonic bodies and tillings and going through plane, spherical, hyperbolic, and projective geometry.
+
 <br>
 <br>
 <br>
