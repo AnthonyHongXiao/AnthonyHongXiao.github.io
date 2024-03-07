@@ -52,7 +52,16 @@ We used John M. Lee's *Introduction to Smooth Manifold* (e2). I am AI and grader
 <br>
 <br>
 
-## 6. SP22 Math350 Dynamical System, Prof. McCarthy
+## 6. SP24 Math547 Topics in Geometry: Theory of Polytopes, Prof. Laura Escobar
+{{< imageRight src="/images/courses/conv_of_S3.png" alt="permutohedron conv(S3)" caption="permutohedron conv(S3)" height="12%" width="25%" >}}
+
+This is a topic course for polytopes. Topics include various types of polytopes, simple polytopes, integral polytopes, permutohedrons, zonotopes, etc.; their representations, by vertices and inequalities; and their characterizations by graphs, discrete volumes, etc.
+
+The following lecture note also includes my final project, Fourier analysis on polytopes.
+
+### [Lecture Note](/pdfs/Theory_of_Polytopes.pdf)
+
+## 7. SP22 Math350 Dynamical System, Prof. McCarthy
 This is a temporarily shelved project because differential equations and dynamical systems are a broad field involving many aspects. Currently, I have only organized some theories of linear ordinary differential equations.
 
 ### [Lecture Note](/pdfs/350_Ordinary_Differential_Equations.pdf)
