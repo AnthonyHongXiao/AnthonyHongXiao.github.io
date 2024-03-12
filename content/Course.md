@@ -17,6 +17,8 @@ Thanks to Albert Peng for his permission to edit his tex file of Math5031 and al
 ## 2. FL23-SP24 Math5021-5022 Complex Analysis I-II, Prof. Martinkainen
 I transcribe Prof. Martinkainen's written manuscripts into latex file, with several tikz illustrations.
 
+I also add some useful remarks made by Prof. Steven Krantz in undergraduate complex analysis course Math416.
+
 ### [Math5021-22 Lecture Note](/pdfs/5021-5022_Complex_Analysis.pdf)
 
 {{< figure src="/images/courses/Cayley_map.png" caption="Cayley map" height="40%" width="65%" class="imagecenter" >}}
