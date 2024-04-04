@@ -64,8 +64,9 @@ The following lecture note also includes my final project, Fourier analysis on p
 ### [Lecture Note](/pdfs/Theory_of_Polytopes.pdf)
 
 ## 7. SP22 Math350 Dynamical System, Prof. McCarthy
-This is a temporarily shelved project because differential equations and dynamical systems are a broad field involving many aspects. Currently, I have only organized some theories of linear ordinary differential equations.
+Dynamical systems can be defined as broadly as a semigroup $G$ action on a manifold $M$. Primary examples are $G=\mathbb{Z}$ (iterated maps) and $G=\mathbb{R}$ (flows and differential equations). In this Lecture note, I begin with a summary of classical ode theory partly from the summer course taught by Soumya Sinha Babu in 2021 (and also from various references (see bibliography in the pdf.)) and then use Prof. McCarthy's Math350 (SP22) where we used Strogatz's textbook as a source for supplementary examples to a more systematic approach to dynamics, chaos, and fractals, etc. See also my reading in Measures, Dimensions, and Analytic Capacities for geometry of fractals. The last part of the note is on analysis and dynamics on Riemann surfaces.
 
-### [Lecture Note](/pdfs/350_Ordinary_Differential_Equations.pdf)
+
+### [Lecture Note](/pdfs/Dynamics.pdf)
 
 {{< figure src="/images/courses/attractor.jpg" caption="Lorenz system using Matlab" height="40%" width="65%" class="imagecenter" >}}
