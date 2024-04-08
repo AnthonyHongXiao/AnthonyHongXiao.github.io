@@ -12,4 +12,4 @@ Exercises solns for HDP: [soln](https://zhuanlan.zhihu.com/p/338822722).
 
 Exercises solns for HDS: [soln](https://high-dimensional-statistics.github.io/).
 
-# 3. Random Vectors in High Dimensions
+# 

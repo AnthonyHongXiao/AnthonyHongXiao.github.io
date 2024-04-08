@@ -4,7 +4,7 @@ date = "2024-01-14T12:01:56+08:00"
 tags = ["probability"]
 +++
 
-This file is for the notes and exercises for the book Roman Vershynin's  [High-Dimensional Probability](/pdfs/HDP-book.pdf), one of the references used in Prof Lunde's Math5440. The other references are Ramon van Handel's [Probability in High Dimension](\pdfs\PHD-book.pdf) and Martin J.Wainwright's [High-Dimensional Statistics](/pdfs/HDS-book.pdf).
+This file is the first of the two for the notes and exercises in the book Roman Vershynin's [High-Dimensional Probability](/pdfs/HDP-book.pdf), one of the references used in Prof Lunde's Math5440. The other references are Ramon van Handel's [Probability in High Dimension](\pdfs\PHD-book.pdf) and Martin J.Wainwright's [High-Dimensional Statistics](/pdfs/HDS-book.pdf). The file contains chapter 0,1,2,3,4. The second file will contain chapter 5,7,8. Some topics will be singled out to become files of their own.
 
 Errata and update of HDP: [errata](/pdfs/Vershynin-Errata-2020.pdf), [update](/pdfs/Vershynin-Updates-2020.pdf).
 
@@ -667,7 +667,7 @@ $$
 
 Let $X_1,\cdots,X_N$ be independent mean-zero sub-exponential random vairables. Then, for every $t\ge 0$, we have
 $$
-\mathbb P\left[\left|\sum_{i=1}^NX_i\right|\ge t\right\]\le 2\exp\left(-c \min\left(\frac{t^2}{\sum_{i=1}^N \Vert X_i\Vert_{\psi_1}^2},\frac{t}{\max_i\Vert X_i\Vert_{\psi_i}}\right)\right)
+\mathbb P\left[\left|\sum_{i=1}^NX_i\right|\ge t\right]\le 2\exp\left(-c \min\left(\frac{t^2}{\sum_{i=1}^N \Vert X_i\Vert_{\psi_1}^2},\frac{t}{\max_i\Vert X_i\Vert_{\psi_i}}\right)\right)
 $$
  where $c>0$ is an absolute constant and $2$ is due to absolute sign.
 
@@ -675,7 +675,7 @@ $$
 
 Ley those $X_i$ be the same. Let $a=(a_1,\cdots,a_N)\in \mathbb R^N$. Then, for every $t\ge 0$, we have
 $$
-\mathbb P\left\[\left|\sum_{i=1}^Na_iX_i\right|\ge t\right\]\le 2\exp\left(-c \min\left(\frac{t^2}{K^2\Vert a\Vert_2^2},\frac{t}{K \Vert a\Vert_{\infty}}\right)\right)
+\mathbb P\left[\left|\sum_{i=1}^Na_iX_i\right|\ge t\right]\le 2\exp\left(-c \min\left(\frac{t^2}{K^2\Vert a\Vert_2^2},\frac{t}{K \Vert a\Vert_{\infty}}\right)\right)
 $$
 where $K=\max_i\Vert X_i\Vert_{\psi_1}$​.
 
@@ -683,7 +683,7 @@ By plugging in $a_i=1/N$ we get a simpler form (**Corollary 2.8.3**).
 
 **Theorem 2.8.4 (Bernstein's inequality for bounded distributions).** Let $X_1, \ldots, X_N$ be independent, mean zero random variables, such that $\left|X_i\right| \leq K$ all $i$. Then, for every $t \geq 0$, we have
 $$
-\mathbb{P}\left\[\left|\sum_{i=1}^N X_i\right| \geq t\right\] \leq 2 \exp \left(-\frac{t^2 / 2}{\sigma^2+K t / 3}\right) .
+\mathbb{P}\left[\left|\sum_{i=1}^N X_i\right| \geq t\right] \leq 2 \exp \left(-\frac{t^2 / 2}{\sigma^2+K t / 3}\right) .
 $$
 
 Here $\sigma^2=\sum_{i=1}^N \mathbb{E} X_i^2$​ is the variance of the sum.
@@ -697,7 +697,7 @@ Another result worth mentioning is Bennett's inequality, which can be regarded a
 
 **Theorem 2.9 .2 (Bennett's inequality).** Let $X_1, \ldots, X_N$ be independent random variables. Assume that $\left|X_i-\mathbb{E} X_i\right| \leq K$ almost surely for every $i$. Then, for any $t>0$, we have
 $$
-\mathbb{P}\left\[\sum_{i=1}^N\left(X_i-\mathbb{E} X_i\right) \geq t\right\] \leq \exp \left(-\frac{\sigma^2}{K^2} h\left(\frac{K t}{\sigma^2}\right)\right)
+\mathbb{P}\left[\sum_{i=1}^N\left(X_i-\mathbb{E} X_i\right) \geq t\right] \leq \exp \left(-\frac{\sigma^2}{K^2} h\left(\frac{K t}{\sigma^2}\right)\right)
 $$
 
 where $\sigma^2=\sum_{i=1}^N \operatorname{Var}\left(X_i\right)$ is the variance of the sum, and $h(u)=(1+u) \log (1+$ $u)-u$.
@@ -824,7 +824,7 @@ We did this when listing examples and non-examples of sub-Gaussians above.
 The first inequality is simply because $\Vert\bullet\Vert_{L^2} \leq\Vert \bullet\Vert_{L^P}$. As for the second one, by Exercise 1.2 .3 and Hoeffding's inequality (Theorem 2.6.3),
 $$
 \begin{aligned}
-\mathbb{E}\left|\sum_{i=1}^N a_i X_i\right|^p & =\int_0^{\infty} p t^{p-1} \mathbb{P}\left\[\left|\sum_{i=1}^N a_i X_i\right|>t\right\] \mathrm{d} t \newline
+\mathbb{E}\left|\sum_{i=1}^N a_i X_i\right|^p & =\int_0^{\infty} p t^{p-1} \mathbb{P}\left[\left|\sum_{i=1}^N a_i X_i\right|>t\right] \mathrm{d} t \newline
 & \leq 2 p \int_0^{\infty} t^{p-1} \exp \left(-\frac{c t^2}{K^2\Vert a\Vert_2^2}\right) \mathrm{d} t \newline
 & =p\left(\frac{K\Vert a\Vert_2}{\sqrt{c}}\right)^p \int_0^{\infty} s^{p / 2-1} \mathrm{e}^{-s} \mathrm{~d} s \quad=p\left(\frac{K\Vert a\Vert_2}{\sqrt{c}}\right)^p \Gamma\left(\frac{p}{2}\right) .
 \end{aligned}
@@ -918,10 +918,10 @@ When $\lambda<\frac{1}{2}$, it exists and equals to $(1-2\lambda)^{-1/2}$. There
 
 (b): Let $\varepsilon>0$ be given. By Chernoff's inequality,
 $$
-\mathbb{P}\{|X| \geq \sqrt{K+\varepsilon}\}=\mathbb{P}\left\[X^2 \geq K+\varepsilon\right\] \leq \inf_{\lambda \in \mathbb{R}} \mathrm{e}^{-\lambda^2(K+\varepsilon)} \mathbb{E} \exp \left(\lambda^2 X^2\right) \leq \inf_{\lambda \in \mathbb{R}} \mathrm{e}^{-\lambda^2 \varepsilon}=0 .
+\mathbb{P}\{|X| \geq \sqrt{K+\varepsilon}\}=\mathbb{P}\left[X^2 \geq K+\varepsilon\right] \leq \inf_{\lambda \in \mathbb{R}} \mathrm{e}^{-\lambda^2(K+\varepsilon)} \mathbb{E} \exp \left(\lambda^2 X^2\right) \leq \inf_{\lambda \in \mathbb{R}} \mathrm{e}^{-\lambda^2 \varepsilon}=0.
 $$
 
-Therefore, $\mathbb{P}\{|X| \leq \sqrt{K}\}=\lim _{n \rightarrow \infty} \mathbb{P}\left\[|X|<\sqrt{K+n^{-1}}\right\]=1$.
+Therefore, $\mathbb{P}\{|X| \leq \sqrt{K}\}=\lim _{n \rightarrow \infty} \mathbb{P}\left[|X|<\sqrt{K+n^{-1}}\right]=1$.
 
 3. (Concentration of Poisson Random Variables). For the following problem, you may use the fact that the MGF of $\operatorname{Poisson}(\mu)$ is given by:
 
@@ -964,7 +964,7 @@ $$
 (b): Observe that
 $$
 \begin{aligned}
-P(X-\mu \geq t) &\leq \inf_{\lambda>0} \mathbb E\left[e^{\lambda(X-\mu)}\right] e^{-\lambda t}\newline
+\mathbb{P}(X-\mu \geq t) &\leq \inf_{\lambda>0} \mathbb E\left[e^{\lambda(X-\mu)}\right] e^{-\lambda t}\newline
 &=\inf_{\lambda>0}\mathbb E [e^{\lambda X}]e^{-\lambda \mu-\lambda t}\newline
 &=\inf_{\lambda>0}e^{\mu e^\lambda -1}e^{-\lambda \mu-\lambda t}
 \end{aligned}
@@ -977,10 +977,207 @@ $$
 
 
 
+## Additional Topic: Martingale-Based Methods
+
+Intuitively, martingales capture the idea of a fair game. Let $X_n$ denote your winnings at time $n$. The most basic notion of martingale is one in which for all $n, E\left|X_n\right|<\infty$ and:
+$$
+E\left[X_{n+1} \mid X_1, \ldots, X_n\right]=x_n
+$$
+
+If we consider $X_{n+1}-X_n$ as our gain at time $n+1$, this is saying that the expected gain given everything that has happened so far is 0 . For example, suppose we flip a fair coin and we win one dollar if it is heads and lose one dollar if it is tails. In this case, the flips are independent and each trial has expectation 0 . Let $S_n=\sum_{i=1}^n X_i$, where $X_i$ the outcome of the $i$-th trial. We will show that $S_n$ is a martingale. Then,
+$$
+\begin{aligned}
+E\left[S_{n+1} \mid S_1, \ldots, S_n\right] & =E\left[X_{n+1}+\sum_{i=1}^n X_i \mid S_1, \ldots, S_n\right] \\
+& =E\left[X_{n+1}+S_n \mid S_1, \ldots, S_n\right] \\
+& =0+s_n=s_n
+\end{aligned}
+$$
+
+However, the idea of a martingale is more general and allows the sequence to be dependent. As an interesting and perhaps controversial example, roughly speaking, the efficient market hypothesis asserts that the return of an asset (relative to a risk-free rate and also taking into consideration risk premiums in some formulations) is a martingale. Even taking the full history of the asset (and the market) into account, the expected value in the next step is the current value.
+
+Let $\left\{X_k\right\}_{k=1}^n$ be a sequence of independent random variables, and consider the random variable $f(X)=f\left(X_1 \ldots, X_n\right)$, for some function $f: \mathbb{R}^n \rightarrow \mathbb{R}$. Suppose that our goal is to obtain bounds on the deviations of $f$ from its mean. In order to do so, we consider the sequence of random variables given by $Y_0=\mathbb{E}[f(X)], Y_n=f(X)$, and
+$$
+Y_k=\mathbb{E}\left[f(X) \mid X_1, \ldots, X_k\right] \quad \text { for } k=1, \ldots, n-1,
+$$
+where we assume that all conditional expectations exist. Note that $Y_0$ is a constant, and the random variables $Y_k$ will tend to exhibit more fluctuations as we move along the sequence from $Y_0$ to $Y_n$. Based on this intuition, the martingale approach to tail bounds is based on the telescoping decomposition
+$$
+f(X)-\mathbb{E}[f(X)]=Y_n-Y_0=\sum_{k=1}^n \underbrace{\left(Y_k-Y_{k-1}\right)}_{D_k},
+$$
+in which the deviation $f(X)-\mathbb{E}[f(X)]$ is written as a sum of increments $\left\{D_k\right\}_{k=1}^n$. As we will see, the sequence $\left\{Y_k\right\}_{k=1}^n$ is a particular example of a martingale sequence, known as the Doob martingale, whereas the sequence $\left\{D_k\right\}_{k=1}^n$ is an example of a martingale difference sequence.
+
+With this example in mind, we now turn to the general definition of a martingale sequence. Let $\left\{\mathcal{F}_k\right\}_{k=1}^{\infty}$ be a sequence of $\sigma$-fields that are nested, meaning that $\mathcal{F}_k \subseteq \mathcal{F}_{k+1}$ for all $k \geq 1$; such a sequence is known as a **filtration**. In the Doob martingale described above, the $\sigma$-field $\sigma\left(X_1, \ldots, X_k\right)$ generated by the first $k$ variables plays the role of $\mathcal{F}_k$. Let $\left\{Y_k\right\}_{k=1}^{\infty}$ be a sequence of random variables such that $Y_k$ is measurable with respect to the $\sigma$-field $\mathcal{F}_k$. In this case, we say that $\left\{Y_k\right\}_{k=1}^{\infty}$ is adapted to the filtration $\left\{\mathcal{F}_k\right\}_{k=1}^{\infty}$. In the Doob martingale, the random variable $Y_k$ is a measurable function of $\left(X_1, \ldots, X_k\right)$, and hence the sequence is adapted to the filtration defined by the $\sigma$-fields. We are now ready to define a general martingale:
+
+**Definition**: Given a sequence $\left\{Y_k\right\}_{k=1}^{\infty}$ of random variables adapted to a filtration $\left\{\mathcal{F}_k\right\}_{k=1}^{\infty}$, the pair $\left\{\left(Y_k, \mathcal{F}_k\right)\right\}_{k=1}^{\infty}$ is a **martingale** if, for all $k \geq 1$,
+$$
+\mathbb{E}\left[\left|Y_k\right|\right]<\infty \quad \text { and } \quad \mathbb{E}\left[Y_{k+1} \mid \mathcal{F}_k\right]=Y_k
+$$
+It is frequently the case that the filtration is defined by a second sequence of random variables $\left\{X_k\right\}_{k=1}^{\infty}$ via the canonical $\sigma$-fields $\mathcal{F}_k:=\sigma\left(X_1, \ldots, X_k\right)$. In this case, we say that $\left\{Y_k\right\}_{k=1}^{\infty}$ is a martingale sequence with respect to $\left\{X_k\right\}_{k=1}^{\infty}$. The Doob construction is an instance of such a martingale sequence. If a sequence is martingale with respect to itself (i.e., with $\mathcal{F}_k=\sigma\left(Y_1, \ldots, Y_k\right)$ ), then we say simply that $\left\{Y_k\right\}_{k=1}^{\infty}$ forms a martingale sequence.
+
+**Example 1** (Sums of Zero Mean Random Variables): Let $S_n=\sum_{i=1}^n X_i$, $X_1$, where $\ldots, X_1, \ldots, X_n$ are independent, $E\left(X_i\right)=0$ and $E\left|X_i\right|<\infty$. Previously, for $S_{n+1}$, we considered conditioning on the information set $S_1, \ldots, S_n$ and showed that this was a martingale (for concreteness, we assumed binary trials, but this was not needed). We can also define a martingale with respect to the random variables $\left(X_i\right)_{i \geq 1}$. Observe that:
+$$
+\begin{aligned}
+E\left[S_{n+1} \mid X_1, \ldots, X_n\right] & =E\left[X_{n+1}+\sum_{i=1}^n X_i \mid X_1, \ldots, X_n\right] \\
+& =0+\sum_{i=1}^n x_n=s_n
+\end{aligned}
+$$
+**Example 2** (Doob construction): Given a sequence of independent random variables $\left\{X_k\right\}_{k=1}^n$, recall the sequence $Y_k=\mathbb{E}\left[f(X) \mid X_1, \ldots, X_k\right]$ previously defined, and suppose that $\mathbb{E}[|f(X)|]<\infty$. We claim that $\left\{Y_k\right\}_{k=0}^n$ is a martingale with respect to $\left\{X_k\right\}_{k=1}^n$. Indeed, in terms of the shorthand $X_1^k=\left(X_1, X_2, \ldots, X_k\right)$, we have
+$$
+\mathbb{E}\left[\left|Y_k\right|\right]=\mathbb{E}\left[\left|\mathbb{E}\left[f(X) \mid X_1^k\right]\right|\right] \leq \mathbb{E}[|f(X)|]<\infty,
+$$
+where the bound follows from Jensen's inequality. Turning to the second property, we have
+$$
+\mathbb{E}\left[Y_{k+1} \mid X_1^k\right]=\mathbb{E}\left[\mathbb{E}\left[f(X) \mid X_1^{k+1}\right] \mid X_1^k\right] \stackrel{(\mathrm{i})}{=} \mathbb{E}\left[f(X) \mid X_1^k\right]=Y_k,
+$$
+where we have used the tower property of conditional expectation in step (i): *Law of total expectation* gives $\mathbb{E}(Z)=\mathbb{E}_Z[\mathbb{E}_X(Z|Y)]$, so $\mathbb{E}(Z|X)=\mathbb{E}[\mathbb{E}(Z|X,Y)|X]$ by replacing $E(\; \cdot\;)$ with $\mathbb{E}(\; \cdot \;|X)$​. 
+
+A closely related notion is that of **martingale difference sequence**, meaning an adapted sequence $\left\{\left(D_k, \mathcal{F}_k\right)\right\}_{k=1}^{\infty}$ such that, for all $k \geq 1$,
+$$
+\mathbb{E}\left[\left|D_k\right|\right]<\infty \quad \text { and } \quad \mathbb{E}\left[D_{k+1} \mid \mathcal{F}_k\right]=0 .
+$$
+
+As suggested by their name, such difference sequences arise in a natural way from martingales. In particular, given a martingale $\left\{\left(Y_k, \mathcal{F}_k\right)\right\}_{k=0}^{\infty}$, let us define $D_k=Y_k-Y_{k-1}$ for $k \geq 1$.
+
+We then have
+$$
+\begin{aligned}
+\mathbb{E}\left[D_{k+1} \mid \mathcal{F}_k\right] & =\mathbb{E}\left[Y_{k+1} \mid \mathcal{F}_k\right]-\mathbb{E}\left[Y_k \mid \mathcal{F}_k\right] \\
+& =\mathbb{E}\left[Y_{k+1} \mid \mathcal{F}_k\right]-Y_k=0,
+\end{aligned}
+$$
+using the martingale property and the fact that $Y_k$ is measurable with respect to $\mathcal{F}_k$. Thus, for any martingale sequence $\left\{Y_k\right\}_{k=0}^{\infty}$, we have the telescoping decomposition
+$$
+Y_n-Y_0=\sum_{k=1}^n D_k,
+$$
+where $\left\{D_k\right\}_{k=1}^{\infty}$​ is a martingale difference sequence.
+
+We now introduce several concentration results.
+
+**Theorem 1** (Azuma-Hoeffding Inequality). Let $\left(Y_n\right)_{n \geq 1}$ be martingale with respect to $\left(X_n\right)_{n \geq 1}$ and let $\left(\Delta_n\right)_{n \geq 1}$ denote the associated martingale difference sequence. Suppose that for each $1 \leq i \leq n$,
+$$
+E\left[\exp \left(\lambda \Delta_i\right) \mid X_1, \ldots, X_{i-1}\right] \leq \exp \left(\frac{\lambda^2 \sigma_i^2}{2}\right) \text { with probability } 1
+$$
+
+Then,
+$$
+P\left(\left|\sum_{i=1}^n \Delta_i\right| \geq t\right) \leq 2 \exp \left(\frac{-t^2}{2 \sum_{i=1}^n \sigma_i^2}\right)
+$$
+*proof*:
+
+Proof. Observe that, conditioned on $X_1, \ldots, X_{n-1}, \Delta_1, \ldots, \Delta_{i-1}$ are fixed since they are functions of $X_1, \ldots, X_{n-1}$. Therefore, by law of iterated expectation,
+$$
+\begin{aligned}
+E\left[\exp \left(\lambda \sum_{i=1}^n \Delta_i\right)\right] & =E\left\{E\left[\exp \left(\lambda \sum_{i=1}^n \Delta_i\right) \mid X_1, \ldots, X_{n-1}\right]\right\} \\
+& =E\left\{E\left[\exp \left(\lambda \Delta_n\right) \mid X_1, \ldots, X_{n-1}\right] \cdot \exp \left(\lambda \sum_{i=1}^{n-1} \Delta_i\right)\right\} \\
+& \leq \exp \left(\frac{\lambda^2 \sigma_n^2}{2}\right) E\left[\exp \left(\lambda \sum_{i=1}^{n-1} \Delta_i\right)\right]
+\end{aligned}
+$$
+
+In the next step, we take law of iterated expectation conditioning on $X_1, \ldots, X_{n-2}$ to see that:
+$$
+E\left[\exp \left(\lambda \sum_{i=1}^n \Delta_i\right)\right] \leq \exp \left(\frac{\lambda^2\left(\sigma_{n-1}^2+\sigma_n^2\right)}{2}\right) E\left[\exp \left(\lambda \sum_{i=1}^{n-2} \Delta_i\right)\right]
+$$
+
+Continuing to unfurl the expectation in this way (we can make this argument more formal through induction), we have:
+$$
+E\left[\exp \left(\lambda \sum_{i=1}^n \Delta_i\right)\right] \leq \exp \left(\frac{\lambda^2 \sum_{i=1}^n \sigma_i^2}{2}\right)
+$$
+
+Therefore, $\sum_{i=1}^n \Delta_i \sim \operatorname{subGaussian}\left(\sum_{i=1}^n \sigma_i^2\right)$ and we can repeat the same Chernoff bound argument for sums of independent sub-Gaussian random variables and the claim follows.
+
+**Definition** (Bounded difference property). The function $f\left(x_1, \ldots, x_n\right)$ has bounded differences with constants $\left(c_1, \ldots, c_n\right)$ if for each $1 \leq i \leq n$,
+$$
+\sup _{x_1, \ldots, x_n, x_i^{\prime}}\left|f\left(x_1, \ldots, x_i, \ldots, x_n\right)-f\left(x_1, \ldots, x_i^{\prime}, \ldots, x_n\right)\right| \leq c_i
+$$
+**Theorem 2** (Bounded Difference Inequality). Suppose that $X_1, \ldots, X_n$ are independent random variables and $f\left(x_1, \ldots, x_n\right)$ satisfies the bounded difference property with constants $\left(c_1, \ldots, c_n\right)$. Then,
+$$
+P\left(\left|f\left(X_1, \ldots, X_n\right)-E\left[f\left(X_1, \ldots, X_n\right)\right]\right| \geq t\right) \leq 2 \exp \left(\frac{-2 t^2}{\sum_{i=1}^n c_i^2}\right)
+$$
+*proof*:
+
+Proof. First, observe that we can write:
+$$
+f\left(X_1, \ldots, X_n\right)-E\left[f\left(X_1, \ldots, X_n\right)\right]=\sum_{i=1}^n \Delta_i
+$$
+where $\Delta_i=Y_i-Y_{i-1}$ and $Y_i$ is Doob martingale considered in Example 2, with $N=n$. Now, the claim will follow if we can show that, conditional on $X_1, \ldots, X_{i-1}$, each $\Delta_i$ takes values in an interval of length $c_i$ due to the upper bound for the sub-Gaussian parameter for bounded random variables discussed in Lecture 3. Define:
+$$
+\begin{aligned}
+& L_i=\inf _{x_i} E\left[f\left(X_1, \ldots, x_i, \ldots, X_n\right) \mid X_1, \ldots, X_{i-1}, x_i\right]-E\left[f\left(X_1, \ldots, X_n\right) \mid X_1, \ldots, X_{i-1}\right] \\
+& U_i=\sup _{x_i} E\left[f\left(X_1, \ldots, x_i, \ldots, X_n\right) \mid X_1, \ldots, X_{i-1}, x_i\right]-E\left[f\left(X_1, \ldots, X_n\right) \mid X_1, \ldots, X_{i-1}\right]
+\end{aligned}
+$$
+
+Notice that, conditional on $X_1, \ldots, X_{i-1}, \Delta_i$ is now only a function of $X_i$. Now,
+$$
+\begin{aligned}
+\Delta_i-L_i & =E\left[f\left(X_1, \ldots, X_n\right) \mid X_1, \ldots, X_i\right]-\inf _{x_i} E\left[f\left(X_1, \ldots, x_i, \ldots, X_n\right) \mid X_1, \ldots, X_{i-1}, x_i\right] \\
+& =g\left(X_i\right)-\inf _{x_i} g\left(x_i\right) \geq 0 \Longrightarrow \Delta_i \geq L_i
+\end{aligned}
+$$
+where above $g\left(X_i\right)=E\left[f\left(x_1 \ldots, x_{i-1}, x_i, \ldots, X_n\right) \mid X_i\right]$. Similarly, we can show that:
+$$
+U_i-\Delta_i \geq 0 \Longrightarrow \Delta_i \leq U_i
+$$
+
+Therefore, with probability 1 ,
+$$
+L_i \leq \Delta_i \leq U_i
+$$
+Now we upper bound $U_i-L_i$ :
+$$
+\begin{aligned}
+U_i-L_i & =\sup _{x_i} E\left[f\left(X_1, \ldots, x_i, \ldots, X_n\right) \mid X_1, \ldots, X_{i-1}, x_i\right]-\inf _{x_i} E\left[f\left(X_1, \ldots, x_i, \ldots, X_n\right) \mid X_1, \ldots, X_{i-1}, x_i\right] \\
+& \leq \sup _{x_i, y_i}\left|E\left[f\left(x_1, \ldots, x_i, X_{i+1}, \ldots, X_n\right)\right]-E\left[f\left(x_1, \ldots, y_i, X_{i+1}, \ldots, X_n\right)\right]\right| \\
+& =\sup _{x_i, y_i}\left|E\left[f\left(x_1, \ldots, x_i, X_{i+1}, \ldots, X_n\right)-f\left(x_1, \ldots, y_i, X_{i+1}, \ldots, X_n\right)\right]\right| \\
+& \leq \sup _{x_1, \ldots, x_n, x_i^{\prime}}\left|f\left(x_1, \ldots, x_i, \ldots, x_n\right)-f\left(x_1, \ldots, x_i^{\prime}, \ldots, x_n\right)\right|=c_i
+\end{aligned}
+$$
+
+In the second line, we used the fact that, because $X_1, \ldots, X_n$ are independent, $E\left[f\left(X_1, \ldots, X_n\right) \mid X_1, \ldots, X_i\right]=E\left[f\left(x_1, \ldots, x_i, X_{i+1}, \ldots X_n\right)\right]$, where $x_1, \ldots x_i$ are treated as fixed constants. If they were not independent, then in general, the conditional distribution would depend on the conditioning set. This would mean that the expectations in line 3 would be with respect to different distributions (since we are taking supremum/infimum), and we wouldn't be able to combine them in the same way using linearity of expectation.
+
+The last line follows from the fact that the expected difference is upper bounded by the largest possible difference, which is given by $c_i$. With linearity of expectation, we can integrate with respect to the same $X_{i+1}, \ldots, X_n$ under the independence assumption.
+
+### Application: Bound on Variance of Kolmogorov-Smirnov Statistic
+
+We recall the theorem of tensorization of variance that if $X_1, \ldots, X_n$ are independent random variables. Then,
+$$
+\operatorname{Var}\left(f\left(X_1, \ldots, X_n\right)\right) \leq \sum_{i=1}^n \mathbb{E}\left[\operatorname{Var}_i f\left(x_1, \ldots, x_n\right)\right]
+$$
+Now suppose that $X_1, \ldots, X_n$ are iid, with common distribution function $F(x)$. Let $F_n(t)$ denote the empirical CDF, which may be viewed as an estimator of $F(t)$ :
+$$
+F_n(t)=\frac{1}{n} \sum_{i=1}^n \mathbb{1}\left(X_i \leq t\right)
+$$
+The Kolmogorov-Smirnov statistic is used for goodness-of-fit testing. Suppose that we want to know whether a distribution with cdf $G(x)$ is a good fit to the data. The associated Kolmogorov-Sminrov statistic is defined as:
+$$
+f\left(X_1, \ldots, X_n\right)=\sup _{t \in \mathbb{R}}\left|F_n(t)-G(t)\right|
+$$
+
+It turns out that we can derive an upper bound for the variance using the bounded difference inequality for the variance. We are considering this statistic as an example because it demonstrates how the bounded difference inequality for the variance has highly non-trivial consequences; however, you are not expected to be able to verify this condition for a fairly complicated statistic like this one. Let's examine the function $F_n(t)$, where we have fixed $x_1, \ldots, x_{i-1}, x_{i+1}, \ldots, x_n$ and we are only considering randomness in $X_i . F_n(t)$ has only one summand that involves $X_i: \frac{1}{n} \mathbb{1}\left(X_i \leq t\right)$. Therefore,
+$$
+\begin{aligned}
+& \sup _{x, y}\left|f\left(x_1, \ldots, x_{i-1}, x, x_{i+1}, \ldots, x_n\right)-f\left(x_1, \ldots, x_{i-1}, y, x_{i+1}, \ldots, x_n\right)\right| \\
+\leq & \sup _{x, y}\left|\sup _{t \in \mathbb{R}}\right| \frac{1}{n} \sum_{j \neq i} \mathbb{1}\left(x_j \leq t\right)+\frac{1}{n} \mathbb{1}(x \leq t)-G(t)\left|-\sup _{t \in \mathbb{R}}\right| \frac{1}{n} \sum_{j \neq i} \mathbb{1}\left(x_j \leq t\right)+\frac{1}{n} \mathbb{1}(y \leq t)-G(t)|| \\
+\leq & \sup _{x, y} \frac{1}{n} \sup _{t \in \mathbb{R}}|\mathbb{1}(x \leq t)-\mathbb{1}(y \leq t)| \leq \frac{1}{n}
+\end{aligned}
+$$
+where above we used the fact that $\sup _{t \in \mathbb{R}}|f(t)|$ is a norm and therefore we have the reverse triangle inequality $\left|\sup _{t \in \mathbb{R}}\right| f(t)\left|-\sup _{t \in \mathbb{R}}\right| g(t)|| \leq \sup _{t \in \mathbb{R}}|f(t)-g(t)|$. Therefore, we may conclude:
+$$
+\operatorname{Var}\left(\sup _{t \in \mathbb{R}}\left|F_n(t)-G(t)\right|\right) \leq \frac{1}{4 n}
+$$
+
+This tells us that the variance of the Kolmgorov-Smirnov statistic gets smaller as $n$ gets larger, and thus, it concentrates around $E\left[\sup _{t \in \mathbb{R}}\left|F_n(t)-G(t)\right|\right]$. If $G(t) \neq F(t)$, then this expectation will not go to zero asymptotically, but if $G(t)=F(t)$, this quantity will turn out to vanish. This is why the Kolmogorov-Smirnov statistic can detect differences between arbitrary distributions.
+
+The bound (157) is in fact uniform over $x_{-i}$ and therefore, the bounded difference property is satisfied with constants $(1 / n, \ldots, 1 / n)$. Thus,
+$$
+P\left(\left|T\left(X_1, \ldots, X_n\right)-\mathbb{E}\left[T\left(X_1, \ldots, X_n\right)\right]\right| \geq t\right) \leq 2 \exp \left(-2 n t^2\right)
+$$
+
+Of course, one question that remains is what is $\mathbb{E}\left[T\left(X_1, \ldots, X_n\right)\right]$ ? Does it go to zero when $F=G$ (i.e. the CDF of $X_i$ is equal to $G$ )? How about when $F \neq G$ ? We will study this in another [reading file](https://anthonyhongxiao.github.io/reading/Concentration_of_Lipschitz_Functions/).
+
+# 3. Random Vectors in High Dimensions
 
 
 
-
+# 4. Random Matrices
 
 
 

@@ -43,7 +43,7 @@ Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Me
 - [UNC Undergraduate Analysis and PDE Seminar](https://tarheels.live/waves/analysis-and-pde-seminar/) FL22-SP24.
 - WashU Reading Group SP23: Algebraic Geometry.
 - WashU Reading Group FL23: Representation Theory.
-{{< imageRight src="/images/portfolio/Aryclic_Painting_Urbanity_and_Space.jpg" alt="Aryclic Painting: Urbanity and Space. Drawn in 8/2020." caption="Aryclic Painting: Urbanity and Space. Drawn in 8/2020." width="20%" >}}
+{{< imageRight src="/images/portfolio/Aryclic_Painting_Urbanity_and_Space.jpg" alt="Aryclic Painting: Urbanity and Space. 8/2020." caption="Aryclic Painting: Urbanity and Space. 8/2020." width="20%" >}}
 - StanCon 2023 Workshop:
   [Convention on Stan Programming and Bayesian Modeling](https://mc-stan.org/events/stancon2023/#tutorials)
 - WUSTL Metamorphic Architecture Workshop 2019, Dean Heather Woofter's tutee.
@@ -132,7 +132,7 @@ A good little book is A.B. Sossinsky's [Geometries](https://bookstore.ams.org/st
 
 {{< figure src="/images/photos/SZ.jpg" caption="Photo: Shenzhen Airport. 8/2022." height="60%" width="80%" class="imagecenter" >}}
 
-{{< figure src="/images/portfolio/Oil_Painting_Oblivion.jpg" caption="Oil Painting: Oblivion. Drawn in 7/2020." height="60%" width="60%" class="imagecenter" >}}
+{{< figure src="/images/portfolio/Oil_Painting_Oblivion.jpg" caption="Oil Painting: Oblivion. 7/2020." height="60%" width="60%" class="imagecenter" >}}
 
 
 

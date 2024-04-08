@@ -10,7 +10,7 @@ tags = []
 
 {{< figure src="/images/Manifold_Garden/Manifold_Garden2.jpg" height="90%" width="90%" class="imagecenter" >}}
 
-Developed by William Chyr, this game stands as a monument to the beauty of architectural impossibilities (**Hilbert's hotel**; see the end of this blog) and geometry (mostly Euclidena but also has a rubber-sheet flavour). Its puzzles cleverly play with perception, rewarding exploration with stunning, mind-bending visuals. The experience is meditative, almost otherworldly, offering a peaceful yet exhilarating escape into a realm of infinite horizons.
+Developed by William Chyr, this game stands as a monument to the beauty of architectural impossibilities (**Hilbert's Hotel**; see the end of this blog) and geometry (mostly Euclidena but also has a rubber-sheet flavour). Its puzzles cleverly play with perception, rewarding exploration with stunning, mind-bending visuals. The experience is meditative, almost otherworldly, offering a peaceful yet exhilarating escape into a realm of infinite horizons.
 
 {{< figure src="/images/Manifold_Garden/Manifold_Garden3.jpg" height="90%" width="90%" class="imagecenter" >}}
 
