@@ -7,7 +7,7 @@ tags = ["probability"]
 
 The content comes from Lecture 7 of Prof. Lunde's  Math5440 and Chapter 5 of [High-Dimensional Probability](/pdfs/HDP-book.pdf).
 
-In [first note on HDP](https://anthonyhongxiao.github.io/reading/high\_dim\_prob1/), we introduced the bounded difference inequality, which is a result that can be applied to a wide range of problems. The bounded difference property may be thought of as a type of smoothness condition. Recall that a function $f: \mathbb{R}^d \mapsto \mathbb{R}$ is $L$-Lipschitz if the following holds for all $x, y \in \mathbb{R}^d$ , $|f(x)-f(y)| \leq L\Vert x-y\Vert $. Typically, $\Vert \cdot\Vert $​ is the Euclidean norm, but one can show that the bounded difference property is a Lipschitz condition with respect to a non-standard norm (See Appendix for details).
+In [first note on HDP](https://anthonyhongxiao.github.io/reading/high_dim_prob_and_satistics/), we introduced the bounded difference inequality, which is a result that can be applied to a wide range of problems. The bounded difference property may be thought of as a type of smoothness condition. Recall that a function $f: \mathbb{R}^d \mapsto \mathbb{R}$ is $L$-Lipschitz if the following holds for all $x, y \in \mathbb{R}^d$ , $|f(x)-f(y)| \leq L\Vert x-y\Vert $. Typically, $\Vert \cdot\Vert $​ is the Euclidean norm, but one can show that the bounded difference property is a Lipschitz condition with respect to a non-standard norm (See Appendix for details).
 
 **Definition** (Lipschitz functions). Let $\left(X, d\_X\right)$ and $\left(Y, d\_Y\right)$ be metric spaces. A function $f: X \rightarrow Y$ is called Lipschitz if there exists $L \in \mathbb{R}$ such that
 $$
@@ -92,7 +92,7 @@ $$
 where $W\_1, \ldots, W\_n$ are iid $N(0,1)$. To apply the Gaussian Lipschitz concentration inequality, we need to argue that a corresponding function is Lipschitz in the arguments corresponding to the Gaussian random variables. Observe that:
 $$
 \begin{aligned}
-& \left|\sup \_{a \in \mathcal{A}}\right| \sum\_{i=1}^n a\_i w\_i\left|-\sup \_{a \in \mathcal{A}}\right| \sum\_{i=1}^n a\_i w\_i^{\prime}|| \newline
+& \left|\sup\_{a \in \mathcal{A}}\left| \sum\_{i=1}^n a\_i w\_i\right|-\sup\_{a \in \mathcal{A}}\left| \sum\_{i=1}^n a\_i w\_i^{\prime}\right|\right| \newline
 & \leq \sup \_{a \in \mathcal{A}}\left|\sum\_{i=1}^n a\_i\left(w\_i-w\_i^{\prime}\right)\right| \newline
 & \leq \sup \_{a \in \mathcal{A}}\Vert a\Vert \_2 \cdot\left\Vert w\_i-w\_i^{\prime}\right\Vert \_2
 \end{aligned}

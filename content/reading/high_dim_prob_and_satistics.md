@@ -15,6 +15,39 @@ Exercises solns for HDS: [soln](https://high-dimensional-statistics.github.io/).
 
 Another handful reference for various conclusions on matrices is *Matrix Analysis* (e2) by Charles R. Johnson and Roger A. Horn.
 
+## Content
+#### 0. Appetizer
+*Key Takeaways*//
+*Exercises*
+#### 1. Preliminaries on Random Variables
+*Key Takeaways*//
+*Exercises*
+#### 2. Concentration of Sums of Independent Random Variables
+*Key Takeaways*:
+*2.1 Why Concentration Inequalities?*//
+*2.2 Hoeffding's Inequality*//
+*2.3 Chernoff's Inequality*//
+*2.4 Application: Degrees of Random Graphs*//
+*2.5 Sub-Gaussian Distributions*//
+*2.6 General Hoeffding and Khintchine Inequalities*//
+*2.7 Sub-Exponential Distributions*//
+*2.8-2.9 Bernstein’s inequality, bounded difference inequality, and Bennett’s inequality*//
+*Exercises*//
+*Additional Topic: Martingale-Based Methods*
+#### 3. Random Vectors in High Dimensions
+*Concentration of the Norm*
+*Sub-Gaussian and sub-Exponential Vectors*
+*Examples of Sub-Gaussian and Sub-Exponential Random Variables*
+*Appendix*
+#### 4. Random Matrices
+*Variational Characterizations of Eigenvalues and Singular Values*//
+*Norms on Matrices*//
+*Other Matrix Norms*//
+*Spectral Perturbation*//
+*Bounds on the Operator Norm of Covariance Matrices*
+#### 5. Principal Components Analysis
+
+
 # 0. Appetizer
 
 ## Key Takeaways
@@ -2017,3 +2050,74 @@ $$
 \mathcal{N}\left(\mathcal{S}^{d-1},\Vert \cdot\Vert \_2, 1 / 4\right) \leq \mathcal{N}\left(\mathcal{B}\_1^{(d)},\Vert \cdot\Vert \_2, 1 / 4\right) \leq\left(1+\frac{2}{1 / 4}\right)^d=9^d
 $$
 
+# 5. Principal Components Analysis
+
+Let $X$ be a random vector in $\R^d$ representing the data and our goal is to understand the underlying distribution of $X$.
+In this problem, we look at the covariance of random vector $X$,
+$$\mathrm{cov}(X)=\mathbb{E}((X-\mu)(X-\mu)^T)=\mathbb{E}XX^T-\mu\mu^T$$
+We can assume the data is centered by a translation, i.e., $\mu = \mathbb{E}X = 0$. We also denote
+$$\Sigma = \mathbb{E}XX^T.$$
+Then $\mathrm{cov}(X)=\Sigma$.
+We draw samples of size $n$ from the population, $X_1,\cdots,X_n\in \R^d$. 
+
+We define our sample variance as $\sigma_n = \frac{1}{n}\sum_{i=1}^{n}Z_i^2$ where $Z_i=\sum_{j=1}^{d}v_{j}X_{ij}$ and we
+want to determine the weight vector $v$ that maximizes this sample variance. The optimization problem is
+
+$$
+\max\_{\Vert v\Vert =1} \frac{1}{n} \sum_{i=1}^n Z_i^2=\max _{\Vert v\Vert =1} \frac{1}{n}\Vert \mathbf{X} v\Vert^2=\max\_{\Vert v\Vert =1} \frac{1}{n} v^T\left(\mathbf{X}^T \mathbf{X}\right) v
+$$
+
+which is just
+
+$$
+\max_{\Vert v\Vert=1} v^T\left(\mathbf{X}^T \mathbf{X}/n\right) v
+$$
+
+where $\mathbf{X}$ is the design matrix, defined as:
+
+$$
+\mathbf{X}=\left[\begin{array}{cccc}
+x\_{11} & x\_{12} & \ldots & x\_{1 d} \newline
+x\_{21} & x\_{21} & \ldots & x\_{2 d} \newline
+\vdots & \vdots & \ddots & \vdots \newline
+x\_{n 1} & x\_{n 2} & \ldots & x\_{n d}
+\end{array}\right]
+$$
+
+Lagrange multiplier method (see Math5440 Lecture 9 for details) gives us a necessary condition
+
+$$
+\frac{\mathbf{X}^T \mathbf{X}}{n} v=\lambda v
+$$
+
+In other words, $v$ need to be an eigenvector of $\frac{\mathbf{X}^T \mathbf{X}}{n}$.
+Our maximization porblem is
+
+$$
+\max _{\Vert v\Vert =1} \frac{1}{n} v^T\left(\mathbf{X}^T \mathbf{X}\right) v
+$$
+
+so $v$ should also have unit length.
+Let $\xi$ be a unit eigenvector of $\frac{\mathbf{X}^T \mathbf{X}}{n}$, i.e., $\left(\frac{\mathbf{X}^T \mathbf{X}}{n}\right)\xi=\lambda \xi$ with its eigenvalue $\xi$.
+We plug $\xi$ into the objective function and see that
+$$\xi^T\left(\mathbf{X}^T \mathbf{X}/n\right) \xi=\xi^T\lambda \xi=\lambda \Vert \xi\Vert ^2=\lambda$$
+Since the largest $\lambda_1$ maximizes this (see Lecture 9 Appendix), we need to pick the eigenvector associated with $\lambda_1$ (in fact, there are infinite such eigenvectors, 
+but they are all aligned on one direction, so enforcing unit length will lock on an eigenvector associated with $\lambda_1$ unique up to a sign) and denote it by $v_1$. Therefore, 
+the result of our maximization problem is
+
+$$
+\arg \max_{\Vert v\Vert =1}\frac{1}{n}\sum_{i=1}^{n}Z_i^2=v_1
+$$
+
+We come back to our population, random vector $X$. We give a principal component analysis for $X$.
+As we said, we assume $\mu = 0$. We consider the analog of sample maximization problem:
+
+$$
+\max_{\Vert v^{\*}\Vert =1}\mathbb{E}(X^Tv^{\*})^2=\max_{\Vert v^{\*}\Vert =1}\mathbb{E}(X^Tv^{\*})^T(X^Tv^{\*})=\max_{\Vert v^{\*}\Vert =1}{v^{\*}}^T\mathbb{E}(XX^T)v^{\*}=\max_{\Vert v^{\*}\Vert =1}{v^{\*}}^T\Sigma v^{\*}.$$
+
+We build the sample statistic $\Sigma_n := \frac{1}{n}\sum_{i=1}^{n}X_iX_i^T=\frac{1}{n}\mathbf{X}^T\mathbf{X}$ as an estimator of $\Sigma$. The solution to the 
+above maximization problem is similarly obained as the eigenvector $v_1^{\*}$ (up to a sign) corresponding to the largest eigenvalue $\lambda_1$ of $\Sigma$.
+
+**Remark**
+
+Above is the procedure for projecting to the principal direction. We can use the same process for the remaining directions.
