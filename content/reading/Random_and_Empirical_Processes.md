@@ -101,7 +101,7 @@ where $d$ is the canonical metric defined above.
 $$
 \mathbb{E} \sup \_{t \in T} X\_t \leq C K \int\_0^{\infty} \sqrt{\log \mathcal{N}(T, d, \varepsilon)} d \varepsilon .
 $$
-{{< figure src="/images/Sudakov\_and\_Dudley.png" caption="Sudakov's bound by max box area; Dudley's bound by area under curve." height="60%" width="60%" class="imagecenter" >}}
+{{< figure src="/images/Sudakov_and_Dudley.png" caption="Sudakov's bound by max box area; Dudley's bound by area under curve." height="60%" width="60%" class="imagecenter" >}}
 
 ## Covering Numbers in $\mathbb{R}^n$​​ and Volume of Polytopes
 
@@ -136,7 +136,7 @@ $$
 
 Suppose we want to evaluate the integral of a function $f: \Omega \rightarrow \mathbb{R}$ with respect to some probability measure $\mu$ on some domain $\Omega \subset \mathbb{R}^d$ :
 $$
-\int\_{\Omega} f d \mu
+\int_{\Omega} f d \mu
 $$
 For example, we could be interested in computing $\int\_0^1 f(x) d x$ for a function $f:[0,1] \rightarrow \mathbb{R}$​.
 
