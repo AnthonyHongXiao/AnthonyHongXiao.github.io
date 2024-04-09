@@ -8,4 +8,4 @@ This reading file is for preparing the undergraduate thesis on Symplectic geomet
 
 Our first reading is Ana Cannas da Silva's *Lectures on Symplectic Geometry* (version: Jan 2006).
 
-[Note](pdfs/Symplectic.pdf)
+Here is the [Note](/pdfs/Symplectic.pdf).
