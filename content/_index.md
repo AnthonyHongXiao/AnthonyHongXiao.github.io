@@ -32,9 +32,8 @@ Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Me
 <br>
 
 ## Experience
-- Speaker at Midstates Consortium for Math and Science 23 ([session I.B.3](https://www.mathsciconsortium.org/uncategorized/2023-undergraduate-research-symposium-in-physical-sciences-mathematics-and-computer-science-at-university-of-chicago/)) at University of Chicago.    ([beamer presentation](pdfs/presentation_on_Ollivier_Ricci_Curvature.pdf))
-- Grading Math4111 Analysis, Math4171 Topology
-- TA Math5046 Differential Topology.
+- Speaker at Midstates Consortium for Math and Science 23 ([session I.B.3](https://www.mathsciconsortium.org/uncategorized/2023-undergraduate-research-symposium-in-physical-sciences-mathematics-and-computer-science-at-university-of-chicago/)) at University of Chicago.    ([beamer presentation](pdfs/presentation_on_Ollivier_Ricci_Curvature.pdf)). The work was also presented at [Prof. Martinkainen's session](https://sites.wustl.edu/henri/online-early-career-morning-sessions-april-13-14-2024/) and WashU SP24 Undergraduate Research Symposium ([video](https://youtu.be/g_lOmxUgVNw)).
+- Grading Math4111 Analysis, Math4171 Topology; TA Math5046 Differential Topology.
 
 ### Seminars/Workshops
 - Math586 Network Statistics.

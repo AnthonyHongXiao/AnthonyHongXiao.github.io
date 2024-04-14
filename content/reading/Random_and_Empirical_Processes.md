@@ -8,7 +8,7 @@ This reading file draws various concentration results from chapter 7 and 8 of [H
 
 {{< figure src="/images/kantorovich.jpg" caption="Economist and Mathematician Kantorovich. Photo from [St Petersburg University](https://english.spbu.ru/history/kantorovich-theorem)." height="80%" width="80%" class="imagecenter" >}}
 
-A **stochastic process**, or **random process** is a collection of $E$-valued random variables $\{X\_t:\Omega\to E\}\_{t\in T}$ with **state space** $(E,\mathcal{E})$ and \define{parameter set} $T$. For each $\omega\in \Omega$, let $X(\omega)$ denote the function $T\to E;t\mapsto X\_t(\omega)$; then $X(\omega)$ is an element of $E^T$, the collection of all functions from $T$ to $E$. We may regard the stochastic process $(X\_t)\_{t\in T}$ as a random variable $X$ that takes value in the product space $(E^T,\mathcal{E}^T)$, since the map $X:\Omega\to E^T;\omega\mapsto X(\omega)$ is measurable relative to $\mathcal{D}$ and $\mathcal{E}^T$. When $T=\mathbb{N}=\{0,1,\cdots\}$ and $(E,\mathcal{E})=(I,\mathcal{I})$​ plus Markov property, we get Markov chain. In other classical settings like Brownian motion, $T=\mathbb{R}$​.
+A **stochastic process**, or **random process** is a collection of $E$-valued random variables $\{X\_t:\Omega\to E\}\_{t\in T}$ with **state space** $(E,\mathcal{E})$ and **parameter set** $T$. For each $\omega\in \Omega$, let $X(\omega)$ denote the function $T\to E;t\mapsto X\_t(\omega)$; then $X(\omega)$ is an element of $E^T$, the collection of all functions from $T$ to $E$. We may regard the stochastic process $(X\_t)\_{t\in T}$ as a random variable $X$ that takes value in the product space $(E^T,\mathcal{E}^T)$, since the map $X:\Omega\to E^T;\omega\mapsto X(\omega)$ is measurable relative to $\mathcal{D}$ and $\mathcal{E}^T$. When $T=\mathbb{N}=\{0,1,\cdots\}$ and $(E,\mathcal{E})=(I,\mathcal{I})$​ plus Markov property, we get **Markov chain**. In other classical settings like **Brownian motion**, $T=\mathbb{R}$​.
 
 For simplicity, let us assume in this file that the random process has zero mean, i.e.
 $$
@@ -151,7 +151,7 @@ $$
 
 Let $X\_1, X\_2, \ldots$ be i.i.d. copies of $X$. The law of large numbers yields that
 $$
-\frac{i=1}{n} \sum\_{i=1}^n f\left(X\_i\right) \rightarrow \mathbb{E} f(X) \quad \text { almost surely }
+\frac{1}{n} \sum\_{i=1}^n f\left(X\_i\right) \rightarrow \mathbb{E} f(X) \quad \text { almost surely }
 $$
 as $n \rightarrow \infty$. This means that we can approximate the integral by the sum
 $$
@@ -264,5 +264,5 @@ Note that $f$ tags each of the data point as either $0$ or $1$​​​, but in 
 $$
 \mathbb{E} \sup \_{f \in \mathcal{F}}\left|\frac{1}{n} \sum\_{i=1}^n f\left(X\_i\right)-\mathbb{E} f(X)\right| \leq 2 \mathbb{E} \sup \_{f \in \mathcal{F}}\left|\frac{1}{n} \sum\_{i=1}^n \varepsilon\_i f\left(X\_i\right)\right|
 $$
-where $\varepsilon\_1, \varepsilon\_2, \ldots$ are independent symmetric Bernoulli random variables (which are also independent of $\left.X\_1, X\_2, \ldots\right)$​. Hint: Modify the proof of Symmetrization Lemma 6.4.2.
+where $\varepsilon\_1, \varepsilon\_2, \ldots$ are independent symmetric Bernoulli random variables (which are also independent of $X\_1, X\_2, \ldots$)​. Hint: Modify the proof of Symmetrization Lemma 6.4.2.
 
