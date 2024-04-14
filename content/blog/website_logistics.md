@@ -1,7 +1,7 @@
 +++
 title = "Website logistics"
 date = "2024-01-09T19:29:30+08:00"
-tags = []
+tags = ["logistics"]
 +++
 
 ## After committing and pushing get stucked:
