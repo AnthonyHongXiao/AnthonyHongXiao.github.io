@@ -67,9 +67,11 @@ The study, using the CHARLS dataset and techniques like OLS and ordered probit m
 
 **07/2023-Now**
 
-This is a summer research with Prof. Renato Feres beginning in July 2023. The study aims to use efficient algorithms to compute Ollivier-Ricci curvature of Cayley graphs of certain groups and find out some patterns. Currently, efficient optimization algorithm is found for Cayley graph and theoretical justifications for interesting patterns about curvature are concluding.
+This is a summer research with Prof. Renato Feres beginning in July 2023. The study aims to use efficient algorithms to compute Ollivier-Ricci curvature of Cayley graphs of certain groups and find out some patterns. Currently, efficient optimization algorithm is found for Cayley graph and theoretical justifications for interesting patterns about curvature are concluding. 
 
-[beamer presentation](pdfs/presentation_on_Ollivier_Ricci_Curvature.pdf)
+<!---
+[beamer presentation](pdfs/presentation_on_Ollivier_Ricci_Curvature.pdf))
+-->
 
 There is also a second project I am working with Prof. Feres. The project studies the Wasserstein distance of point measures that evolved along their geodesics after initiations.
 
