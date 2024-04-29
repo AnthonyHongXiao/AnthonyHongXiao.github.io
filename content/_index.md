@@ -1,7 +1,7 @@
 # Xiao (Anthony) Hong
 
 ## About Me
-{{< imageRight src="/images/photos/Learning_Singular_Homology.jpg" alt="Learning singular homology in a bar. Photo credit: Jessie." caption="Learning singular homology in a bar. Photo credit: Jessie." width="20%" >}}
+{{< imageRight src="/images/photos/Portrait.jpg" alt="Lecturing. Photo credit: Pascal." caption="Lecturing. Photo credit: Pascal." width="20%" >}}
 Hello! I am Anthony, a junior at **Washington University in St. Louis (WUSTL)**, where I transitioned from an early passion for architecture into the intricate world of geometric structures. **Geometry** is not only the theoretical foundation of civil engineering but also a powerful tool to showcase the uniqueness of **data**. I seek to understand how structures like manifolds and graphs that are inherent in real-world images can be encoded as data.
 
 I find solace in the rich symphonies of Brahms and the leisures that come with travel. My recent course projects and research include symplectic geometry and toric manifolds (undergraduate thesis with Prof. Tang Xiang), Fourier analysis on polytopes (course project in topic course on polytopes), harmonic analysis on groups (research with Prof. Renato Feres), and surface reconstruction for imaging (course project in computational geometry).
