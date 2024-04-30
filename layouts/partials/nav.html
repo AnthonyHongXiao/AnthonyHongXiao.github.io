@@ -1,7 +1,14 @@
 <a href="{{ "" | relURL }}">Home</a>
 {{ range .Site.Menus.main }}
+
+<!-- Change the following to hard coding any url. -->
+<a href="/pdfs/Resume_AnthonyHong.pdf">CV</a>
+
+<!-- This is automatically parsing md files in the content folder -->
 <a href="{{ .URL }}">{{ .Name }}</a>
 {{ end }}
+
+<!-- This is adding pages for list like pages -->
 {{ with .Site.GetPage "/blog" }}
 <a href="{{ "blog" | relURL }}">Blog</a>
 {{ end }}
