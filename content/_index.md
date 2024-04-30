@@ -1,6 +1,8 @@
 # Xiao (Anthony) Hong
 
-Mathematics is art, and its practicality and applicability are only byproducts of perception and invention of beauty.
+*Poetry is the art of calling the same thing by different names.* -- Anonymous.
+
+*Yes, and mathematics is the art of calling different things by the same name.* -- Henri Poincaré.
 
 ## About Me
 {{< imageRight src="/images/photos/Portrait.jpg" alt="Photo credit: Pascal." caption="Photo credit: Pascal." width="20%" >}}
