@@ -1,52 +1,35 @@
 # Xiao (Anthony) Hong
 
+Mathematics is art, and its practicality and applicability are only byproducts of perception and invention of beauty.
+
 ## About Me
-{{< imageRight src="/images/photos/Portrait.jpg" alt="Lecturing. Photo credit: Pascal." caption="Lecturing. Photo credit: Pascal." width="20%" >}}
+{{< imageRight src="/images/photos/Portrait.jpg" alt="Photo credit: Pascal." caption="Photo credit: Pascal." width="20%" >}}
 Hello! I am Anthony, a junior at **Washington University in St. Louis (WUSTL)**, where I transitioned from an early passion for architecture into the intricate world of geometric structures. **Geometry** is not only the theoretical foundation of civil engineering but also a powerful tool to showcase the uniqueness of **data**. I seek to understand how structures like manifolds and graphs that are inherent in real-world images can be encoded as data.
 
 I find solace in the rich symphonies of Brahms and the leisures that come with travel. My recent course projects and research include symplectic geometry and toric manifolds (undergraduate thesis with Prof. Tang Xiang), Fourier analysis on polytopes (course project in topic course on polytopes), harmonic analysis on groups (research with Prof. Renato Feres), and surface reconstruction for imaging (course project in computational geometry).
-
+{{< imageRight src="/images/photos/NY.jpg" alt="Photo: New York. Dec 2022." caption="Photo: New York. Dec 2022." width="20%" >}}
 ### Contact
 - **Email: hong[dot]x@wustl[dot]edu**
 - **LinkedIn: [https://www.linkedin.com/in/xiao-hong-anthony/](https://www.linkedin.com/in/xiao-hong-anthony/)**
 
 <br>
-
-## Education
-- High School Diploma, Shenzhen Middle School, 2017-2021;
-{{< imageRight src="/images/photos/NY.jpg" alt="Photo: New York. 12/2022." caption="Photo: New York. 12/2022." width="20%" >}}
-- Bachelor of Science in Economics & Computer Science, Second Major in Mathematics, Washington University in St. Louis, 2021-2025.
-
-**Major GPA: 4.00/4.00; Total GPA: 3.99/4.00**
-
-### Selected Courses:
-**Graduate courses**:
-Math5045 Algebraic Topology (A); Math5046 Differential Topology (A); Math5051 Measure Theory and Functional Analysis I (A); Math5031 Algebra I (A+); Math5021 Complex Analysis I (A); Math586 Network Statistics (A); CSE543 Algorithms of Nonlinear Optimization (A).
-
-**Undergraduate courses**: Math494 Mathematical Statistics (A+); Math350 Dynamical System and Chaos (A); CSE417T Introduction to Machine Learning (A); Econ4011 Microecon (A+); Econ4021 Macroecon (A+); Econ413 Econometrics (A+).
-
-{{< imageRight src="/images/photos/Uchi_Midstates_Consortium.jpg" alt="Uchi Midstates Consortium" caption="Midstates Consortium at Uchi" width="20%" >}}
-
-**In progress**: CSE546T Computational Geometry; CSE347 Analysis of Algorithm; Math547 Combinatorics of Polytopes; Math5032 Algebra II; Math 5021 Complex Analysis II; Math5440 Big Data.
-
 <br>
 
-## Experience
+### Conferences/Seminars/Awards
 - Speaker at Midstates Consortium for Math and Science 23 ([session I.B.3](https://www.mathsciconsortium.org/uncategorized/2023-undergraduate-research-symposium-in-physical-sciences-mathematics-and-computer-science-at-university-of-chicago/)) at University of Chicago. ([beamer presentation](pdfs/presentation_on_Ollivier_Ricci_Curvature.pdf)). The work was also presented at [Prof. Martinkainen's session](https://sites.wustl.edu/henri/online-early-career-morning-sessions-april-13-14-2024/) and WashU SP24 Undergraduate Research Symposium ([video](https://youtu.be/g_lOmxUgVNw)).
 - Grading Math4111 Analysis, Math4171 Topology; TA Math5046 Differential Topology.
 - [Brian Blank Award](\pdfs/Brian_Blank_Award.pdf) for distinguished junior Mathematics major (Spring 24).
-
-### Seminars/Workshops
-- Math586 Network Statistics.
-- Math547 Combinatorics of Polytopes.
-- Math497 Topic in Group Theory.
+- Math586 Topic in Statistics: Network Statistics.
+{{< imageRight src="/images/portfolio/Aryclic_Painting_Urbanity_and_Space.jpg" alt="Aryclic Painting: Urbanity and Space. Aug 2020." caption="Aryclic Painting: Urbanity and Space. Aug 2020." width="20%" >}}
+- Math547 Topic in Geometry: Combinatorics of Polytopes.
+- Math497 Topics in Mathematics: Group Theory From a Historical Perspective
 - [UNC Undergraduate Analysis and PDE Seminar](https://tarheels.live/waves/analysis-and-pde-seminar/) FL22-SP24.
 - WashU Reading Group SP23: Algebraic Geometry.
 - WashU Reading Group FL23: Representation Theory.
-{{< imageRight src="/images/portfolio/Aryclic_Painting_Urbanity_and_Space.jpg" alt="Aryclic Painting: Urbanity and Space. 8/2020." caption="Aryclic Painting: Urbanity and Space. 8/2020." width="20%" >}}
 - StanCon 2023 Workshop:
   [Convention on Stan Programming and Bayesian Modeling](https://mc-stan.org/events/stancon2023/#tutorials)
 - WUSTL Metamorphic Architecture Workshop 2019, Dean Heather Woofter's tutee.
+
 
 <br>
 
