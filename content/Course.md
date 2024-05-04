@@ -64,7 +64,20 @@ The following lecture note also includes my final project, Fourier analysis on p
 ## 7. SP22 Math350 Dynamical System, Prof. McCarthy
 Dynamical systems can be defined as broadly as a semigroup $G$ action on a manifold $M$. Primary examples are $G=\mathbb{Z}$ (iterated maps) and $G=\mathbb{R}$ (flows and differential equations). In this Lecture note, I begin with a summary of classical ode theory partly from the summer course taught by Soumya Sinha Babu in 2021 (and also from various references (see bibliography in the pdf.)) and then use Prof. McCarthy's Math350 (SP22) where we used Strogatz's textbook as a source for supplementary examples to a more systematic approach to dynamics, chaos, and fractals, etc. See also my reading in Measures, Dimensions, and Analytic Capacities for geometry of fractals. The last part of the note is on analysis and dynamics on Riemann surfaces.
 
-
 ### [Lecture Note](/pdfs/Dynamics.pdf)
 
 {{< figure src="/images/courses/attractor.jpg" caption="Lorenz system using Matlab" height="40%" width="65%" class="imagecenter" >}}
+
+
+## 8. FL24 CSE645T Computational Geometry, Prof. Ju
+A course in computational geometry. Topics include convex hull algorithms, sweeping line algorithm, line arrangement algorithm, trapezoidal maps, Art gallery problem, Voronoi diagrams, Delaunay triangulations, KD trees, range trees, and interval trees, motion planning, DCEL, and Hamsandwich cuts ...
+
+### [Course slides, Homework solns, and final project](https://drive.google.com/drive/folders/113TQnPQCbvaph-oaImkYvno5WSCAFG77?usp=sharing)
+
+### [Demo](https://students.engineering.wustl.edu/comp_geo_algorithms/index.html)
+
+### [David M. Mount's lecture note](/pdfs/David_Mount_CompGeoNote.pdf)
+
+{{< figure src="/images/courses/VDduality.png" caption="Voronoi Diagram - Delaunay Triangulation duality (Lecture 12 slide 27)" height="80%" width="100%" class="imagecenter" >}}
+
+
