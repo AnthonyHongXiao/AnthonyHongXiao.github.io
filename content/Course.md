@@ -69,7 +69,7 @@ Dynamical systems can be defined as broadly as a semigroup $G$ action on a manif
 {{< figure src="/images/courses/attractor.jpg" caption="Lorenz system using Matlab" height="40%" width="65%" class="imagecenter" >}}
 
 
-## 8. FL24 CSE645T Computational Geometry, Prof. Ju
+## 8. FL24 CSE546T Computational Geometry, Prof. Ju
 A course in computational geometry. Topics include convex hull algorithms, sweeping line algorithm, line arrangement algorithm, trapezoidal maps, Art gallery problem, Voronoi diagrams, Delaunay triangulations, KD trees, range trees, and interval trees, motion planning, DCEL, and Hamsandwich cuts ...
 
 ### [Course slides, Homework solns, and final project](https://drive.google.com/drive/folders/113TQnPQCbvaph-oaImkYvno5WSCAFG77?usp=sharing)
