@@ -8,19 +8,22 @@
 {{< imageRight src="/images/photos/Portrait.jpg" alt="Photo credit: Pascal." caption="Photo credit: Pascal." width="20%" >}}
 Hello! I am Anthony, a junior at **Washington University in St. Louis (WUSTL)**, where I transitioned from an early passion for architecture into the intricate world of geometric structures. **Geometry** is not only the theoretical foundation of civil engineering but also a powerful tool to showcase the uniqueness of **data**. I seek to understand how structures like manifolds and graphs that are inherent in real-world images can be encoded as data.
 
-I find solace in the rich symphonies of Brahms and the leisures that come with travel. My recent course projects and research include symplectic geometry and toric manifolds (undergraduate thesis with Prof. Tang Xiang), Fourier analysis on polytopes (course project in topic course on polytopes), harmonic analysis on groups (research with Prof. Renato Feres), and surface reconstruction for imaging (course project in computational geometry).
+I find solace in the rich symphonies of Brahms and the leisures that come with travel. My recent projects and research include symplectic geometry and toric manifolds (undergraduate thesis with Prof. Tang Xiang), harmonic analysis on groups (research with Prof. Renato Feres), geometry processing work at [MIT SGI](https://sgi.mit.edu/sgi-2024), and forthcoming work on fractals at Imperial College London.
 {{< imageRight src="/images/photos/NY.jpg" alt="Photo: New York. Dec 2022." caption="Photo: New York. Dec 2022." width="20%" >}}
 ### Contact
 - **Email: hong[dot]x@wustl[dot]edu**
 - **LinkedIn: [https://www.linkedin.com/in/xiao-hong-anthony/](https://www.linkedin.com/in/xiao-hong-anthony/)**
+- **Twitter: [https://x.com/AnthonyHongXiao](https://x.com/AnthonyHongXiao)**
 
 <br>
 <br>
 
-### Conferences/Seminars/Awards
+### Talks/Work
 - Speaker at Midstates Consortium for Math and Science 23 ([session I.B.3](https://www.mathsciconsortium.org/uncategorized/2023-undergraduate-research-symposium-in-physical-sciences-mathematics-and-computer-science-at-university-of-chicago/)) at University of Chicago. ([beamer presentation](pdfs/presentation_on_Ollivier_Ricci_Curvature.pdf)). The work was also presented at [Prof. Martinkainen's session](https://sites.wustl.edu/henri/online-early-career-morning-sessions-april-13-14-2024/) and WashU SP24 Undergraduate Research Symposium ([video](https://youtu.be/g_lOmxUgVNw)).
-- Grading Math4111 Analysis, Math4171 Topology; TA Math5046 Differential Topology.
-- [Brian Blank Award](\pdfs/Brian_Blank_Award.pdf) for distinguished junior Mathematics major (Spring 24).
+- Teaching assistant for Math5046 Differential Topology
+- Grader for Math4111 Introduction to Analysis, Math4171 Topology I, and Math5051 Measure Theory and Functional Analysis I
+
+### Seminars
 - Math586 Topic in Statistics: Network Statistics.
 {{< imageRight src="/images/portfolio/Aryclic_Painting_Urbanity_and_Space.jpg" alt="Aryclic Painting: Urbanity and Space. Aug 2020." caption="Aryclic Painting: Urbanity and Space. Aug 2020." width="20%" >}}
 - Math547 Topic in Geometry: Combinatorics of Polytopes.
@@ -31,7 +34,6 @@ I find solace in the rich symphonies of Brahms and the leisures that come with t
 - StanCon 2023 Workshop:
   [Convention on Stan Programming and Bayesian Modeling](https://mc-stan.org/events/stancon2023/#tutorials)
 - WUSTL Metamorphic Architecture Workshop 2019, Dean Heather Woofter's tutee.
-
 
 <br>
 
