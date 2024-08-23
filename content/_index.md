@@ -6,9 +6,11 @@
 
 ## About Me
 {{< imageRight src="/images/photos/Portrait.jpg" alt="Photo credit: Pascal." caption="Photo credit: Pascal." width="20%" >}}
-Hello! I am Anthony, a junior at **Washington University in St. Louis (WUSTL)**, where I transitioned from an early passion for architecture into the intricate world of geometric structures. **Geometry** is not only the theoretical foundation of civil engineering but also a powerful tool to showcase the uniqueness of **data**. I seek to understand how structures like manifolds and graphs that are inherent in real-world images can be encoded as data.
+Hello! I am Anthony, a senior undergraduate at **Washington University in St. Louis (WUSTL)**, majoring in Economics and Computer Science, with a double major in Mathematics. My early studies in architecture and art led me to an interest in **geometry**, which I now explore with a focus on **data** in a broad sense. I’m interested in various geometric structures, including symplectic and noncommutative geometry, as well as probabilistic and coarse geometry. I also enjoy visual models in low-dimensional topology and discrete differential geometry.
 
-I find solace in the rich symphonies of Brahms and the leisures that come with travel. My recent projects and research include symplectic geometry and toric manifolds (undergraduate thesis with Prof. Tang Xiang), harmonic analysis on groups (research with Prof. Renato Feres), geometry processing work at [MIT SGI](https://sgi.mit.edu/sgi-2024), and forthcoming work on fractals at Imperial College London.
+I recently participated in the geometry processing program at [MIT SGI](https://sgi.mit.edu/sgi-2024), where I took part in a tutorial week and group projects guided by both industry professionals and academics. I’m currently working on my undergraduate thesis in symplectic geometry and toric manifolds with Prof. Tang Xiang.
+
+Outside of math 🔢, I enjoy reading social theories 📖, listening to classical music 🎻, traveling ⛰️, and spending time with my cat 🐈.
 {{< imageRight src="/images/photos/NY.jpg" alt="Photo: New York. Dec 2022." caption="Photo: New York. Dec 2022." width="20%" >}}
 ### Contact
 - **Email: hong[dot]x@wustl[dot]edu**
@@ -39,6 +41,7 @@ I find solace in the rich symphonies of Brahms and the leisures that come with t
 
 ## Publications
 
+{{< imageRight src="/images/Great_Gatsby_Curve.png" alt="The Great Gatsby Curve." caption="The Great Gatsby Curve." width="35%" >}}
 ### 1. Study of Intergenerational Mobility and Urbanization Based on OLS Method and Ordered Probit Model
 
 **IEEE-CS/MSIEID2020, 12/18/2020.**
@@ -47,12 +50,10 @@ I find solace in the rich symphonies of Brahms and the leisures that come with t
 
 The study, using the CHARLS dataset and techniques like OLS and ordered probit model, reveals a growing educational disparity across generations in China, highlighting an increasing trend in educational inequality despite overall improvements, especially between urban and rural regions.
 
-{{< figure src="/images/Great_Gatsby_Curve.png" caption="The Great Gatsby Curve." height="50%" width="50%" class="imagecenter" >}}
-
 ## Projects
 
-### 1.  Curvature of Cayley Graph of Certain Groups (working)
-
+### 1.  Curvature of Cayley Graph of Abelian and Nilpotent Groups (working)
+{{< imageRight src="/images/evolving_point_measures.png" alt="Evolving Point Measures." caption="Evolving Point Measures." width="35%" >}}
 **07/2023-Now**
 
 This is a summer research with Prof. Renato Feres beginning in July 2023. The study aims to use efficient algorithms to compute Ollivier-Ricci curvature of Cayley graphs of certain groups and find out some patterns. Currently, efficient optimization algorithm is found for Cayley graph and theoretical justifications for interesting patterns about curvature are concluding. 
@@ -63,7 +64,6 @@ This is a summer research with Prof. Renato Feres beginning in July 2023. The st
 
 There is also a second project I am working with Prof. Feres. The project studies the Wasserstein distance of point measures that evolved along their geodesics after initiations.
 
-{{< figure src="/images/evolved_point_measures.png" caption="Evolved Point Measures." height="65%" width="65%" class="imagecenter" >}}
 <!---------------------------- seperation line ---------------------------->
 
 ### 2. Image Classification Using Wasserstein Distance from Monge-Kantorovich Solvers
