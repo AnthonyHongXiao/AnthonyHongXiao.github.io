@@ -63,8 +63,6 @@ The influence of discrete differential geometry and computational visualization 
   [DGD Project](https://www.discretization.de)  
   This project explores the deep connections between discrete geometry, dynamics, and their smooth counterparts, using visualization and geometry processing techniques.
 
-- Artur (one of my sgi group mates) writes a whole fully-illustrated [book](https://www.overleaf.com/read/wwsssgnqdvmz#7f0bc0) for our sgi. The book *Guide to Computational Geometry Processing* is a good reference too.
-
 ### Mathematicians Using Visualization
 
 - **Steve Trettel**  

@@ -44,7 +44,7 @@ Outside of math 🔢, I enjoy reading social theories 📖, listening to classic
 {{< imageRight src="/images/Great_Gatsby_Curve.png" alt="The Great Gatsby Curve." caption="The Great Gatsby Curve." width="35%" >}}
 ### 1. Study of Intergenerational Mobility and Urbanization Based on OLS Method and Ordered Probit Model
 
-**IEEE-CS/MSIEID2020, 12/18/2020.**
+**IEEE-CS/MSIEID2020, Dec 18 2020.**
 
 [DOI: 10.1109/MSIEID52046.2020.00092](https://ieeexplore.ieee.org/abstract/document/9382602)
 
@@ -52,9 +52,16 @@ The study, using the CHARLS dataset and techniques like OLS and ordered probit m
 
 ## Projects
 
-### 1.  Curvature of Cayley Graph of Abelian and Nilpotent Groups (working)
-{{< imageRight src="/images/evolving_point_measures.png" alt="Evolving Point Measures." caption="Evolving Point Measures." width="35%" >}}
-**07/2023-Now**
+### 2. Undergraduate Thesis on Symplectic Geometry
+**Feb 2024 - Present**
+
+The project aims to present the Atiyah-Guillemin-Sternberg convexity theorem at the end. Current readings include Ana Cannas da Silva’s *Lectures on Symplectic Geometry* and *Symplectic Toric Manifolds*.
+
+<!---------------------------- seperation line ---------------------------->
+
+### 2.  Curvature of Cayley Graph of Abelian and Nilpotent Groups
+{{< imageRight src="/images/torus.png" alt="Evolving Point Measures." caption="Evolving Point Measures." width="35%" >}}
+**Jul 2023 - Jan 2024**
 
 This is a summer research with Prof. Renato Feres beginning in July 2023. The study aims to use efficient algorithms to compute Ollivier-Ricci curvature of Cayley graphs of certain groups and find out some patterns. Currently, efficient optimization algorithm is found for Cayley graph and theoretical justifications for interesting patterns about curvature are concluding. 
 
@@ -64,50 +71,101 @@ This is a summer research with Prof. Renato Feres beginning in July 2023. The st
 
 There is also a second project I am working with Prof. Feres. The project studies the Wasserstein distance of point measures that evolved along their geodesics after initiations.
 
+$$
+W_p(\mu_1,\mu_2)=\left(\inf_{\mu\in \Gamma(\mu_1,\mu_2)}{\int_{X^2}d(x,y)^p\,d\mu(x,y)}\right)^{\frac{1}{p}}=\left(\inf_{\mu\in \Gamma(\mu_1,\mu_2)}{\mathbf{d}(\mu,\nu)^p_{L^p(\mu;X)}}\right)^{\frac{1}{p}}
+$$
+with
+$$
+\forall A\in \mathcal{B}(\mathcal{M}):\,\mu_1(t)(A)=\frac{1}{n}\sum_{i=1}^{n}{\delta_{\gamma_{v_i}(t)}}(A)=\frac{\text{ number of }\gamma_{v_i}(t)\text{ in }A}{n}
+$$
+
 <!---------------------------- seperation line ---------------------------->
 
-### 2. Image Classification Using Wasserstein Distance from Monge-Kantorovich Solvers
+{{< imageRight src="/images/image_classification.png" alt="MNIST digit examples." caption="MNIST digit examples." width="35%" >}}
+### 3. Image Classification Using Wasserstein Distance from Monge-Kantorovich Solvers
 
 **Final project in Prof. Yixin Chen's CSE543 Nonlinear Optimization, with Jingyuan Zhu, Mingzhen Li, Ruiqi Wang, Fall 2023.**
 
-A survey on two algorithmic solutions (gradient descent and numerical pde) of Monge-Kantorovich solvers and application of image classification.
-[Paper Link](/pdfs/543_Image_Classification_Using_W_dist.pdf)
+A survey on two algorithmic solutions (gradient descent and numerical PDE) of Monge-Kantorovich solvers and application of image classification.
 
-{{< figure src="/images/image_classification.png" caption="MNIST digit examples." height="40%" width="50%" class="imagecenter" >}}
+[Paper Link](/pdfs/543_Image_Classification_Using_W_dist.pdf); image from the [database](https://yann.lecun.com/exdb/mnist/).
+
+<br>
+
+### 4. MIT Summer Geometry Initiative (SGI)
+
+**Jul 2024 - Aug 2024**
+
+The SGI is a program that starts with a week-long tutorial in geometry processing, followed by group projects mentored by experts in the field. Below are the projects I contributed to:
+
+#### Deforming Mesh
+In this project, I explored different metrics to compare the "wiggliness" of shapes, focusing on Gromov-Hausdorff, Hausdorff, and Chamfer distances. The project involved applying these metrics to analyze and quantify shape dissimilarities. My work contributed to developing a deeper understanding of how these distances can be used in practical geometry processing applications.
+
+[Project Link](https://summergeometry.org/sgi2024/how-to-match-the-wiggliness-of-two-shapes/)
+
+{{< imageRight src="/images/SGI/SDF.png" width="25%" >}}
+
+#### Signed Distance Functions (SDFs)
+This project involved designing and reconstructing signed distance functions (SDFs) using the marching squares algorithm. We studied how SDFs can be characterized on planes, proving a theorem that connects SDFs to the Eikonal equation and the closest point condition. The project aimed at improving the precision of surface reconstructions, which has broad implications for fields like computer graphics and computational geometry.
+
+[Part 1](https://summergeometry.org/sgi2024/a-study-on-surface-reconstruction-from-signed-distance-data-part-1/) | [Part 2](https://summergeometry.org/sgi2024/a-study-on-surface-reconstruction-from-signed-distance-data-part-2-error-methods/)
+
+{{< imageRight src="/images/SGI/Nefertiti.png" width="25%" >}}
+
+#### Fitting Inconsistent Input with Noise Regularization
+In this project, I worked on reconstructing surfaces from point clouds that include noise and outliers. We utilized shallow neural networks coupled with adversarial modules to regularize the noise and improve the surface fitting process. The project demonstrated how combining machine learning with geometric techniques can lead to more robust and accurate surface reconstructions, even with imperfect data.
+
+[Project Link](https://summergeometry.org/sgi2024/fitting-surfaces-with-noise-regularization/)
+
+#### Winding Numbers Vectorization
+This project focused on computing winding numbers, which are essential in understanding the topological properties of shapes. I worked on applying these calculations to a torus and its universal cover, using intrinsic triangulations to optimize the mesh. The project aimed at solving issues related to mesh connectivity and color region disconnections by embedding these properties in a feature space. The work has practical implications for texture mapping and mesh processing in computer graphics.
+
+*Project Link: coming soon.*
+
+{{< imageRight src="/images/SGI/flat_torus.png" width="25%" >}}
+#### Bridging Curvatures: From Riemann to Gauss
+This project aimed to introduce the concept of curvature to a broader audience, particularly those familiar with surface curvatures. I reviewed the isometric embedding of a flat torus and explored Gromov's convex integration technique. The project served as an educational resource, connecting classical differential geometry concepts with more advanced topics, making them accessible to members of the SGI community.
+
+[Project Link](https://summergeometry.org/sgi2024/bridging-curvatures-from-riemann-to-gauss/); image from [paper](https://www.pnas.org/doi/pdf/10.1073/pnas.1118478109).
+
 <!---------------------------- seperation line ---------------------------->
 
 ### 3. Hex & Brouwer Paper Report
 
+{{< imageRight src="/images/Hex_board.png" alt="Hex board game." caption="Hex board game." width="25%" >}}
+
 **Midterm project in Prof. Chi's Math 4181 Algebraic Topology, Spring 2022.**
 
-A paper correcting and reestablishing the proof of equivalence between the Hex theorem and the Bouwer Fixed-Point in David Gale’s paper “The Game of Hex and The Brouwer Fixed-Point Theorem.”
-[Paper Link](/pdfs/4181_Hex_and_Brouwer.pdf)
+[Report Link](/pdfs/4181_Hex_and_Brouwer.pdf)
 
-{{< figure src="/images/Hex_board.png" height="40%" width="40%" class="imagecenter" >}}
+A report that correctsm a error on neighborhood size and reestablishes the proof of equivalence between the Hex theorem and the Bouwer Fixed-Point in David Gale’s paper “The Game of Hex and The Brouwer Fixed-Point Theorem.”
+
+Image from [Wolfram](https://mathworld.wolfram.com/GameofHex.html).
+
+<br>
+
 <!---------------------------- seperation line ---------------------------->
 
 ### 4. Split Spoils: Solution to Stolen Necklace Problem Via Borsuk-Ulam Theorem
 
 **Final project in Prof.Chi's Math 4181 Algebraic Topology, Spring 2022.**
 
-Aiming for high-schooler reading, the paper presents the process of solving a mathematical problem and the use of intuition in solving the 2-dimensional Necklace division problem using the Borsuk-Ulam Theorem.
-[Paper Link](/pdfs/4181_Necklace_Problem.pdf)
+[Report Link](/pdfs/4181_Necklace_Problem.pdf)
 
-Note: an interesting little book is [Using the Borsuk-Ulam Theorem](https://kam.mff.cuni.cz/~matousek/akt.html).
+Aiming for high-schooler reading, the paper demonstrates how to solve a mathematical problem. Specifically, guided by [Using the Borsuk-Ulam Theorem](https://kam.mff.cuni.cz/~matousek/akt.html) and 3b1b YouTube [video on necklace problem](https://www.youtube.com/watch?v=yuVqxCSsE7c), we presented the Borsuk-Ulam Theorem intuitively and used it to solve the 2-dimensional Necklace division problem.
+
 <!---------------------------- seperation line ---------------------------->
+{{< imageRight src="/images/covering.png" alt="A covering." caption="A covering." width="18%" >}}
 
 ### 5. A Note about Algebraic and Geometric Characteristics of Archetypal Riemann Surfaces
 
 **Final project in Dr. Rodsphon's Math 497 Topic in Group Theory, Spring 2023.**
 
-A summary of curvatures, isometry groups, and automorphism groups of 3 Riemann Surfaces $\hat{\mathbb{C}}, \mathbb{C}, \triangle$ in uniformization theorem.
+A.B. Sossinsky in [Geometries](https://bookstore.ams.org/stml-64/) classified subgroups of $\text{SO}(3)$ and $\text{Isom}(\mathbb{R}^2)$ for Platonic bodies and tillings. Aimed for understanding such visual applications, we wrote a summary of curvatures, isometry groups, and automorphism groups of 3 Riemann Surfaces $\hat{\mathbb{C}}, \mathbb{C}, \triangle$ in uniformization theorem.
 [Paper Link](/pdfs/497_A_Note_on_Algebraic_and_Geometric_Characteristics_of_Archetypal_Riemann_Surfaces.pdf)
 
 [Presentation: An Exposition of Modernism in Geometry and Physics](https://docs.google.com/presentation/d/1o8KRS4pxbBGSSJmRdzsk2t1VcwMVyEX8/edit?usp=sharing&ouid=100293676418265540630&rtpof=true&sd=true)
 
-A good little book is A.B. Sossinsky's [Geometries](https://bookstore.ams.org/stml-64/), classifying subgroups of $\text{SO}(3)$ and $\text{Isom}(\mathbb{R}^2)$ for Platonic bodies and tillings and going through plane, spherical, hyperbolic, and projective geometry.
-
-<br>
 <br>
 <br>
 
