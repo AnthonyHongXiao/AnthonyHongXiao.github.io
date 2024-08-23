@@ -6,8 +6,12 @@ tags = ["geometry"]
 
 This reading file is for preparing the undergraduate thesis on Symplectic geometry and momental maps, supervised by Prof. Tang Xiang.
 
-Our first reading is Ana Cannas da Silva's *Lectures on Symplectic Geometry* (version: Jan 2006). Our plan is to read Lecture 1,2,3,4,5,6,7,8,9,18,21,22,23,24,,27,28,29,30.
+Our first reading is Ana Cannas da Silva's [*Lectures on Symplectic Geometry*](https://people.math.ethz.ch/~acannas/Papers/lsg.pdf) (version: Jan 2006).
 
-Here is the [Note](/pdfs/Symplectic.pdf).
+**See [overleaf](https://www.overleaf.com/read/zjjgfgrpmkbj#d471df) for my partial notes.**
 
-{{< figure src="/images/lsgimage.jpg" caption="Lectures on Symplectic Geometry." height="35%" width="35%" class="imagecenter" >}}
+{{< figure src="/images/daSilva/daSilva1.png" height="65%" width="65%" class="imagecenter" >}}
+
+Our second reading is Ana Cannas da Silva's [*Symplectic Toric Manifolds*](https://people.math.ethz.ch/~acannas/Papers/toric.pdf) (version: Jul 2001).
+
+{{< figure src="/images/daSilva/daSilva2.png" height="55%" width="55%" class="imagecenter" >}}

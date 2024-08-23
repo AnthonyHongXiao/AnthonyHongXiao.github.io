@@ -184,7 +184,3 @@ A.B. Sossinsky in [Geometries](https://bookstore.ams.org/stml-64/) classified su
 
 
 
-
-
-
-
