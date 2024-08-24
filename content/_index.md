@@ -20,7 +20,7 @@ Outside of math 🔢, I enjoy reading social theories 📖, listening to classic
 <br>
 <br>
 
-### Talks/Work
+### Talks/Teaching
 - Speaker at Midstates Consortium for Math and Science 23 ([session I.B.3](https://www.mathsciconsortium.org/uncategorized/2023-undergraduate-research-symposium-in-physical-sciences-mathematics-and-computer-science-at-university-of-chicago/)) at University of Chicago. ([beamer presentation](pdfs/presentation_on_Ollivier_Ricci_Curvature.pdf)). The work was also presented at [Prof. Martinkainen's session](https://sites.wustl.edu/henri/online-early-career-morning-sessions-april-13-14-2024/) and WashU SP24 Undergraduate Research Symposium ([video](https://youtu.be/g_lOmxUgVNw)).
 - Teaching assistant for Math5046 Differential Topology
 - Grader for Math4111 Introduction to Analysis, Math4171 Topology I, and Math5051 Measure Theory and Functional Analysis I
@@ -39,6 +39,8 @@ Outside of math 🔢, I enjoy reading social theories 📖, listening to classic
 
 <br>
 
+<hr style="border: none; height: 1px; background-color: #333; margin: 40px 0;">
+
 ## Publications
 
 {{< imageRight src="/images/Great_Gatsby_Curve.png" alt="The Great Gatsby Curve." caption="The Great Gatsby Curve." width="35%" >}}
@@ -50,9 +52,11 @@ Outside of math 🔢, I enjoy reading social theories 📖, listening to classic
 
 The study, using the CHARLS dataset and techniques like OLS and ordered probit model, reveals a growing educational disparity across generations in China, highlighting an increasing trend in educational inequality despite overall improvements, especially between urban and rural regions.
 
+<hr style="border: none; height: 1px; background-color: #333; margin: 40px 0;">
+
 ## Projects
 
-### 2. Undergraduate Thesis on Symplectic Geometry
+### 1. Undergraduate Thesis on Symplectic Geometry
 **Feb 2024 - Present**
 
 The project aims to present the Atiyah-Guillemin-Sternberg convexity theorem at the end. Current readings include Ana Cannas da Silva’s *Lectures on Symplectic Geometry* and *Symplectic Toric Manifolds*.
@@ -76,7 +80,7 @@ W_p(\mu_1,\mu_2)=\left(\inf_{\mu\in \Gamma(\mu_1,\mu_2)}{\int_{X^2}d(x,y)^p\,d\m
 $$
 with
 $$
-\forall A\in \mathcal{B}(\mathcal{M}):\,\mu_1(t)(A)=\frac{1}{n}\sum_{i=1}^{n}{\delta_{\gamma_{v_i}(t)}}(A)=\frac{\text{ number of }\gamma_{v_i}(t)\text{ in }A}{n}
+\forall A\in \mathcal{B}(\mathcal{M}):\text{ }\mu_1(t)(A)=\frac{1}{n}\sum_{i=1}^{n}{\delta_{\gamma_{v_i}(t)}}(A)=\frac{\text{ number of }\gamma_{v_i}(t)\text{ in }A}{n}
 $$
 
 <!---------------------------- seperation line ---------------------------->
@@ -130,7 +134,7 @@ This project aimed to introduce the concept of curvature to a broader audience, 
 
 <!---------------------------- seperation line ---------------------------->
 
-### 3. Hex & Brouwer Paper Report
+### 5. Hex & Brouwer Paper Report
 
 {{< imageRight src="/images/Hex_board.png" alt="Hex board game." caption="Hex board game." width="25%" >}}
 
@@ -146,7 +150,7 @@ Image from [Wolfram](https://mathworld.wolfram.com/GameofHex.html).
 
 <!---------------------------- seperation line ---------------------------->
 
-### 4. Split Spoils: Solution to Stolen Necklace Problem Via Borsuk-Ulam Theorem
+### 6. Split Spoils: Solution to Stolen Necklace Problem Via Borsuk-Ulam Theorem
 
 **Final project in Prof.Chi's Math 4181 Algebraic Topology, Spring 2022.**
 
@@ -155,9 +159,9 @@ Image from [Wolfram](https://mathworld.wolfram.com/GameofHex.html).
 Aiming for high-schooler reading, the paper demonstrates how to solve a mathematical problem. Specifically, guided by [Using the Borsuk-Ulam Theorem](https://kam.mff.cuni.cz/~matousek/akt.html) and 3b1b YouTube [video on necklace problem](https://www.youtube.com/watch?v=yuVqxCSsE7c), we presented the Borsuk-Ulam Theorem intuitively and used it to solve the 2-dimensional Necklace division problem.
 
 <!---------------------------- seperation line ---------------------------->
-{{< imageRight src="/images/covering.png" alt="A covering." caption="A covering." width="18%" >}}
+{{< imageRight src="/images/covering.jpg" alt="A covering." caption="A covering." width="25%" >}}
 
-### 5. A Note about Algebraic and Geometric Characteristics of Archetypal Riemann Surfaces
+### 7. A Note about Algebraic and Geometric Characteristics of Archetypal Riemann Surfaces
 
 **Final project in Dr. Rodsphon's Math 497 Topic in Group Theory, Spring 2023.**
 
@@ -168,6 +172,8 @@ A.B. Sossinsky in [Geometries](https://bookstore.ams.org/stml-64/) classified su
 
 <br>
 <br>
+
+<div style="border-top: 4px solid #333; margin: 40px 0;"></div>
 
 ## Gallery
 
