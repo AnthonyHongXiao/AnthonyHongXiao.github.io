@@ -76,7 +76,7 @@ This is a summer research with Prof. Renato Feres beginning in July 2023. The st
 There is also a second project I am working with Prof. Feres. The project studies the Wasserstein distance of point measures that evolved along their geodesics after initiations.
 
 $$
-W_p(\mu_1,\mu_2)=\left(\inf_{\mu\in \Gamma(\mu_1,\mu_2)}{\int_{X^2}d(x,y)^p\,d\mu(x,y)}\right)^{\frac{1}{p}}=\left(\inf_{\mu\in \Gamma(\mu_1,\mu_2)}{\mathbf{d}(\mu,\nu)^p_{L^p(\mu;X)}}\right)^{\frac{1}{p}}
+W_p(\mu_1,\mu_2)=\left(\inf_{\mu\in \Gamma(\mu_1,\mu_2)}{\int_{X^2}d(x,y)^pd\mu(x,y)}\right)^{\frac{1}{p}}=\left(\inf_{\mu\in \Gamma(\mu_1,\mu_2)}{\mathbf{d}(\mu,\nu)^p_{L^p(\mu;X)}}\right)^{\frac{1}{p}}
 $$
 with
 $$
