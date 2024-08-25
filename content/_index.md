@@ -54,7 +54,9 @@ Outside of math 🔢, I enjoy reading social theories 📖, listening to classic
 
 [DOI: 10.1109/MSIEID52046.2020.00092](https://ieeexplore.ieee.org/abstract/document/9382602)
 
-The study, using the CHARLS dataset and techniques like OLS and ordered probit model, reveals a growing educational disparity across generations in China, highlighting an increasing trend in educational inequality despite overall improvements, especially between urban and rural regions.
+The study based on the CHARLS dataset uses OLS, ordered probit model, and generalized entropy to analyze and generate Great Gatsby curve and Lorenz curve. The study reveals a growing educational disparity across generations in China, highlighting an increasing trend in educational inequality despite overall improvements, especially between urban and rural regions.
+
+*Interestingly, apart from the educational version of Great Gatsby curve above, we recently have an [academic version](Great Gatsby curve).*
 
 <hr style="border: none; height: 1px; background-color: #333; margin: 40px 0;">
 
