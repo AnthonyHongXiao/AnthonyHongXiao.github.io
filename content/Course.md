@@ -90,3 +90,7 @@ The course based on *Lectures on Lie Groups* by Frank Adams is structured in thr
 ## 10. FL24 Math547 Lie Algbera and Representation Theory, Prof. Martha Precup
 
 See syllabus [here](pdfs/547Syllabus-F24.pdf).
+
+## 11. FL24 Math5047 Riemannian Geometry, Prof. Renato Feres
+
+See syllabus [here](https://www.math.wustl.edu/~feres/Math5047Fall24/Math5047Fall24Syllabus.html).

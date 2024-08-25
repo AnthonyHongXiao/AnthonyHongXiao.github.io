@@ -11,10 +11,15 @@ Hello! I am Anthony, a senior undergraduate at **Washington University in St. Lo
 I recently participated in the geometry processing program at [MIT SGI](https://sgi.mit.edu/sgi-2024), where I took part in a tutorial week and group projects guided by both industry professionals and academics. I’m currently working on my undergraduate thesis in symplectic geometry and toric manifolds with Prof. Tang Xiang.
 
 Outside of math 🔢, I enjoy reading social theories 📖, listening to classical music 🎻, traveling ⛰️, and spending time with my cat 🐈.
-{{< imageRight src="/images/photos/NY.jpg" alt="Photo: New York. Dec 2022." caption="Photo: New York. Dec 2022." width="20%" >}}
+{{< imageRight src="/images/photos/cat.jpg" alt="cat" caption="my cat Qiu-qiu." width="20%" >}}
+
+<br>
+<br>
+
 ### Contact
 - **Email: hong[dot]x@wustl[dot]edu**
 - **LinkedIn: [https://www.linkedin.com/in/xiao-hong-anthony/](https://www.linkedin.com/in/xiao-hong-anthony/)**
+{{< imageRight src="/images/photos/NY.jpg" alt="Photo: New York. Dec 2022." caption="Photo: New York. Dec 2022." width="20%" >}}
 - **Twitter: [https://x.com/AnthonyHongXiao](https://x.com/AnthonyHongXiao)**
 
 <br>
@@ -22,12 +27,13 @@ Outside of math 🔢, I enjoy reading social theories 📖, listening to classic
 
 ### Talks/Teaching
 - Speaker at Midstates Consortium for Math and Science 23 ([session I.B.3](https://www.mathsciconsortium.org/uncategorized/2023-undergraduate-research-symposium-in-physical-sciences-mathematics-and-computer-science-at-university-of-chicago/)) at University of Chicago. ([beamer presentation](pdfs/presentation_on_Ollivier_Ricci_Curvature.pdf)). The work was also presented at [Prof. Martinkainen's session](https://sites.wustl.edu/henri/online-early-career-morning-sessions-april-13-14-2024/) and WashU SP24 Undergraduate Research Symposium ([video](https://youtu.be/g_lOmxUgVNw)).
-- Teaching assistant for Math5046 Differential Topology
-- Grader for Math4111 Introduction to Analysis, Math4171 Topology I, and Math5051 Measure Theory and Functional Analysis I
+- Teaching assistant for Math5046 Differential Topology.
+- Grader for Math4111 Introduction to Analysis, Math4171 Topology I, and Math5051 Measure Theory and Functional Analysis I.
+
+{{< imageRight src="/images/portfolio/Aryclic_Painting_Urbanity_and_Space.jpg" alt="Aryclic Painting: Urbanity and Space. Aug 2020." caption="Aryclic Painting: Urbanity and Space. Aug 2020." width="20%" >}}
 
 ### Seminars
 - Math586 Topic in Statistics: Network Statistics.
-{{< imageRight src="/images/portfolio/Aryclic_Painting_Urbanity_and_Space.jpg" alt="Aryclic Painting: Urbanity and Space. Aug 2020." caption="Aryclic Painting: Urbanity and Space. Aug 2020." width="20%" >}}
 - Math547 Topic in Geometry: Combinatorics of Polytopes.
 - Math497 Topics in Mathematics: Group Theory From a Historical Perspective
 - [UNC Undergraduate Analysis and PDE Seminar](https://tarheels.live/waves/analysis-and-pde-seminar/) FL22-SP24.
@@ -36,8 +42,6 @@ Outside of math 🔢, I enjoy reading social theories 📖, listening to classic
 - StanCon 2023 Workshop:
   [Convention on Stan Programming and Bayesian Modeling](https://mc-stan.org/events/stancon2023/#tutorials)
 - WUSTL Metamorphic Architecture Workshop 2019, Dean Heather Woofter's tutee.
-
-<br>
 
 <hr style="border: none; height: 1px; background-color: #333; margin: 40px 0;">
 
@@ -80,7 +84,7 @@ W_p(\mu_1,\mu_2)=\left(\inf_{\mu\in \Gamma(\mu_1,\mu_2)}{\int_{X^2}d(x,y)^pd\mu(
 $$
 with
 $$
-\forall A\in \mathcal{B}(\mathcal{M}):\text{ }\mu_1(t)(A)=\frac{1}{n}\sum_{i=1}^{n}{\delta_{\gamma_{v_i}(t)}}(A)=\frac{\text{ number of }\gamma_{v_i}(t)\text{ in }A}{n}
+\forall A\in \mathcal{B}(\mathcal{M}):\text{ }\mu_1(t)(A)=\frac{1}{n}\sum_{i=1}^{n}{\delta_{\gamma_{v_i}(t)}}(A)=\frac{\text{ number of }\gamma_{v_i}(t)\text{ in }A}{n}.
 $$
 
 <!---------------------------- seperation line ---------------------------->
@@ -92,7 +96,7 @@ $$
 
 A review of the [paper](https://arxiv.org/abs/1612.00181) on gradient descent and finite element method for solving the Monge-Kantorovich problem with quadratic cost
 $$
-\min_{\text{measurable }T\text{ s.t. } T_{\sharp} \mu=\nu}\left(\int_X \frac{1}{2}\left|x-T^*(x)\right|^2 f(x) d x\right)^{1 / 2}
+\inf_{T\in \Gamma(\mu,\nu)}\left(\int_X \frac{1}{2}\left|x-T^*(x)\right|^2 f(x) d x\right)^{1 / 2}
 $$
 with application in image classification.
 
