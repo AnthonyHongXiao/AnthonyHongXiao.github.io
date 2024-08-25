@@ -67,7 +67,7 @@ The project aims to present the Atiyah-Guillemin-Sternberg convexity theorem at 
 {{< imageRight src="/images/torus.png" alt="Evolving Point Measures." caption="Evolving Point Measures." width="35%" >}}
 **Jul 2023 - Jan 2024**
 
-This is a summer research with Prof. Renato Feres beginning in July 2023. The study aims to use efficient algorithms to compute Ollivier-Ricci curvature of Cayley graphs of certain groups and find out some patterns. Currently, efficient optimization algorithm is found for Cayley graph and theoretical justifications for interesting patterns about curvature are concluding. 
+This is a summer research with Prof. Renato Feres beginning in July 2023. The study aims to use efficient algorithms to compute [Ollivier-Ricci curvature](https://www.sciencedirect.com/science/article/pii/S002212360800493X), or [Lin-Lu-Yau curvature](https://people.math.sc.edu/lu/papers/graphcurv.pdf), of Cayley graphs of certain groups and find out some patterns. Currently, efficient optimization algorithm is found for Cayley graph and theoretical justifications for interesting patterns about curvature are concluding. 
 
 <!---
 [beamer presentation](pdfs/presentation_on_Ollivier_Ricci_Curvature.pdf))
@@ -90,7 +90,11 @@ $$
 
 **Final project in Prof. Yixin Chen's CSE543 Nonlinear Optimization, with Jingyuan Zhu, Mingzhen Li, Ruiqi Wang, Fall 2023.**
 
-A survey on two algorithmic solutions (gradient descent and numerical PDE) of Monge-Kantorovich solvers and application of image classification.
+A review of the [paper](https://arxiv.org/abs/1612.00181) on gradient descent and finite element method for solving the Monge-Kantorovich problem
+$$
+\min_{\text{measurable }T: X \to Y \text{ s.t. } T_{\#}=\nu}\left(\int_X \frac{1}{2}\left|x-T^*(x)\right|^2 f(x) d x\right)^{1 / 2}
+$$
+with application in image classification.
 
 [Paper Link](/pdfs/543_Image_Classification_Using_W_dist.pdf); image from the [database](https://yann.lecun.com/exdb/mnist/).
 
