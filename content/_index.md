@@ -90,9 +90,9 @@ $$
 
 **Final project in Prof. Yixin Chen's CSE543 Nonlinear Optimization, with Jingyuan Zhu, Mingzhen Li, Ruiqi Wang, Fall 2023.**
 
-A review of the [paper](https://arxiv.org/abs/1612.00181) on gradient descent and finite element method for solving the Monge-Kantorovich problem
+A review of the [paper](https://arxiv.org/abs/1612.00181) on gradient descent and finite element method for solving the Monge-Kantorovich problem with quadratic cost
 $$
-\min_{\text{measurable }T: X \to Y \text{ s.t. } T_{\#}=\nu}\left(\int_X \frac{1}{2}\left|x-T^*(x)\right|^2 f(x) d x\right)^{1 / 2}
+\min_{\text{measurable }T\text{ s.t. } T_{\sharp} \mu=\nu}\left(\int_X \frac{1}{2}\left|x-T^*(x)\right|^2 f(x) d x\right)^{1 / 2}
 $$
 with application in image classification.
 
