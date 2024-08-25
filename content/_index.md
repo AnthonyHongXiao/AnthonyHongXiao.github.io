@@ -6,7 +6,7 @@
 
 ## About Me
 {{< imageRight src="/images/photos/Portrait.jpg" alt="Photo credit: Pascal." caption="Photo credit: Pascal." width="20%" >}}
-Hello! I am Anthony, a senior undergraduate at **Washington University in St. Louis (WUSTL)**, majoring in Economics and Computer Science, with a double major in Mathematics. My early studies in architecture and art led me to an interest in **geometry**, which I now explore with a focus on **data** in a broad sense. I’m interested in various geometric structures, including symplectic and noncommutative geometry, as well as probabilistic and coarse geometry. I also enjoy visual models in low-dimensional topology and discrete differential geometry.
+Hello! I am Anthony, a senior undergraduate at **Washington University in St. Louis (WUSTL)**, majoring in joint program Econ+CS, with a double major in Mathematics. My early study in architecture and art led me to an interest in **geometry**, which I now explore with a focus on **data** in a broad sense. I’m interested in various geometric structures, including symplectic and noncommutative geometry, as well as probabilistic and coarse geometry. I also enjoy visual models in low-dimensional topology and discrete differential geometry.
 
 I recently participated in the geometry processing program at [MIT SGI](https://sgi.mit.edu/sgi-2024), where I took part in a tutorial week and group projects guided by both industry professionals and academics. I’m currently working on my undergraduate thesis in symplectic geometry and toric manifolds with Prof. Tang Xiang.
 
