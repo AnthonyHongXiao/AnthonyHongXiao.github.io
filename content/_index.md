@@ -104,7 +104,7 @@ with application in image classification.
 
 **Jul 2024 - Aug 2024**
 
-The SGI is a program that starts with a week-long tutorial in geometry processing, followed by group projects mentored by experts in the field. Below are the projects I contributed to:
+The [MIT SGI](https://sgi.mit.edu/sgi-2024) is a program that starts with a week-long tutorial in geometry processing, followed by group projects mentored by experts in the field. Below are the projects I contributed to:
 
 #### Deforming Mesh
 In this project, I explored different metrics to compare the "wiggliness" of shapes, focusing on Gromov-Hausdorff, Hausdorff, and Chamfer distances. The project involved applying these metrics to analyze and quantify shape dissimilarities. My work contributed to developing a deeper understanding of how these distances can be used in practical geometry processing applications.
