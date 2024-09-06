@@ -65,7 +65,7 @@ The study based on the CHARLS dataset uses OLS, ordered probit model, and genera
 ### 1. Undergraduate Thesis on Symplectic Geometry
 **Feb 2024 - Present**
 
-The project aims to present the Atiyah-Guillemin-Sternberg convexity theorem at the end. Current readings include Ana Cannas da Silva’s *Lectures on Symplectic Geometry* and *Symplectic Toric Manifolds*.
+The project, supervised under Prof. [Xiang Tang](https://www.math.wustl.edu/~xtang/), aims to present the Atiyah-Guillemin-Sternberg convexity theorem and toric manifolds at the end. Current readings include Ana Cannas da Silva’s *Lectures on Symplectic Geometry* and *Symplectic Toric Manifolds*.
 
 <!---------------------------- seperation line ---------------------------->
 
@@ -73,7 +73,7 @@ The project aims to present the Atiyah-Guillemin-Sternberg convexity theorem at 
 {{< imageRight src="/images/torus.png" alt="Evolving Point Measures." caption="Evolving Point Measures." width="35%" >}}
 **Jul 2023 - Jan 2024**
 
-This is a summer research with Prof. Renato Feres beginning in July 2023. The study aims to use efficient algorithms to compute [Ollivier-Ricci curvature](https://www.sciencedirect.com/science/article/pii/S002212360800493X), or [Lin-Lu-Yau curvature](https://people.math.sc.edu/lu/papers/graphcurv.pdf), of Cayley graphs of certain groups and find out some patterns. Currently, efficient optimization algorithm is found for Cayley graph and theoretical justifications for interesting patterns about curvature are concluding. 
+This is a summer research with Prof. [Renato Feres](https://www.math.wustl.edu/~feres/) beginning in July 2023. The study aims to use efficient algorithms to compute [Ollivier-Ricci curvature](https://www.sciencedirect.com/science/article/pii/S002212360800493X), or [Lin-Lu-Yau curvature](https://people.math.sc.edu/lu/papers/graphcurv.pdf), of Cayley graphs of certain groups and find out some patterns. Currently, efficient optimization algorithm is found for Cayley graph and theoretical justifications for interesting patterns about curvature are concluding. 
 
 <!---
 [beamer presentation](pdfs/presentation_on_Ollivier_Ricci_Curvature.pdf))
@@ -112,26 +112,26 @@ with application in image classification.
 
 The [MIT SGI](https://sgi.mit.edu/sgi-2024) is a program that starts with a week-long tutorial in geometry processing, followed by group projects mentored by experts in the field. Below are the projects I contributed to:
 
-#### Deforming Mesh
+#### Deforming Mesh (Dr. [Nickolas Sharp](https://nmwsharp.com/))
 In this project, I explored different metrics to compare the "wiggliness" of shapes, focusing on Gromov-Hausdorff, Hausdorff, and Chamfer distances. The project involved applying these metrics to analyze and quantify shape dissimilarities. My work contributed to developing a deeper understanding of how these distances can be used in practical geometry processing applications.
 
 [Project Link](https://summergeometry.org/sgi2024/how-to-match-the-wiggliness-of-two-shapes/)
 
 {{< imageRight src="/images/SGI/SDF.png" width="25%" >}}
 
-#### Signed Distance Functions (SDFs)
+#### Signed Distance Functions (SDFs) (Prof. [Oded Stein](https://odedstein.com/) and Prof. [Silvia Sellán](https://www.silviasellan.com/))
 This project involved designing and reconstructing signed distance functions (SDFs) using the marching squares algorithm. We studied how SDFs can be characterized on planes, proving a theorem that connects SDFs to the Eikonal equation and the closest point condition. The project aimed at improving the precision of surface reconstructions, which has broad implications for fields like computer graphics and computational geometry.
 
 [Part 1](https://summergeometry.org/sgi2024/a-study-on-surface-reconstruction-from-signed-distance-data-part-1/) | [Part 2](https://summergeometry.org/sgi2024/a-study-on-surface-reconstruction-from-signed-distance-data-part-2-error-methods/)
 
 {{< imageRight src="/images/SGI/Nefertiti.png" width="25%" >}}
 
-#### Fitting Inconsistent Input with Noise Regularization
+#### Fitting Inconsistent Input with Noise Regularization (Prof. [Amir Vaxman](https://avaxman.github.io/))
 In this project, I worked on reconstructing surfaces from point clouds that include noise and outliers. We utilized shallow neural networks coupled with adversarial modules to regularize the noise and improve the surface fitting process. The project demonstrated how combining machine learning with geometric techniques can lead to more robust and accurate surface reconstructions, even with imperfect data.
 
 [Project Link](https://summergeometry.org/sgi2024/fitting-surfaces-with-noise-regularization/)
 
-#### Winding Numbers Vectorization
+#### Winding Numbers Vectorization (Prof. [Edward Chien](https://cs-people.bu.edu/edchien/))
 This project focused on computing winding numbers, which are essential in understanding the topological properties of shapes. I worked on applying these calculations to a torus and its universal cover, using intrinsic triangulations to optimize the mesh. The project aimed at solving issues related to mesh connectivity and color region disconnections by embedding these properties in a feature space. The work has practical implications for texture mapping and mesh processing in computer graphics.
 
 *Project Link: coming soon.*
