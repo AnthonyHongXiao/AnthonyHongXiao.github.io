@@ -1,3 +1,3 @@
 # Hugo ʕ•ᴥ•ʔ Bear Blog 
 
-Anthony's implementation
+Anthony Hong's implementation
