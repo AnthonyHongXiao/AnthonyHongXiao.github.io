@@ -6,7 +6,7 @@ tags = [geometry]
 
 ## Geometry: The Rhetoric of Mathematics
 
-“Let no one ignorant of geometry enter,” Plato once inscribed above his academy, hinting that geometry is more than a mere field of study—it’s a prerequisite for higher thought. Like rhetoric, geometry structures our understanding and shapes how we interpret the world.
+“Let no one ignorant of geometry enter,” Plato once inscribed above his academy, hinting that geometry is more than a mere field of study—it’s a prerequisite for higher thought. Like rhetoric, geometry structures our understanding and shapes how we interpret the world. 
 
 But what exactly is geometry? It’s nearly impossible to define without it dissolving into algebra, topology, or analysis. When we talk about metrics, we often mean analysis, while the “geometry” of graphs is actually combinatorics, using terms like diameter or bridges for rhetorical flair. Even the concept of shape often implies a topological, rather than geometric, essence.
 
