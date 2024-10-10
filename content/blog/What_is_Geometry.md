@@ -1,7 +1,7 @@
 +++
 title = "What is Geometry?"
 date = "2024-10-09T22:29:35-05:00"
-tags = [geometry]
+tags = ["geometry"]
 +++
 
 ## Geometry: The Rhetoric of Mathematics
