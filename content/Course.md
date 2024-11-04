@@ -25,16 +25,32 @@ The red book of Varieties and Schemes, David Mumford. Springer Lecture Notes, 19
 
 ## 3. FL24 Math547 Lie Algbera and Representation Theory, Prof. Martha Precup
 
-See syllabus [here](/pdfs/547Syllabus-F24.pdf).
+We used the following textbooks:
+
+- Introduction to Lie Algebras, by K. Erdmann and M. J. Wildon
+
+- Introduction to Lie Algebras and Representation Theory, by J. Humphreys
+
+- Representation Theory: A First Course, by W. Fulton and J. Harris
+
+- Symmetry, Representations, and Invariants, by R. Goodman and N. R. Wallach
+
+### [Math547 Lecture Note](/pdfs/547_LieAlandRep.pdf)
+
+{{< figure src="/images/courses/G2.png" caption="Root System G_2" height="60%" width="60%" class="imagecenter" >}}
 
 ## 4. FL24 Math560 Compact Lie Group, Prof. Quo-Shin Chi
 The course based on *Lectures on Lie Groups* by Frank Adams is structured in three stages. First, it proves that the universal cover of a compact connected Lie group is the direct product of Euclidean space and compact, simply connected simple Lie groups, which aids in classifying all compact Lie groups. Next, it explores the maximal torus, root systems, Weyl groups, and their role in classifying these groups. Finally, the course examines the relationship between the weights of a maximal torus and irreducible complex representations, particularly focusing on exceptional Lie groups and Spin representations.
+
+### [Math547 Lecture Note](/pdfs/560_CompactLieGroup.pdf)
 
 {{< figure src="/images/courses/FiberBundle.png" caption="A Fiber Bundle." height="80%" width="80%" class="imagecenter" >}}
 
 ## 5. FL24 Math5047 Riemannian Geometry, Prof. Renato Feres
 
-See syllabus [here](https://www.math.wustl.edu/~feres/Math5047Fall24/Math5047Fall24Syllabus.html).
+See syllabus [here](https://www.math.wustl.edu/~feres/Math5047Fall24/Math5047Fall24Syllabus.html). This course provides an in-depth introduction to Riemannian geometry. We begin with a review of differentiable manifolds and Lie theory and define Riemannian metrics and connections, discussing affine and Riemannian connections, parallel transport, and the geodesic flow. We also explore various curvature notions and hypersurfaces and the Gauss-Bonnet theorem, followed by an examination of Jacobi fields. We  survey results on complete manifolds, including the Hopf-Rinow and Hadamard theorems. Finally, we overview spaces of constant curvature and conclude with a discussion of the Chern-Gauss-Bonnet theorem.
+
+### [Math547 Lecture Note](/pdfs/LeeRM.pdf)
 
 {{< figure src="/images/courses/submanifold.jpg" caption="A Submanifold." height="80%" width="80%" class="imagecenter" >}}
 
