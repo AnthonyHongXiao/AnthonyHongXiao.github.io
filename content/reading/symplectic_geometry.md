@@ -10,8 +10,8 @@ Our first reading is Ana Cannas da Silva's [*Lectures on Symplectic Geometry*](h
 
 **See [overleaf](https://www.overleaf.com/read/zjjgfgrpmkbj#d471df) for my partial notes.**
 
-{{< figure src="/images/daSilva/daSilva1.png" height="65%" width="65%" class="imagecenter" >}}
+{{< figure src="/images/symplectic/daSilva1.png" height="65%" width="65%" class="imagecenter" >}}
 
 Our second reading is Ana Cannas da Silva's [*Symplectic Toric Manifolds*](https://people.math.ethz.ch/~acannas/Papers/toric.pdf) (version: Jul 2001).
 
-{{< figure src="/images/daSilva/daSilva2.png" height="55%" width="55%" class="imagecenter" >}}
+{{< figure src="/images/symplectic/daSilva2.png" height="55%" width="55%" class="imagecenter" >}}

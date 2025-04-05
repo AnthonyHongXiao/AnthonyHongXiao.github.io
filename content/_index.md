@@ -5,43 +5,41 @@
 *Yes, and mathematics is the art of calling different things by the same name.* -- Henri Poincaré.
 
 ## About Me
-{{< imageRight src="/images/photos/Portrait.jpg" alt="Photo credit: Pascal." width="20%" >}}
-Hello! I am Anthony, a senior undergraduate at **Washington University in St. Louis (WUSTL)**, majoring in joint program Econ+CS, with a double major in Mathematics. My early study in architecture and art led me to an interest in **geometry**, which I now explore with an additional layer of **data** in a broad sense. I’m interested in various geometric structures, including symplectic and noncommutative geometry, as well as probabilistic and coarse geometry. I also enjoy visual models in low-dimensional topology and discrete differential geometry.
+{{< imageRight src="/images/photos/Portrait.jpg" alt="Photo credit: Pascal." caption="me in front of Olin Library." width="20%" >}}
+Hello! I am Anthony, a senior undergraduate at **Washington University in St. Louis (WUSTL)**, majoring in a joint major Econ+CS, with a double major in Mathematics. My early study in architecture and art led me to an interest in **geometry**, which I now explore with an additional layer of **data** in a broad sense. I’m interested in various geometric structures, including Riemannian and symplectic geometry, as well as probabilistic and coarse geometry. I also enjoy visual models like knots, graphs, polytopes, and some low-dimensional manifolds. I like drawing these models either by hand or in vector graphics.
 
-I recently participated in the geometry processing program at [MIT SGI](https://sgi.mit.edu/sgi-2024) and am currently working on my undergraduate thesis in symplectic and toric manifolds with Prof. [Xiang Tang](https://www.math.wustl.edu/~xtang/).
+Recently, I finished my undergraduate thesis in symplectic and toric manifolds with Prof. [Xiang Tang](https://www.math.wustl.edu/~xtang/). Last summer, I participated in an REU on discrete differential geometry and geometry processing at [MIT SGI](https://sgi.mit.edu/sgi-2024). 
 
 Outside of math 🔢, I enjoy reading social theories 📖, listening to classical music 🎻, traveling ⛰️, and spending time with my cat 🐈.
 {{< imageRight src="/images/photos/cat.jpg" alt="cat" caption="my cat Qiu-qiu." width="20%" >}}
 
 <br>
-<br>
 
 ### Contact
 - **Email: hong[dot]x@wustl[dot]edu**
 - **LinkedIn: [https://www.linkedin.com/in/xiao-hong-anthony/](https://www.linkedin.com/in/xiao-hong-anthony/)**
-{{< imageRight src="/images/photos/NY.jpg" alt="Photo: New York. Dec 2022." caption="Photo: New York. Dec 2022." width="20%" >}}
 - **Twitter: [https://x.com/AnthonyHongXiao](https://x.com/AnthonyHongXiao)**
-
-<br>
-<br>
+{{< imageRight src="/images/photos/NY.jpg" alt="Photo: New York. Dec 2022." caption="Photo: New York. Dec 2022." width="20%" >}}
 
 ### Talks/Teaching
 - Speaker at Midstates Consortium for Math and Science 23 ([session I.B.3](https://www.mathsciconsortium.org/uncategorized/2023-undergraduate-research-symposium-in-physical-sciences-mathematics-and-computer-science-at-university-of-chicago/)) at University of Chicago. ([beamer presentation](pdfs/presentation_on_Ollivier_Ricci_Curvature.pdf)). The work was also presented at [Prof. Martinkainen's session](https://sites.wustl.edu/henri/online-early-career-morning-sessions-april-13-14-2024/) and WashU SP24 Undergraduate Research Symposium ([video](https://youtu.be/g_lOmxUgVNw)).
+- My undergraduate thesis presentation ([video](https://youtu.be/6PMXHiMQoeA) and [event link](https://math.wustl.edu/events/senior-honors-thesis-symplectic-geometry-reduction-convexity-and-unimodularity)).
 - Teaching assistant for Math5046 Differential Topology.
 - Grader for Math4111 Introduction to Analysis, Math4171 Topology I, and Math5051 Measure Theory and Functional Analysis I.
 
-{{< imageRight src="/images/portfolio/Aryclic_Painting_Urbanity_and_Space.jpg" alt="Aryclic Painting: Urbanity and Space. Aug 2020." caption="Aryclic Painting: Urbanity and Space. Aug 2020." width="20%" >}}
-
 ### Seminars
-- Math586 Topic in Statistics: Network Statistics.
-- Math547 Topic in Geometry: Combinatorics of Polytopes.
-- Math497 Topics in Mathematics: Group Theory From a Historical Perspective
+- Math547 Lie Algebra and Representation Theory.
+{{< imageRight src="/images/portfolio/Aryclic_Painting_Urbanity_and_Space.jpg" alt="Aryclic Painting: Urbanity and Space. Aug 2020." caption="Aryclic Painting: Urbanity and Space. Aug 2020." width="20%" >}}
+- Math560 Compact Lie Groups.
+- Math586 Network Statistics.
+- Math547 Combinatorics of Polytopes.
+- Math497 Group Theory From a Historical Perspective
 - [UNC Undergraduate Analysis and PDE Seminar](https://tarheels.live/waves/analysis-and-pde-seminar/) FL22-SP24.
 - WashU Reading Group SP23: Algebraic Geometry.
 - WashU Reading Group FL23: Representation Theory.
 - StanCon 2023 Workshop:
   [Convention on Stan Programming and Bayesian Modeling](https://mc-stan.org/events/stancon2023/#tutorials)
-- WUSTL Metamorphic Architecture Workshop 2019, Dean Heather Woofter's tutee.
+- WUSTL Metamorphic Architecture Workshop 2019, mentored by Dean Heather Woofter.
 
 <hr style="border: none; height: 1px; background-color: #333; margin: 40px 0;">
 
@@ -62,10 +60,13 @@ The study based on the CHARLS dataset uses OLS, ordered probit model, and genera
 
 ## Projects
 
-### 1. Undergraduate Thesis on Symplectic Geometry
-**Feb 2024 - Present**
 
-The project, supervised under Prof. [Xiang Tang](https://www.math.wustl.edu/~xtang/), aims to present the Atiyah-Guillemin-Sternberg convexity theorem and toric manifolds at the end. Current readings include Ana Cannas da Silva’s *Lectures on Symplectic Geometry* and *Symplectic Toric Manifolds*.
+### 1. Undergraduate Thesis on Symplectic Geometry
+**Feb 2024 - March 2025**
+{{< imageRight src="/images/symplectic/heightFunction.png" alt="heightFunction" caption="Height function as a moment map." width="40%" >}}
+In this thesis, we review the classical results of symplectic geometry, focusing on the Marsden-Weinstein- Meyer Theorem, the Atiyah-Guillemin-Sternberg Theorem, and Delzant’s classification of the symplectic toric manifolds. We begin with preliminaries covering symplectic manifolds, compatible triples, Morse the- ory, Lie groups, and Hamiltonian actions, including examples like circle actions and complex projective space with Fubini-Study form. The thesis concludes with some applications and generalizations of these classical theorems: Horn’s conjecture on Hermitian spectra, Kirwan and Weinstein ’s generalization of the convexity theorem, and the principle of quantization commuting with reduction.
+
+[Paper link](/pdfs/SymplGeoRCU.pdf).
 
 <!---------------------------- seperation line ---------------------------->
 
