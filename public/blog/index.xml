@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Energy = Milk · Coffee^2</title>
+    <link>https://AnthonyHongXiao.github.io/blog/</link>
+    <description>Recent content in Blog on Energy = Milk · Coffee^2</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2023, Anthony Hong.</copyright>
+    <lastBuildDate>Wed, 09 Oct 2024 22:29:35 -0500</lastBuildDate>
+    <atom:link href="https://AnthonyHongXiao.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is Geometry?</title>
+      <link>https://AnthonyHongXiao.github.io/what-is-geometry/</link>
+      <pubDate>Wed, 09 Oct 2024 22:29:35 -0500</pubDate>
+      <guid>https://AnthonyHongXiao.github.io/what-is-geometry/</guid>
+      <description>Geometry: The Rhetoric of Mathematics “Let no one ignorant of geometry enter,” Plato once inscribed above his academy, hinting that geometry is more than a mere field of study—it’s a prerequisite for higher thought. Like rhetoric, geometry structures our understanding and shapes how we interpret the world.&#xA;But what exactly is geometry? It’s nearly impossible to define without it dissolving into algebra, topology, or analysis. When we talk about metrics, we often mean analysis, while the “geometry” of graphs is actually combinatorics, using terms like diameter or bridges for rhetorical flair.</description>
+    </item>
+    <item>
+      <title>Can You Hear the Algebra</title>
+      <link>https://AnthonyHongXiao.github.io/can-you-hear-the-algebra/</link>
+      <pubDate>Fri, 06 Sep 2024 22:40:43 -0500</pubDate>
+      <guid>https://AnthonyHongXiao.github.io/can-you-hear-the-algebra/</guid>
+      <description>I was on a long flight from Shenzhen to LA, and like many travelers, I decided to catch up on some movies. Among the selections was Oppenheimer. One particular line in the movie struck me:&#xA;&amp;ldquo;Algebra is like a score. The question is not &amp;lsquo;can you read the music?&amp;rsquo; but &amp;lsquo;can you hear it?&amp;rsquo;&amp;rdquo;&#xA;Oppenheimer’s response was quick and simple:&#xA;&amp;ldquo;Yes. I can hear it.&amp;rdquo;&#xA;In that moment, I couldn’t help but reflect on the comparison between algebra and music.</description>
+    </item>
+    <item>
+      <title>Asymptotes of algebraic curves</title>
+      <link>https://AnthonyHongXiao.github.io/asymptotes-of-algebraic-curves/</link>
+      <pubDate>Sun, 01 Sep 2024 16:53:22 -0500</pubDate>
+      <guid>https://AnthonyHongXiao.github.io/asymptotes-of-algebraic-curves/</guid>
+      <description>An asymptote of a curve is a straight line that the curve approaches as the points on the curve tend toward infinity. Essentially, the distance between the curve and the line becomes arbitrarily small as you move further along the curve. There are three main types of asymptotes:&#xA;Vertical Asymptotes Horizontal Asymptotes Oblique Asymptotes The Algebraic Method Step 1: Replace $ y $ with $ mx + c $ (for $x \to \infty$ case) Given the equation of the curve, replace $ y $ with the expression $ mx + c $.</description>
+    </item>
+    <item>
+      <title>SGI</title>
+      <link>https://AnthonyHongXiao.github.io/sgi/</link>
+      <pubDate>Fri, 23 Aug 2024 08:30:36 +0800</pubDate>
+      <guid>https://AnthonyHongXiao.github.io/sgi/</guid>
+      <description>MIT SGI had just ended last week, and there are numerous great resources that I want to mention in this blog. The community is very inclusive and friendly. Check our blogs. Artur (one of my sgi group mates) writes a whole fully-illustrated book for our sgi. The book Guide to Computational Geometry Processing is a good reference too.&#xA;Talk by Qingnan (James) Zhou at Adobe (starting at 1:09) Talk by Mina Konaković Luković at MIT.</description>
+    </item>
+    <item>
+      <title>Discrete Differential Geometry</title>
+      <link>https://AnthonyHongXiao.github.io/discrete-differential-geometry/</link>
+      <pubDate>Fri, 23 Aug 2024 07:05:03 +0800</pubDate>
+      <guid>https://AnthonyHongXiao.github.io/discrete-differential-geometry/</guid>
+      <description>Discrete Differential Geometry: Feeding Back into Differential Geometry In the intersection of mathematics and computational geometry, discrete differential geometry has proven to be more than just a practical tool—it has become an insightful bridge back to classical differential geometry. A remarkable example of this is the resolution of a 150-year-old problem on compact Bonnet pairs, a question that had puzzled mathematicians since 1867.&#xA;Solving the Compact Bonnet Pair Problem The compact Bonnet pair problem originated from the work of Pierre Ossian Bonnet in 1867, who conjectured that two quantities of a surface, the mean curvature and the metric, uniquely determine the surface&amp;rsquo;s shape.</description>
+    </item>
+    <item>
+      <title>Multifractal</title>
+      <link>https://AnthonyHongXiao.github.io/multifractal/</link>
+      <pubDate>Sun, 18 Aug 2024 23:21:31 +0800</pubDate>
+      <guid>https://AnthonyHongXiao.github.io/multifractal/</guid>
+      <description>Local Dimensions and Multifractal Spectra Multifractals provide a complex and rich framework for understanding the intricate structures seen in various natural phenomena and mathematical constructs. Central to the study of multifractals are the concepts of local dimensions and multifractal spectra, particularly the functions $ f(\alpha) $ and $ \tau(q) $. These tools allow for a deep understanding of the variability in scaling behavior across different subsets of a fractal.&#xA;Local Dimensions Local dimensions offer insights into the density of measures at specific points within a set or fractal structure.</description>
+    </item>
+    <item>
+      <title>Compare Two Powers</title>
+      <link>https://AnthonyHongXiao.github.io/compare-two-powers/</link>
+      <pubDate>Wed, 03 Jul 2024 18:07:52 +0800</pubDate>
+      <guid>https://AnthonyHongXiao.github.io/compare-two-powers/</guid>
+      <description>I found an interesting way to compare two powers, $e^\pi$ and $\pi^e$, although there should have already been many interesting articles illustrating this idea and possibly including couple of more ways to compare them.&#xA;Here is the idea:&#xA;Consider the function $f(x)=\frac{1}{x}$, which is continuous and strictly decreasing for $x&amp;gt;0$. Notice that $\pi&amp;gt;e$. We then integrate the function over the intervel $[e,\pi]$ too get $$ \int_{e}^{\pi}\frac{1}{x}dx=\ln\pi-\ln e=\ln\pi -1 $$ which equals to the area under the curve $f(x)$ above the intervel $[e,\pi]$.</description>
+    </item>
+    <item>
+      <title>MBTI model</title>
+      <link>https://AnthonyHongXiao.github.io/mbti-model/</link>
+      <pubDate>Sun, 12 May 2024 11:09:45 -0500</pubDate>
+      <guid>https://AnthonyHongXiao.github.io/mbti-model/</guid>
+      <description>The Myers-Briggs Type Indicator (MBTI) is a personality assessment tool designed to identify a person&amp;rsquo;s personality type, strengths, and preferences. Developed by Isabel Briggs Myers and her mother Katharine Briggs in the mid-20th century, the MBTI is based on the psychological theories of Carl Jung.&#xA;The assessment categorizes personalities into 16 distinct types based on four dichotomies:&#xA;Extraversion (E) vs. Introversion (I): Describes where individuals prefer to focus their attention and get their energy—from external objects, people, and activities (E) or their inner world of ideas and experiences (I).</description>
+    </item>
+    <item>
+      <title>Fork and Bar</title>
+      <link>https://AnthonyHongXiao.github.io/fork-and-bar/</link>
+      <pubDate>Mon, 29 Apr 2024 02:26:16 -0500</pubDate>
+      <guid>https://AnthonyHongXiao.github.io/fork-and-bar/</guid>
+      <description>Part One: Reflections on Frost and O. Henry Learning singular homology in a bar. Photo credit: Jessie. There&amp;rsquo;s a peculiar sort of kinship between the gentle unease of O. Henry&amp;rsquo;s &amp;ldquo;Roads of Destiny&amp;rdquo; and the reflective ponderings within Frost&amp;rsquo;s &amp;ldquo;The Road Not Taken.&amp;rdquo; Both weave a complex fabric of destiny and choice. O. Henry&amp;rsquo;s characters, with their twisted fates, remind me of the capricious nature of life&amp;rsquo;s journey. Frost&amp;rsquo;s poem, a gift from my friend Sam Chen, captures the essence of that journey—each decision point a divergence into a new possibility, a contemplative look at the paths we choose and those we leave behind.</description>
+    </item>
+    <item>
+      <title>Some Markdown Grammer Issues</title>
+      <link>https://AnthonyHongXiao.github.io/some-markdown-grammer-issues/</link>
+      <pubDate>Sun, 14 Apr 2024 16:07:36 -0500</pubDate>
+      <guid>https://AnthonyHongXiao.github.io/some-markdown-grammer-issues/</guid>
+      <description>❌: \left{ \right} ✅: \set{ }&#xA;❌: \ ✅: \newline&#xA;❌: ^* ✅: ^{*}&#xA;❌: - ✅: _&#xA;❌: | ✅: \Vert (Note that one need to add a blackspace after \Vert when globally changing all of | because otherwise for example |a| will be changed to |Verta\vert, which is invalid.)&#xA;❌: \epsilon ✅: \varepsilon</description>
+    </item>
+    <item>
+      <title>How to write Fraktur g</title>
+      <link>https://AnthonyHongXiao.github.io/how-to-write-fraktur-g/</link>
+      <pubDate>Sun, 14 Apr 2024 16:04:09 -0500</pubDate>
+      <guid>https://AnthonyHongXiao.github.io/how-to-write-fraktur-g/</guid>
+      <description>I am now increasingly encountering the facktur g (and others) standing for a Lie algebra. Here is a post for how to write them in hand: link.</description>
+    </item>
+    <item>
+      <title>Poincaré Universe</title>
+      <link>https://AnthonyHongXiao.github.io/poincar%C3%A9-universe/</link>
+      <pubDate>Tue, 27 Feb 2024 18:52:30 -0600</pubDate>
+      <guid>https://AnthonyHongXiao.github.io/poincar%C3%A9-universe/</guid>
+      <description>Extract from A.B. Sossinsky&amp;rsquo;s Geometries 7.8 Hyperbolic Geometry and the Physical World&#xA;In his famous book Science et Hypothèse, Henri Poincaré describes the physics of a small &amp;ldquo;universe&amp;rdquo; and the physical theories that its inhabitants would create. The universe considered by Poincaré is Euclidean, plane (two-dimensional), and has the form of an open unit disk. Its temperature is $100^{\circ}$ Farenheit at the center of the disk and decreases linearly to absolute zero at its boundary.</description>
+    </item>
+    <item>
+      <title>Manifold Garden and Hilbert&#39;s Hotel</title>
+      <link>https://AnthonyHongXiao.github.io/manifold-garden-and-hilberts-hotel/</link>
+      <pubDate>Tue, 13 Feb 2024 10:00:14 -0600</pubDate>
+      <guid>https://AnthonyHongXiao.github.io/manifold-garden-and-hilberts-hotel/</guid>
+      <description>&amp;ldquo;Manifold Garden&amp;rdquo; is really a marvel of puzzle game design, inviting players into an ethereal world where gravity is a toy and infinity a canvas. I played it during my freshman year and want to introduce you to this feast for the eyes.&#xA;Developed by William Chyr, this game stands as a monument to the beauty of architectural impossibilities (Hilbert&amp;rsquo;s Hotel; see the end of this blog) and geometry (mostly Euclidena but also has a rubber-sheet flavour).</description>
+    </item>
+    <item>
+      <title>Covering Spaces of Wedge of Two Circles</title>
+      <link>https://AnthonyHongXiao.github.io/covering-spaces-of-wedge-of-two-circles/</link>
+      <pubDate>Tue, 13 Feb 2024 08:38:28 -0600</pubDate>
+      <guid>https://AnthonyHongXiao.github.io/covering-spaces-of-wedge-of-two-circles/</guid>
+      <description>We start with some theorems from Hatcher&amp;rsquo;s algebraic topology and will give a solution of the following exercise by enumeration.&#xA;Find all the connected 2-sheeted and 3-sheeted covering spaces of $S^1 \vee S^1$​, up to isomorphism of covering spaces without basepoints. Review of Hatcher Proposition 1.32. The number of sheets of a covering space $p:(\widetilde{X}, \widetilde{x_0}) \to (X, x_0)$ with $X$ and $\widetilde{X}$ path-connected equals the index of $p_*\left(\pi_1\left(\widetilde{X}, \widetilde{x_0}\right)\right)$ in $\pi_1\left(X, x_0\right)$.</description>
+    </item>
+    <item>
+      <title>Brahms and Strauss</title>
+      <link>https://AnthonyHongXiao.github.io/brahms-and-strauss/</link>
+      <pubDate>Mon, 05 Feb 2024 22:24:27 -0600</pubDate>
+      <guid>https://AnthonyHongXiao.github.io/brahms-and-strauss/</guid>
+      <description>Post-romantic music, epitomized by the likes of Johannes Brahms and Richard Strauss, dives deep into a realm where intense emotions are paramount. Brahms&amp;rsquo; compositions resonate with a profound sense of grief, yet there&amp;rsquo;s a fiery undercurrent of rage that seems to threaten the very fabric of the world, as if it could tear it apart and reduce it to ashes. This emotional power, coupled with the structural legacies of Beethoven and Bach, makes his music enduringly impactful.</description>
+    </item>
+    <item>
+      <title>Schubert and Hilbert</title>
+      <link>https://AnthonyHongXiao.github.io/schubert-and-hilbert/</link>
+      <pubDate>Wed, 24 Jan 2024 10:09:15 -0600</pubDate>
+      <guid>https://AnthonyHongXiao.github.io/schubert-and-hilbert/</guid>
+      <description>The Austrian composer Franz Schubert&amp;rsquo;s response to Beethoven&amp;rsquo;s string quartets, &amp;ldquo;Now that such works have been composed, I have no regrets,&amp;rdquo; poignantly captures a moment of profound artistic realization and humility. This statement, made shortly before his untimely death at the age of thirty-one, reflects a deep sense of fulfillment and resignation. Schubert, in his brief life, grappled with the enormity of his own artistic contribution in the shadow of a colossus like Beethoven.</description>
+    </item>
+    <item>
+      <title>About Applied Math</title>
+      <link>https://AnthonyHongXiao.github.io/about-applied-math/</link>
+      <pubDate>Sat, 20 Jan 2024 10:09:15 -0600</pubDate>
+      <guid>https://AnthonyHongXiao.github.io/about-applied-math/</guid>
+      <description>There can be a common misconception about the phrase &amp;ldquo;applied math&amp;rdquo;. Contrary to the prevalent belief that applied mathematics involves the application of mathematics to other fields, it is actually the reverse. In reality, applied mathematics involves using concepts and methods from other disciplines within the framework of mathematics. This is better understood when considering the difference between the terms &amp;lsquo;applied math&amp;rsquo; and &amp;lsquo;mathematical application&amp;rsquo;. The former implies a broader scope where external concepts are integrated into mathematical contexts, while the latter suggests a more limited view where mathematics is merely applied as a tool in various fields.</description>
+    </item>
+    <item>
+      <title>Cayley Graphs on Surfaces</title>
+      <link>https://AnthonyHongXiao.github.io/cayley-graphs-on-surfaces/</link>
+      <pubDate>Fri, 12 Jan 2024 15:09:15 +0800</pubDate>
+      <guid>https://AnthonyHongXiao.github.io/cayley-graphs-on-surfaces/</guid>
+      <description>Some aspects may be related:&#xA;curvature of cayley graph&#xA;curavture of surface (The convergence result that for n going to infinity, the Ollivier-Ricci curvature of the random geometric graph sampled from manifold converges to the Ricci curvature of the manifold) (and for more general theory, see Graphs of Groups on Surface: Interactions and Models by Arthur T. White).&#xA;embedding of cayley graph on surface (see &amp;ldquo;Cayley maps&amp;rdquo; by R. Bruce Richter et al.</description>
+    </item>
+    <item>
+      <title>Geometric Group Theory</title>
+      <link>https://AnthonyHongXiao.github.io/geometric-group-theory/</link>
+      <pubDate>Fri, 12 Jan 2024 14:08:23 +0800</pubDate>
+      <guid>https://AnthonyHongXiao.github.io/geometric-group-theory/</guid>
+      <description>There are some interesting materials in geometric group theory when I am doing research in computation of Ollivier-Ricci curvature of Cayley graphs:&#xA;Terrace Tao&amp;rsquo;s blog: he builds some analogies of geometric structure between group and manifold, including abelianness&amp;ndash;flatness (zero curvature), subgroups&amp;ndash;foliations, normal subgroups&amp;ndash;bundles&amp;hellip;&#xA;John Meier&amp;rsquo;s little blue LMS book: Groups, Graphs, and Trees: An Introduction to the Geometry of Infinite Groups. The book &amp;ldquo;proceeds step by carefully placed step, quite rapidly and naturally through many of the key ideas of modern geometric group theory,&amp;rdquo; reviewed by Jon McCammond, UCSB.</description>
+    </item>
+    <item>
+      <title>Website logistics</title>
+      <link>https://AnthonyHongXiao.github.io/website-logistics/</link>
+      <pubDate>Tue, 09 Jan 2024 19:29:30 +0800</pubDate>
+      <guid>https://AnthonyHongXiao.github.io/website-logistics/</guid>
+      <description>After committing and pushing get stucked: for uncommited changes: git commit -m &amp;ldquo;Your commit message&amp;rdquo;&#xA;discard unstaged changes (note that directly copying from website will give a single - instead of consecutive two -): git checkout &amp;ndash; .&#xA;for &amp;ldquo;already exists&amp;rdquo; branch: git branch -d branch_name&#xA;use link to restore: rebrase and other commands.&#xA;To create a new blog: terminal (top of the mac computer) &amp;ndash; new terminal &amp;ndash; type hugo new blog/name.</description>
+    </item>
+    <item>
+      <title>Markdown Syntax Guide</title>
+      <link>https://AnthonyHongXiao.github.io/markdown-syntax-guide/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://AnthonyHongXiao.github.io/markdown-syntax-guide/</guid>
+      <description>&lt;p&gt;For a quick cheatsheet, check out &lt;a href=&#34;https://simplemde.com/markdown-guide&#34;&gt;https://simplemde.com/markdown-guide&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

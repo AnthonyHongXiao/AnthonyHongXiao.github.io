@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://AnthonyHongXiao.github.io/images/favicon.png" />
+<title>Asymptotes of algebraic curves | Energy = Milk · Coffee^2</title>
+<meta name="title" content="Asymptotes of algebraic curves" />
+<meta name="description" content="An asymptote of a curve is a straight line that the curve approaches as the points on the curve tend toward infinity. Essentially, the distance between the curve and the line becomes arbitrarily small as you move further along the curve. There are three main types of asymptotes:
+Vertical Asymptotes Horizontal Asymptotes Oblique Asymptotes The Algebraic Method Step 1: Replace $ y $ with $ mx &#43; c $ (for $x \to \infty$ case) Given the equation of the curve, replace $ y $ with the expression $ mx &#43; c $." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Asymptotes of algebraic curves" />
+<meta property="og:description" content="An asymptote of a curve is a straight line that the curve approaches as the points on the curve tend toward infinity. Essentially, the distance between the curve and the line becomes arbitrarily small as you move further along the curve. There are three main types of asymptotes:
+Vertical Asymptotes Horizontal Asymptotes Oblique Asymptotes The Algebraic Method Step 1: Replace $ y $ with $ mx &#43; c $ (for $x \to \infty$ case) Given the equation of the curve, replace $ y $ with the expression $ mx &#43; c $." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://AnthonyHongXiao.github.io/asymptotes-of-algebraic-curves/" /><meta property="og:image" content="https://AnthonyHongXiao.github.io/images/share.png" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2024-09-01T16:53:22-05:00" />
+<meta property="article:modified_time" content="2024-09-01T16:53:22-05:00" /><meta property="og:site_name" content="Hugo ʕ•ᴥ•ʔ Bear" />
+
+
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://AnthonyHongXiao.github.io/images/share.png" /><meta name="twitter:title" content="Asymptotes of algebraic curves"/>
+<meta name="twitter:description" content="An asymptote of a curve is a straight line that the curve approaches as the points on the curve tend toward infinity. Essentially, the distance between the curve and the line becomes arbitrarily small as you move further along the curve. There are three main types of asymptotes:
+Vertical Asymptotes Horizontal Asymptotes Oblique Asymptotes The Algebraic Method Step 1: Replace $ y $ with $ mx &#43; c $ (for $x \to \infty$ case) Given the equation of the curve, replace $ y $ with the expression $ mx &#43; c $."/>
+
+
+
+<meta itemprop="name" content="Asymptotes of algebraic curves">
+<meta itemprop="description" content="An asymptote of a curve is a straight line that the curve approaches as the points on the curve tend toward infinity. Essentially, the distance between the curve and the line becomes arbitrarily small as you move further along the curve. There are three main types of asymptotes:
+Vertical Asymptotes Horizontal Asymptotes Oblique Asymptotes The Algebraic Method Step 1: Replace $ y $ with $ mx &#43; c $ (for $x \to \infty$ case) Given the equation of the curve, replace $ y $ with the expression $ mx &#43; c $."><meta itemprop="datePublished" content="2024-09-01T16:53:22-05:00" />
+<meta itemprop="dateModified" content="2024-09-01T16:53:22-05:00" />
+<meta itemprop="wordCount" content="452"><meta itemprop="image" content="https://AnthonyHongXiao.github.io/images/share.png" />
+<meta itemprop="keywords" content="" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Georgia, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 1000px;
+     
+    text-align: left;
+    background-color: #eaeaea;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+    font-size: 14;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: rgb(197, 229, 249);
+       
+      color: rgb(49, 55, 58);
+       
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: rgba(21, 76, 11, 0.898);
+       
+    }
+
+    a {
+      color: #1d79a1;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+.imagecenter {
+  text-align: center;
+}
+  
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+      ],
+      throwOnError: false
+    });
+  });
+</script>
+
+<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Energy = Milk · Coffee^2</h2>
+</a>
+<nav><a href="/">Home</a>
+
+
+
+<a href="/pdfs/Resume_AnthonyHong.pdf">CV</a>
+
+
+<a href="/course/">Courses</a>
+
+
+
+
+<a href="/blog">Blog</a>
+
+
+<a href="/reading">Reading</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Asymptotes of algebraic curves</h1>
+<p>
+  <i>
+    <time datetime='2024-09-01' pubdate>
+      01 Sep, 2024
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>An <strong>asymptote</strong> of a curve is a straight line that the curve approaches as the points on the curve tend toward infinity. Essentially, the distance between the curve and the line becomes arbitrarily small as you move further along the curve. There are three main types of asymptotes:</p>
+<ul>
+<li><strong>Vertical Asymptotes</strong></li>
+<li><strong>Horizontal Asymptotes</strong></li>
+<li><strong>Oblique Asymptotes</strong></li>
+</ul>
+<h2 id="the-algebraic-method">The Algebraic Method</h2>
+<h3 id="step-1-replace--y--with--mx--c--for-x-to-infty-case">Step 1: Replace $ y $ with $ mx + c $ (for $x \to \infty$ case)</h3>
+<p>Given the equation of the curve, replace $ y $ with the expression $ mx + c $. This transforms the equation into a polynomial form:</p>
+<p>$$
+a_n x^n + a_{n-1} x^{n-1} + \ldots + a_1 x + a_0 = 0
+$$</p>
+<h3 id="step-2-solve-the-simultaneous-equations">Step 2: Solve the Simultaneous Equations</h3>
+<p>Next, solve the following system of equations for $ m $ and $ c $:</p>
+<p>$$
+a_n = 0
+$$
+$$
+a_{n-1} = 0
+$$</p>
+<h3 id="step-3-write-the-equation-of-the-asymptote">Step 3: Write the Equation of the Asymptote</h3>
+<p>For each pair of solutions $ m $ and $ c $, write the equation of the asymptote in the form:</p>
+<p>$$
+y = mx + c
+$$</p>
+<h3 id="step-4-handle-special-cases">Step 4: Handle Special Cases</h3>
+<p>If there is no $ a_{n-1} $ term in the polynomial (from Step 1), you should instead solve the system:</p>
+<p>$$
+a_n = 0
+$$
+$$
+a_{n-2} = 0
+$$</p>
+<p>This step helps in finding the appropriate asymptote in cases where the usual process doesn&rsquo;t directly apply.</p>
+<h3 id="step-5-consider-the-case--y-to-infty-">Step 5: Consider the Case $ y \to \infty $</h3>
+<p>In addition to the $x \to \infty$ case, you should also consider the possibility of $ y \to \infty $. To do this, swap the roles of $ x $ and $ y $ in the equation. Replace $ x $ with $ ky + b $, which transforms the equation into:</p>
+<p>$$
+b_m y^m + b_{m-1} y^{m-1} + \ldots + b_1 y + b_0 = 0
+$$</p>
+<p>Then, repeat the process of solving the system of equations for $ k $ and $ b $:</p>
+<p>$$
+b_m = 0
+$$
+$$
+b_{m-1} = 0
+$$</p>
+<p>The solutions give you the equations of any additional asymptotes, in the form:</p>
+<p>$$
+x = ky + b
+$$</p>
+<h2 id="example">Example</h2>
+<p>Find the asymptotes for
+$$
+2x^2+3x-2xy-y=6
+$$</p>
+<p>Let $y=mx+c$. We will get
+$$
+(2-2m)x^2 + (3-m-2c)x - c -6=0
+$$
+Then we have $2-2m=0\implies m=1$ and $3-m-2c=2-2c=0\implies c=1$. Thus, $y=x+1$ is an asymptote for $x\to \infty$ case.</p>
+<p>Let $x=ky+b$. We will get
+$$
+2(k^2-2k)y^2 + (4kb +3k -2b-1)y \cdots = 0
+$$
+Then $2k^2-2k=0\implies k=0$ or $k=1$. Use the second condition $4kb+3k-2b-1=0$ to see that if $k=0$, then $b=-\frac{1}{2}$; if $k=1$, then $b=-1$. Thus, we have two asymptotes for $y\to \infty$ case:
+$$
+x=-\frac{1}{2}
+$$
+$$
+y=x+1
+$$
+The graph:
+<figure class="imagecenter"><img src="/images/2x%5e2&#43;3x-2xy-y=6.png" width="60%" height="60%"/>
+</figure>
+</p>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://AnthonyHongXiao.github.io/images/favicon.png" />
+<title>Processes, Wasserstein distance, and VC Dimension | Energy = Milk · Coffee^2</title>
+<meta name="title" content="Processes, Wasserstein distance, and VC Dimension" />
+<meta name="description" content="This reading file draws various concentration results from chapter 7 and 8 of High-Dimensional Probability, and three applications of interest to be mentioned in this file are volume of polytopes, kantorovich-rubinstein duality for Wasserstein distance and VC dimension in machine learning.
+Economist and Mathematician Kantorovich. Photo from St Petersburg University.
+A stochastic process, or random process is a collection of $E$-valued random variables ${X_t:\Omega\to E}_{t\in T}$ with state space $(E,\mathcal{E})$ and parameter set $T$." />
+<meta name="keywords" content="probability," />
+
+
+<meta property="og:title" content="Processes, Wasserstein distance, and VC Dimension" />
+<meta property="og:description" content="This reading file draws various concentration results from chapter 7 and 8 of High-Dimensional Probability, and three applications of interest to be mentioned in this file are volume of polytopes, kantorovich-rubinstein duality for Wasserstein distance and VC dimension in machine learning.
+Economist and Mathematician Kantorovich. Photo from St Petersburg University.
+A stochastic process, or random process is a collection of $E$-valued random variables ${X_t:\Omega\to E}_{t\in T}$ with state space $(E,\mathcal{E})$ and parameter set $T$." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://AnthonyHongXiao.github.io/reading/random_and_empirical_processes/" /><meta property="og:image" content="https://AnthonyHongXiao.github.io/images/share.png" /><meta property="article:section" content="reading" />
+<meta property="article:published_time" content="2024-04-08T12:19:42-05:00" />
+<meta property="article:modified_time" content="2024-04-08T12:19:42-05:00" /><meta property="og:site_name" content="Hugo ʕ•ᴥ•ʔ Bear" />
+
+
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://AnthonyHongXiao.github.io/images/share.png" /><meta name="twitter:title" content="Processes, Wasserstein distance, and VC Dimension"/>
+<meta name="twitter:description" content="This reading file draws various concentration results from chapter 7 and 8 of High-Dimensional Probability, and three applications of interest to be mentioned in this file are volume of polytopes, kantorovich-rubinstein duality for Wasserstein distance and VC dimension in machine learning.
+Economist and Mathematician Kantorovich. Photo from St Petersburg University.
+A stochastic process, or random process is a collection of $E$-valued random variables ${X_t:\Omega\to E}_{t\in T}$ with state space $(E,\mathcal{E})$ and parameter set $T$."/>
+
+
+
+<meta itemprop="name" content="Processes, Wasserstein distance, and VC Dimension">
+<meta itemprop="description" content="This reading file draws various concentration results from chapter 7 and 8 of High-Dimensional Probability, and three applications of interest to be mentioned in this file are volume of polytopes, kantorovich-rubinstein duality for Wasserstein distance and VC dimension in machine learning.
+Economist and Mathematician Kantorovich. Photo from St Petersburg University.
+A stochastic process, or random process is a collection of $E$-valued random variables ${X_t:\Omega\to E}_{t\in T}$ with state space $(E,\mathcal{E})$ and parameter set $T$."><meta itemprop="datePublished" content="2024-04-08T12:19:42-05:00" />
+<meta itemprop="dateModified" content="2024-04-08T12:19:42-05:00" />
+<meta itemprop="wordCount" content="2721"><meta itemprop="image" content="https://AnthonyHongXiao.github.io/images/share.png" />
+<meta itemprop="keywords" content="probability," />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Georgia, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 1000px;
+     
+    text-align: left;
+    background-color: #eaeaea;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+    font-size: 14;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: rgb(197, 229, 249);
+       
+      color: rgb(49, 55, 58);
+       
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: rgba(21, 76, 11, 0.898);
+       
+    }
+
+    a {
+      color: #1d79a1;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+.imagecenter {
+  text-align: center;
+}
+  
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+      ],
+      throwOnError: false
+    });
+  });
+</script>
+
+<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Energy = Milk · Coffee^2</h2>
+</a>
+<nav><a href="/">Home</a>
+
+
+
+<a href="/pdfs/Resume_AnthonyHong.pdf">CV</a>
+
+
+<a href="/course/">Courses</a>
+
+
+
+
+<a href="/blog">Blog</a>
+
+
+<a href="/reading">Reading</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Processes, Wasserstein distance, and VC Dimension</h1>
+<p>
+  <i>
+    <time datetime='2024-04-08' pubdate>
+      08 Apr, 2024
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>This reading file draws various concentration results from chapter 7 and 8 of <a href="/pdfs/HDP-book.pdf">High-Dimensional Probability</a>, and three applications of interest to be mentioned in this file are volume of polytopes, kantorovich-rubinstein duality for Wasserstein distance and VC dimension in machine learning.</p>
+<figure class="imagecenter"><img src="/images/kantorovich.jpg"
+         alt="Economist and Mathematician Kantorovich. Photo from St Petersburg University." width="80%" height="80%"/><figcaption>
+            <p>Economist and Mathematician Kantorovich. Photo from <a href="https://english.spbu.ru/history/kantorovich-theorem">St Petersburg University</a>.</p>
+        </figcaption>
+</figure>
+
+<p>A <strong>stochastic process</strong>, or <strong>random process</strong> is a collection of $E$-valued random variables ${X_t:\Omega\to E}_{t\in T}$ with <strong>state space</strong> $(E,\mathcal{E})$ and <strong>parameter set</strong> $T$. For each $\omega\in \Omega$, let $X(\omega)$ denote the function $T\to E;t\mapsto X_t(\omega)$; then $X(\omega)$ is an element of $E^T$, the collection of all functions from $T$ to $E$. We may regard the stochastic process $(X_t)_{t\in T}$ as a random variable $X$ that takes value in the product space $(E^T,\mathcal{E}^T)$, since the map $X:\Omega\to E^T;\omega\mapsto X(\omega)$ is measurable relative to $\mathcal{D}$ and $\mathcal{E}^T$. When $T=\mathbb{N}={0,1,\cdots}$ and $(E,\mathcal{E})=(I,\mathcal{I})$​ plus Markov property, we get <strong>Markov chain</strong>. In other classical settings like <strong>Brownian motion</strong>, $T=\mathbb{R}$​.</p>
+<p>For simplicity, let us assume in this file that the random process has zero mean, i.e.
+$$
+\mathbb{E} X_t=0 \quad \text { for all } t \in T .
+$$
+(The adjustments for the general case will be obvious.) We define the <strong>covariance function</strong> of a random process $\left(X_t\right)_{t \in T}$  as
+$$
+\Sigma(t, s):=\operatorname{cov}\left(X_t, X_s\right)=\mathbb{E} X_t X_s, \quad t, s \in T .
+$$</p>
+<p>The <strong>increments</strong> of the random process are defined as
+$$
+d(t, s):=\left|X_t-X_s\right|_{L^2}=\left(\mathbb{E}\left(X_t-X_s\right)^2\right)^{1 / 2}, \quad t, s \in T .
+$$</p>
+<p>For example, the increments of the standard Brownian motion satisfy $d(t, s)=\sqrt{t-s},; t \geq s$. The increments of a random walk with $\mathbb{E} Z_i^2=1$ satisfy $d(n, m)=\sqrt{n-m},; n \geq m$.</p>
+<p>In high dimensional proability, it is important to go beyond the case $T=\mathbb{R}$ and allow $T$ to be a general abstract set. An important example is so-called <strong>canonical Gaussian process</strong>
+$$
+X_t=\langle g,t\rangle,\hspace{1cm} t\in T,
+$$
+where $T\subseteq \mathbb{R}^n$ and $g$ is a standard normal random vector in $\mathbb{R}^n$. More generally, a random process $(X_t)_{t\in T}$ is called a <strong>Gaussian process</strong> if, for any finite subset $T_0\subseteq T$, the random vector $(X_t)_{t\in T_0}$ has normal distribution. Equivalently, $(X_t)_{t\in T}$ is Gaussian if every finite linear combination $\sum_{t\in T_0}a_tX_t$​ is a normal random variable. Check that the canonical Gaussian process has its increment being the Euclidean distance $\Vert t-s\Vert_2$</p>
+<p>It is a standard exercise (HDP 7.1.8) to express the increments $\Vert X_t-X_s\Vert_{L^2}$ in terms of the covariance function $\Sigma(t,s)$ and vice versa (assuming zero r.v. belongs to the process). From the formula for multivariate normal density we may recall that the distribution of a mean zero Gaussian random vector $X$ in $\mathbb{R}^n$ is completely determined by its covariance matrix. Then, by definition, the distribution of a mean zero Gaussian process $\left(X_t\right)_{t \in T}$ is also completely determined by its covariance function $\Sigma(t, s)$. Therefore, equivalently, the distribution of the process is determined by the increments $d(t, s)$​.</p>
+<p>We list several concentration results without proof and directly go to the two applications we promised.</p>
+<p><strong>Theorem 7.2.1</strong> (Slepian&rsquo;s inequality). Let $\left(X_t\right)_{t \in T}$ and $\left(Y_t\right)_{t \in T}$ be two mean zero Gaussian processes. Assume that for all $t, s \in T$, we have
+$$
+\mathbb{E} X_t^2=\mathbb{E} Y_t^2 \quad \text { and } \quad \mathbb{E}\left(X_t-X_s\right)^2 \leq \mathbb{E}\left(Y_t-Y_s\right)^2 .
+$$</p>
+<p>Then for every $\tau \in \mathbb{R}$ we have the tail comparison inequality
+$$
+\mathbb{P}\set{\sup _{t \in T} X_t \geq \tau} \leq \mathbb{P}\set{\sup _{t \in T} Y_t \geq \tau} .
+$$
+Consequently,
+$$
+\mathbb{E} \sup _{t \in T} X_t \leq \mathbb{E} \sup _{t \in T} Y_t .
+$$</p>
+<p>Whenever the tail comparison inequality holds, we say that the random variable $X$ is <strong>stochastically dominated</strong> by the random variable $Y$​.</p>
+<p><strong>Theorem 7.2.11</strong> (Sudakov-Fernique&rsquo;s inequality). Let $\left(X_t\right)_{t \in T}$ and $\left(Y_t\right)_{t \in T}$ be two mean zero Gaussian processes. Assume that for all $t, s \in T$, we have
+$$
+\mathbb{E}\left(X_t-X_s\right)^2 \leq \mathbb{E}\left(Y_t-Y_s\right)^2 .
+$$</p>
+<p>Then
+$$
+\mathbb{E} \sup _{t \in T} X_t \leq \mathbb{E} \sup _{t \in T} Y_t .
+$$
+<strong>Theorem 7.3.1</strong> (Norms of Gaussian random matrices). Let $A$ be an $m \times n$ matrix with independent $N(0,1)$ entries. Then
+$$
+\mathbb{E}|A| \leq \sqrt{m}+\sqrt{n} .
+$$</p>
+<h2 id="magnitude-of-the-process-sudakovs-minoration-inequality-and-dudleys-inequality">Magnitude of the Process: Sudakov&rsquo;s Minoration Inequality and Dudley&rsquo;s Inequality</h2>
+<p>Consider the mean zero Gaussian processes $\left(X_t\right)_{t \in T}$. The increments
+$$
+d(t, s):=\left|X_t-X_s\right|_{L^2}=\left(\mathbb{E}\left(X_t-X_s\right)^2\right)^{1 / 2}
+$$
+define a metric on the (otherwise abstract) index set $T$, which we called the <strong>canonical metric</strong>.</p>
+<p>The canonical metric $d(t, s)$ determines the covariance function $\Sigma(t, s)$, which in turn determines the distribution of the process $\left(X_t\right)_{t \in T}$. So in principle, we should be able to answer any question about the distribution of a Gaussian process $\left(X_t\right)_{t \in T}$ by looking at the geometry of the metric space $(T, d)$. Put plainly, we should be able to study probability via geometry.</p>
+<p>Let us then ask an important specific question. How can we evaluate the overall magnitude of the process, namely
+$$
+\mathbb{E} \sup _{t \in T} X_t
+$$
+in terms of the geometry of $(T, d)$ ? We will give Sudakov and Dudley&rsquo;s bounds. We first recall some notions from our <a href="https://anthonyhongxiao.github.io/reading/high_dim_prob_and_satistics/">first note on HDP</a>. For $\varepsilon&gt;0$, the <strong>covering number</strong></p>
+<p>$$
+\mathcal{N}(T, d, \varepsilon)
+$$
+is defined to be the smallest cardinality of an $\varepsilon$-net of $T$ in the metric $d$. Equivalently, $\mathcal{N}(T, d, \varepsilon)$ is the smallest number of closed balls of radius $\varepsilon$ whose union covers $T$. Recall also that the logarithm of the covering number,
+$$
+\log _2 \mathcal{N}(T, d, \varepsilon)
+$$
+is called the <strong>metric entropy</strong> of $T$​.</p>
+<p><strong>Theorem 7.4.1</strong> (Sudakov&rsquo;s minoration inequality). Let $\left(X_t\right)_{t \in T}$ be a mean zero Gaussian process. Then, for any $\varepsilon \geq 0$, we have
+$$
+\mathbb{E} \sup _{t \in T} X_t \geq c \varepsilon \sqrt{\log \mathcal{N}(T, d, \varepsilon)} .
+$$
+where $d$ is the canonical metric defined above.</p>
+<p><strong>Theorem 8.1.3</strong> (Dudley&rsquo;s integral inequality). Let $\left(X_t\right)_{t \in T}$ be a mean zero random process on a metric space $(T, d)$ with sub-gaussian increments. Then
+$$
+\mathbb{E} \sup _{t \in T} X_t \leq C K \int_0^{\infty} \sqrt{\log \mathcal{N}(T, d, \varepsilon)} d \varepsilon .
+$$
+<figure class="imagecenter"><img src="/images/Sudakov_and_Dudley.png"
+         alt="Sudakov&amp;rsquo;s bound by max box area; Dudley&amp;rsquo;s bound by area under curve." width="60%" height="60%"/><figcaption>
+            <p>Sudakov&rsquo;s bound by max box area; Dudley&rsquo;s bound by area under curve.</p>
+        </figcaption>
+</figure>
+</p>
+<h2 id="covering-numbers-in-mathbbrn-and-volume-of-polytopes">Covering Numbers in $\mathbb{R}^n$​​ and Volume of Polytopes</h2>
+<p>Sudakov&rsquo;s minoration inequality can be used to estimate the covering numbers of sets $T \subset \mathbb{R}^n$. To see how to do this, consider a canonical Gaussian process on $T$, namely
+$$
+X_t:=\langle g, t\rangle, \quad t \in T, \quad \text { where } g \sim N\left(0, I_n\right) .
+$$</p>
+<p>The canonical distance for this process is the Euclidean distance in $\mathbb{R}^n$, i.e.
+$$
+d(t, s)=\left|X_t-X_s\right|_{L^2}=|t-s|_2 .
+$$
+Thus Sudakov&rsquo;s inequality can be stated as follows.
+<strong>Corollary 7.4.3</strong> (Sudakov&rsquo;s minoration inequality in $\mathbb{R}^n$ ). Let $T \subset \mathbb{R}^n$. Then, for any $\varepsilon&gt;0$, we have
+$$
+\mathbb{E} \sup _{t \in T}\langle g, t\rangle \geq c \varepsilon \sqrt{\log \mathcal{N}(T, \varepsilon)} .
+$$</p>
+<p>Here $\mathcal{N}(T, \varepsilon)$ is the covering number of $T$ by Euclidean balls - the smallest number of Euclidean balls with radii $\varepsilon$ and centers in $T$ that cover $T$, just like in our <a href="https://anthonyhongxiao.github.io/reading/high_dim_prob_and_satistics/">first note on HDP</a>.
+<strong>Corollary 7.4.4</strong> (Covering numbers of polytopes). Let $P$ be a polytope in $\mathbb{R}^n$ with $N$ vertices and whose diameter is bounded by 1 . Then, for every $\varepsilon&gt;0$ we have
+$$
+\mathcal{N}(P, \varepsilon) \leq N^{C / \varepsilon^2} .
+$$</p>
+<p><strong>Exercise 7.4.5</strong> (Volume of polytopes). Let $P$ be a polytope in $\mathbb{R}^n$, which has $N$ vertices and is contained in the unit Euclidean ball $B_2^n$. Show that
+$$
+\frac{\operatorname{Vol}(P)}{\operatorname{Vol}\left(B_2^n\right)} \leq\left(\frac{C \log N}{n}\right)^{C n} .
+$$
+<em>Soln</em> By Proposition HDP 4.2.12, $\operatorname{Vol}(P) / \mathrm{Vol}\left(B_2^n\right) \leq \varepsilon^n \mathcal{N}(P, \varepsilon)$. By Corollary HDP 7.4.4, $\mathcal{N}(P, \varepsilon) \leq N^{C / \varepsilon^2}$. Then, taking $\varepsilon=\sqrt{2 C \log N / n}$ leads to $\operatorname{Vol}(P) / \operatorname{Vol}\left(B_2^n\right) \leq(2 \mathrm{e} C \log N / n)^{n / 2}$.</p>
+<h2 id="empirical-processes-and-measures-and-wasserstein-distance">Empirical Processes and Measures and Wasserstein Distance</h2>
+<p>Suppose we want to evaluate the integral of a function $f: \Omega \rightarrow \mathbb{R}$ with respect to some probability measure $\mu$ on some domain $\Omega \subset \mathbb{R}^d$ :
+$$
+\int_{\Omega} f d \mu
+$$
+For example, we could be interested in computing $\int_0^1 f(x) d x$ for a function $f:[0,1] \rightarrow \mathbb{R}$​.</p>
+<p>We use probability to evaluate this integral. Consider a random point $X$ that takes values in $\Omega$ according to the law $\mu$, i.e.
+$$
+\mathbb{P}{X \in A}=\mu(A) \quad \text { for any measurable set } A \subset \Omega .
+$$
+(For example, to evaluate $\int_0^1 f(x) d x$, we take $X \sim \operatorname{Unif}[0,1]$.) Then we may interpret the integral as expectation:
+$$
+\int_{\Omega} f d \mu=\mathbb{E} f(X) .
+$$</p>
+<p>Let $X_1, X_2, \ldots$ be i.i.d. copies of $X$. The law of large numbers yields that
+$$
+\frac{1}{n} \sum_{i=1}^n f\left(X_i\right) \rightarrow \mathbb{E} f(X) \quad \text { almost surely }
+$$
+as $n \rightarrow \infty$. This means that we can approximate the integral by the sum
+$$
+\int_{\Omega} f d \mu \approx \frac{1}{n} \sum_{i=1}^n f\left(X_i\right) \qquad (*)
+$$
+where the points $X_i$ are drawn at random from the domain $\Omega$​. This way of numerically computing integrals is called the <strong>Monte-Carlo method</strong>.</p>
+<p>Can we use the same sample $X_1, \ldots, X_n$ to evaluate the integral of any function $f: \Omega \rightarrow \mathbb{R}$ ? Of course, not. For a given sample, one can choose a function that oscillates in a the wrong way between the sample points, and the approximation $(*)$ will fail.</p>
+<p>Will it help if we consider only those functions $f$ that do not oscillate wildly - for example, Lipschitz functions? It will. Our next theorem states that Monte-Carlo method $(*)$ does work well simultaneously over the class of Lipschitz functions
+$$
+\mathcal{F}:=\set{f:[0,1] \rightarrow \mathbb{R},|f|_{\text {Lip }} \leq L},
+$$
+where $L$ is any fixed number.</p>
+<p><strong>Theorem 8.2.3</strong> (Uniform law of large numbers). Let $X, X_1, X_2, \ldots, X_n$ be i.i.d. random variables taking values in $[0,1]$. Then
+$$
+\mathbb{E} \sup _{f \in \mathcal{F}}\left|\frac{1}{n} \sum_{i=1}^n f\left(X_i\right)-\mathbb{E} f(X)\right| \leq \frac{C L}{\sqrt{n}} .
+$$
+The supremum over $f \in \mathcal{F}$ appears inside the expectation. By Markov&rsquo;s inequality, this means that with high probability, a random sample $X_1, \ldots, X_n$ is good. And &ldquo;good&rdquo; means that using this sample, we can approximate the integral of any function $f \in \mathcal{F}$ with error bounded by the same quantity $C L / \sqrt{n}$. This is the same rate of convergence the classical Law of Large numbers guarantees for a single function $f$. So we paid essentially nothing for making the law of large numbers uniform over the class of functions $\mathcal{F}$.</p>
+<p>We now come to concepts of empirical processes and measures. If we let $\mathcal{F}$ be a class of real-valued functions $f: \Omega \rightarrow \mathbb{R}$ where $(\Omega, \Sigma, \mu)$ is a probability space, $X$ be a random point in $\Omega$ distributed according to the law $\mu$, and $X_1, X_2, \ldots, X_n$ be independent copies of $X$. The random process $\left(X_f\right)_{f \in \mathcal{F}}$ defined by
+$$
+X_f:=\frac{1}{n} \sum_{i=1}^n f\left(X_i\right)-\mathbb{E} f(X)
+$$
+is called an <strong>empirical process</strong> indexed by $\mathcal{F}$​.</p>
+<p>Consider a probability measure $\mu_n$ that is uniformly distributed on the sample $X_1, \ldots, X_n$, that is
+$$
+\mu_n\left(\set{X_i}\right)=\frac{1}{n} \quad \text { for every } i=1, \ldots, n .
+$$</p>
+<p>Note that $\mu_n$ is a random measure. It is called the <strong>empirical measure</strong>.
+While the integral of $f$ with respect to the original measure $\mu$ is the $\mathbb{E} f(X)$ (the &ldquo;population&rdquo; average of $f$ ) the integral of $f$ with respect to the empirical measure is $\frac{1}{n} \sum_{i=1}^n f\left(X_i\right)$ (the &ldquo;sample&rdquo;, or empirical, average of $f$ ). In the literature on empirical processes, the population expectation of $f$ is denoted by $\mu f$, and the empirical expectation, by $\mu_n f$ :
+$$
+\mu f=\int f d \mu=\mathbb{E} f(X), \quad \mu_n f=\int f d \mu_n=\frac{1}{n} \sum_{i=1}^n f\left(X_i\right) .
+$$</p>
+<p>The empirical process $X_f$ thus measures the deviation of population expectation from the empirical expectation:
+$$
+X_f=\mu f-\mu_n f .
+$$</p>
+<p>The uniform law of large numbers gives a uniform bound on the deviation
+$$
+\mathbb{E} \sup _{f \in \mathcal{F}}\left|\mu_n f-\mu f\right|
+$$
+over the class of Lipschitz functions $\mathcal{F}$.</p>
+<p>We now use Kantorovich-Rubinstein&rsquo;s duality theorem to view above deviation as Wasserstein distance between two measurs $\mu_n$ and $\mu$.</p>
+<p>Let $(M, d)$ be a metric space that is a Polish space. For $p \in[1,+\infty]$, the <strong>Wasserstein $p$-distance</strong> between two probability measures $\mu$ and $\nu$ on $M$ with finite $p$-moments is
+$$
+W_p(\mu, \nu)=\inf _{\gamma \in \Gamma(\mu, \nu)}\left(\mathbb{E}_{(x, y) \sim \gamma} d(x, y)^p\right)^{1 / p},
+$$
+where $\Gamma(\mu, \nu)$ is the set of all couplings of $\mu$ and $\nu ; W_{\infty}(\mu, \nu)$ is defined to be $\lim _{p \rightarrow+\infty} W_p(\mu, \nu)$ and corresponds to a supremum norm. A coupling $\gamma$ is a joint probability measure on $M \times M$ whose marginals are $\mu$ and $\nu$ on the first and second factors, respectively. That is, for all measurable $A \subset M$ a coupling fulfils
+$$
+\begin{aligned}
+&amp; \int_A \int_M \gamma(x, y) \mathrm{d} y \mathrm{~d} x=\mu(A), \newline
+&amp; \int_A \int_M \gamma(x, y) \mathrm{d} x \mathrm{~d} y=\nu(A) .
+\end{aligned}
+$$
+For $f: X \rightarrow \mathbb{R}$, we define the expression $|f|_L$ by the equation
+$$
+|f|_L=\sup {|f(x)-f(y)| / d(x, y): x, y \in X ; x \neq y} .
+$$</p>
+<p>Then the <strong>Kantorovich-Rubinstein theorem</strong> states that, if the space $(X, d)$ is compact, we have
+$$
+\inf _{\gamma \in \Gamma(\mu, \nu)} \int_{X \times X} d(x, y) d\gamma(x,y)=\sup\set{\int_X f \mathrm{~d} \mu-\int_X f \mathrm{~d} \nu:|f|_L \leq 1}
+$$
+Therefore, if we take $p=1$, then  $\mathbb{E} \sup _{f \in \mathcal{F}}\left|\mu_n f-\mu f\right|$ measures the distance between $\mu_n$ and $\mu$ on spaces of measures.</p>
+<h2 id="vc-dimension-and-machine-learning">VC Dimension and Machine Learning</h2>
+<p>We only briefly mention the use of high dimensional probability in ML, a relation too vast to be even properly overviewed in this file.</p>
+<p>VC-dimension is a measure of complexity of classes of Boolean functions. By a class of Boolean functions we mean any collection $\mathcal{F}$ of functions $f: \Omega \rightarrow{0,1}$ defined on a common domain $\Omega$. We say that a subset $\Lambda \subseteq \Omega$ is <strong>shattered</strong> by $\mathcal{F}$ if any function $g: \Lambda \rightarrow{0,1}$ can be obtained by restricting some function $f \in \mathcal{F}$ onto $\Lambda$. The <strong>VC dimension</strong> of $\mathcal{F}$, denoted $\operatorname{vc}(\mathcal{F})$, is the largest cardinality of a subset $\Lambda \subseteq \Omega$ shattered by $\mathcal{F}$.</p>
+<p><strong>Theorem 8.3.23</strong> (Empirical processes via VC dimension). Let $\mathcal{F}$ be a class of Boolean functions on a probability space $(\Omega, \Sigma, \mu)$ with finite $V C$ dimension $\operatorname{vc}(\mathcal{F}) \geq 1$. Let $X, X_1, X_2, \ldots, X_n$ be independent random points in $\Omega$ distributed according to the law $\mu$. Then
+$$
+\mathbb{E} \sup _{f \in \mathcal{F}}\left|\frac{1}{n} \sum_{i=1}^n f\left(X_i\right)-\mathbb{E} f(X)\right| \leq C \sqrt{\frac{\operatorname{vc}(\mathcal{F})}{n}} .
+$$
+To do this, note that $\frac{\log N}{2 d_n}=\log \left(N^{1 / 2 d_n}\right) \leq N^{1 / 2 d_n}$.</p>
+<p>It is easier to understand the definition of VC dimenison and various bounds should we put them in the context of machine learning, in particular, classification problem, where $\mathcal{F}$ becomes the hypothesis set. $X_1,\cdots,X_n$ are random data points. The goal is to find the optimal hypothesis $f^{*}\in \mathcal{F}$ to minimize the (quadratic) risk
+$$
+R(f):=\mathbb{E}(f(X)-T(X))^2
+$$
+where $T$ is the target function. However, we don&rsquo;t know this target function. The <strong>empirical risk</strong> for a function $f: \Omega \rightarrow \mathbb{R}$ is defined as
+$$
+R_n(f):=\frac{1}{n} \sum_{i=1}^n\left(f\left(X_i\right)-T\left(X_i\right)\right)^2
+$$
+Denote by $f_n^{*}$ a function in the hypothesis space $\mathcal{F}$ which minimizes the empirical risk:
+$$
+f_n^{*}:=\arg \min _{f \in \mathcal{F}} R_n(f),
+$$</p>
+<p>Note that both $R_n(f)$ and $f_n^{*}$ can be computed from the data. The outcome of learning from the data is thus $f_n^{*}$. The main question is: how large is the <strong>excess risk</strong>
+$$
+R\left(f_n^{*}\right)-R\left(f^{*}\right)
+$$
+<strong>Theorem 8.4.4</strong> (Excess risk via VC dimension). Assume that the target $T$ is a Boolean function, and the hypothesis space $\mathcal{F}$ is a class of Boolean functions with finite $V C$ dimension $\operatorname{vc}(\mathcal{F}) \geq 1$. Then
+$$
+\mathbb{E} R\left(f_n^{*}\right) \leq R\left(f^{*}\right)+C \sqrt{\frac{\operatorname{vc}(\mathcal{F})}{n}}
+$$
+Note that $f$ tags each of the data point as either $0$ or $1$​​​, but in practice one also need a symmetrization step to make them symmetric bernoulli.</p>
+<p><strong>Exercise 8.3.24</strong> (Symmetrization for empirical processes). Let $\mathcal{F}$ be a class of functions on a probability space $(\Omega, \Sigma, \mu)$. Let $X, X_1, X_2, \ldots, X_n$ be random points in $\Omega$ distributed according to the law $\mu$. Prove that
+$$
+\mathbb{E} \sup _{f \in \mathcal{F}}\left|\frac{1}{n} \sum_{i=1}^n f\left(X_i\right)-\mathbb{E} f(X)\right| \leq 2 \mathbb{E} \sup _{f \in \mathcal{F}}\left|\frac{1}{n} \sum_{i=1}^n \varepsilon_i f\left(X_i\right)\right|
+$$
+where $\varepsilon_1, \varepsilon_2, \ldots$ are independent symmetric Bernoulli random variables (which are also independent of $X_1, X_2, \ldots$)​. Hint: Modify the proof of Symmetrization Lemma 6.4.2.</p>
+
+</content>
+<p>
+  
+  <a href="https://AnthonyHongXiao.github.io/blog/probability/">#probability</a>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

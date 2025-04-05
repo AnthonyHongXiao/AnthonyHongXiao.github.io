@@ -5,7 +5,7 @@
 *Yes, and mathematics is the art of calling different things by the same name.* -- Henri Poincaré.
 
 ## About Me
-{{< imageRight src="/images/photos/Portrait.jpg" alt="Photo credit: Pascal." caption="Photo credit: Pascal." width="20%" >}}
+{{< imageRight src="/images/photos/Portrait.jpg" alt="Photo credit: Pascal." width="20%" >}}
 Hello! I am Anthony, a senior undergraduate at **Washington University in St. Louis (WUSTL)**, majoring in joint program Econ+CS, with a double major in Mathematics. My early study in architecture and art led me to an interest in **geometry**, which I now explore with an additional layer of **data** in a broad sense. I’m interested in various geometric structures, including symplectic and noncommutative geometry, as well as probabilistic and coarse geometry. I also enjoy visual models in low-dimensional topology and discrete differential geometry.
 
 I recently participated in the geometry processing program at [MIT SGI](https://sgi.mit.edu/sgi-2024) and am currently working on my undergraduate thesis in symplectic and toric manifolds with Prof. [Xiang Tang](https://www.math.wustl.edu/~xtang/).
@@ -98,7 +98,7 @@ $$
 
 A review of the [paper](https://arxiv.org/abs/1612.00181) on gradient descent and finite element method for solving the Monge-Kantorovich problem with quadratic cost
 $$
-\inf_{T\in \Gamma(\mu,\nu)}\left(\int_X \frac{1}{2}\left|x-T^*(x)\right|^2 f(x) d x\right)^{1 / 2}
+\inf_{T\in \Gamma(\mu,\nu)}\left(\int_X \frac{1}{2}\left|x-T(x)\right|^2 d\mu\right)^{1 / 2}
 $$
 with application in image classification.
 

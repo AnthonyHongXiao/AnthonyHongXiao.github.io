@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>probability on Energy = Milk · Coffee^2</title>
+    <link>https://AnthonyHongXiao.github.io/blog/probability/</link>
+    <description>Recent content in probability on Energy = Milk · Coffee^2</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2023, Anthony Hong.</copyright>
+    <lastBuildDate>Mon, 08 Apr 2024 12:19:42 -0500</lastBuildDate>
+    <atom:link href="https://AnthonyHongXiao.github.io/blog/probability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Processes, Wasserstein distance, and VC Dimension</title>
+      <link>https://AnthonyHongXiao.github.io/reading/random_and_empirical_processes/</link>
+      <pubDate>Mon, 08 Apr 2024 12:19:42 -0500</pubDate>
+      <guid>https://AnthonyHongXiao.github.io/reading/random_and_empirical_processes/</guid>
+      <description>This reading file draws various concentration results from chapter 7 and 8 of High-Dimensional Probability, and three applications of interest to be mentioned in this file are volume of polytopes, kantorovich-rubinstein duality for Wasserstein distance and VC dimension in machine learning.&#xA;Economist and Mathematician Kantorovich. Photo from St Petersburg University.&#xA;A stochastic process, or random process is a collection of $E$-valued random variables ${X_t:\Omega\to E}_{t\in T}$ with state space $(E,\mathcal{E})$ and parameter set $T$.</description>
+    </item>
+    <item>
+      <title>Concentration of Lipschitz Functions</title>
+      <link>https://AnthonyHongXiao.github.io/reading/concentration_of_lipschitz_functions/</link>
+      <pubDate>Mon, 08 Apr 2024 00:47:01 -0500</pubDate>
+      <guid>https://AnthonyHongXiao.github.io/reading/concentration_of_lipschitz_functions/</guid>
+      <description>The content comes from Lecture 7 of Prof. Lunde&amp;rsquo;s Math5440 and Chapter 5 of High-Dimensional Probability.&#xA;In first note on HDP, we introduced the bounded difference inequality, which is a result that can be applied to a wide range of problems. The bounded difference property may be thought of as a type of smoothness condition. Recall that a function $f: \mathbb{R}^d \mapsto \mathbb{R}$ is $L$-Lipschitz if the following holds for all $x, y \in \mathbb{R}^d$ , $|f(x)-f(y)| \leq L\Vert x-y\Vert $.</description>
+    </item>
+    <item>
+      <title>High-Dimensional Probability and Statistics</title>
+      <link>https://AnthonyHongXiao.github.io/reading/high_dim_prob_and_satistics/</link>
+      <pubDate>Sun, 14 Jan 2024 12:01:56 +0800</pubDate>
+      <guid>https://AnthonyHongXiao.github.io/reading/high_dim_prob_and_satistics/</guid>
+      <description>This file is the first of the two for the notes and exercises in the book Roman Vershynin&amp;rsquo;s High-Dimensional Probability, one of the references used in Prof Lunde&amp;rsquo;s Math5440. The other references are Ramon van Handel&amp;rsquo;s Probability in High Dimension and Martin J.Wainwright&amp;rsquo;s High-Dimensional Statistics. The file contains chapter 0,1,2,3,4, which cover some of the basic notions. We will use two other reading files for further topics, one for concentration of Lipschitz functions (chapter 5) and one for Random and Empirical Processes (chapter 7 and 8).</description>
+    </item>
+  </channel>
+</rss>
