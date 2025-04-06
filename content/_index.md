@@ -5,13 +5,13 @@
 *Yes, and mathematics is the art of calling different things by the same name.* -- Henri Poincaré.
 
 ## About Me
-{{< imageRight src="/images/photos/Portrait.jpg" alt="Photo credit: Pascal." caption="me in front of Olin Library." width="20%" >}}
+{{< imageRight src="/images/photos/Portrait.jpg" alt="Photo credit: Pascal." caption="Me in front of Olin Library." width="20%" >}}
 Hello! I am Anthony, a senior undergraduate at **Washington University in St. Louis (WUSTL)**, majoring in a joint major Econ+CS, with a double major in Mathematics. My early study in architecture and art led me to an interest in **geometry**, which I now explore with an additional layer of **data** in a broad sense. I’m interested in various geometric structures, including Riemannian and symplectic geometry, as well as probabilistic and coarse geometry. I also enjoy visual models like knots, graphs, polytopes, and some low-dimensional manifolds. I like drawing these models either by hand or in vector graphics.
 
 Recently, I finished my undergraduate thesis in symplectic and toric manifolds with Prof. [Xiang Tang](https://www.math.wustl.edu/~xtang/). Last summer, I participated in an REU on discrete differential geometry and geometry processing at [MIT SGI](https://sgi.mit.edu/sgi-2024). 
 
 Outside of math 🔢, I enjoy reading social theories 📖, listening to classical music 🎻, traveling ⛰️, and spending time with my cat 🐈.
-{{< imageRight src="/images/photos/cat.jpg" alt="cat" caption="my cat Qiu-qiu." width="20%" >}}
+{{< imageRight src="/images/photos/cat.jpg" alt="cat" caption="My cat Qiu-qiu." width="20%" >}}
 
 <br>
 
@@ -27,7 +27,8 @@ Outside of math 🔢, I enjoy reading social theories 📖, listening to classic
 - Teaching assistant for Math5046 Differential Topology.
 - Grader for Math4111 Introduction to Analysis, Math4171 Topology I, and Math5051 Measure Theory and Functional Analysis I.
 
-### Seminars
+### Seminars/Workshops
+- Math540 Index Theorem.
 - Math547 Lie Algebra and Representation Theory.
 {{< imageRight src="/images/portfolio/Aryclic_Painting_Urbanity_and_Space.jpg" alt="Aryclic Painting: Urbanity and Space. Aug 2020." caption="Aryclic Painting: Urbanity and Space. Aug 2020." width="20%" >}}
 - Math560 Compact Lie Groups.
@@ -39,7 +40,7 @@ Outside of math 🔢, I enjoy reading social theories 📖, listening to classic
 - WashU Reading Group FL23: Representation Theory.
 - StanCon 2023 Workshop:
   [Convention on Stan Programming and Bayesian Modeling](https://mc-stan.org/events/stancon2023/#tutorials)
-- WUSTL Metamorphic Architecture Workshop 2019, mentored by Dean Heather Woofter.
+- WUSTL Metamorphic Architecture Workshop 2019, mentored by Prof. [Heather Woofter](https://soa.utexas.edu/faculty/heather-woofter) and Prof. [Sung Ho Kim](https://www.kent.edu/caed/sung-ho-kim).
 
 <hr style="border: none; height: 1px; background-color: #333; margin: 40px 0;">
 
