@@ -67,7 +67,7 @@ The study based on the CHARLS dataset uses OLS, ordered probit model, and genera
 {{< imageRight src="/images/symplectic/heightFunction.png" alt="heightFunction" caption="Height function as a moment map." width="40%" >}}
 In this thesis, we review the classical results of symplectic geometry, focusing on the Marsden-Weinstein- Meyer Theorem, the Atiyah-Guillemin-Sternberg Theorem, and Delzant’s classification of the symplectic toric manifolds. We begin with preliminaries covering symplectic manifolds, compatible triples, Morse the- ory, Lie groups, and Hamiltonian actions, including examples like circle actions and complex projective space with Fubini-Study form. The thesis concludes with some applications and generalizations of these classical theorems: Horn’s conjecture on Hermitian spectra, Kirwan and Weinstein ’s generalization of the convexity theorem, and the principle of quantization commuting with reduction.
 
-[Paper link](/pdfs/SymplGeoRCU.pdf).
+[Paper link](/pdfs/SymplGeoRCU.pdf) | [Presentation link](/pdfs/thesis_presentation.pdf)
 
 <!---------------------------- seperation line ---------------------------->
 
