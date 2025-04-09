@@ -6,7 +6,7 @@
 
 ## About Me
 {{< imageRight src="/images/photos/Portrait.jpg" alt="Photo credit: Pascal." caption="Me in front of Olin Library." width="20%" >}}
-Hello! I am Anthony, a senior undergraduate at **Washington University in St. Louis (WUSTL)**, majoring in a joint major Econ+CS, with a double major in Mathematics. My early study in architecture and art led me to an interest in **geometry**, which I now explore with an additional layer of **data** in a broad sense. I’m interested in various geometric structures, including Riemannian and symplectic geometry, as well as probabilistic and coarse geometry. I also enjoy visual models like knots, graphs, polytopes, and some low-dimensional manifolds. I like drawing these models either by hand or in vector graphics.
+Hello! I am Anthony, a senior undergraduate at **Washington University in St. Louis**, majoring in a joint major Econ+CS, with a double major in Mathematics. I will do my Math PhD at **Rice University** next fall. My early study in architecture and art led me to an interest in **geometry**, which I now explore with an additional layer of **data** in a broad sense. I’m interested in various geometric structures, including Riemannian and symplectic geometry, as well as probabilistic and coarse geometry. I also enjoy visual models like knots, graphs, polytopes, and some low-dimensional manifolds. I like drawing these models either by hand or in vector graphics.
 
 Recently, I finished my undergraduate thesis in symplectic and toric manifolds with Prof. [Xiang Tang](https://www.math.wustl.edu/~xtang/). Last summer, I participated in an REU on discrete differential geometry and geometry processing at [MIT SGI](https://sgi.mit.edu/sgi-2024). 
 
