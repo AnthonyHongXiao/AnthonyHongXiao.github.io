@@ -1,11 +1,11 @@
-# Xiao (Anthony) Hong
+# Xiao (Anthony) Hong 洪筱
 
 *Poetry is the art of calling the same thing by different names.* -- Anonymous.
 
 *Yes, and mathematics is the art of calling different things by the same name.* -- Henri Poincaré.
 
 ## About Me
-{{< imageRight src="/images/photos/Portrait.jpg" alt="Photo credit: Pascal." caption="Me in front of Olin Library." width="20%" >}}
+{{< imageRight src="/images/photos/dining.jpg" alt="Photo by Jessie" caption="Photo by Jessie." width="20%" >}}
 Hello! I am Anthony, a senior undergraduate at **Washington University in St. Louis**, majoring in a joint major Econ+CS, with a double major in Mathematics. I will do my Math PhD at **Rice University** next fall. My early study in architecture and art led me to an interest in **geometry**, which I now explore with an additional layer of **data** in a broad sense. I’m interested in various geometric structures, including Riemannian and symplectic geometry, as well as probabilistic and coarse geometry. I also enjoy visual models like knots, graphs, polytopes, and some low-dimensional manifolds. I like drawing these models either by hand or in vector graphics.
 
 Recently, I finished my undergraduate thesis in symplectic and toric manifolds with Prof. [Xiang Tang](https://www.math.wustl.edu/~xtang/). Last summer, I participated in an REU on discrete differential geometry and geometry processing at [MIT SGI](https://sgi.mit.edu/sgi-2024). 
@@ -193,7 +193,7 @@ A.B. Sossinsky in [Geometries](https://bookstore.ams.org/stml-64/) classified su
 
 {{< figure src="/images/portfolio/Model_Market-Pavilion_Continuum(detail)_Metamorphic_Workshop.jpg" caption="Market-Pavilion Continuum (detail), Metamorphic Workshop 2019." height="80%" width="80%" class="imagecenter" >}}
 
-{{< figure src="/images/portfolio/Model_The_Memory_Museum.jpg" caption="Model: The Memory Museum. Made in 12/2019." height="80%" width="80%" class="imagecenter" >}}
+{{< figure src="/images/portfolio/Model_The_Memory_Museum.jpg" caption="Model: The Memory Museum. 12/2019." height="80%" width="80%" class="imagecenter" >}}
 
 {{< figure src="/images/photos/SZ.jpg" caption="Photo: Shenzhen Airport. 8/2022." height="60%" width="80%" class="imagecenter" >}}
 
