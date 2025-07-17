@@ -65,7 +65,7 @@ I also add some useful remarks made by Prof. Steven Krantz in undergraduate comp
 
 Above is the image of a cat by Cayley map $\frac{z-i}{z+i}$ visualized through [online conformal mapping viewer](https://mabotkin.github.io/complex/). Cute cat becomes a bear.
 
-## 7. FL22 and SP25 (plan to take) Math5051-5052 Measure Theory and Functional Analysis I-II, Prof. Henri Martikainen
+## 7. FL22 and SP25 Math5051-5052 Measure Theory and Functional Analysis I-II, Prof. Henri Martikainen
 {{< imageRight src="/images/courses/dyadic_cubes.png" caption="dyadic cubes" height="7%" width="16%" >}}
 ### [Math5051-52 Lecture Note](/pdfs/5051-5052_MeasureTheory_and_FunctionalAnaysis.pdf)
 
@@ -84,10 +84,14 @@ Final project on cross-validation on network with Aaron Luo.
 
 {{< imageRight src="/images/courses/Ax_signature.jpg" alt="pianist Emaneul Ax's signature on Lee's Intro to SM" caption="pianist Emaneul Ax's signature on Lee's Intro to SM" height="7%" width="16%" >}}
 
-## 9. SP23 Math5046 Differential Topology, Prof. Rachel Roberts
+## 9. SP23 Math5046 Differential Topology (Prof. Rachel Roberts) and FL24 Math5047 Differential Geometry (Prof. Renato Feres)
 We used John M. Lee's *Introduction to Smooth Manifold* (e2). I am AI and grader for this course in SP24 with Prof. Roberts again, this time using Tu's *Introduction to Manifold* (e2). Some other texts are also very interesting, including a classical little book Milnor's *Topology from the Differentiable Viewpoint* and *Smooth Manifolds and Observables* by a group named themselves Jet Nestruev.
 
 ### [Lecture Note and Homework soln](https://drive.google.com/drive/folders/1GZ0SFArJ0su1If913UX1wHZrGDyUwOaz?usp=sharing)
+
+For differential geometry, we used John Lee's *Introduction to Reimannian Manifold* (e2) and some other texts.
+
+### [Lecture Note](/pdfs/5047_DiffGeo.pdf)
 
 <br>
 <br>
