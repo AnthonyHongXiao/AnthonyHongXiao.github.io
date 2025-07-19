@@ -50,7 +50,7 @@ The course based on *Lectures on Lie Groups* by Frank Adams is structured in thr
 
 See syllabus [here](https://www.math.wustl.edu/~feres/Math5047Fall24/Math5047Fall24Syllabus.html). This course provides an in-depth introduction to Riemannian geometry. We begin with a review of differentiable manifolds and Lie theory and define Riemannian metrics and connections, discussing affine and Riemannian connections, parallel transport, and the geodesic flow. We also explore various curvature notions and hypersurfaces and the Gauss-Bonnet theorem, followed by an examination of Jacobi fields. We  survey results on complete manifolds, including the Hopf-Rinow and Hadamard theorems. Finally, we overview spaces of constant curvature and conclude with a discussion of the Chern-Gauss-Bonnet theorem.
 
-### [Math547 Lecture Note](/pdfs/LeeRM.pdf)
+### [Math5047 Lecture Note](/pdfs/5047_DiffGeo.pdf)
 
 {{< figure src="/images/courses/submanifold.jpg" caption="A Submanifold." height="80%" width="80%" class="imagecenter" >}}
 
@@ -84,14 +84,10 @@ Final project on cross-validation on network with Aaron Luo.
 
 {{< imageRight src="/images/courses/Ax_signature.jpg" alt="pianist Emaneul Ax's signature on Lee's Intro to SM" caption="pianist Emaneul Ax's signature on Lee's Intro to SM" height="7%" width="16%" >}}
 
-## 9. SP23 Math5046 Differential Topology (Prof. Rachel Roberts) and FL24 Math5047 Differential Geometry (Prof. Renato Feres)
+## 9. SP23 Math5046 Differential Topology (Prof. Rachel Roberts)
 We used John M. Lee's *Introduction to Smooth Manifold* (e2). I am AI and grader for this course in SP24 with Prof. Roberts again, this time using Tu's *Introduction to Manifold* (e2). Some other texts are also very interesting, including a classical little book Milnor's *Topology from the Differentiable Viewpoint* and *Smooth Manifolds and Observables* by a group named themselves Jet Nestruev.
 
 ### [Lecture Note and Homework soln](https://drive.google.com/drive/folders/1GZ0SFArJ0su1If913UX1wHZrGDyUwOaz?usp=sharing)
-
-For differential geometry, we used John Lee's *Introduction to Reimannian Manifold* (e2) and some other texts.
-
-### [Lecture Note](/pdfs/5047_DiffGeo.pdf)
 
 <br>
 <br>
