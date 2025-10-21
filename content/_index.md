@@ -6,38 +6,20 @@
 
 ## About Me
 {{< imageRight src="/images/photos/dining.jpg" alt="Photo by Jessie" caption="Photo by Jessie." width="20%" >}}
-Hello! I am Anthony, a senior undergraduate at **Washington University in St. Louis**, majoring in a joint major Econ+CS, with a double major in Mathematics. I will do my Math PhD at **Rice University** next fall. My early study in architecture and art led me to an interest in **geometry**, which I now explore with an additional layer of **data** in a broad sense. I’m interested in various geometric structures, including Riemannian and symplectic geometry, as well as probabilistic and coarse geometry. I also enjoy visual models like knots, graphs, polytopes, and some low-dimensional manifolds. I like drawing these models either by hand or in vector graphics.
-
-Recently, I finished my undergraduate thesis in symplectic and toric manifolds with Prof. [Xiang Tang](https://www.math.wustl.edu/~xtang/). Last summer, I participated in an REU on discrete differential geometry and geometry processing at [MIT SGI](https://sgi.mit.edu/sgi-2024). 
+Hello! I am Anthony, a PhD student in Math at **Rice University**. Before that, I majored in CS+Econ at **Washington University in St. Louis**, finishing my undergraduate thesis in symplectic and toric geometry with Prof. [Xiang Tang](https://www.math.wustl.edu/~xtang/). My early study in architecture and art led me to an interest in **geometry**, which I now explore with an additional layer of **data** in a broad sense. My current advisor is Prof. [Maarten de Hoop](https://maartendehoop.rice.edu/).
 
 Outside of math 🔢, I enjoy reading social theories 📖, listening to classical music 🎻, traveling ⛰️, and spending time with my cat 🐈.
-{{< imageRight src="/images/photos/cat.jpg" alt="cat" caption="My cat Qiu-qiu." width="20%" >}}
-
-<br>
 
 ### Contact
-- **Email: hong[dot]x@wustl[dot]edu**
+- **Email: ah282[at]rice[dot]edu**
 - **LinkedIn: [https://www.linkedin.com/in/xiao-hong-anthony/](https://www.linkedin.com/in/xiao-hong-anthony/)**
 - **Twitter: [https://x.com/AnthonyHongXiao](https://x.com/AnthonyHongXiao)**
-{{< imageRight src="/images/photos/NY.jpg" alt="Photo: New York. Dec 2022." caption="Photo: New York. Dec 2022." width="20%" >}}
 
-### Talks/Teaching
+{{< imageRight src="/images/photos/cat.jpg" alt="cat" caption="My cat Qiu-qiu." width="20%" >}}
+
+### Talks/Workshops
 - Speaker at Midstates Consortium for Math and Science 23 ([session I.B.3](https://www.mathsciconsortium.org/uncategorized/2023-undergraduate-research-symposium-in-physical-sciences-mathematics-and-computer-science-at-university-of-chicago/)) at University of Chicago. ([beamer presentation](pdfs/presentation_on_Ollivier_Ricci_Curvature.pdf)). The work was also presented at [Prof. Martinkainen's session](https://sites.wustl.edu/henri/online-early-career-morning-sessions-april-13-14-2024/) and WashU SP24 Undergraduate Research Symposium ([video](https://youtu.be/g_lOmxUgVNw)).
 - My undergraduate thesis presentation ([video](https://youtu.be/6PMXHiMQoeA) and [event link](https://math.wustl.edu/events/senior-honors-thesis-symplectic-geometry-reduction-convexity-and-unimodularity)).
-- Teaching assistant for Math5046 Differential Topology.
-- Grader for Math4111 Introduction to Analysis, Math4171 Topology I, and Math5051 Measure Theory and Functional Analysis I.
-
-### Seminars/Workshops
-- Math540 Index Theorem.
-- Math547 Lie Algebra and Representation Theory.
-{{< imageRight src="/images/portfolio/Aryclic_Painting_Urbanity_and_Space.jpg" alt="Aryclic Painting: Urbanity and Space. Aug 2020." caption="Aryclic Painting: Urbanity and Space. Aug 2020." width="20%" >}}
-- Math560 Compact Lie Groups.
-- Math586 Network Statistics.
-- Math547 Combinatorics of Polytopes.
-- Math497 Group Theory From a Historical Perspective
-- [UNC Undergraduate Analysis and PDE Seminar](https://tarheels.live/waves/analysis-and-pde-seminar/) FL22-SP24.
-- WashU Reading Group SP23: Algebraic Geometry.
-- WashU Reading Group FL23: Representation Theory.
 - StanCon 2023 Workshop:
   [Convention on Stan Programming and Bayesian Modeling](https://mc-stan.org/events/stancon2023/#tutorials)
 - WUSTL Metamorphic Architecture Workshop 2019, mentored by Prof. [Heather Woofter](https://soa.utexas.edu/faculty/heather-woofter) and Prof. [Sung Ho Kim](https://www.kent.edu/caed/sung-ho-kim).
