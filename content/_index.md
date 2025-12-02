@@ -5,7 +5,7 @@
 *Yes, and mathematics is the art of calling different things by the same name.* -- Henri Poincaré.
 
 ## About Me
-{{< imageRight src="/images/photos/dining.jpg" alt="Photo by Jessie" caption="Photo by Jessie." width="20%" >}}
+{{< imageRight src="/images/photos/Anthony.jpg" width="20%" >}}
 Hello! I am Anthony, a PhD student in Math at **Rice University**. Before that, I majored in CS+Econ at **Washington University in St. Louis**, finishing my undergraduate thesis in symplectic and toric geometry with Prof. [Xiang Tang](https://www.math.wustl.edu/~xtang/). My early study in architecture and art led me to an interest in **geometry**, which I now explore with an additional layer of **data** in a broad sense. My current advisor is Prof. [Maarten de Hoop](https://maartendehoop.rice.edu/).
 
 Outside of math 🔢, I enjoy reading social theories 📖, listening to classical music 🎻, traveling ⛰️, and spending time with my cat 🐈.
@@ -128,44 +128,17 @@ This project aimed to introduce the concept of curvature to a broader audience, 
 
 <!---------------------------- seperation line ---------------------------->
 
-### 5. Hex & Brouwer Paper Report
+### 5. 
 
-{{< imageRight src="/images/Hex_board.png" alt="Hex board game." caption="Hex board game." width="25%" >}}
+
 
 **Midterm project in Prof. Chi's Math 4181 Algebraic Topology, Spring 2022.**
 
-[Report Link](/pdfs/4181_Hex_and_Brouwer.pdf)
 
 A report that correctsm a error on neighborhood size and reestablishes the proof of equivalence between the Hex theorem and the Bouwer Fixed-Point in David Gale’s paper “The Game of Hex and The Brouwer Fixed-Point Theorem.”
 
-Image from [Wolfram](https://mathworld.wolfram.com/GameofHex.html).
 
-<br>
 
-<!---------------------------- seperation line ---------------------------->
-
-### 6. Split Spoils: Solution to Stolen Necklace Problem Via Borsuk-Ulam Theorem
-
-**Final project in Prof.Chi's Math 4181 Algebraic Topology, Spring 2022.**
-
-[Report Link](/pdfs/4181_Necklace_Problem.pdf)
-
-Aiming for high-schooler reading, the paper demonstrates how to solve a mathematical problem. Specifically, guided by [Using the Borsuk-Ulam Theorem](https://kam.mff.cuni.cz/~matousek/akt.html) and 3b1b YouTube [video on necklace problem](https://www.youtube.com/watch?v=yuVqxCSsE7c), we presented the Borsuk-Ulam Theorem intuitively and used it to solve the 2-dimensional Necklace division problem.
-
-<!---------------------------- seperation line ---------------------------->
-{{< imageRight src="/images/covering.jpg" alt="A covering." caption="A covering." width="25%" >}}
-
-### 7. A Note about Algebraic and Geometric Characteristics of Archetypal Riemann Surfaces
-
-**Final project in Dr. Rodsphon's Math 497 Topic in Group Theory, Spring 2023.**
-
-A.B. Sossinsky in [Geometries](https://bookstore.ams.org/stml-64/) classified subgroups of $\text{SO}(3)$ and $\text{Isom}(\mathbb{R}^2)$ for Platonic bodies and tillings. Aimed for understanding such visual applications, we wrote a summary of curvatures, isometry groups, and automorphism groups of 3 Riemann Surfaces $\hat{\mathbb{C}}, \mathbb{C}, \triangle$ in uniformization theorem.
-[Paper Link](/pdfs/497_A_Note_on_Algebraic_and_Geometric_Characteristics_of_Archetypal_Riemann_Surfaces.pdf)
-
-[Presentation: An Exposition of Modernism in Geometry and Physics](https://docs.google.com/presentation/d/1o8KRS4pxbBGSSJmRdzsk2t1VcwMVyEX8/edit?usp=sharing&ouid=100293676418265540630&rtpof=true&sd=true)
-
-<br>
-<br>
 
 <div style="border-top: 4px solid #333; margin: 40px 0;"></div>
 
@@ -175,7 +148,9 @@ A.B. Sossinsky in [Geometries](https://bookstore.ams.org/stml-64/) classified su
 
 {{< figure src="/images/portfolio/Model_Market-Pavilion_Continuum(detail)_Metamorphic_Workshop.jpg" caption="Market-Pavilion Continuum (detail), Metamorphic Workshop 2019." height="80%" width="80%" class="imagecenter" >}}
 
-{{< figure src="/images/portfolio/Model_The_Memory_Museum.jpg" caption="Model: The Memory Museum. 12/2019." height="80%" width="80%" class="imagecenter" >}}
+{{< figure src="/images/portfolio/Model_The_Memory_Museum.jpg" caption="Model: The Memory Museum. 2019." height="80%" width="80%" class="imagecenter" >}}
+
+{{< figure src="/images/portfolio/Half-Stereo_Collage_Village_Re-assemblage.jpg" caption="Collage: Village. 2020." height="80%" width="80%" class="imagecenter" >}}
 
 {{< figure src="/images/photos/SZ.jpg" caption="Photo: Shenzhen Airport. 8/2022." height="60%" width="80%" class="imagecenter" >}}
 
