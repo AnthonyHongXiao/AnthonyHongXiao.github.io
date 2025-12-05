@@ -126,20 +126,6 @@ This project aimed to introduce the concept of curvature to a broader audience, 
 
 [Project Link](https://summergeometry.org/sgi2024/bridging-curvatures-from-riemann-to-gauss/); image from [paper](https://www.pnas.org/doi/pdf/10.1073/pnas.1118478109).
 
-<!---------------------------- seperation line ---------------------------->
-
-### 5. 
-
-
-
-**Midterm project in Prof. Chi's Math 4181 Algebraic Topology, Spring 2022.**
-
-
-A report that correctsm a error on neighborhood size and reestablishes the proof of equivalence between the Hex theorem and the Bouwer Fixed-Point in David Gale’s paper “The Game of Hex and The Brouwer Fixed-Point Theorem.”
-
-
-
-
 <div style="border-top: 4px solid #333; margin: 40px 0;"></div>
 
 ## Gallery
