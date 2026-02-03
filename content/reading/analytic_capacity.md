@@ -13,5 +13,5 @@ Two simple python codes generate the following plots for Mandelbrot and Julia se
 
 {{< figure src="/images/fractal/Mandelbrot.png" caption="Mandelbrot set" height="55%" width="55%" class="imagecenter" >}}
 
-{{< figure src="/images/fractal/Julia.png" caption="Mandelbrot set" height="55%" width="55%" class="imagecenter" >}}
+{{< figure src="/images/fractal/Julia.png" caption="Julia set" height="55%" width="55%" class="imagecenter" >}}
 
