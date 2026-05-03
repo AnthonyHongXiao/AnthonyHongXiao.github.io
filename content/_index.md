@@ -5,7 +5,7 @@
 *Yes, and mathematics is the art of calling different things by the same name.* -- Henri Poincaré.
 
 ## About Me
-{{< imageRight src="/images/photos/Anthony.jpg" width="20%" >}}
+{{< imageRight src="/images/photos/Anthony2.jpg" width="20%" >}}
 Hello! I am Anthony, a PhD student in Math at **Rice University**. Before that, I majored in CS+Econ at **Washington University in St. Louis**, finishing my undergraduate thesis in symplectic and toric geometry with Prof. [Xiang Tang](https://www.math.wustl.edu/~xtang/). My early study in architecture and art led me to an interest in **geometry**, which I now explore with an additional layer of **data** in a broad sense. My current advisor is Prof. [Maarten de Hoop](https://maartendehoop.rice.edu/).
 
 Outside of math 🔢, I enjoy reading social theories 📖, listening to classical music 🎻, traveling ⛰️, and spending time with my cat 🐈.
